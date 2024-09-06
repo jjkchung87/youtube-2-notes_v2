@@ -1,0 +1,172 @@
+3800.039: that one last thing that we might be
+3798.0 - 3803.52: useful here is going back to looking at
+3800.039 - 3806.5200000000004: a data frame if I wanted to just get the
+3803.52 - 3811.64: rows that had Nas in them I could do
+3806.52 - 3811.64: you know coffee oh oops what just
+3815.839 - 3820.48: happened do
+3818.039 - 3822.4: isna we could do something like this to
+3820.48 - 3825.96: just get those rows and if we wanted a
+3822.4 - 3829.96: rows that didn't have unit sold we could
+3825.96 - 3832.319: do a na and do our filtering conditions
+3829.96 - 3834.16: like we've seen in the past cool stuff
+3832.319 - 3836.599: here that's kind of the basics of null
+3834.16 - 3838.7599999999998: values find that if they exist in our
+3836.599 - 3840.6400000000003: data frame fill them if you think it
+3838.76 - 3843.5200000000004: makes sense but sometimes it also just
+3840.64 - 3845.359: makes sense to let them be and not worry
+3843.52 - 3846.96: too much about them in our data as we
+3845.359 - 3848.799: continue down the tutorial one thing
+3846.96 - 3852.2: that's super useful is how we can
+3848.799 - 3855.4: aggregate data so combine things group
+3852.2 - 3858.0: things uh use pivot tables Etc probably
+3855.4 - 3860.4: the most basic aggregation that I find
+3858.0 - 3863.44: super useful is going to be value
+3860.4 - 3866.359: accounts so if we look at our bio
+3863.44 - 3869.599: information on our athletes maybe I'm
+3866.359 - 3871.279: really curious what the top cities for
+3869.599 - 3875.279: Olympic athletes to come from are I
+3871.279 - 3877.44: could do bios. value counts and I would
+3875.279 - 3881.88: explicitly want to do the value counts
+3877.44 - 3884.7200000000003: on the column born City and we see
+3881.88 - 3887.44: Budapest leading the charge with Moscow
+3884.72 - 3889.799: second Oslo third and we can start
+3887.44 - 3892.64: combining things here I could do bios
+3889.799 - 3896.319: bios born
+3892.64 - 3899.279: country equals equals USA
+3896.319 - 3902.16: and then maybe I want to do get the born
+3899.279 - 3905.799: region and do value counts on that so
+3902.16 - 3908.2: filtering only on people from the us and
+3905.799 - 3909.4: we see that of the states in the US most
+3908.2 - 3911.8799999999997: Olympic athletes have come from
+3909.4 - 3914.6800000000003: California makes sense California is
+3911.88 - 3916.44: massive then you get New York second
+3914.68 - 3919.52: definitely makes sense Chicago and
+3916.44 - 3922.799: Illinois third uh Massachusetts where I
+3919.52 - 3924.72: am at most of the time rounding out the
+3922.799 - 3926.7599999999998: top five and you could you know look at
+3924.72 - 3929.64: the tale of this as well
+3926.76 - 3932.079: well uh Wyoming not producing many
+3929.64 - 3935.24: Olympic athletes I was proud to see New
+3932.079 - 3937.7200000000003: Hampshire had a decent amount I think I
+3935.24 - 3941.359: had all the go all the way back yeah to
+3937.72 - 3943.0: the I guess right at like 83 not many
+3941.359 - 3944.0789999999997: but probably some skiers and stuff when
+3943.0 - 3947.119: we're beating Vermont so that's
+3944.079 - 3948.96: important I'm from New Hampshire so cool
+3947.119 - 3951.0: that's some value counts what else can
+3948.96 - 3953.599: we do here so
+3951.0 - 3956.96: bios cool maybe we would want to group
+3953.599 - 3959.6800000000003: by a specific Sport and then then check
+3956.96 - 3962.079: what the average weight or height is
+3959.68 - 3964.44: based on that sport or maybe like we
+3962.079 - 3965.92: would want to sort by country and see
+3964.44 - 3967.48: what the average height of athletes
+3965.92 - 3969.6800000000003: coming from that country are you could
+3967.48 - 3971.039: imagine doing all sorts of things one
+3969.68 - 3972.7599999999998: interesting thing might be shorting by
+3971.039 - 3975.2400000000002: like birth de and seeing the height and
+3972.76 - 3978.599: weight and how it changes over time so a
+3975.24 - 3980.7599999999998: useful function in the pandas world is
+3978.599 - 3981.88: Group by and I think it'll be easier to
+3980.76 - 3984.44: understand some of this stuff if we
+3981.88 - 3986.319: start with the the toy coffee examples
+3984.44 - 3989.7200000000003: I'm going reload it
+3986.319 - 3992.72: from maybe I'll just use the
+3989.72 - 3992.72: interpolated
+4000.0 - 4004.4: value just going to fill this data so we
+4002.119 - 4004.4: have no
+4004.52 - 4009.279: nans guess it doesn't really make sense
+4006.92 - 4011.839: to have a fractional unit sold but that
+4009.279 - 4014.64: is Life okay aggregating data group buys
+4011.839 - 4016.0389999999998: are useful so we could do group bu and
+4014.64 - 4019.279: maybe we wanted to
+4016.039 - 4024.44: just do some calculations on the coffee
+4019.279 - 4027.72: type so you do group by do coffee type
+4024.44 - 4030.64: and then maybe we wanted to grab just
+4027.72 - 4033.7599999999998: the total number of units sold based on
+4030.64 - 4037.48: that coffee type and we can do a sum
+4033.76 - 4041.88: like this we see 246 for the espresso
+4037.48 - 4044.96: 203 for the lot we can also do like the
+4041.88 - 4046.88: average per day for each of those types
+4044.96 - 4049.119: one thing that's cool is let's say we
+4046.88 - 4052.2000000000003: wanted to calculate different things
+4049.119 - 4054.48: based on our data we could doag and
+4052.2 - 4057.48: actually pass in a dictionary here so
+4054.48 - 4061.319: maybe for our unit sold we wanted to
+4057.48 - 4062.799: calculate the sum but for our price it
+4061.319 - 4065.079: wouldn't make sense to calculate the sum
+4062.799 - 4067.799: of the price but maybe that one we would
+4065.079 - 4070.2000000000003: want to calculate the average price and
+4067.799 - 4071.96: we see we get that because the price
+4070.2 - 4074.52: never changed for either of those we see
+4071.96 - 4077.559: it's just $3.99 and $5.99 but it's cool
+4074.52 - 4079.16: that we can see like the unit sold this
+4077.559 - 4081.2000000000003: and then taking the average price you'd
+4079.16 - 4083.5989999999997: get like a and you multiplying that you
+4081.2 - 4086.96: could get something useful there Group
+4083.599 - 4089.6800000000003: by very very important very helpful you
+4086.96 - 4091.2: can actually Group by multiple
+4089.68 - 4094.1189999999997: properties so you could also like group
+4091.2 - 4095.839: by the day of the week here too wouldn't
+4094.119 - 4097.400000000001: be as useful in this situation because I
+4095.839 - 4099.0: think we only have one day of the week
+4097.4 - 4100.199: for each but you could imagine in a
+4099.0 - 4102.4: different use case where you wouldd want
+4100.199 - 4106.44: to group by multiple things and then do
+4102.4 - 4108.679: these aggregations similar to group buys
+4106.44 - 4111.839: another useful thing is what's known as
+4108.679 - 4115.6: a pivot table so we have our coffee
+4111.839 - 4117.96: right one way to do the same type of
+4115.6 - 4119.96: things but maybe is a little bit more
+4117.96 - 4123.96: easy to work with longer term is to
+4119.96 - 4125.719: create a pivot on our data so what I
+4123.96 - 4128.719: mean by this is we have this original
+4125.719 - 4132.679: data frame looks like this how about we
+4128.719 - 4134.839: get espresso and Latte as columns and we
+4132.679 - 4135.96: just look at the units sold based on the
+4134.839 - 4138.359: day of the week
+4135.96 - 4140.04: or like the revenue four of those based
+4138.359 - 4144.4400000000005: on the day of the week so we could do
+4140.04 - 4148.08: pivot equals coffee. pivot The Columns
+4144.44 - 4152.759: will be equal to Coffee
+4148.08 - 4158.04: type the the index will be equal to the
+4152.759 - 4160.92: day and the values will be how about our
+4158.04 - 4162.759: Revenue so pivot table takes our data
+4160.92 - 4166.04: that looks like this as is on the screen
+4162.759 - 4168.48: right now and it converts it into into a
+4166.04 - 4172.64: format that
+4168.48 - 4174.3189999999995: looks like this one thing that we see is
+4172.64 - 4176.719: a little bit annoying here is that it
+4174.319 - 4178.1990000000005: did make this weird order of our day a
+4176.719 - 4180.719: bit different you can leverage
+4178.199 - 4182.3189999999995: categorical variables to reorder this
+4180.719 - 4184.64: the way that you want I don't know if
+4182.319 - 4186.279: I'll cover that right now but with these
+4184.64 - 4188.159000000001: pivot tables one thing that's cool is
+4186.279 - 4189.839000000001: like now you can you have a new way to
+4188.159 - 4193.08: access this information that's pretty
+4189.839 - 4195.88: easy like I could grab Monday's latte
+4193.08 - 4200.48: count very easily like this I could also
+4195.88 - 4202.8: do a sum on the table and see the total
+4200.48 - 4205.44: revenue for both espresso and Latte we
+4202.8 - 4210.64: could also look at the total revenue on
+4205.44 - 4214.5199999999995: a day count by doing sum AIS equals
+4210.64 - 4217.6: one and we see we get the total revenue
+4214.52 - 4219.92: summed the other way so sum is useful
+4217.6 - 4221.92: pivot tables are useful let's do some
+4219.92 - 4226.56: more I guess Advanced examples maybe
+4221.92 - 4226.56: with our sports information
+4226.76 - 4231.1990000000005: let's say we wanted to group people by
+4229.239 - 4235.28: the year they were born to do that we
+4231.199 - 4237.678999999999: could do something like bios. group by
+4235.28 - 4240.12: you know we maybe have to add a I think
+4237.679 - 4241.4800000000005: we could actually just do could do born
+4240.12 - 4244.84: date I just want to make sure this is a
+4241.48 - 4248.28: date time first date. year and then we
+4244.84 - 4248.28: could do a DOT
+4249.28 - 4252.719: count count
+4252.8 - 4262.4800000000005: here and we see not as useful looking at
+4257.12 - 4262.48: it like this I could even just do name.
+4263.0 - 4267.48: count and we can see how many people
+4265.28 - 4271.92: were born by each year maybe it would be
+4267.48 - 4271.919999999999

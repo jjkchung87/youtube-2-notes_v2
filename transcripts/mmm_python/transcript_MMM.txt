@@ -1,0 +1,674 @@
+0.56 - 5.92: hello and welcome to the first episode
+3.28 - 8.72: about mark about applying marketing mix
+5.92 - 11.84: modeling using python
+8.72 - 12.96: all right so uh we're gonna do what
+11.84 - 14.799: we're gonna
+12.96 - 17.84: to cover today is
+14.799 - 20.48: we're gonna try to do a bridge of
+17.84 - 24.0: uh what we've done in the past using
+20.48 - 26.560000000000002: uh linear regression uh in excel
+24.0 - 28.88: doing that all the expiration phase uh
+26.56 - 30.479999999999997: create a simple model and see how
+28.88 - 32.64: accurate it is
+30.48 - 34.399: we're going to do the same thing
+32.64 - 36.32: using python
+34.399 - 37.04: so the steps that we're going to cover
+36.32 - 39.2: are
+37.04 - 41.839999999999996: what libraries we need to import and how
+39.2 - 41.84: to import them
+42.079 - 46.079: we're going to import our data frame and
+44.0 - 47.52: we're gonna see how
+46.079 - 49.92: and
+47.52 - 52.64: let's see if i all right we're gonna see
+49.92 - 54.96: how and then we're gonna show graphs and
+52.64 - 56.559: do some exploration analysis
+54.96 - 59.28: we're gonna use
+56.559 - 62.0: ordinary squares library
+59.28 - 64.72: uh or stats models library that has a
+62.0 - 67.2: function called ordinary squares to do
+64.72 - 68.96: some statistical analysis we're going to
+67.2 - 70.96000000000001: see what metrics we need
+68.96 - 74.15899999999999: to understand in order to validate our
+70.96 - 75.759: hypothesis and create an mmm project
+74.159 - 77.28: done well
+75.759 - 79.759: then we're going to use a linear
+77.28 - 81.52: regression function from socket learn
+79.759 - 83.36: and then we're going to do some post
+81.52 - 86.15899999999999: modeling analysis
+83.36 - 87.68: so let's start importing libraries we
+86.159 - 89.759: actually need
+87.68 - 92.72000000000001: only four or five libraries it's going
+89.759 - 94.0: to be super easy first one is
+92.72 - 96.4: pandas
+94.0 - 99.68: we need to have a way libras is a
+96.4 - 102.56: library used to
+99.68 - 104.72000000000001: manipulate data sets it's super
+102.56 - 107.84: incredible easy to use and super
+104.72 - 109.52: powerful so i'm gonna do import pandas
+107.84 - 112.96000000000001: as pd
+109.52 - 116.399: then import uh poly
+112.96 - 118.96: x dot express as px
+116.399 - 121.84: plus express is a library that allows us
+118.96 - 124.88: to have interactive graphs which we can
+121.84 - 128.0: zoom in zoom out and
+124.88 - 128.959: it's incredible it's really incredible
+128.0 - 134.879: um
+128.959 - 136.879: then we're gonna import uh stats models
+134.879 - 138.319: as xm
+136.879 - 142.64: and then we're gonna do
+138.319 - 144.48: from socket learn dot linear model
+142.64 - 146.55999999999997: underscore model
+144.48 - 148.07999999999998: uh import
+146.56 - 150.48: linear
+148.08 - 152.8: regression
+150.48 - 154.56: and
+152.8 - 157.68: from
+154.56 - 159.84: socket learn
+157.68 - 161.04000000000002: that model
+159.84 - 163.28: selection
+161.04 - 165.28: we're gonna import
+163.28 - 167.76: uh train
+165.28 - 170.239: underscore test
+167.76 - 173.04: split
+170.239 - 175.84: and this function is used to do
+173.04 - 178.0: something that in data science uh is
+175.84 - 179.28: it's a must in order to validate your
+178.0 - 182.72: hypothesis
+179.28 - 185.68: really well we if this function
+182.72 - 186.72: allows us to easily separate and divide
+185.68 - 187.59900000000002: into
+186.72 - 189.519: um
+187.599 - 191.44: our data sets in two parts in which
+189.519 - 192.56: we're gonna use the first part to train
+191.44 - 194.07999999999998: our model
+192.56 - 196.84: and then we're gonna do
+194.08 - 199.92000000000002: we're gonna use the second part
+196.84 - 202.31900000000002: to validate our model
+199.92 - 204.39999999999998: how well to validate how well it can
+202.319 - 205.11999999999998: predict it can predict
+204.4 - 207.68: so
+205.12 - 211.04: let's uh shift
+207.68 - 213.84: uh let's run it perfect now
+211.04 - 216.239: uh let's define our data set so we've
+213.84 - 219.36: done the first part let's import our
+216.239 - 222.0: data frame our data frame is df equal
+219.36 - 225.44000000000003: we're going to use the function read csv
+222.0 - 227.84: from pandas so pd.read
+225.44 - 231.44: underscore csv
+227.84 - 233.12: open parentheses uh we're gonna do
+231.44 - 234.4: we're gonna copy
+233.12 - 236.64000000000001: the path
+234.4 - 239.04: from
+236.64 - 241.04: this uh csv file
+239.04 - 243.439: and then we're going to route that head
+241.04 - 248.4: that's rough right let's
+243.439 - 248.4: describe let's see what comes out
+248.64 - 250.64: all right
+249.76 - 253.28: um
+250.64 - 255.2: now let's let's just run the f
+253.28 - 257.68: this is our data set
+255.2 - 260.15999999999997: and how pandas show
+257.68 - 261.6: shows data sets basically and we can see
+260.16 - 263.68: that we have an aggregate a weekly
+261.6 - 266.96000000000004: aggression as we had in
+263.68 - 269.68: the past episodes in in excel
+266.96 - 271.19899999999996: we have 30 records in these 30 records
+269.68 - 272.56: we have sales
+271.199 - 274.16: time frame
+272.56 - 276.24: how much we spend on facebook how much
+274.16 - 277.44: we spend on tv and how much we spent on
+276.24 - 280.56: radio
+277.44 - 283.199: now we imported this df what i'm gonna
+280.56 - 285.36: want to see now is how they behave over
+283.199 - 287.84000000000003: time in order to see if
+285.36 - 290.08000000000004: all the inputs over time
+287.84 - 292.96: are correlated in some way so if they
+290.08 - 295.03999999999996: move up also sales move up
+292.96 - 298.08: that's what i want to find out
+295.04 - 300.24: let's do and we do that using plug
+298.08 - 301.039: express so
+300.24 - 303.36: uh
+301.039 - 304.479: coding wise what we do is fig
+303.36 - 307.759: equal
+304.479 - 309.75899999999996: to px dot line
+307.759 - 312.16: open parenthesis
+309.759 - 315.039: we define what's the data framework we
+312.16 - 319.44: need to take into consideration
+315.039 - 321.12: then the x-axis needs to be time
+319.44 - 322.24: as we've seen here
+321.12 - 325.52: and then
+322.24 - 328.8: in the y-axis what i want is
+325.52 - 330.4: uh df.columns so i want everything i
+328.8 - 333.039: just want to see
+330.4 - 336.28: how everything is showing i'm going to
+333.039 - 336.28: do fig.show
+336.72 - 342.24: and it's gonna show me everything
+338.8 - 343.6: so here what we have is uh sales right
+342.24 - 345.68: so
+343.6 - 347.84000000000003: they have different dimension dimensions
+345.68 - 350.84000000000003: so this is really high
+347.84 - 352.71999999999997: and what i want to see if
+350.84 - 354.479: is yeah
+352.72 - 357.44000000000005: as we've seen in the past episode in
+354.479 - 360.4: excel uh this is facebook and once
+357.44 - 361.36: when facebook is rising also sales rise
+360.4 - 362.63899999999995: with that
+361.36 - 364.24: um
+362.639 - 365.6: let's see here
+364.24 - 368.8: um
+365.6 - 371.91900000000004: yeah facebook rises uh sales rises too
+368.8 - 371.91900000000004: uh this is tv
+372.0 - 378.08: tv seems a little a little correlated
+375.6 - 379.36: but we can see that radio has positive
+378.08 - 380.639: spikes when
+379.36 - 382.8: uh
+380.639 - 385.759: when sails have downward spikes so
+382.8 - 389.12: they're not really correlated i've seen
+385.759 - 390.96000000000004: let's check real quick if um the
+389.12 - 393.68: correlation the piercer correlation
+390.96 - 395.84: metrics and python is a python and
+393.68 - 399.56: pandas app a really simple way to do it
+395.84 - 399.56: it's just df.car
+399.6 - 402.639: run it
+400.8 - 405.6: as you can see we have correlation
+402.639 - 408.0: between sales and facebook sales and tv
+405.6 - 410.319: sales and radio there is an incredibly
+408.0 - 412.319: low correlation between radio and sales
+410.319 - 413.759: okay correlation between tv and sales
+412.319 - 415.84000000000003: but really high correlation between
+413.759 - 417.52000000000004: facebook and sales
+415.84 - 419.19899999999996: that's good
+417.52 - 421.039: now
+419.199 - 422.8: what we want to do is we want to do
+421.039 - 424.8: scatter plots
+422.8 - 426.96000000000004: so
+424.8 - 430.319: what we do is uh
+426.96 - 431.84: we define a new fig equal
+430.319 - 432.72: let's call it click one
+431.84 - 433.919: just
+432.72 - 435.52000000000004: put some
+433.919 - 437.75899999999996: clearance
+435.52 - 441.52: across all the notebook so we're gonna
+437.759 - 444.16: do px dot uh scatter
+441.52 - 447.52: open parenthesis we're gonna define df
+444.16 - 450.639: as a exact as a data set
+447.52 - 451.68: that is it x is equal to
+450.639 - 454.24: um
+451.68 - 456.56: facebook all right we're gonna
+454.24 - 460.24: facebook and y
+456.56 - 460.24: is gonna be equal to sales
+461.84 - 466.96: fake one
+463.44 - 468.71999999999997: let's wait let's do something faster so
+466.96 - 471.52: i'm gonna copy three times i'm gonna
+468.72 - 473.759: call it big one pick two from three
+471.52 - 476.84: uh
+473.759 - 479.91900000000004: we're gonna change this tv and
+476.84 - 482.0: radio and let's show everything let's
+479.919 - 483.84: pick one show
+482.0 - 485.44: copy it
+483.84 - 487.28: three times
+485.44 - 489.12: two and three
+487.28 - 491.19899999999996: let's run it
+489.12 - 492.72: all right as we can see seals and
+491.199 - 495.759: facebook are
+492.72 - 498.47900000000004: really correlated so if you see a trend
+495.759 - 500.96000000000004: when when the budget is invested it's
+498.479 - 502.479: increasing if we have a positive
+500.96 - 505.12: correlation so
+502.479 - 507.039: the points are going up
+505.12 - 510.479: it means that there is a
+507.039 - 513.8389999999999: clear correlation in here
+510.479 - 516.479: uh sales and tv are
+513.839 - 518.8800000000001: a little correlated there are some um as
+516.479 - 520.399: you can see here these are anomalies
+518.88 - 521.519: that
+520.399 - 522.959: we can
+521.519 - 524.159: weaken the
+522.959 - 528.2399999999999: uh
+524.159 - 531.2: made the correlation uh lower
+528.24 - 532.24: that they're not really good for uh
+531.2 - 534.8000000000001: for
+532.24 - 535.839: the regression but it's whatever we have
+534.8 - 537.8389999999999: it
+535.839 - 540.08: and then we have all the
+537.839 - 542.8000000000001: uh all the rate investments that are
+540.08 - 545.12: really low correlated we shouldn't put
+542.8 - 547.279: it inside in order to validate our
+545.12 - 550.32: policies if we should
+547.279 - 552.8: insert our
+550.32 - 555.7600000000001: radio or not we're going to use ols
+552.8 - 557.5999999999999: ordinary square from stats models i
+555.76 - 560.88: already inputted everything we have
+557.6 - 563.6800000000001: inputs we define facebook tv and radio
+560.88 - 565.2: we define x which is our input variables
+563.68 - 568.56: independent variables
+565.2 - 570.72: is df inputs y
+568.56 - 573.1199999999999: sdf sales
+570.72 - 575.6: we add in the ols
+573.12 - 576.9590000000001: statsmodels library a constant because
+575.6 - 580.5600000000001: we know that
+576.959 - 583.92: at when the variables are all input
+580.56 - 585.1999999999999: variables are all 0 we still have some
+583.92 - 587.8389999999999: positive
+585.2 - 587.839: conversions
+588.64 - 593.519: then we print results as sm ols
+592.24 - 596.24: x
+593.519 - 598.5600000000001: epsilon and x dot fit
+596.24 - 600.9590000000001: which is the function for uh ordinary
+598.56 - 604.399: squares in the stats models library and
+600.959 - 606.4799999999999: then we print the summary so run it
+604.399 - 609.36: and in this case
+606.48 - 611.2: we have some uh matrix and kpi we need
+609.36 - 613.6: to take for this
+611.2 - 615.76: i think one of the most important part
+613.6 - 616.8000000000001: for an entire marketing mix modeling
+615.76 - 619.12: project
+616.8 - 622.4799999999999: we have the r square which measures
+619.12 - 624.24: accuracy so it basically tells you
+622.48 - 626.16: what is
+624.24 - 628.88: what is the percentage of variation in
+626.16 - 630.959: the input variables are
+628.88 - 632.88: are described describe the output
+630.959 - 634.88: variables describe the variation in the
+632.88 - 637.04: output variables
+634.88 - 638.72: we have the f statistics
+637.04 - 640.16: which is a metric and a kpi that
+638.72 - 642.72: measures how
+640.16 - 643.76: statistically significant is the entire
+642.72 - 647.12: model
+643.76 - 650.3199999999999: and it should be higher than two
+647.12 - 653.6: in order to be statistically significant
+650.32 - 655.839: now um let's measure here
+653.6 - 658.8000000000001: we have the first column so
+655.839 - 661.6: the dimension in here is
+658.8 - 663.92: constant facebook tv radio so there are
+661.6 - 666.5600000000001: the input variables for our model
+663.92 - 670.64: we see that we have an input coefficient
+666.56 - 673.76: for a constant of 3.36 which we can if
+670.64 - 675.1999999999999: we compare it with our model
+673.76 - 678.88: on excel
+675.2 - 680.6400000000001: we have a 3.01 which is super similar
+678.88 - 681.68: right
+680.64 - 683.1999999999999: so
+681.68 - 684.959: um
+683.2 - 687.2: we are here
+684.959 - 687.1999999999999: and
+687.519 - 694.399: it's okay facebook is at 0.04
+691.36 - 696.5600000000001: tv is at 0.18 and radio has a negative
+694.399 - 698.72: coefficient which doesn't make sense
+696.56 - 702.2399999999999: there is no it doesn't exist an
+698.72 - 705.2: investment that drives negative sales we
+702.24 - 708.24: now here have a standard error so
+705.2 - 712.72: how much we think it can vary
+708.24 - 715.519: at this how much this value can vary
+712.72 - 718.1600000000001: from old historical data
+715.519 - 721.44: and we can see actually this standard
+718.16 - 723.76: error is used to uh to measure then p
+721.44 - 725.7600000000001: value and the p value measures how
+723.76 - 727.519: statistically significant is the
+725.76 - 728.3199999999999: coefficient so
+727.519 - 729.44: uh
+728.32 - 730.88: if
+729.44 - 733.0400000000001: this
+730.88 - 736.24: if the coefficient
+733.04 - 738.56: has a probability higher than 95 percent
+736.24 - 739.76: of happening
+738.56 - 740.959: um
+739.76 - 745.519: it's good
+740.959 - 746.6389999999999: if not if it has a p value lower than 95
+745.519 - 749.92: percent
+746.639 - 751.279: but higher than 0.05
+749.92 - 753.04: it's bad
+751.279 - 756.959: as we can see
+753.04 - 758.399: uh here we have most of our
+756.959 - 762.0: variables
+758.399 - 763.92: are lower than 0.05
+762.0 - 766.32: which means that these three are
+763.92 - 770.079: statistically significant well what is
+766.32 - 772.399: not statistically significant is radio
+770.079 - 775.4399999999999: the confidence interval in here tells
+772.399 - 777.44: you what is the range in which uh your
+775.44 - 779.36: uh coefficient here
+777.44 - 783.0400000000001: could vary
+779.36 - 784.0790000000001: in a 95 percent confidence interval
+783.04 - 786.88: and
+784.079 - 789.92: constants has a pretty wide range of
+786.88 - 792.72: values uh facebook has a pretty low
+789.92 - 794.4799999999999: range of values same for tv
+792.72 - 797.2: and
+794.48 - 799.9200000000001: radio is not statistically significant
+797.2 - 803.36: ergo we should eliminate it so what we
+799.92 - 805.1999999999999: do here let's copy this
+803.36 - 807.04: this code let's paste in here and we're
+805.2 - 809.839: going to remove radio
+807.04 - 811.279: let's see what happens to our model
+809.839 - 813.2790000000001: our model
+811.279 - 815.92: redu it decreases
+813.279 - 817.56: the r squared decreases a little bit
+815.92 - 822.279: from
+817.56 - 822.279: 0.875 to 0.872
+822.32 - 825.9200000000001: um
+823.519 - 828.24: perfect f statistics increases which is
+825.92 - 829.36: good all the variables are statistically
+828.24 - 832.24: significant
+829.36 - 833.36: are they're all positive which is good
+832.24 - 835.12: and
+833.36 - 837.1990000000001: there's another thing that i want to
+835.12 - 840.0: mention which is condition number and a
+837.199 - 842.079: condition number is a
+840.0 - 844.16: is a variable it's a kpi that measures
+842.079 - 845.68: what's the multiple linearity inside of
+844.16 - 847.76: our models
+845.68 - 849.519: and what we want to have because we have
+847.76 - 852.48: a linear regression which is a function
+849.519 - 854.9590000000001: that describes it's
+852.48 - 857.44: it's something like this
+854.959 - 862.56: i'm going to comment it absolutely is
+857.44 - 865.6800000000001: equal to better one x1 plus beta2 x2 etc
+862.56 - 869.3599999999999: plus beta0 for example
+865.68 - 872.88: we want to have all the inside axis
+869.36 - 874.8000000000001: independent and not collinear to other
+872.88 - 875.76: input variables
+874.8 - 877.92: because
+875.76 - 880.24: it would create some
+877.92 - 883.04: some problems over time if we if there
+880.24 - 885.839: is high multi-linearity inside
+883.04 - 888.88: so what we do here
+885.839 - 891.7600000000001: is we now define what's the best model
+888.88 - 893.36: uh we're gonna create we're gonna
+891.76 - 895.12: run the
+893.36 - 898.9590000000001: train test split
+895.12 - 900.0: uh to divide our data set so we do x
+898.959 - 902.0: train
+900.0 - 902.959: y train
+902.0 - 905.519: uh
+902.959 - 907.5999999999999: x test
+905.519 - 909.519: y test
+907.6 - 911.1990000000001: equal to train
+909.519 - 912.399: test
+911.199 - 914.16: pass
+912.399 - 917.519: split
+914.16 - 921.279: let's run x epsilon uh we're gonna do
+917.519 - 923.839: shuffle equal false we know we don't
+921.279 - 925.4399999999999: want to shuffle our data
+923.839 - 926.639: and
+925.44 - 927.839: test
+926.639 - 930.0: size
+927.839 - 932.8800000000001: let's start with
+930.0 - 934.16: 0.2 right
+932.88 - 935.759: now
+934.16 - 937.8389999999999: i'm not going to run it because i want
+935.759 - 940.9590000000001: to i want to find out we're going to
+937.839 - 943.759: divide our um our data set and we're
+940.959 - 946.7199999999999: going to use 80 for training and 20
+943.759 - 949.1990000000001: for set for for testing
+946.72 - 951.9200000000001: i decided to not shuffle the data which
+949.199 - 953.3599999999999: means i want this particular order
+951.92 - 955.36: because in the long term it's going to
+953.36 - 957.6: be useful for the ad stock we don't want
+955.36 - 961.6800000000001: to shuffle the ad stock but
+957.6 - 963.6800000000001: we're going to cover it later anyway um
+961.68 - 966.399: so let's uh
+963.68 - 967.4399999999999: initiate our model so we do model equal
+966.399 - 969.839: linear
+967.44 - 969.839: regression
+970.399 - 977.279: perfect and we want to do model dot fit
+973.92 - 978.959: open parenthesis x train
+977.279 - 981.6: y train
+978.959 - 983.92: so it's gonna learn and
+981.6 - 987.519: train basically
+983.92 - 989.92: and then i want to print
+987.519 - 991.839: the score i want to see what's the score
+989.92 - 994.8: what's the r square for
+991.839 - 997.0400000000001: a model dot score
+994.8 - 999.04: x x-ray
+997.04 - 1002.399: y train
+999.04 - 1004.16: comma model.score
+1002.399 - 1006.959: x test
+1004.16 - 1006.959: y test
+1007.04 - 1010.399: perfect
+1008.639 - 1011.199: and
+1010.399 - 1012.959: so
+1011.199 - 1015.3599999999999: let's run it
+1012.959 - 1018.16: we find a ninety percent r square
+1015.36 - 1019.04: uh in the training set and 38 percent in
+1018.16 - 1019.92: the
+1019.04 - 1022.8: uh
+1019.92 - 1025.4389999999999: test set which is it's not good
+1022.8 - 1028.6399999999999: uh let's see what happens if we increase
+1025.439 - 1029.919: the test size so if we have if we train
+1028.64 - 1034.0: the data set
+1029.919 - 1035.8390000000002: uh using other more than 15 rows records
+1034.0 - 1038.16: let's see
+1035.839 - 1041.52: they tend to converge a little bit let's
+1038.16 - 1044.16: try to find 0.5 for example
+1041.52 - 1045.199: yeah it's way closer now it makes a lot
+1044.16 - 1046.72: of sense
+1045.199 - 1048.0790000000002: to have these two
+1046.72 - 1049.919: now um
+1048.079 - 1052.96: we train only on 50
+1049.919 - 1055.679: and use the other 50 to test the data
+1052.96 - 1057.3600000000001: let's see what happens if i if i put
+1055.679 - 1058.24: 20 on test
+1057.36 - 1060.6399999999999: set
+1058.24 - 1064.24: and i want to shuffle the data so i put
+1060.64 - 1066.4: true and what happens is in this case
+1064.24 - 1067.919: in which we don't transform without
+1066.4 - 1070.72: stock any
+1067.919 - 1073.2: any function and we don't uh transform
+1070.72 - 1075.2: anything shuffling that is not
+1073.2 - 1077.6000000000001: something bad to do
+1075.2 - 1078.96: because what happens is uh what that
+1077.6 - 1082.0: what the
+1078.96 - 1084.16: linear regression does it measures the
+1082.0 - 1086.64: the instant in the same week how many
+1084.16 - 1089.6000000000001: variation has been in the input and
+1086.64 - 1091.44: measure what happened in the same record
+1089.6 - 1092.48: in the same week what happened to the
+1091.44 - 1093.28: output
+1092.48 - 1095.039: so
+1093.28 - 1096.6399999999999: if we shuffle the data there's no
+1095.039 - 1098.559: seasonality there's
+1096.64 - 1099.8400000000001: there's literally nothing that can
+1098.559 - 1102.32: impact
+1099.84 - 1102.32: um
+1102.799 - 1107.6: negatively the
+1104.24 - 1111.28: the linear russian because most of times
+1107.6 - 1113.039: what happens is the efficiency and the
+1111.28 - 1116.32: effectiveness of our
+1113.039 - 1118.8799999999999: our advertising until this point
+1116.32 - 1119.84: are in one way but after this point or
+1118.88 - 1123.44: another
+1119.84 - 1126.559: let's take for example if this here was
+1123.44 - 1129.52: april 2021
+1126.559 - 1131.6789999999999: obviously uh the effectiveness of our
+1129.52 - 1133.84: facebook card or google ads would be
+1131.679 - 1135.76: different in the previous period of
+1133.84 - 1138.48: april 2021
+1135.76 - 1141.36: compared to the next period
+1138.48 - 1143.52: because we obviously had a change on
+1141.36 - 1145.52: restriction cookie policies that
+1143.52 - 1148.08: affected all our
+1145.52 - 1150.6399999999999: all our advertising so the dynamics
+1148.08 - 1153.1999999999998: change after this that point
+1150.64 - 1155.3600000000001: and what we want now
+1153.2 - 1157.2: is uh in a simple linear regression we
+1155.36 - 1159.84: want to first shuffle the data so we are
+1157.2 - 1162.32: more agnostic we're not influenced to
+1159.84 - 1163.6789999999999: the changes
+1162.32 - 1164.6399999999999: over time
+1163.679 - 1165.6000000000001: so
+1164.64 - 1167.6000000000001: uh
+1165.6 - 1169.6789999999999: let's model
+1167.6 - 1171.4399999999998: let's do twenty percent of test that we
+1169.679 - 1175.1200000000001: shot the data
+1171.44 - 1178.0: oh wow that's it it's even more
+1175.12 - 1180.3999999999999: bigger than the training set which is
+1178.0 - 1182.64: let's do refresh again
+1180.4 - 1185.2: this doesn't make any sense
+1182.64 - 1185.2: all right
+1185.52 - 1189.28: all right still um
+1187.52 - 1192.72: obviously
+1189.28 - 1195.84: twenty percent is six records out of 30
+1192.72 - 1198.32: records obviously so it tries to find
+1195.84 - 1201.12: what's the are square on
+1198.32 - 1203.84: that six records and they find it which
+1201.12 - 1205.4399999999998: is pretty good they converge a little
+1203.84 - 1206.559: and
+1205.44 - 1207.44: obviously
+1206.559 - 1209.6: there
+1207.44 - 1212.559: there will be required
+1209.6 - 1215.12: more records in order to drive and do a
+1212.559 - 1218.32: regression analysis that's done well
+1215.12 - 1218.32: anyway so um
+1218.799 - 1223.679: what i want to do i want to see the axes
+1222.0 - 1225.84: in this case
+1223.679 - 1227.6000000000001: all right so what we have here we have a
+1225.84 - 1229.1999999999998: constant
+1227.6 - 1231.84: and this constant
+1229.2 - 1235.8400000000001: does not make but let's see well let's
+1231.84 - 1239.28: see the coefficient right so model
+1235.84 - 1242.0: model dot coeff
+1239.28 - 1244.0: we have zero
+1242.0 - 1245.6: let's see what
+1244.0 - 1248.64: and i want to see
+1245.6 - 1250.48: x dot columns
+1248.64 - 1253.1200000000001: so we have constant which is a zero
+1250.48 - 1255.6: coefficient so we don't take it as an
+1253.12 - 1257.12: input we have facebook
+1255.6 - 1259.9189999999999: which has
+1257.12 - 1263.6: 0.049
+1259.919 - 1264.64: and tv which has 0.16 let's see if it's
+1263.6 - 1267.6399999999999: different
+1264.64 - 1267.64: 0.046
+1268.159 - 1274.24: here 0.49
+1271.039 - 1274.24: and here we have
+1275.36 - 1281.28: uh we have the coefficient let's see
+1278.48 - 1282.88: and then we have 0.16
+1281.28 - 1284.3999999999999: uh
+1282.88 - 1286.96: 0.16
+1284.4 - 1289.679: all right so they're really similar
+1286.96 - 1292.48: let's see the intercept model dot
+1289.679 - 1292.48: intercept
+1292.679 - 1297.2: 3.03
+1294.32 - 1298.799: in here is being 3.17
+1297.2 - 1301.679: all right
+1298.799 - 1304.559: so what we want to do now let me change
+1301.679 - 1307.919: these two
+1304.559 - 1308.96: x dot columns
+1307.919 - 1311.44: perfect
+1308.96 - 1314.48: so we know that the first co-f is for
+1311.44 - 1318.559: constant the second code is for facebook
+1314.48 - 1320.48: and and the third co-f is for tv now
+1318.559 - 1323.6: what i want to see now
+1320.48 - 1323.6: is um
+1323.76 - 1328.48: let's drive and see what is the
+1328.88 - 1333.1200000000001: uh what's the prediction all right so we
+1331.12 - 1334.0: do df
+1333.12 - 1336.799: uh
+1334.0 - 1337.76: parenthesis prediction so we add a new
+1336.799 - 1342.559: column
+1337.76 - 1344.96: put it equal to model dot predict
+1342.559 - 1347.2: we put x in here
+1344.96 - 1349.28: now we want to see how the prediction
+1347.2 - 1350.48: how accurate is the prediction so we do
+1349.28 - 1351.9189999999999: uh
+1350.48 - 1354.32: fig
+1351.919 - 1355.76: equal to px dot
+1354.32 - 1358.08: line
+1355.76 - 1361.84: df
+1358.08 - 1361.84: x it's equal to time
+1362.559 - 1369.039: as always and then epsilon is equal to
+1367.36 - 1371.1999999999998: let's say
+1369.039 - 1376.32: yeah dot columns
+1371.2 - 1379.44: so to make it easier so fig dot show
+1376.32 - 1381.9189999999999: let's print it i don't want facebook tv
+1379.44 - 1384.799: and radio click on it look at that
+1381.919 - 1386.72: so it's pretty good
+1384.799 - 1388.72: it's pretty efficient right
+1386.72 - 1390.96: so
+1388.72 - 1392.08: it drives and can predict pretty well
+1390.96 - 1394.48: all the
+1392.08 - 1397.4399999999998: spikes positive spikes number spikes
+1394.48 - 1399.3600000000001: except some of them which are here which
+1397.44 - 1401.52: are here
+1399.36 - 1404.1589999999999: my question is how would it differ if we
+1401.52 - 1407.52: didn't shuffle it so
+1404.159 - 1409.44: we put false and we have a really low r
+1407.52 - 1411.76: square in the test set
+1409.44 - 1414.24: 38
+1411.76 - 1415.84: the coefficient changed by a lot
+1414.24 - 1417.039: let's see what happens if we do a
+1415.84 - 1420.799: prediction
+1417.039 - 1422.559: we eliminate facebook tv and radio
+1420.799 - 1424.96: they're actually still
+1422.559 - 1426.24: there they're still pretty good
+1424.96 - 1428.64: so
+1426.24 - 1430.559: right all right there is more variance
+1428.64 - 1433.6000000000001: in here
+1430.559 - 1435.6789999999999: because this would be probably test set
+1433.6 - 1436.8799999999999: tested will start here there is more
+1435.679 - 1438.88: variance
+1436.88 - 1442.0: let's see if i
+1438.88 - 1442.0: put 0.5
+1442.72 - 1445.84: all right
+1448.4 - 1453.2: the test that will start here and it
+1451.52 - 1455.2: will predict pretty well actually it's
+1453.2 - 1459.44: not that bad
+1455.2 - 1461.2: let's see if we want to analyze how was
+1459.44 - 1464.48: how it is the
+1461.2 - 1467.6000000000001: uh the cpo so we have for facebook
+1464.48 - 1470.08: we have a 0.05
+1467.6 - 1472.559: so we have uh
+1470.08 - 1477.039: facebook is equal to
+1472.559 - 1479.6: zero one divided by zero point zero five
+1477.039 - 1482.559: we have the cpr so we need to divide the
+1479.6 - 1484.8799999999999: coefficient of our
+1482.559 - 1487.52: uh our model
+1484.88 - 1489.3600000000001: one divided by coefficient we have the
+1487.52 - 1491.279: approximated
+1489.36 - 1493.279: uh cpl
+1491.279 - 1496.0: which is considered constant so if we
+1493.279 - 1498.159: run facebook we have a 20
+1496.0 - 1502.559: euro or dollar cpl
+1498.159 - 1506.0390000000002: if we run for tv in which we have 0.12
+1502.559 - 1508.0: tv is equal to 1 divided by
+1506.039 - 1509.679: 0.12
+1508.0 - 1512.4: we run tv
+1509.679 - 1515.039: we have an 8.3
+1512.4 - 1515.039: 333 33
+1515.36 - 1517.9189999999999: cpl
+1518.08 - 1519.76: so
+1518.88 - 1522.96: um
+1519.76 - 1524.24: radio it's not considered and let's see
+1522.96 - 1526.0: how many
+1524.24 - 1529.44: model dot intercept
+1526.0 - 1532.48: it's 3.13 which is the number of sales
+1529.44 - 1533.679: we will get if we did not spend in any
+1532.48 - 1536.08: of these two
+1533.679 - 1536.0800000000002: channels
+1537.12 - 1541.6: now obviously um
+1539.279 - 1544.72: we have to
+1541.6 - 1548.1589999999999: we have to figure it out a way of
+1544.72 - 1550.159: um of doing diminishing returns and add
+1548.159 - 1553.2: stock on this um
+1550.159 - 1554.88: on this graph on this on this project
+1553.2 - 1556.559: but i want to stop right here for the
+1554.88 - 1558.48: moment because
+1556.559 - 1561.039: we covered a lot it's almost half an
+1558.48 - 1563.52: hour of a project and
+1561.039 - 1564.96: uh i don't want to put too much stuff in
+1563.52 - 1568.24: the first step let me know in the
+1564.96 - 1572.0: comments uh if everything was clear so
+1568.24 - 1575.36: far i tried to be obviously as always as
+1572.0 - 1577.44: clear as possible and
+1575.36 - 1580.3999999999999: i want to check your feedback before
+1577.44 - 1583.279: doing the step two and implementing all
+1580.4 - 1585.919: the diminishing returns and stock
+1583.279 - 1587.919: and see how we can optimize budgets
+1585.919 - 1589.279: using python right
+1587.919 - 1590.48: so
+1589.279 - 1592.72: thank you for
+1590.48 - 1594.32: staying with me these half an hour see
+1592.72 - 1597.039: you next video
+1594.32 - 1597.039: bye

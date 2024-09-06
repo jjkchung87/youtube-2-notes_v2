@@ -1,0 +1,177 @@
+you could do this find athletes
+1835.76 - 1840.919: whose name contains a hyphen or an
+1838.76 - 1842.519: apostrophe find athletes with names that
+1840.919 - 1845.279: start and end with the same
+1842.519 - 1847.279: letter find athletes with a born city
+1845.279 - 1849.64: that has exactly seven
+1847.279 - 1852.6: characters uh find athletes with names
+1849.64 - 1854.039: containing three or more vels so you can
+1852.6 - 1855.76: see there's a lot you can do pretty much
+1854.039 - 1857.08: anything you can imagine you could
+1855.76 - 1858.919: probably create a regular expression to
+1857.08 - 1860.6789999999999: filter by that if you want to understand
+1858.919 - 1862.6000000000001: regular Expressions more I did make a
+1860.679 - 1864.88: video on Regular Expressions I'll link
+1862.6 - 1866.559: it up above and also in the description
+1864.88 - 1868.72: but I do want to just stress that these
+1866.559 - 1871.84: can be very very powerful regular
+1868.72 - 1873.6390000000001: Expressions combined with pandas and if
+1871.84 - 1875.76: you ever wanted to turn off the regx
+1873.639 - 1877.559: search capability you can also pass in
+1875.76 - 1880.12: the keyword argument to do that you just
+1877.559 - 1882.519: do regx equals false and then we'll see
+1880.12 - 1885.399: this Keith or Patrick will not return
+1882.519 - 1887.519: anything because there's never a exact
+1885.399 - 1891.08: match of this it's no longer using the
+1887.519 - 1893.2: Reg X search functionality you can other
+1891.08 - 1896.279: there's other methods such as like
+1893.2 - 1898.1200000000001: string. is in and this is going to be a
+1896.279 - 1900.679: trickier thing it's going to say okay
+1898.12 - 1903.399: you have a list so maybe my list is just
+1900.679 - 1907.519: Keith and it's saying which of these
+1903.399 - 1907.5189999999998: names is in
+1908.08 - 1914.4399999999998: Keith we run
+1910.88 - 1917.519: this it fails fails
+1914.44 - 1918.76: again I think maybe we just run do is in
+1917.519 - 1922.3990000000001: sorry
+1918.76 - 1923.919: no no value specifically is in Keith but
+1922.399 - 1927.0: this is more interesting if we did maybe
+1923.919 - 1930.5590000000002: like born country and we use some
+1927.0 - 1932.24: abbreviations so if I did like
+1930.559 - 1934.6: USA
+1932.24 - 1938.0: France Great Britain would that work I
+1934.6 - 1941.0: don't know if it's gbr yeah it is gbr we
+1938.0 - 1942.72: can filter based on that condition and
+1941.0 - 1948.279: again we can combine this so I could do
+1942.72 - 1951.96: and bios name equals equals
+1948.279 - 1954.639: or string.
+1951.96 - 1957.8400000000001: contains I think I can even do starts
+1954.639 - 1961.799: with Keith so if I didn't want last name
+1957.84 - 1964.9599999999998: Keith I could do this run that and we
+1961.799 - 1967.36: see some keiths from USA Great Britain
+1964.96 - 1969.44: and I don't think there's any french
+1967.36 - 1972.039: keiths but you can do this with your own
+1969.44 - 1975.519: name see what Olympic athletes there
+1972.039 - 1977.1589999999999: were cool given I'm being super full of
+1975.519 - 1978.559: myself and using myself in all the
+1977.159 - 1980.8400000000001: examples I think I think this is a good
+1978.559 - 1982.2: time to shamelessly plug if you've
+1980.84 - 1984.0: learned something from this tutorial so
+1982.2 - 1986.799: far make sure to hit that subscribe
+1984.0 - 1990.279: button and throw this video a like but
+1986.799 - 1993.399: let's keep moving on another cool thing
+1990.279 - 1996.159: we can do by filtering data is we can
+1993.399 - 1999.76: use so like one issue sometimes is that
+1996.159 - 2001.519: like by doing this there's just a lot of
+1999.76 - 2003.36: like repeat characters it seems a little
+2001.519 - 2006.08: bit clunky to have to do bios and then
+2003.36 - 2008.12: bios again and then bios again so one
+2006.08 - 2011.24: cool thing that we can do is we can use
+2008.12 - 2014.2399999999998: a query function and I could get stuff
+2011.24 - 2016.08: like born I pass it into string here and
+2014.24 - 2019.84: I basically say born country equals
+2016.08 - 2021.6: equals USA it's like kind of another way
+2019.84 - 2024.32: I guess I have to use single quates
+2021.6 - 2028.08: sorry it's another way
+2024.32 - 2030.84: to oh foreign country equals USA and I
+2028.08 - 2033.039: need to pass this in in quotes but it's
+2030.84 - 2035.6789999999999: another way to filter data based on a
+2033.039 - 2037.84: condition so look at query functions may
+2035.679 - 2040.519: be useful I honestly don't see it a ton
+2037.84 - 2043.32: in the wild but maybe that's just
+2040.519 - 2047.3990000000001: because not enough people know about it
+2043.32 - 2050.399: and forign City
+2047.399 - 2050.399: equals
+2051.56 - 2056.639: Seattle
+2053.52 - 2059.24: cool so another way you can do
+2056.639 - 2061.32: that I think that's good for filtering
+2059.24 - 2063.7599999999998: data all right let's go ahead and see
+2061.32 - 2067.3990000000003: how we can add and remove coms from our
+2063.76 - 2068.5600000000004: data frame so looking at this data frame
+2067.399 - 2070.2: we
+2068.56 - 2073.0: do couple different things here let's
+2070.2 - 2076.1589999999997: say we just wanted to add some sort of
+2073.0 - 2079.56: price column and maybe the price for
+2076.159 - 2082.0: both espressos and lattes is a
+2079.56 - 2083.52: flat coffee is expensive these days it's
+2082.0 - 2088.119: like you know
+2083.52 - 2088.119: $4.99 right run
+2089.079 - 2093.679: that and we see that we now have this
+2091.399 - 2095.679: new column called price cool that's a
+2093.679 - 2098.48: good start but what if we wanted to be a
+2095.679 - 2101.0: little bit more I guess specific with
+2098.48 - 2102.599: the column we added so one thing we
+2101.0 - 2105.119: might want to do is let's say we had one
+2102.599 - 2108.3590000000004: price for espresso one price for latte
+2105.119 - 2112.4: well we can do that with call this new
+2108.359 - 2114.3199999999997: price we can leverage a numpy helper
+2112.4 - 2120.839: method here so we're going to import
+2114.32 - 2123.6400000000003: nump as NP and we can do this np. wear
+2120.839 - 2126.48: which allows us to use conditionals so
+2123.64 - 2128.68: let's say we said espressos were a
+2126.48 - 2133.359: little bit cheaper than latte so we
+2128.68 - 2137.16: could do coffee coffee type equals
+2133.359 - 2141.0789999999997: equals espresso if that's the case if
+2137.16 - 2144.68: that's true then we want it to be about
+2141.079 - 2147.92: 3.99 and otherwise we want it to be 5.99
+2144.68 - 2147.9199999999996: so lattes are actually quite
+2148.44 - 2155.599: expensive and let's see our
+2152.839 - 2160.319: coffee that latte is now
+2155.599 - 2162.76: 5.99 and espresso is 3.99 that looks
+2160.319 - 2164.24: cool but now we kind of have two prices
+2162.76 - 2168.4: we don't want two prices so how do we
+2164.24 - 2172.56: drop that one column we could do coffee.
+2168.4 - 2174.1600000000003: drop and we can specify so if we don't
+2172.56 - 2176.44: specify it's going to drop an index so
+2174.16 - 2179.2799999999997: if I dropped let's say
+2176.44 - 2181.48: Monday oh I guess that didn't work I
+2179.28 - 2182.76: guess it's not the label because it's
+2181.48 - 2185.28: not the index right now but I could do
+2182.76 - 2187.599: drop zero and we get rid of the zeroth
+2185.28 - 2190.2000000000003: index the nice thing is if we look at
+2187.599 - 2192.3590000000004: coffee again we didn't actually modify
+2190.2 - 2195.04: the actual data frame we just ran that
+2192.359 - 2197.88: command and that returned a modified
+2195.04 - 2200.16: version of it so we could do drop and
+2197.88 - 2203.8: because we couldn't just pass in like
+2200.16 - 2207.3999999999996: price it won't work we need to specify
+2203.8 - 2209.3590000000004: that we want to drop the columns equal
+2207.4 - 2212.8: to
+2209.359 - 2216.319: price and now you see that it's only the
+2212.8 - 2218.319: new price there however again if we look
+2216.319 - 2220.56: at coffee
+2218.319 - 2222.359: we see that it still has that price
+2220.56 - 2224.0: because we didn't actually modify it if
+2222.359 - 2229.52: we want to actually modify it we need to
+2224.0 - 2229.52: do in place equals true and now we'll
+2231.88 - 2237.92: see now we'll see just what we expect
+2236.24 - 2241.24: couple caveats here that I want to
+2237.92 - 2244.359: mention so I'm going to load in
+2241.24 - 2247.0789999999997: the file from scratch
+2244.359 - 2250.0789999999997: again let's say I want to do this all on
+2247.079 - 2251.52: a new new data frame so I'm going to say
+2250.079 - 2256.8: how
+2251.52 - 2259.079: about coffee new equals
+2256.8 - 2261.8: coffee now I want to modify make all
+2259.079 - 2264.76: these modifications on coffee new so if
+2261.8 - 2266.5600000000004: we look at Coffee new we'll see it has
+2264.76 - 2270.3190000000004: that price
+2266.56 - 2272.7599999999998: column cool the thing is that's weird is
+2270.319 - 2275.24: that if we also looked at Coffee we see
+2272.76 - 2277.92: that it also has the price thing this
+2275.24 - 2280.72: kind of comes down to how panda stes
+2277.92 - 2282.64: memory right now the way we set this
+2280.72 - 2285.319: coffee new is just pointing to the same
+2282.64 - 2288.0789999999997: memory space as our data frame coffee so
+2285.319 - 2288.079: if we wanted to
+2288.359 - 2293.88: actually make this separate we'd have to
+2290.839 - 2296.56: do coffee new equals coffee. copy and
+2293.88 - 2297.76: just so you can see what's actually
+2296.56 - 2300.7599999999998: happening here I'm going to load in
+2297.76 - 2302.2000000000003: coffee one more time and I know I said I
+2300.76 - 2304.119: was going to use the Olympic data but I
+2302.2 - 2306.8799999999997: feel like this little data set is easy
+2304.119 - 2308.04: to use for some educational points like
+2306.88 - 2311.28: a coffee
+2308.04 - 2315.56: no price but if we did coffee
+2311.28 - 2317.76: new. copy and then we

@@ -1,0 +1,99 @@
+unt how many times that
+224.879 - 227.44: that
+225.76 - 230.56: integer has been specifically like
+227.44 - 232.56: pointed at and the size of that integer
+230.56 - 234.48: value
+232.56 - 237.12: and so if we break this up into the
+234.48 - 239.51899999999998: actual binary that it represents we can
+237.12 - 241.59900000000002: take the object value
+239.519 - 243.12: and that's represented as a long which
+241.599 - 245.599: is like 8 bytes
+243.12 - 247.12: the object type same deal reference
+245.599 - 249.35999999999999: count same deal and then the size i
+247.12 - 251.28: believe is a little bit smaller
+249.36 - 254.0: i think it's only 4 bytes but as you can
+251.28 - 256.16: see that's a single integer within lists
+254.0 - 259.12: using the built-in int type
+256.16 - 263.44: it requires a lot more space than numpy
+259.12 - 263.44: so basically the takeaway from this is
+263.6 - 268.72: that
+264.639 - 270.40000000000003: because numpy uses less bytes of memory
+268.72 - 273.36: the computer can read less bites of
+270.4 - 275.03999999999996: memory quicker obviously so it's faster
+273.36 - 276.08000000000004: in that regard
+275.04 - 279.12: another reason that i didn't
+276.08 - 281.12: specifically say is that
+279.12 - 284.16: when we're iterating through each item
+281.12 - 286.32: in a numpy array we don't have to do
+284.16 - 287.91900000000004: type checking each time so in python
+286.32 - 289.84: built-in lists you could have a list of
+287.919 - 292.15999999999997: like an integer then a float then a
+289.84 - 293.919: string then a boolean
+292.16 - 296.0: and you'd have to check each element
+293.919 - 297.12: you're looking at what type it is but
+296.0 - 298.639: numpy we don't have to do that so
+297.12 - 299.84000000000003: another reason it's faster is that
+298.639 - 301.919: there's no type checking when
+299.84 - 304.63899999999995: integrating through objects
+301.919 - 306.639: moving on another reason that numpy is
+304.639 - 309.199: faster than list is because numpy
+306.639 - 310.96000000000004: utilizes contiguous memory so what that
+309.199 - 314.0: means is imagine that
+310.96 - 316.4: this kind of array-like structure is our
+314.0 - 318.8: computer's memory so we could store
+316.4 - 320.0: information in any one of these memory
+318.8 - 321.52000000000004: blocks
+320.0 - 323.6: so if we had a list
+321.52 - 324.71999999999997: the way that that would look in a list's
+323.6 - 327.44: memory
+324.72 - 329.91900000000004: is that our list would be kind of
+327.44 - 332.479: scattered around so maybe we have a
+329.919 - 334.56: list that takes up eight memory blocks
+332.479 - 335.52: the thing is that these memory blocks
+334.56 - 337.28000000000003: aren't
+335.52 - 338.88: necessarily next to each other so you
+337.28 - 340.23999999999995: have some information here you have some
+338.88 - 342.32: information here you have a good amount
+340.24 - 344.479: of information in here
+342.32 - 345.919: then you skip a block here here and skip
+344.479 - 347.52: two blocks you have some information
+345.919 - 349.35999999999996: here so it's all kind of scattered
+347.52 - 351.84: around
+349.36 - 354.72: so kind of if you have an eight item
+351.84 - 356.96: array what that looks like is that that
+354.72 - 359.28000000000003: array is actually just
+356.96 - 362.15999999999997: or that list is just
+359.28 - 364.15999999999997: um containing pointers to the actual
+362.16 - 367.12: information that's scattered around our
+364.16 - 367.12: computer's memory
+367.199 - 370.16: and so
+368.16 - 371.68: it's just that all the information is
+370.16 - 372.56: not right next to each other kind of you
+371.68 - 374.24: have to
+372.56 - 377.039: bounce around your computer's memory a
+374.24 - 379.28000000000003: bit and it's not super super fast to
+377.039 - 380.639: like rapidly go through and
+379.28 - 383.28: kind of
+380.639 - 386.639: potentially perform functions on all
+383.28 - 390.23999999999995: items at a time or subsets of the items
+386.639 - 391.52: a numpy array however uses contiguous
+390.24 - 393.68: memory so
+391.52 - 395.44: all eight blocks in this case would be
+393.68 - 398.08: right next to each other and this has
+395.44 - 400.24: all sorts of advantages um and also just
+398.08 - 402.56: to mention real quick you'd also kind of
+400.24 - 404.639: have to have to store somehow where the
+402.56 - 407.28000000000003: start of that memory is and then like
+404.639 - 408.88: the total size and the type of
+407.28 - 411.28: memory block
+408.88 - 413.84: but it's a lot easier than this kind of
+411.28 - 416.08: pointer structure that's up here
+413.84 - 418.479: and so the benefits of numpy using this
+416.08 - 420.8: contiguous memory are a couple of
+418.479 - 424.479: different things so
+420.8 - 426.319: the first benefit is that our cpus our
+424.479 - 427.52: our computers have these
+426.319 - 428.47900000000004: cindy
+427.52 - 431.039: vector
+428.479 - 432.88: processing units and so when this memory
+431.039 - 434.4: is all l

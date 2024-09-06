@@ -1,0 +1,103 @@
+8: array or a matrix of random numbers so
+1597.76 - 1606.0: random decimal numbers to start
+1601.2 - 1607.8400000000001: to do that we do np dot random.rand
+1606.0 - 1610.4: and we specify the shape
+1607.84 - 1612.799: so let's say four by two
+1610.4 - 1615.039: oh no what did i do wrong
+1612.799 - 1615.039: uh
+1615.12 - 1619.84: huh
+1616.96 - 1619.8400000000001: actually confused
+1620.08 - 1625.24: tuple state
+1622.24 - 1625.24: oh
+1626.4 - 1630.0: okay yeah this one's a little bit
+1627.679 - 1632.88: different so instead of passing in a
+1630.0 - 1634.4: tuple you can pass in directly the
+1632.88 - 1636.5590000000002: integers you wanna
+1634.4 - 1638.64: the integers of the shape so it's a kind
+1636.559 - 1641.12: of a weird thing to remember
+1638.64 - 1642.96: so if i did the 4x2 this way i would
+1641.12 - 1644.6399999999999: actually pass it in like that and when
+1642.96 - 1646.72: you get errors like this oftentimes you
+1644.64 - 1648.72: can just do a quick google search
+1646.72 - 1650.48: and realize that that's what you need to
+1648.72 - 1652.559: do so i can even keep going so i could
+1650.48 - 1656.159: do a four by two by three
+1652.559 - 1658.96: of random numbers between 0 and 1.
+1656.159 - 1660.64: i could also pass in something like
+1658.96 - 1663.919: a dot shape i don't know if this would
+1660.64 - 1666.0: work let's try
+1663.919 - 1669.1200000000001: yeah so if you wanted to pass in like a
+1666.0 - 1671.12: shape you can do a random sample
+1669.12 - 1673.84: a dot shape
+1671.12 - 1677.6: and that now you see
+1673.84 - 1679.76: gives us the same shape as our a from
+1677.6 - 1682.08: up here
+1679.76 - 1685.039: so yeah rand and then there's random
+1682.08 - 1688.799: sample which is another method
+1685.039 - 1690.08: we'll keep it as random four by two
+1688.799 - 1692.48: okay what if you didn't want just
+1690.08 - 1696.12: decimal numbers but you wanted random
+1692.48 - 1696.1200000000001: like integer values
+1697.039 - 1701.2: well to do that
+1698.64 - 1704.159: we can do
+1701.2 - 1705.279: random.rand
+1704.159 - 1708.279: i'm getting
+1705.279 - 1708.279: np.random.brandint
+1708.48 - 1712.72: and in this one we're gonna pass in the
+1710.72 - 1714.799: start value or if you don't specify a
+1712.72 - 1716.0: start value it's gonna just start at
+1714.799 - 1717.52: zero
+1716.0 - 1720.799: um
+1717.52 - 1722.399: and so if you don't specify a shape then
+1720.799 - 1725.9189999999999: it's just gonna do one number so let's
+1722.399 - 1727.9189999999999: say we wanted a three by three
+1725.919 - 1730.64: ah what did i do wrong
+1727.919 - 1732.24: and this is not shaped it's actually
+1730.64 - 1734.0800000000002: size
+1732.24 - 1736.08: and yeah all the documentation has these
+1734.08 - 1738.1589999999999: like you know you're not expected to
+1736.08 - 1740.559: memorize all of these things what i
+1738.159 - 1741.919: think it is helpful to see is that you
+1740.559 - 1743.2: see that you can do these types of
+1741.919 - 1744.7990000000002: things so like when you're thinking
+1743.2 - 1746.799: about a problem
+1744.799 - 1748.8799999999999: you can like kind of point back like oh
+1746.799 - 1750.8799999999999: i remember that that's possible
+1748.88 - 1755.24: uh maybe do a google search on how to
+1750.88 - 1755.24: get it but yeah random.random07
+1755.6 - 1760.1589999999999: with size 3x3 is here you can also
+1758.32 - 1762.559: specify like a different parameter so
+1760.159 - 1764.72: let's say i wanted four to seven
+1762.559 - 1766.48: and i think and if i keep running this
+1764.72 - 1768.72: too it's kind of cool you can see it
+1766.48 - 1770.72: changing and so it looks like that seven
+1768.72 - 1772.88: is exclusive so if i wanted to include
+1770.72 - 1774.64: seven i would stop a little bit later
+1772.88 - 1777.279: you could also throw in like negative
+1774.64 - 1777.279: numbers here
+1777.76 - 1781.52: cool
+1779.12 - 1783.1999999999998: all right uh what else other than a
+1781.52 - 1786.0: random integers maybe you wanted to do
+1783.2 - 1788.799: like the identity matrix you do
+1786.0 - 1790.48: identity of three this one only needs
+1788.799 - 1792.559: one parameter because the identity
+1790.48 - 1795.279: matrix
+1792.559 - 1798.48: by its nature is going to be a square
+1795.279 - 1798.48: major matrix
+1803.279 - 1806.399: what else is useful
+1807.36 - 1812.559: maybe it's useful to repeat a array a
+1810.08 - 1815.12: few times so to do that you could do
+1812.559 - 1816.799: say we had the array
+1815.12 - 1819.039: um
+1816.799 - 1822.399: one two three
+1819.039 - 1825.12: let's say i wanted to repeat that
+1822.399 - 1825.12: three times
+1828.0 - 1832.96: pass in the array you want to repeat
+1830.08 - 1835.1999999999998: and then that's print r1 see what
+1832.96 - 1836.72: happens
+1835.2 - 1839.039: okay
+1836.72 - 1841.279: and then if i specify the axis equals
+1839.039 - 1842.0: zero oh no it did do anything
+1841.279 - 1843.44: uh
+1842.0 - 1845.52: what i can do is make this a two
+1843.44 

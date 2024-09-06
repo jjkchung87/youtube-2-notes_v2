@@ -1,0 +1,102 @@
+t
+3244.16 - 3251.2799999999997: which corresponds to this right here
+3247.04 - 3253.119: uh what else can we do with this
+3251.28 - 3254.2400000000002: um
+3253.119 - 3257.119: if you
+3254.24 - 3259.839: did axis equals one
+3257.119 - 3262.2400000000002: it's gonna be the rows
+3259.839 - 3264.5589999999997: you can also do multiple conditions so i
+3262.24 - 3267.04: could do like
+3264.559 - 3269.8390000000004: i want file data to be
+3267.04 - 3270.8: greater than 50
+3269.839 - 3274.0789999999997: and
+3270.8 - 3276.2400000000002: let's say file data is less than 100 and
+3274.079 - 3279.6800000000003: this syntax is very similar to pandas
+3276.24 - 3281.68: here and as i said before numpy builds
+3279.68 - 3282.72: is what's the base of panda so it makes
+3281.68 - 3285.2799999999997: sense
+3282.72 - 3285.2799999999997: ah no
+3286.16 - 3288.8799999999997: the
+3287.04 - 3290.4: truth value of an array with more than
+3288.88 - 3293.28: one element
+3290.4 - 3295.76: is ambiguous how do i do this
+3293.28 - 3298.2400000000002: i think if i do something like this it
+3295.76 - 3298.2400000000002: will work
+3302.48 - 3307.04: not positive let's see
+3305.44 - 3309.119: yeah what happened
+3307.04 - 3311.599: no i need to end it
+3309.119 - 3312.799: yeah cool so this is all the values that
+3311.599 - 3314.7200000000003: are
+3312.799 - 3316.96: greater than 50 but less than 100 so
+3314.72 - 3321.1189999999997: like the first true should happen at the
+3316.96 - 3322.64: sixth spot one two three four five six
+3321.119 - 3326.079: as you see
+3322.64 - 3326.0789999999997: uh and i could do something like
+3326.16 - 3329.839: all the spots if i wanted to
+3328.079 - 3330.799: make all this
+3329.839 - 3331.92: not
+3330.799 - 3334.96: so this
+3331.92 - 3337.04: means not greater than 50 and less than
+3334.96 - 3339.119: 100 this is going to be the reverse of
+3337.04 - 3342.0: what we just did
+3339.119 - 3343.359: so yeah now the
+3342.0 - 3346.64: um
+3343.359 - 3349.119: sixth spot is the first false
+3346.64 - 3350.799: so this meant not so yeah all sorts of
+3349.119 - 3354.319: cool stuff you can do with this boolean
+3350.799 - 3356.48: masking and advanced indexing
+3354.319 - 3358.079: i mean yeah any sort of like condition
+3356.48 - 3360.2400000000002: i'll put a link and some more
+3358.079 - 3363.119: information about this all right quick
+3360.24 - 3364.799: little quiz on uh indexing this is kind
+3363.119 - 3366.1600000000003: of using all sorts of advanced stuff
+3364.799 - 3368.079: that you just learned in that last
+3366.16 - 3370.64: section include and then also like some
+3368.079 - 3373.599: of the original stuff so first question
+3370.64 - 3374.8799999999997: uh basically pause the video after i ask
+3373.599 - 3377.52: it and then try to figure out what the
+3374.88 - 3379.92: command would be so we have this matrix
+3377.52 - 3382.559: and how would you index this part of the
+3379.92 - 3382.559: matrix
+3385.599 - 3388.88: so this is the
+3389.359 - 3393.68: second and third row and the first and
+3392.319 - 3396.319: second column
+3393.68 - 3399.1189999999997: or zero and first column so it looks
+3396.319 - 3399.119: something like this
+3399.2 - 3403.52: rows columns
+3400.88 - 3405.28: next question how would you index
+3403.52 - 3407.52: this this is something we haven't done
+3405.28 - 3409.76: before but you potentially with that
+3407.52 - 3412.799: last section might have an idea
+3409.76 - 3412.7990000000004: if not no worries
+3414.559 - 3417.6800000000003: so to do this one
+3417.76 - 3422.4: you need to use two different lists
+3421.04 - 3423.92: within your
+3422.4 - 3427.119: uh indexing
+3423.92 - 3429.52: so it's gonna look something like this
+3427.119 - 3431.2000000000003: we need the zeroth first second and
+3429.52 - 3433.04: third row
+3431.2 - 3435.7599999999998: and then the first second third and
+3433.04 - 3438.319: fourth columns that's what that is and
+3435.76 - 3440.88: then final question
+3438.319 - 3443.119: how would you index this
+3440.88 - 3444.799: this is like also something we haven't
+3443.119 - 3446.96: immediately looked at but you might be
+3444.799 - 3449.2: able to get especially with that last
+3446.96 - 3449.2: one
+3449.28 - 3452.1600000000003: take a second
+3454.24 - 3458.799: all right that would look something like
+3457.04 - 3460.88: this
+3458.799 - 3462.559: where you get the zeroth fourth and
+3460.88 - 3464.6400000000003: fifth row zero
+3462.559 - 3467.52: fourth and fifth rows
+3464.64 - 3469.68: and then you want columns three onwards
+3467.52 - 3471.359: so this would
+3469.68 - 3473.2799999999997: like three onwards works you could also
+3471.359 - 3475.2799999999997: do like three to five
+3473.28 - 3477.52: you'd also do three or like a list of
+3475.28 - 3479.3590000000004: three four but yeah that's one way to do
+3477.52 - 3481.359: it it's a fun little quiz i don't know
+3479.359 - 3482.799: it's i guess good to revisit this type
+3481.359 - 3483.68: of thing and like think critically about
+348

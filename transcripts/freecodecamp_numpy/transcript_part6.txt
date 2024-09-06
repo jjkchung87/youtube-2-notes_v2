@@ -1,0 +1,104 @@
+and we have the
+1125.12 - 1129.28: start index
+1126.799 - 1130.8799999999999: this is just a reminder start index
+1129.28 - 1134.24: end index
+1130.88 - 1137.3600000000001: and then finally the step size
+1134.24 - 1140.0: so if i wanted to let's say get
+1137.36 - 1141.84: between the numbers two and six every
+1140.0 - 1143.36: other element so two
+1141.84 - 1147.039: four and six
+1143.36 - 1149.6: well to specify that i would do
+1147.039 - 1151.76: well i want the first row
+1149.6 - 1153.36: and then i want to start at the first
+1151.76 - 1154.72: element
+1153.36 - 1156.0: the two
+1154.72 - 1158.799: and i actually screw that up it should
+1156.0 - 1160.88: be one so i start at the two then i want
+1158.799 - 1164.08: to end here at the six
+1160.88 - 1166.5590000000002: which is the
+1164.08 - 1168.24: it's exclusive so that would be
+1166.559 - 1170.16: uh i want to actually go to the sixth
+1168.24 - 1172.08: element and then i want to
+1170.16 - 1174.559: step by two because i wanted two four
+1172.08 - 1177.28: six so i do one six two
+1174.559 - 1180.32: and that gives me two four six and i can
+1177.28 - 1181.84: also use the negative here and do like
+1180.32 - 1184.0: negative two
+1181.84 - 1185.9189999999999: ah what happened there oh shoot that was
+1184.0 - 1188.559: going backwards i didn't want to change
+1185.919 - 1190.48: it there i wanted to change the six to
+1188.559 - 1192.72: be negative two
+1190.48 - 1194.64: ah okay it's exclusive so i wanted this
+1192.72 - 1196.24: to actually be negative one
+1194.64 - 1197.2800000000002: a little bit more of a fancy way to do
+1196.24 - 1200.32: that
+1197.28 - 1201.52: okay so that's how you access elements
+1200.32 - 1202.96: and then if we wanted to change
+1201.52 - 1205.039: something it's pretty straightforward
+1202.96 - 1207.6000000000001: too let's say i wanted to change that 13
+1205.039 - 1209.76: that i originally accessed
+1207.6 - 1210.6399999999999: well i can just do
+1209.76 - 1211.6: like
+1210.64 - 1214.7990000000002: 20.
+1211.6 - 1214.799: if i print out a now
+1215.039 - 1218.24: that original element that was 13 is now
+1217.28 - 1220.3999999999999: 20
+1218.24 - 1222.0: and you can do the same thing for
+1220.4 - 1224.3200000000002: um
+1222.0 - 1225.76: series of numbers so like for an entire
+1224.32 - 1227.9189999999999: column let's say we wanted to replace
+1225.76 - 1230.72: this 310 column
+1227.919 - 1232.88: i would do something like
+1230.72 - 1235.1200000000001: a
+1232.88 - 1237.7600000000002: colon two
+1235.12 - 1239.12: equals let's say i wanted it to be all
+1237.76 - 1242.0: fives
+1239.12 - 1245.4399999999998: i could start like this
+1242.0 - 1246.72: and as you see it's all fives five five
+1245.44 - 1248.0: and then if i wanted it to be two
+1246.72 - 1250.88: different numbers you just kind of
+1248.0 - 1252.88: specify the same shape as
+1250.88 - 1254.24: what you've subsequent so it'd be like
+1252.88 - 1256.48: one two
+1254.24 - 1259.36: so now you see that we have a one two in
+1256.48 - 1259.3600000000001: that's position
+1259.76 - 1264.1589999999999: really quickly let's just show a 3d
+1262.0 - 1269.28: example
+1264.159 - 1269.2800000000002: if i had a 3d so we'll say b equals
+1273.679 - 1280.799: numpy array of all this and if i print
+1278.72 - 1280.799: b
+1283.84 - 1286.799: so if we want to get a specific element
+1285.6 - 1288.6399999999999: here
+1286.799 - 1291.6: the recommendation i have is work
+1288.64 - 1294.0800000000002: outside in so work outside in so let's
+1291.6 - 1297.28: say i wanted this four right here
+1294.08 - 1299.52: well the farthest outside would be which
+1297.28 - 1302.48: one of these do i want and i want the
+1299.52 - 1305.039: first set so i want this area right here
+1302.48 - 1308.24: so if i wanted that i would do b
+1305.039 - 1310.559: zero and then now that i'm in here i
+1308.24 - 1312.24: want the second row
+1310.559 - 1313.84: so i want the three four
+1312.24 - 1317.28: so that would be one
+1313.84 - 1318.799: and now that i'm within this i want the
+1317.28 - 1320.6399999999999: first
+1318.799 - 1322.24: or the second yeah the second element
+1320.64 - 1324.48: but the first index
+1322.24 - 1326.88: like that so that gives me the four and
+1324.48 - 1329.44: you can do similar type stuff with like
+1326.88 - 1331.8400000000001: the colons in here so each one of these
+1329.44 - 1333.6000000000001: dimensions that you're indexing you can
+1331.84 - 1335.76: be all fancy with
+1333.6 - 1337.6: uh how you access elements so i can do
+1335.76 - 1338.799: something like this
+1337.6 - 1341.6: and
+1338.799 - 1343.2: you know get three four seven eight you
+1341.6 - 1344.559: can kind of play around with this and
+1343.2 - 1346.32: see how
+1344.559 - 1348.08: changing different things changes what
+1346.32 - 1349.52: you get
+1348.08 - 1350.72: and if you wanted to replace in this
+1349.52 - 1352.4: case
+1350.72 - 1354.159: um
+1352.4 - 1356.96: basically you just have to create a
+1354.159 - 1359.1200000000001: subsequence tha

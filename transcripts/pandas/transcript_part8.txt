@@ -1,0 +1,178 @@
+at if
+3287.0 - 3293.24: you had duplicate
+3289.359 - 3297.04: columns run that I hate these suffixes
+3293.24 - 3297.04: go back to the original
+3297.319 - 3303.0: and we will
+3298.4 - 3307.64: compare bios new nooc
+3303.0 - 3311.799: X is not equal to believe not equals
+3307.64 - 3316.68: this way we want to compare it to bio
+3311.799 - 3316.68: new uh born country
+3318.559 - 3325.119: full this was a lowercase x cool so
+3323.72 - 3326.72: there's actually a decent number of
+3325.119 - 3329.079: people
+3326.72 - 3332.4399999999996: I guess we actually wanted to compare it
+3329.079 - 3335.8390000000004: to yeah that looks good and you might
+3332.44 - 3335.839: simplify this just to
+3340.039 - 3343.8390000000004: see you might want to just grab the rows
+3342.359 - 3346.4: you
+3343.839 - 3348.2799999999997: want do it this
+3346.4 - 3350.92: way
+3348.28 - 3353.6800000000003: cool and so in some situations it looks
+3350.92 - 3356.28: like we just didn't properly convert
+3353.68 - 3358.72: things so you might want to do some n
+3356.28 - 3359.8390000000004: filtering and whatnot here too but this
+3358.72 - 3362.48: gives you an
+3359.839 - 3363.96: idea another thing you might want to do
+3362.48 - 3365.76: is let's say we just wanted to take
+3363.96 - 3371.4: people from the
+3365.76 - 3374.3190000000004: USA USA equals bios bios forign
+3371.4 - 3377.079: country equals equals
+3374.319 - 3379.599: USA we'll make a
+3377.079 - 3385.0: copy and maybe we wanted to have a Great
+3379.599 - 3387.92: Britain equals bios bios born country
+3385.0 - 3391.039: equals equals
+3387.92 - 3393.44: gbr do
+3391.039 - 3397.76: copy we can look at these two data
+3393.44 - 3397.76: frames see everyone is
+3398.44 - 3403.799: USA everyone's USA gbr
+3403.92 - 3408.6800000000003: doad everyone's England cool if we
+3406.88 - 3412.52: wanted to make a new data frame that's
+3408.68 - 3416.3999999999996: just USA and England so new DF we could
+3412.52 - 3420.319: do pd. concat and we can pass in a list
+3416.4 - 3422.76: of data frames so USA gbr and by default
+3420.319 - 3424.2: it should just append them top to bottom
+3422.76 - 3426.2000000000003: there might be some situations where you
+3424.2 - 3427.68: would want to append on them to the
+3426.2 - 3429.0789999999997: other side but usually I think You' just
+3427.68 - 3430.96: use a merge in that
+3429.079 - 3433.319: situation like you would just want to
+3430.96 - 3436.2: append two data frames together but if
+3433.319 - 3436.2: we look at our new data
+3437.559 - 3442.96: frame and now we look at the taale of
+3439.72 - 3446.48: that we'll see the Great Britain so that
+3442.96 - 3448.319: was us joining both of those with con P
+3446.48 - 3450.96: so that's putting one on top of the
+3448.319 - 3453.24: other an additional example of merging
+3450.96 - 3455.799: that we might want to see is we take our
+3453.24 - 3458.9599999999996: results here and we see that this is a
+3455.799 - 3461.4: specific event for a specific person and
+3458.96 - 3463.839: because we have an athlete ID we can tie
+3461.4 - 3468.96: that with their bio information so I
+3463.839 - 3470.68: might do combined DF equals pd. merge
+3468.96 - 3472.64: First Data frame will be our results in
+3470.68 - 3477.839: this situation second data frame will be
+3472.64 - 3481.52: the BIOS the on here will be a Elite
+3477.839 - 3483.16: ID and the how we really want to just
+3481.52 - 3485.839: make sure that all of these events are
+3483.16 - 3487.1189999999997: kept we don't care if the events are
+3485.839 - 3489.96: most important this time we want to
+3487.119 - 3491.52: attach the bio information to the the
+3489.96 - 3494.2400000000002: event information so we'll say how
+3491.52 - 3495.4: equals left run that and if we looked at
+3494.24 - 3497.5989999999997: our
+3495.4 - 3501.6800000000003: combined DF
+3497.599 - 3504.079: now we're going to have a bunch of
+3501.68 - 3506.72: columns because now we've appended that
+3504.079 - 3508.96: so another example of merging two data
+3506.72 - 3511.52: frames together in this case we had a
+3508.96 - 3513.68: shared column name athlete ID and it
+3511.52 - 3516.319: worked a little bit more straightforward
+3513.68 - 3518.0389999999998: next let us look at how we can handle no
+3516.319 - 3520.7599999999998: values in our data so going back to the
+3518.039 - 3523.8390000000004: simple coffee data frame let's imagine
+3520.76 - 3525.92: we didn't have all this information
+3523.839 - 3527.359: let's say we had some null values going
+3525.92 - 3530.2000000000003: back to previous stuff we learned we
+3527.359 - 3533.68: could maybe say like maybe there was a
+3530.2 - 3538.8799999999997: null value on the unit
+3533.68 - 3542.64: sold for specifically the indexes zero
+3538.88 - 3548.1600000000003: and one so this row and this row that's
+3542.64 - 3552.4: going to equal np. na I think we can do
+3548.16 - 3555.1189999999997: this if we look at our coffee data frame
+3552.4 - 3558.319: now just look at the full thing we see
+3555.119 - 3560.2000000000003: we get these not a numbers here you'll
+3558.319 - 3562.52: see these all over the place with your
+3560.2 - 3564.68: data frames and you can keep track of
+3562.52 - 3567.119: them if you do the dataframe doino
+3564.68 - 3568.839: you'll see that part of this has the
+3567.119 - 3571.839: non-null count so like 12 in this
+3568.839 - 3575.16: situation can use the is Na and do like
+3571.839 - 3578.52: a sum here to see the number of explicit
+3575.16 - 3580.64: n values but what would we do if in the
+3578.52 - 3583.7599999999998: real world we looked at our data frame
+3580.64 - 3586.1189999999997: and saw we didn't have unit sold for our
+3583.76 - 3588.599: Monday value here well there's a few
+3586.119 - 3591.2000000000003: things we could do one of them is you
+3588.599 - 3591.2000000000003: can do
+3591.64 - 3597.48: a Phill a and in this situation there's
+3596.16 - 3601.2799999999997: a couple things you could do you could
+3597.48 - 3605.079: just arbitrarily P pick like you know
+3601.28 - 3607.039: 10,000 and run that and you see changes
+3605.079 - 3608.88: that obviously that's you know maybe not
+3607.039 - 3612.0: the smartest thing we can do but it does
+3608.88 - 3615.599: work a smarter thing would be to do
+3612.0 - 3617.68: coffee do unit sold and we can actually
+3615.599 - 3620.6800000000003: do a do mean I'll show some more about
+3617.68 - 3622.64: this in a bit but we run this then it's
+3620.68 - 3624.48: 35 and that's you know a much more
+3622.64 - 3627.2: realistic value because that's the mean
+3624.48 - 3629.2400000000002: of that whole column so make sense even
+3627.2 - 3632.1189999999997: smarter still might be to like
+3629.24 - 3634.3999999999996: conditionally fill this based on the
+3632.119 - 3637.599: coffee type another cool thing you could
+3634.4 - 3640.1600000000003: do is use this
+3637.599 - 3642.079: interpolate fill that oh I guess it
+3640.16 - 3643.72: didn't work in this situation it didn't
+3642.079 - 3645.52: quite know how to do it but interpolate
+3643.72 - 3648.1189999999997: is cool because if there's a pattern
+3645.52 - 3650.079: with your data it will know to continue
+3648.119 - 3651.52: that pattern in the column and
+3650.079 - 3653.88: interpolate basically looks at the
+3651.52 - 3655.119: neighbors of this so because we're doing
+3653.88 - 3657.359: interpolate on the first one I think
+3655.119 - 3660.52: that's why we got the N so I'm going to
+3657.359 - 3663.52: try this again but instead of doing the
+3660.52 - 3668.28: unit sold here I'll do two and three
+3663.52 - 3670.0: rerun this look at coffee again I guess
+3668.28 - 3672.76: now we need to repopulate the initial
+3670.0 - 3675.96: values for one and
+3672.76 - 3680.0: two we could say like you know 15 how
+3675.96 - 3680.0: about oh I guess it was zero and
+3682.88 - 3689.2000000000003: one look at coffee
+3686.52 - 3691.16: we can do the interpolate which if we
+3689.2 - 3692.72: look at this right looks like they're
+3691.16 - 3694.24: kind of steadily going up they get the
+3692.72 - 3698.4399999999996: highest around the weekend so we would
+3694.24 - 3701.2: hope for a value between 25 and 35 and
+3698.44 - 3706.839: 15 here if we interpolate on the Tuesday
+3701.2 - 3709.5589999999997: values so I'll do coffee units sold do
+3706.839 - 3714.839: interpolate and watch what happens we
+3709.559 - 3716.4: run this we get values there and you see
+3714.839 - 3719.119: that those two values that were added
+3716.4 - 3722.119: are nicely between kind of the values
+3719.119 - 3724.92: that we expect in our data frame so
+3722.119 - 3727.599: that's cool to see and to set this to
+3724.92 - 3730.44: the actual value you could do coffee
+3727.599 - 3730.44: units
+3735.76 - 3741.559: sold and you look at that interpolate is
+3738.76 - 3743.599: another cool way to handle Nan's um you
+3741.559 - 3748.88: could also maybe just drop the rows that
+3743.599 - 3748.88: are are n so again we reset this to
+3749.0 - 3756.68: Nan's maybe you just wanted to throw out
+3751.64 - 3759.319: any data that had n you could do drop
+3756.68 - 3762.68: Na and we see that we get the data frame
+3759.319 - 3764.359: back without those missing na rows this
+3762.68 - 3767.1189999999997: is a little bit you want to be careful
+3764.359 - 3769.4: on because it drops the full entire row
+3767.119 - 3772.1600000000003: maybe you wanted to do something like
+3769.4 - 3775.319: only if unit sold was n do you want to
+3772.16 - 3777.839: do this whereas if the price was n you
+3775.319 - 3781.279: could fit fill it you can do subset
+3777.839 - 3783.0389999999998: equals like just unit sold to only drop
+3781.279 - 3785.44: rows if it's the unit sold that's
+3783.039 - 3786.88: specifically na uh and then again
+3785.44 - 3788.44: remember if you want to actually change
+3786.88 - 3791.2000000000003: this in memory you have to do in place
+3788.44 - 3795.279: equals true or you have to reset this
+3791.2 - 3795.279: using coffee equals
+3795.44 - 

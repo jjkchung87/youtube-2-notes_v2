@@ -1,0 +1,177 @@
+17.04 - 4823.199: index that did not work how about this
+4821.0 - 4826.639: this grabs all the float columns but
+4823.199 - 4826.638999999999: maybe we just want to do r
+4828.719 - 4835.84: now and we could do cumulative sum on
+4833.08 - 4835.84: that and set it
+4840.96 - 4844.32: to this would
+4845.28 - 4851.8: work and you see that it is adding
+4848.84 - 4854.159000000001: things up as we go can be useful you
+4851.8 - 4856.639: could also do like Revenue over like the
+4854.159 - 4856.638999999999: past three
+4857.28 - 4862.719: days and that would be something like
+4859.88 - 4865.2390000000005: rolling so how about we do a data frame
+4862.719 - 4868.04: of just our espresso or just our lattes
+4865.239 - 4868.04: because it's a shorter
+4881.08 - 4886.159: word maybe I wanted to do a cumulative
+4883.56 - 4888.8: sum over 3 days I could do
+4886.159 - 4892.839999999999: rolling then I think we can do periods
+4888.8 - 4894.4400000000005: window equals 3 and sum and we probably
+4892.84 - 4897.719: would want to do that specifically on
+4894.44 - 4902.759999999999: let's say like unit
+4897.719 - 4905.4800000000005: sold and you could call this latte 3day
+4902.76 - 4905.4800000000005: or something like
+4907.4 - 4911.12: that and now if we look at
+4912.199 - 4923.4: latte we see 15 + 28 is 43 plus 25 is 68
+4920.199 - 4924.678999999999: and there's that 33 so this gives us 3
+4923.4 - 4927.199: days and there's ways to fill these
+4924.679 - 4929.28: values but just useful to know cool
+4927.199 - 4931.239: Advanced functionality let's quickly go
+4929.28 - 4933.84: into some of the new functionality of
+4931.239 - 4935.799999999999: pandas and really the big switch from my
+4933.84 - 4938.679: previous tutorial to this one is the
+4935.8 - 4942.0: jump from pandas 1.0 version you know
+4938.679 - 4944.159: 1.x to 2 point I think it's like 2.2
+4942.0 - 4946.159: right now or 2.3 as I record this video
+4944.159 - 4949.92: but we could actually I guess check that
+4946.159 - 4954.239: for explicitly by doing pd.
+4949.92 - 4956.32: verion I guess I need to type it Fly
+4954.239 - 4961.239: 2.2.2
+4956.32 - 4964.759999999999: 2.2.2 point2 point2 is the incorporation
+4961.239 - 4967.199: of the pi Arrow back end and basically
+4964.76 - 4969.360000000001: the difference between pi arrow and what
+4967.199 - 4973.839999999999: was there in version 1.0 which was a
+4969.36 - 4976.759999999999: numpy back end is that Pi Aro gives us a
+4973.84 - 4979.679: lot more optimization and can do things
+4976.76 - 4981.96: more efficiently and can interupt with a
+4979.679 - 4984.08: lot of other data engineering uh data
+4981.96 - 4986.8: sciency type tools probably more
+4984.08 - 4987.96: robustly than we can with numpy and some
+4986.8 - 4989.84: of the key things that you'll actually
+4987.96 - 4992.0: see as a user though come down to
+4989.84 - 4994.96: Performance so if I load both of these
+4992.0 - 4998.639: files in if I did something like results
+4994.96 - 5000.6: numpy Dost string. contains have or
+4998.639 - 5001.88: let's look at the just the the data
+5000.6 - 5005.120000000001: frame real
+5001.88 - 5006.159000000001: quick right we got this and and let's
+5005.12 - 5010.04: look
+5006.159 - 5012.12: at info cool we have some floats objects
+5010.04 - 5016.28: Etc if we go down and look at our
+5012.12 - 5019.159: results arrow and do a.info
+5016.28 - 5021.08: we'll see that we have some different
+5019.159 - 5025.5199999999995: stuff first off we'll see we have these
+5021.08 - 5027.5199999999995: string types here uh versus the object
+5025.52 - 5029.88: types here and string operations is one
+5027.52 - 5032.120000000001: of the biggest optimizations within the
+5029.88 - 5034.1990000000005: arrow backend versus numpy numpy is
+5032.12 - 5036.32: definitely not designed to handle string
+5034.199 - 5038.879999999999: stuff stuff great you know super
+5036.32 - 5040.679: efficiently but in practice we can just
+5038.88 - 5043.92: basically do a lot more things
+5040.679 - 5045.0: efficiently uh another difference and
+5043.92 - 5047.2390000000005: and I'm not going to get into all the
+5045.0 - 5050.04: details here of optimizations I'll link
+5047.239 - 5052.04: a blog post that was posted when pandas
+5050.04 - 5054.08: 2.0 is first release that I I recommend
+5052.04 - 5056.0: checking out but just as a simple
+5054.08 - 5059.96: example if I did something like results
+5056.0 - 5062.36: numpy do uh let's say there's a name
+5059.96 - 5066.88: column which is basically as and you
+5062.36 - 5072.48: know it's an object here do as.
+5066.88 - 5075.96: string tains uh use my my name again
+5072.48 - 5075.959999999999: that work what's going
+5077.719 - 5083.4: on run that I guess it did it pretty
+5091.96 - 5097.96: quick but basically nothing functionally
+5095.639 - 5101.92: changes this is still data frame in both
+5097.96 - 5104.679: situations but by using more specific
+5101.92 - 5107.639: types like these string types within Pi
+5104.679 - 5110.08: Arrow we can optimize at scale with
+5107.639 - 5113.0: operations that you know include strings
+5110.08 - 5114.5599999999995: that include Boolean values lot of
+5113.0 - 5118.44: different things we can optimize for
+5114.56 - 5120.6: here so really the this back end in most
+5118.44 - 5122.239: situations if performance matters I
+5120.6 - 5124.679: recommend switching to the pi Arrow back
+5122.239 - 5126.599999999999: end you'll have to install pi Arrow but
+5124.679 - 5128.4400000000005: that was in the requirements.txt that
+5126.6 - 5129.92: was included with this video definitely
+5128.44 - 5131.799999999999: recommend checking out the blog post
+5129.92 - 5133.32: that's one of the biggest things other
+5131.8 - 5135.84: new functionality and it's not
+5133.32 - 5138.36: necessarily like Panda specific but I
+5135.84 - 5141.88: think in this AI driven world right now
+5138.36 - 5144.799999999999: it's worth knowing and doing a bit more
+5141.88 - 5147.52: with AI stuff so command I will open up
+5144.8 - 5151.04: co-pilot chat so maybe I said you know
+5147.52 - 5155.1990000000005: bios. head I could do like co-pilot chat
+5151.04 - 5159.04: and just say use my BIOS data frame
+5155.199 - 5163.04: to grab people that are
+5159.04 - 5167.679: Olympians from either New
+5163.04 - 5173.56: Hampshire from the Bourne region New
+5167.679 - 5176.36: Hampshire or from the born City San
+5173.56 - 5178.76: Francisco pretty complex query but
+5176.36 - 5181.36: copilot is pretty smart so this can be
+5178.76 - 5183.52: really helpful if you
+5181.36 - 5186.32: are trying to do some Panda stuff
+5183.52 - 5188.2390000000005: quickly so so let's look at
+5186.32 - 5190.92: filtered
+5188.239 - 5194.199: bios and look at that did a pretty dang
+5190.92 - 5196.159: good job shout out to Ral Garcia from
+5194.199 - 5198.719: New Hampshire could look it even more I
+5196.159 - 5200.879999999999: could do a sample to check out more rows
+5198.719 - 5204.0: of this we're going to see probably a
+5200.88 - 5206.6: lot more people from San Francisco oh
+5204.0 - 5206.6: hey another New
+5208.639 - 5213.119: Hampshire cool so that was one thing
+5211.199 - 5215.32: with copilot chat another thing we could
+5213.119 - 5219.08: do though is
+5215.32 - 5221.239: I could pass that same type of query
+5219.08 - 5224.4: into chat
+5221.239 - 5229.32: GPT um to do that I could do something
+5224.4 - 5233.759999999999: like I have a data frame called
+5229.32 - 5236.719: bios that looks like
+5233.76 - 5240.92: this and I just copied the you know the
+5236.719 - 5244.8: head there please give me the pandas
+5240.92 - 5249.36: code to filter the data BAS
+5244.8 - 5253.159000000001: on finding someone either from New
+5249.36 - 5256.239: Hampshire or from I guess I probably
+5253.159 - 5257.839999999999: should specify either from the Bourne
+5256.239 - 5261.718999999999: region New
+5257.84 - 5263.52: Hampshire or the Bourne City San
+5261.719 - 5264.6: Francisco and it's going to give me
+5263.52 - 5267.159000000001: something
+5264.6 - 5269.92: similar yeah as we can see that looks
+5267.159 - 5271.48: exactly like what co-pilot gave us
+5269.92 - 5274.4: another cool thing you can do with chat
+5271.48 - 5277.32: GPT I'm using GPT for but it should work
+5274.4 - 5281.28: well with GPD 3.5 as well but you can do
+5277.32 - 5285.32: something like please give me a toy data
+5281.28 - 5287.8: frame I can use to play around with
+5285.32 - 5287.799999999999: pivot
+5289.159 - 5293.599999999999: tables and so really interactively I
+5291.679 - 5296.2390000000005: feel like working on certain skills like
+5293.6 - 5298.8: this with little toy data frames can be
+5296.239 - 5301.48: super useful to understand how these
+5298.8 - 5303.1990000000005: things operate and I'm gonna actually
+5301.48 - 5304.839999999999: copy this code and show you what I'm
+5303.199 - 5307.879999999999: talking about here
+5304.84 - 5310.2390000000005: paste this in I don't like print DF I
+5307.88 - 5312.88: like just doing DF and I bet you it's G
+5310.239 - 5314.638999999999: to have us pivot this based on the
+5312.88 - 5318.0: salesperson the salesperson will
+5314.639 - 5320.639: probably be our columns I would think
+5318.0 - 5323.92: and maybe the unit sold our values and
+5320.639 - 5327.08: probably could maybe keep the dates the
+5323.92 - 5330.159: same we'll see what they recommend and
+5327.08 - 5332.88: then it gives us this pivot
+5330.159 - 5335.96: table so the values are the unit sold
+5332.88 - 5339.719: index stays the date columns
+5335.96 - 5343.0: item a function sum oh interesting so
+5339.719 - 5345.119: it's summing the total number of items
+5343.0 - 5350.04: depend not not not worrying about the
+5345.119 - 5350.04: salesperson so if we look at the pivot
+5351.76 - 5357.4400000000005: table we see the total number of apples
+5354.6 - 5361.84: bananas and oranges sold we can also
+5357.44 - 5364.678999999999: like look at the total number of units
+5361.84 - 5369.84: sold uh irregardless of it
+5364.679 - 5372.84: by th

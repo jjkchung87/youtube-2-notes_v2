@@ -1,0 +1,176 @@
+ looked at Coffee
+2315.56 - 2319.319: we see no price that's cool but if we
+2317.76 - 2323.2400000000002: looked at Coffee
+2319.319 - 2326.319: new dude I need coffee right now uh it
+2323.24 - 2328.24: worked cool cool I don't really care to
+2326.319 - 2329.72: mod like I'm fine modifying the original
+2328.24 - 2332.319: one though so I'm not going to do the
+2329.72 - 2335.359: copy necessarily maybe I'll leave this
+2332.319 - 2338.52: code in here anyway though um okay so
+2335.359 - 2341.359: coffee new price equals NP
+2338.52 - 2346.079: Weare I going to bring this back
+2341.359 - 2349.0789999999997: to normal though coffee
+2346.079 - 2349.079: equals
+2359.359 - 2364.52: this all right we're going to rerun this
+2361.64 - 2366.56: line if we look at this we have two
+2364.52 - 2369.119: things so we saw that in place true
+2366.56 - 2372.48: works we also could have done this same
+2369.119 - 2374.359: exact Line Coffee equals coffee. drop
+2372.48 - 2375.88: columns price this also would have
+2374.359 - 2378.56: worked we're basically just dropping
+2375.88 - 2382.359: that one column and then resetting it to
+2378.56 - 2384.7999999999997: coffee and now if we looked at
+2382.359 - 2387.16: Coffee uh we see we just have the new
+2384.8 - 2388.88: price another thing we could have done
+2387.16 - 2392.3999999999996: is we could have said coffee equals
+2388.88 - 2394.7200000000003: let's say like coffee and we only we
+2392.4 - 2396.64: could have just set it to equal it with
+2394.72 - 2398.7999999999997: only the columns that we wanted so like
+2396.64 - 2402.8799999999997: day
+2398.8 - 2404.88: coffee type unit sold this is a little
+2402.88 - 2406.56: bit slower of a way but it can be
+2404.88 - 2408.6400000000003: helpful if we you only need a couple
+2406.56 - 2411.0: specific columns this also would have
+2408.64 - 2412.16: worked to drop out that price column all
+2411.0 - 2414.0: right now we have a data frame that
+2412.16 - 2416.16: looks like this I could see it being
+2414.0 - 2420.44: very useful to have a column that's
+2416.16 - 2426.52: called Revenue so I might do coffee
+2420.44 - 2430.079: Revenue equals coffee units sold times
+2426.52 - 2430.079: coffee new
+2430.24 - 2436.1189999999997: price and you so you can actually
+2432.28 - 2439.5600000000004: multiply and combine columns like this
+2436.119 - 2439.56: and if we see what we
+2440.079 - 2445.96: get if you want to do the math in your
+2442.2 - 2450.8799999999997: head but 25 * 3.99 so that's like close
+2445.96 - 2454.599: to 25 * 4 that' be 100 and 100 minus the
+2450.88 - 2455.76: 1 C off that's 9975 so that looks good
+2454.599 - 2457.7200000000003: another thing we might want to do is not
+2455.76 - 2460.5200000000004: new price we might want to rename that
+2457.72 - 2463.16: column so coffee.
+2460.52 - 2465.8: rename and now you can specify what you
+2463.16 - 2468.0: want to rename so I'm going to say
+2465.8 - 2470.079: columns and I'm going to pass in a
+2468.0 - 2474.119: dictionary I'm going to say if the
+2470.079 - 2475.5600000000004: column is new price I want it to be
+2474.119 - 2479.2000000000003: equal to
+2475.56 - 2482.319: price and now we see we get price there
+2479.2 - 2484.8799999999997: instead of new price but once again if I
+2482.319 - 2488.2799999999997: look at Coffee it still says new price
+2484.88 - 2491.04: because we need to do input Place equals
+2488.28 - 2494.6400000000003: true or set
+2491.04 - 2496.2: this um back equal like this so I
+2494.64 - 2499.2799999999997: typically I feel like like resetting
+2496.2 - 2499.2799999999997: something like
+2499.839 - 2504.04: this look at that couple of additional
+2502.68 - 2508.24: things you might want to see so let's
+2504.04 - 2510.92: now move over to our bio bio information
+2508.24 - 2515.0: on our athletes esape y to make this a
+2510.92 - 2516.88: code cell after being marked down and I
+2515.0 - 2519.8: think a good thing would be maybe to get
+2516.88 - 2522.2000000000003: just the first name from these people or
+2519.8 - 2524.599: maybe to just get the birth year from
+2522.2 - 2526.3999999999996: this date how might we do that few
+2524.599 - 2528.319: different things we can do so if I
+2526.4 - 2532.4: wanted to just get the first name I
+2528.319 - 2533.92: might do bios first
+2532.4 - 2536.079: name
+2533.92 - 2539.839: equals and let's make a copy of this
+2536.079 - 2542.44: real quick bios new equals
+2539.839 - 2545.24: bios.
+2542.44 - 2547.88: copy if I wanted to just get the first
+2545.24 - 2550.7999999999997: name I might do bios new first
+2547.88 - 2553.4: name equals bios
+2550.8 - 2558.119: new
+2553.4 - 2560.2000000000003: dotname dolit or string and sometimes I
+2558.119 - 2561.6800000000003: really recommend having a editor that
+2560.2 - 2563.2: gives you autocompletes because you can
+2561.68 - 2564.68: see all the functions you have available
+2563.2 - 2567.9199999999996: and this definitely is helpful but
+2564.68 - 2569.3999999999996: string dot split basically all of our
+2567.92 - 2572.28: string Methods are going to go off of
+2569.4 - 2576.2400000000002: this do string method split we'll split
+2572.28 - 2578.1600000000003: on a space and then we want to grab just
+2576.24 - 2580.4399999999996: the first element from that I think
+2578.16 - 2583.16: we'll do this think that this will work
+2580.44 - 2586.559: let's try it
+2583.16 - 2588.48: bios new and we're going to see the new
+2586.559 - 2591.8390000000004: column all the way over at the right
+2588.48 - 2598.119: here and now if I looked at bios
+2591.839 - 2600.48: new um let's say query first name name
+2598.119 - 2603.599: equals equals Keith we'll get some
+2600.48 - 2605.4: results I guess not oh it always it
+2603.599 - 2607.2400000000002: needs to be in quotes because this is a
+2605.4 - 2610.48: string
+2607.24 - 2612.64: cool other new columns we might want to
+2610.48 - 2614.839: add another new column we might want to
+2612.64 - 2617.68: add is just the birth year so if we look
+2614.839 - 2620.44: at bios new. info and we check out the
+2617.68 - 2622.72: data types we see like we have this
+2620.44 - 2624.76: athlete ID that's int then we have a
+2622.72 - 2627.68: bunch of objects some floats and some
+2624.76 - 2630.079: more objects to work with dates like
+2627.68 - 2632.7599999999998: this more easily I recommend converting
+2630.079 - 2636.28: them to a datetime type object so if we
+2632.76 - 2638.1600000000003: go to bios new and we do born date we
+2636.28 - 2643.119: can set this to a date time object by
+2638.16 - 2647.1189999999997: doing bios new or I guess we can do pd.
+2643.119 - 2650.48: two date time and then pass in this bios
+2647.119 - 2652.599: new and how about we call this uh could
+2650.48 - 2655.4: either set it as a new column let call
+2652.599 - 2657.319: it a new column let's do born date time
+2655.4 - 2658.52: how about just so it's it's separate
+2657.319 - 2663.5589999999997: bios
+2658.52 - 2666.04: new born date we run this and now if we
+2663.559 - 2668.1600000000003: look at now if we look at
+2666.04 - 2670.319: this and we look at the new column that
+2668.16 - 2672.92: was created doesn't look any different
+2670.319 - 2677.2: but if we look at the
+2672.92 - 2679.119: info we see that it is a datetime object
+2677.2 - 2682.4399999999996: and why is this useful well what you can
+2679.119 - 2686.48: do with this new column is you could
+2682.44 - 2688.44: create a year column by doing bios new
+2686.48 - 2695.0: have a born
+2688.44 - 2698.079: year equals bios new born date
+2695.0 - 2700.839: time date this is this is like string
+2698.079 - 2703.1600000000003: where if you do DT once it's a daytime
+2700.839 - 2706.16: object you have access to all sorts of
+2703.16 - 2707.839: useful things so you could even like
+2706.16 - 2710.16: create a column based on like the day of
+2707.839 - 2714.319: the week they are born but we want
+2710.16 - 2718.3999999999996: specifically the year and run this we
+2714.319 - 2723.7599999999998: look at our data I'll just show the how
+2718.4 - 2727.6800000000003: about two columns name and born year we
+2723.76 - 2729.44: see we just get that year cool
+2727.68 - 2730.7999999999997: and this gives you access to all sorts
+2729.44 - 2732.8: of useful things that would be hard to
+2730.8 - 2735.7200000000003: write from scratch like one thing I just
+2732.8 - 2737.48: saw there is like is leap year you could
+2735.72 - 2739.0: add and if you wanted to find just the
+2737.48 - 2741.2: Olympic athletes that were born in a
+2739.0 - 2744.04: leap year or even on leap day you could
+2741.2 - 2746.2: do that with useful date functions off
+2744.04 - 2748.04: of this converted using this two date
+2746.2 - 2750.24: time one thing you should know about the
+2748.04 - 2751.8: two date time is that sometimes you'll
+2750.24 - 2753.839: to get errors because the format won't
+2751.8 - 2755.7200000000003: be the same so you can like course your
+2753.839 - 2759.7599999999998: errors which will help resolve them
+2755.72 - 2760.9199999999996: gracefully you also can specify a format
+2759.76 - 2762.8390000000004: and I recommend looking at the
+2760.92 - 2764.48: documentation to understand this more so
+2762.839 - 2767.2799999999997: if you know your column is set up in a
+2764.48 - 2770.559: way that it's like year
+2767.28 - 2772.4: month day let's say you can pass in the
+2770.559 - 2775.079: format explicitly and that will help
+2772.4 - 2778.1600000000003: this to date time convert things
+2775.079 - 2780.3590000000004: properly these percentage symbols I'll
+2778.16 - 2781.7599999999998: link in the description a cheat sheet of
+2780.359 - 2783.96: all the different things you can use
+2781.76 - 2785.6800000000003: here very useful to know especially
+2783.96 - 2789.0: because like here in the United States
+2785.68 - 2791.64: we use month day year and I feel like
+2789.0 - 2795.68: everywhere else in the world does day
+2791.64 - 2797.24: month year so it's helpful to specify
+2795.68 - 2799.319: what you're
+2797.24 -

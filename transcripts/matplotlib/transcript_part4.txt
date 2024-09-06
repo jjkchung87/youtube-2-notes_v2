@@ -1,0 +1,169 @@
+21 - 1632.14: video so all right so I want to do bar
+1629.81 - 1632.1399999999999: chart
+1636.73 - 1640.3700000000001: okay so bar charts are pretty
+1639.23 - 1651.17: straightforward as well
+1640.37 - 1657.2299999999998: let's say we had some labels a a B and C
+1651.17 - 1659.51: and some values that say 1 4 & 2
+1657.23 - 1664.3700000000001: well if we wanted to do a bar chart we
+1659.51 - 1666.4: can just do plot dot bar of labels comma
+1664.37 - 1674.1799999999998: values at Friday they're wrong its
+1666.4 - 1679.76: values comma labels and we get not what
+1674.18 - 1687.47: I was looking for okay let's see it is
+1679.76 - 1689.36: actually labels first then values ABC
+1687.47 - 1694.19: cool so that was pretty straightforward
+1689.36 - 1697.34: and I can do the plot dot show we're
+1694.19 - 1699.8: going to do all the adding of titles and
+1697.34 - 1703.1: whatnot the same way as before in the
+1699.8 - 1704.6: line graph example let's skip over that
+1703.1 - 1707.06: for now
+1704.6 - 1712.37: it could also resize it let's say so I
+1707.06 - 1716.1799999999998: could do plot figure fig size equals
+1712.37 - 1720.02: it's a six by four it's gonna use
+1716.18 - 1721.0700000000002: whatever the default dpi is and then one
+1720.02 - 1725.36: thing that it's cool that you can do
+1721.07 - 1728.4199999999998: with bar charts is you could add
+1725.36 - 1731.87: different patterns to these so to do
+1728.42 - 1733.13: that and you can you can really play
+1731.87 - 1735.8: around with the documentation do all
+1733.13 - 1738.2600000000002: sorts of different things I do some kind
+1735.8 - 1739.81: of following the graphs that I was
+1738.26 - 1741.57: showing the inner intro
+1739.81 - 1747.1: video so I wanted to just show kind of
+1741.57 - 1752.04: what different hatch values look like so
+1747.1 - 1756.1299999999999: I can make first one have I'm gonna say
+1752.04 - 1759.6399999999999: bars equal plug up ours there you go now
+1756.13 - 1762.43: I do bars zero set hatch that's gonna
+1759.64 - 1765.1000000000001: give me the lines that you see down here
+1762.43 - 1772.99: I can do the same thing with the second
+1765.1 - 1775.6: value let's make this circles and you
+1772.99 - 1778.63: can find out the hatch values and the
+1775.6 - 1782.32: documentation as well let's do the third
+1778.63 - 1785.3200000000002: value we'll do stars so now you get kind
+1782.32 - 1787.57: of a cool little bar chart I can also
+1785.32 - 1789.58: add a legend to this very easily and
+1787.57 - 1791.32: this will tell me right away we have a B
+1789.58 - 1793.06: and C but I mean their label right here
+1791.32 - 1797.8899999999999: some legends probably not necessary in
+1793.06 - 1799.27: this case all right let's see what else
+1797.89 - 1800.3200000000002: does I want to do with this and then if
+1799.27 - 1802.66: you wanted to make this a little bit
+1800.32 - 1805.1799999999998: neater if you had like many more I might
+1802.66 - 1813.0900000000001: get tiring to do this so you could do
+1805.18 - 1817.39: something like patterns equals /o and
+1813.09 - 1823.6299999999999: star and you could do instead of this
+1817.39 - 1833.0500000000002: notation you could do ya for a bar and
+1823.63 - 1835.71: bars bar dot set hatch guess we want an
+1833.05 - 1835.71: index as well
+1838.25 - 1846.21: we'll just do actually patterns dot pop
+1842.57 - 1848.9099999999999: first item off so this would get us our
+1846.21 - 1853.14: right one for each one should yeah look
+1848.91 - 1854.5500000000002: at that if I didn't pop regularly I
+1853.14 - 1858.21: think it would take off the last so this
+1854.55 - 1860.1599999999999: will be stars instead of yep look at
+1858.21 - 1862.02: that yeah so basically what it did is it
+1860.16 - 1863.97: just popped off the first item for the
+1862.02 - 1865.29: first bar popped up the second item for
+1863.97 - 1868.83: the second bar and then popped off the
+1865.29 - 1871.46: final item for the third bar as you can
+1868.83 - 1871.46: see there
+1873.39 - 1876.45: in this video we're going to build off
+1874.89 - 1877.95: of what we didn't in the last video
+1876.45 - 1881.1000000000001: which was kind of an introductory video
+1877.95 - 1882.39: to Matt pot Lib library of Python so in
+1881.1 - 1884.2199999999998: this video specifically we're going to
+1882.39 - 1886.89: be kind of doing some real world type
+1884.22 - 1889.3500000000001: examples so basically combining our
+1886.89 - 1891.75: knowledge of the pandas library with the
+1889.35 - 1894.54: matplotlib library to create all sorts
+1891.75 - 1898.32: of different plots based on CSV style
+1894.54 - 1900.48: data so we'll start out with a
+1898.32 - 1905.52: spreadsheet that all provided my github
+1900.48 - 1908.28: page link in the description to gas
+1905.52 - 1911.12: prices over time for different countries
+1908.28 - 1914.52: so with that data sheet will build
+1911.12 - 1917.9699999999998: charts such as the one you see here then
+1914.52 - 1920.58: the second data set that I provided is a
+1917.97 - 1923.58: list of all the game the video game
+1920.58 - 1925.11: FIFA's player stats so if you're not
+1923.58 - 1927.03: familiar with that and basically all of
+1925.11 - 1928.35: the soccer players or I guess if you're
+1927.03 - 1929.73: an international viewer watching this
+1928.35 - 1932.8799999999999: all the football players in the game
+1929.73 - 1934.77: FIFA provided all their like overall
+1932.88 - 1938.46: stats in the game and will build grab
+1934.77 - 1940.8: all sorts of charts off of that so we'll
+1938.46 - 1944.22: do like histogram stuff with players
+1940.8 - 1947.6699999999998: overall rating in FIFA some pie chart
+1944.22 - 1950.49: stuff more pie chart stuff a little bit
+1947.67 - 1953.43: more complex and then finally some box
+1950.49 - 1955.71: and whisker chart stuff based off the
+1953.43 - 1958.71: FIFA data and if we have time maybe one
+1955.71 - 1962.25: or two more graphs before we begin
+1958.71 - 1964.05: couple quick I guess announcements first
+1962.25 - 1965.88: is if you've enjoyed any of my videos
+1964.05 - 1968.9099999999999: it'd mean a lot to me if you can
+1965.88 - 1970.74: subscribe and also along the same lines
+1968.91 - 1972.9: if you don't mind also following my
+1970.74 - 1975.24: Instagram and Twitter
+1972.9 - 1978.1200000000001: basically the more followers I get on
+1975.24 - 1981.08: all my social media platforms the more
+1978.12 - 1984.06: content the more serious that I'll take
+1981.08 - 1985.8: this and the more content that I'll
+1984.06 - 1987.1499999999999: produce all right we'll start this video
+1985.8 - 1988.53: off the same way we started the last
+1987.15 - 1991.2: video make sure you load up the
+1988.53 - 1993.69: necessary libraries I'll be editing with
+1991.2 - 1994.14: Jupiter notebook using Python 3 but you
+1993.69 - 1997.56: can
+1994.14 - 1999.8100000000002: using other IDs and text editors as well
+1997.56 - 2003.32: so we're importing these three libraries
+1999.81 - 2005.6599999999999: matplotlib numpy and pandas then the
+2003.32 - 2008.21: next step will be to download the data
+2005.66 - 2010.3400000000001: that I provided for this so to do that
+2008.21 - 2012.8600000000001: go to my github which is in the
+2010.34 - 2015.3799999999999: description and we want to download two
+2012.86 - 2017.03: different files so that files the first
+2015.38 - 2019.5200000000002: file we want to download is this gas
+2017.03 - 2022.37: prices so the easiest way to think to
+2019.52 - 2027.08: download this is go to the raw and then
+2022.37 - 2031.4899999999998: just do save as you can and you want to
+2027.08 - 2034.37: save it wherever you have your code so
+2031.49 - 2036.41: my code these Jupiter notebooks for me
+2034.37 - 2039.11: are in this map pot Lib tutorial
+2036.41 - 2041.39: directory so I would save this value
+2039.11 - 2044.3: here as you see I already saved it and
+2041.39 - 2046.5500000000002: then for the the other data file the
+2044.3 - 2048.77: FIFA dataset we're gonna want to do the
+2046.55 - 2051.5299999999997: same thing so go back to the main file
+2048.77 - 2053.39: in the github click on FIFA data this
+2051.53 - 2057.9500000000003: one you can't even preview but just
+2053.39 - 2061.9089999999997: click view raw right click and save as
+2057.95 - 2064.0099999999998: you want to save it as a CSV file so a
+2061.909 - 2065.51: comma separated values file and you'll
+2064.01 - 2067.3700000000003: also want to save this in the same
+2065.51 - 2072.23: directory that you have the file that
+2067.37 - 2074.24: you're writing your code in okay so now
+2072.23 - 2076.28: that we've saved the data let's start
+2074.24 - 2078.4399999999996: playing around with it and if you
+2076.28 - 2081.3500000000004: remember from my pandas video the way
+2078.44 - 2084.14: that we can look at a CSV file with
+2081.35 - 2086.83: pandas is we can do something like will
+2084.14 - 2091.97: call this CS or will our data gasps
+2086.83 - 2093.3199999999997: equals PD read CSV then we need to type
+2091.97 - 2096.3999999999996: in the name of the file we want to read
+2093.32 - 2100.5800000000004: we've saved it as gas prices dot CSV and
+2096.4 - 2102.08: we should be luron that no issues and we
+2100.58 - 2104.99: saved this file in the same directory
+2102.08 - 2107.09: that this map pot the editorial file is
+2104.99 - 2109.7: in so that's why this worked if you save
+2107.09 - 2112.73: this file in a different directory you
+2109.7 - 2115.16: can specify where you save it so if you
+2112.73 - 2117.41: save it in like a data folder you would
+2115.16 - 2121.46: specify it so it's with this type of
+2117.41 - 2123.52: syntax okay yes so now what we can do is
+2121.46 - 2127.13: look what to see what's in our
+2123.52 - 2130.22: this data file so if I just do gas and
+2127.13 - 2133.4: this works in Jupiter notebook but in
+2130.22 - 2134.8999999999996: another if you're just using like
+2133.4 - 2138.26: sublime text you'd have to like print
+2134.9 - 2143.119: gas or you could just

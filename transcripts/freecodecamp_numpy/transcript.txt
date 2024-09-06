@@ -1,0 +1,1523 @@
+0.16 - 3.52: how's it going everyone and welcome back
+1.68 - 5.8389999999999995: to another video today we're going to be
+3.52 - 8.639: going through the numpy library which is
+5.839 - 11.120000000000001: considered to be kind of the fundamental
+8.639 - 13.28: package for all scientific computing in
+11.12 - 15.12: python so it's a super super important
+13.28 - 16.56: library uh
+15.12 - 17.358999999999998: it's kind of the base for a lot of the
+16.56 - 19.358999999999998: other
+17.359 - 20.8: like major data science libraries in
+19.359 - 22.880000000000003: python so like
+20.8 - 25.199: pandas that i've done a video on before
+22.88 - 27.599: it builds pretty much like entirely off
+25.199 - 29.840000000000003: of the numpy library so it's super
+27.599 - 31.84: important and kind of because it's
+29.84 - 32.719: important it's because it's this like
+31.84 - 34.64: base
+32.719 - 35.84: uh the way we're gonna do this video is
+34.64 - 38.559: i'm gonna start off with kind of a
+35.84 - 40.239000000000004: background information on how numpy
+38.559 - 41.919999999999995: works and i think really having that
+40.239 - 43.279999999999994: intuition is helpful for when you
+41.92 - 45.28: actually start writing code with it so
+43.28 - 46.879000000000005: we'll do the background information and
+45.28 - 49.52: then after that we'll jump into all
+46.879 - 52.32: sorts of useful
+49.52 - 54.800000000000004: methods and ways you can utilize this
+52.32 - 56.480000000000004: library as far as actual code goes as
+54.8 - 58.48: always make sure to
+56.48 - 60.718999999999994: smash that subscribe button throw this
+58.48 - 62.879: video a thumbs up uh
+60.719 - 68.159: follow my tweeters
+62.879 - 71.36: tweetergram instagram twitter github too
+68.159 - 73.92: hit the bell for the notifications
+71.36 - 74.88: throw this another thumbs up
+73.92 - 77.28: yeah
+74.88 - 79.19999999999999: to begin numpy is a multi-dimensional
+77.28 - 81.43900000000001: array library so what that means is you
+79.2 - 82.159: can use numpy to store all sorts of data
+81.439 - 84.08: in
+82.159 - 85.759: one-dimensional arrays two-dimensional
+84.08 - 88.88: arrays three-dimensional race
+85.759 - 90.72: four-dimensional rays etc
+88.88 - 93.67999999999999: and so the common question you kind of
+90.72 - 95.439: ask or i'm commonly asked when
+93.68 - 97.28: you know you first bring up numpy is why
+95.439 - 98.15899999999999: do you use numpy
+97.28 - 102.0: over
+98.159 - 105.2: lists so the main difference comes from
+102.0 - 107.28: the speed so lists they are very slow
+105.2 - 108.479: meanwhile numpy
+107.28 - 111.52: is
+108.479 - 114.88: very fast and so why are lists slow and
+111.52 - 118.079: numpy fast well one reason is because
+114.88 - 120.0: numpy uses fixed types
+118.079 - 121.27999999999999: so what that means is imagine we have
+120.0 - 124.159: this
+121.28 - 125.52: three by four matrix three rows four
+124.159 - 127.759: columns
+125.52 - 129.119: and it's all integer values and we're
+127.759 - 130.479: going to kind of look at how those
+129.119 - 133.84: integer values
+130.479 - 135.84: differ between numpy and lists so let's
+133.84 - 137.68: just zoom in on that 5 that's there in
+135.84 - 141.36: that matrix
+137.68 - 145.20000000000002: so our computers they don't c5 they see
+141.36 - 145.20000000000002: binary that represents five
+145.68 - 149.68: and so
+147.52 - 150.87900000000002: this is the number five in binary and
+149.68 - 152.87900000000002: it's eight
+150.879 - 156.72: bits which makes up a byte so our
+152.879 - 159.28: computers read uh information in bytes
+156.72 - 160.56: so when we use numpy
+159.28 - 164.959: this
+160.56 - 166.64000000000001: this one bit five is actually by default
+164.959 - 169.36: going to be
+166.64 - 171.67999999999998: casted to this int 32 type which
+169.36 - 174.56: consists of four bytes
+171.68 - 177.59900000000002: uh and so it represents five in
+174.56 - 179.519: a total memory space of four bytes
+177.599 - 181.76: so in 32 and you also you can even
+179.519 - 184.08: specify so by default it's in 32 but you
+181.76 - 186.319: could even specify that you didn't need
+184.08 - 188.959: all four bytes to represent this value
+186.319 - 191.76: so you could specify within numpy that
+188.959 - 194.08: you wanted maybe an n16 which is 16 bits
+191.76 - 195.44: or two bytes or even if you had really
+194.08 - 197.36: small values
+195.44 - 198.959: into eight which is just a single byte
+197.36 - 201.92000000000002: on the other hand
+198.959 - 201.92000000000002: with lists
+202.959 - 206.879: there's a lot more information you need
+204.48 - 210.319: to store as an integer so
+206.879 - 213.04: in lists lists use a built-in int type
+210.319 - 214.72: for python and so that built-in in type
+213.04 - 217.67999999999998: consists of four different things it
+214.72 - 220.319: consists of the object value
+217.68 - 222.959: which you know has its own bits
+220.319 - 224.879: associated with it object type
+222.959 - 225.76: the reference count how many times that
+224.879 - 227.44: that
+225.76 - 230.56: integer has been specifically like
+227.44 - 232.56: pointed at and the size of that integer
+230.56 - 234.48: value
+232.56 - 237.12: and so if we break this up into the
+234.48 - 239.51899999999998: actual binary that it represents we can
+237.12 - 241.59900000000002: take the object value
+239.519 - 243.12: and that's represented as a long which
+241.599 - 245.599: is like 8 bytes
+243.12 - 247.12: the object type same deal reference
+245.599 - 249.35999999999999: count same deal and then the size i
+247.12 - 251.28: believe is a little bit smaller
+249.36 - 254.0: i think it's only 4 bytes but as you can
+251.28 - 256.16: see that's a single integer within lists
+254.0 - 259.12: using the built-in int type
+256.16 - 263.44: it requires a lot more space than numpy
+259.12 - 263.44: so basically the takeaway from this is
+263.6 - 268.72: that
+264.639 - 270.40000000000003: because numpy uses less bytes of memory
+268.72 - 273.36: the computer can read less bites of
+270.4 - 275.03999999999996: memory quicker obviously so it's faster
+273.36 - 276.08000000000004: in that regard
+275.04 - 279.12: another reason that i didn't
+276.08 - 281.12: specifically say is that
+279.12 - 284.16: when we're iterating through each item
+281.12 - 286.32: in a numpy array we don't have to do
+284.16 - 287.91900000000004: type checking each time so in python
+286.32 - 289.84: built-in lists you could have a list of
+287.919 - 292.15999999999997: like an integer then a float then a
+289.84 - 293.919: string then a boolean
+292.16 - 296.0: and you'd have to check each element
+293.919 - 297.12: you're looking at what type it is but
+296.0 - 298.639: numpy we don't have to do that so
+297.12 - 299.84000000000003: another reason it's faster is that
+298.639 - 301.919: there's no type checking when
+299.84 - 304.63899999999995: integrating through objects
+301.919 - 306.639: moving on another reason that numpy is
+304.639 - 309.199: faster than list is because numpy
+306.639 - 310.96000000000004: utilizes contiguous memory so what that
+309.199 - 314.0: means is imagine that
+310.96 - 316.4: this kind of array-like structure is our
+314.0 - 318.8: computer's memory so we could store
+316.4 - 320.0: information in any one of these memory
+318.8 - 321.52000000000004: blocks
+320.0 - 323.6: so if we had a list
+321.52 - 324.71999999999997: the way that that would look in a list's
+323.6 - 327.44: memory
+324.72 - 329.91900000000004: is that our list would be kind of
+327.44 - 332.479: scattered around so maybe we have a
+329.919 - 334.56: list that takes up eight memory blocks
+332.479 - 335.52: the thing is that these memory blocks
+334.56 - 337.28000000000003: aren't
+335.52 - 338.88: necessarily next to each other so you
+337.28 - 340.23999999999995: have some information here you have some
+338.88 - 342.32: information here you have a good amount
+340.24 - 344.479: of information in here
+342.32 - 345.919: then you skip a block here here and skip
+344.479 - 347.52: two blocks you have some information
+345.919 - 349.35999999999996: here so it's all kind of scattered
+347.52 - 351.84: around
+349.36 - 354.72: so kind of if you have an eight item
+351.84 - 356.96: array what that looks like is that that
+354.72 - 359.28000000000003: array is actually just
+356.96 - 362.15999999999997: or that list is just
+359.28 - 364.15999999999997: um containing pointers to the actual
+362.16 - 367.12: information that's scattered around our
+364.16 - 367.12: computer's memory
+367.199 - 370.16: and so
+368.16 - 371.68: it's just that all the information is
+370.16 - 372.56: not right next to each other kind of you
+371.68 - 374.24: have to
+372.56 - 377.039: bounce around your computer's memory a
+374.24 - 379.28000000000003: bit and it's not super super fast to
+377.039 - 380.639: like rapidly go through and
+379.28 - 383.28: kind of
+380.639 - 386.639: potentially perform functions on all
+383.28 - 390.23999999999995: items at a time or subsets of the items
+386.639 - 391.52: a numpy array however uses contiguous
+390.24 - 393.68: memory so
+391.52 - 395.44: all eight blocks in this case would be
+393.68 - 398.08: right next to each other and this has
+395.44 - 400.24: all sorts of advantages um and also just
+398.08 - 402.56: to mention real quick you'd also kind of
+400.24 - 404.639: have to have to store somehow where the
+402.56 - 407.28000000000003: start of that memory is and then like
+404.639 - 408.88: the total size and the type of
+407.28 - 411.28: memory block
+408.88 - 413.84: but it's a lot easier than this kind of
+411.28 - 416.08: pointer structure that's up here
+413.84 - 418.479: and so the benefits of numpy using this
+416.08 - 420.8: contiguous memory are a couple of
+418.479 - 424.479: different things so
+420.8 - 426.319: the first benefit is that our cpus our
+424.479 - 427.52: our computers have these
+426.319 - 428.47900000000004: cindy
+427.52 - 431.039: vector
+428.479 - 432.88: processing units and so when this memory
+431.039 - 434.4: is all like right next to each other we
+432.88 - 436.8: can utilize this
+434.4 - 440.15999999999997: unit and basically what cimd stands for
+436.8 - 441.84000000000003: is single instruction multiple data
+440.16 - 444.16: so we can like if we have to do an
+441.84 - 445.919: addition of like a lot of values
+444.16 - 448.8: instead of just doing one addition at a
+445.919 - 450.56: time we can use this cmd vector unit and
+448.8 - 453.36: basically perform
+450.56 - 454.479: computations on all these values at one
+453.36 - 456.47900000000004: time
+454.479 - 458.71999999999997: so it's quicker in that regard another
+456.479 - 461.44: reason it's quicker is that we more
+458.72 - 462.8: effectively utilize our cache so our
+461.44 - 465.12: kind of our quicker memory in our
+462.8 - 466.639: computer basically if we load in all
+465.12 - 468.0: these values
+466.639 - 471.84000000000003: we can keep them
+468.0 - 473.599: close to where we need to access them
+471.84 - 475.67999999999995: and like perform all sorts of operations
+473.599 - 478.87899999999996: while as in the list case you'd maybe
+475.68 - 480.479: load in like half of this but then this
+478.879 - 482.879: other half because it's scattered around
+480.479 - 486.08: in different places you'd have to like
+482.879 - 487.759: go back and like reload that in
+486.08 - 489.039: uh to your cache
+487.759 - 490.639: like
+489.039 - 492.87899999999996: you know just be overall slower because
+490.639 - 495.44: you'd have to do more like longer memory
+492.879 - 497.91900000000004: lookups within your computer
+495.44 - 499.919: okay so we kind of went over some of the
+497.919 - 501.52: performance benefits but how are lists
+499.919 - 503.84: different from numpy
+501.52 - 506.87899999999996: well lists we can do insertion deletion
+503.84 - 509.44: appending concatenation etc and we can
+506.879 - 511.36: also do those same exact things in numpy
+509.44 - 514.399: i guess the big difference though is
+511.36 - 516.399: that within numpy we can do all that
+514.399 - 518.959: and we can do lots and lots more and
+516.399 - 521.12: we'll see the lot slots more
+518.959 - 523.4399999999999: throughout the video but as a simple
+521.12 - 525.519: example imagine we have
+523.44 - 526.72: these two arrays
+525.519 - 528.72: one thing that we can do that's really
+526.72 - 532.88: nice in numpy is that if we try to
+528.72 - 535.2: multiply these one item at a time
+532.88 - 537.279: we could do that in in lists you
+535.2 - 538.24: couldn't multiply one and one three and
+537.279 - 540.72: two
+538.24 - 543.36: uh five and three
+540.72 - 545.44: um etc but when we do the exact same
+543.36 - 549.44: computation within numpy it allows us to
+545.44 - 550.8000000000001: do these you know single value like
+549.44 - 552.8800000000001: item-wise
+550.8 - 555.12: computations which is pretty neat and
+552.88 - 556.399: pretty useful so that's one example and
+555.12 - 558.5600000000001: you'll see a lot more throughout the
+556.399 - 560.08: video uh so applications are known by
+558.56 - 561.76: there's all sorts of applications i
+560.08 - 563.76: think the first one the kind of the
+561.76 - 565.92: first one that comes to my mind is that
+563.76 - 568.0: is a kind of a
+565.92 - 570.399: matlab replacement you can do all sorts
+568.0 - 572.8: of mathematics with numpy i think i
+570.399 - 574.08: should say that i think the scipy
+572.8 - 577.279: library
+574.08 - 579.519: has even more mathematics like functions
+577.279 - 580.399: and whatnot so if numpy isn't cutting it
+579.519 - 582.48: for you
+580.399 - 584.32: try to look through the scipy
+582.48 - 586.88: documentation you might be able to find
+584.32 - 589.6: even more but yeah it's pretty powerful
+586.88 - 592.8: the math that numpy can do
+589.6 - 594.399: it's useful in plotting it is
+592.8 - 596.8: the back end of many different
+594.399 - 598.88: applications so pandas
+596.8 - 601.519: which i've done a video on before
+598.88 - 603.279: it is just like the core
+601.519 - 605.2: component of pandas library it really
+603.279 - 607.519: allows pandas to work
+605.2 - 610.48: um if you've seen my connect 4 how to
+607.519 - 612.24: program that video i use numpy to store
+610.48 - 613.76: the board
+612.24 - 614.88: and then in future videos i'm going to
+613.76 - 616.8389999999999: do
+614.88 - 620.399: you can you can actually store
+616.839 - 623.0400000000001: images uh through numpy so like png
+620.399 - 624.959: images you can use numpy to store all
+623.04 - 626.959: the information and like do all sorts of
+624.959 - 628.16: cool stuff that i'll uh post future
+626.959 - 630.16: videos on
+628.16 - 633.76: uh let's see also
+630.16 - 636.16: another i think useful reason to know
+633.76 - 637.68: numpy is that it's kind of like pretty
+636.16 - 639.6: important for machine learning
+637.68 - 641.4399999999999: applications
+639.6 - 643.44: both directly and then also kind of
+641.44 - 645.36: indirectly because
+643.44 - 647.12: one of the key
+645.36 - 648.48: libraries or key kind of concepts you
+647.12 - 650.5600000000001: learn with
+648.48 - 652.16: machine learning is the idea of like
+650.56 - 654.88: tensors
+652.16 - 657.279: and tensors are pretty connected to kind
+654.88 - 659.12: of like the tensor libraries are pretty
+657.279 - 661.519: similar to like the numpy library it's
+659.12 - 662.24: just a way to store all sorts of values
+661.519 - 664.72: so
+662.24 - 665.76: knowing numpy will help you
+664.72 - 667.279: kind of
+665.76 - 668.56: be able to do some stuff with machine
+667.279 - 670.0: learning
+668.56 - 671.1999999999999: all right to get started with the code
+670.0 - 673.279: the first thing you're going to do is
+671.2 - 674.9590000000001: import the numpy library
+673.279 - 677.04: and just so we're on the same page i'm
+674.959 - 679.3599999999999: using a jupiter notebook to use to code
+677.04 - 681.76: this up but you can use whatever editor
+679.36 - 683.36: you prefer also all this code that i'll
+681.76 - 685.2: be going through will be on my github
+683.36 - 686.64: and the link to that will be in the
+685.2 - 689.44: description
+686.64 - 691.1999999999999: okay so import numpy as np if that works
+689.44 - 693.6: for you great if it didn't work you'll
+691.2 - 696.72: have to do a pip install
+693.6 - 701.72: so you can go ahead into your terminal
+696.72 - 701.72: and type in pip install numpy
+705.12 - 708.9590000000001: and so
+706.399 - 710.0: uh it's already installed for me
+708.959 - 712.0: so
+710.0 - 714.48: and if pip doesn't work for you try pip
+712.0 - 715.76: 3 install numpy that should work
+714.48 - 718.0: so the first thing that's important to
+715.76 - 720.56: know is how to initialize an array so
+718.0 - 723.36: we'll just say that a equals
+720.56 - 725.1199999999999: np dot array
+723.36 - 726.88: and then within this we just basically
+725.12 - 728.8: pass in a list
+726.88 - 730.8: so one two three this would be a one
+728.8 - 732.3199999999999: dimensional array containing the values
+730.8 - 733.76: one two three
+732.32 - 735.839: as you see
+733.76 - 738.72: uh and you can go ahead you're not using
+735.839 - 740.639: jupyter notebooks and print a
+738.72 - 742.399: okay cool so we could also initialize a
+740.639 - 743.12: little bit more complex arrays so we
+742.399 - 745.519: could
+743.12 - 748.079: do like a 2d array of floats and i could
+745.519 - 751.76: do that the following way
+748.079 - 751.76: we're going to have a list within a list
+754.72 - 759.2: so here's some floating values and then
+757.68 - 760.7199999999999: we're going to make this two dimensional
+759.2 - 763.6800000000001: so here's some more
+760.72 - 763.6800000000001: float values
+766.0 - 771.04: and let's go ahead and
+769.04 - 773.519: print b
+771.04 - 776.56: cool so now that we know how to
+773.519 - 779.12: initialize arrays uh and you can keep
+776.56 - 780.399: doing this like i can nest lists within
+779.12 - 783.519: a list within a list to create a
+780.399 - 785.12: three-dimensional array etc
+783.519 - 786.88: some other useful things to know about
+785.12 - 790.399: this is
+786.88 - 791.519: how to how do you get the dimension of
+790.399 - 796.0: your
+791.519 - 796.0: numpy arrays so if i did a dot
+796.16 - 800.48: number dimensions
+798.16 - 803.76: so this tells me that it's one
+800.48 - 805.12: dimensional for a and if i did b dot and
+803.76 - 806.56: m
+805.12 - 808.9590000000001: it would be two
+806.56 - 810.16: shape is another important function so
+808.959 - 812.3199999999999: get shape
+810.16 - 814.7199999999999: uh if we do the first one a dot shape
+812.32 - 816.0: this is all we have to do it's a vector
+814.72 - 817.6: so it's only going to tell me the one
+816.0 - 820.079: dimension because it only has one
+817.6 - 821.6: dimension so it's size three
+820.079 - 823.92: if i do b dot shape it's going to tell
+821.6 - 825.9200000000001: me the rows and the columns so this is
+823.92 - 829.04: two rows and three columns so it should
+825.92 - 831.04: print out two by three as it does
+829.04 - 834.16: okay other things we want to know how
+831.04 - 836.8: much memory our numpy arrays take up so
+834.16 - 838.8: we can get the type and also get the
+836.8 - 840.8: size so
+838.8 - 844.399: if we want to get the type we do
+840.8 - 844.399: just a dot type
+845.12 - 850.079: oh sorry a dot data type
+847.76 - 852.0: in 32 by default
+850.079 - 855.68: so even though these are small values by
+852.0 - 858.8: default it specifies that it should take
+855.68 - 861.8389999999999: up four bytes or be an n32 if we wanted
+858.8 - 864.24: to specify what type we wanted to store
+861.839 - 866.32: at so maybe we knew that we didn't have
+864.24 - 869.12: many like big values
+866.32 - 871.839: so we could do like an n16 and so that
+869.12 - 875.12: would take up less size and you can see
+871.839 - 877.519: the difference in size and i say
+875.12 - 878.24: so right now it's in 16 and if i want to
+877.519 - 880.0: see
+878.24 - 882.48: the size there's a couple different i
+880.0 - 884.48: guess important functions with this
+882.48 - 887.04: we could do a dot item size
+884.48 - 888.32: so this should tell me two bytes
+887.04 - 892.8: as it does
+888.32 - 894.399: if we left this as an int 32
+892.8 - 897.279: it will tell me
+894.399 - 899.68: four bytes down here
+897.279 - 902.88: as it does
+899.68 - 902.88: you can also do i think
+903.12 - 906.0: the total size
+911.279 - 915.199: um i guess a dot size
+913.92 - 917.12: is
+915.199 - 918.8: uh the total number of elements so the
+917.12 - 922.72: total size would be
+918.8 - 924.56: a dot size times a dot item size
+922.72 - 926.639: um another way to do that is i think
+924.56 - 928.56: just number of bytes
+926.639 - 929.759: as you see that's the same thing
+928.56 - 931.3599999999999: and
+929.759 - 933.759: um
+931.36 - 935.279: you can also do this with b it's like b
+933.759 - 937.44: dot item size
+935.279 - 939.92: bs are floats and i believe that this is
+937.44 - 942.399: an eight byte type so if i do b item
+939.92 - 944.399: size as you see yeah it's eight so
+942.399 - 946.56: floats are going to be bigger than
+944.399 - 949.04: um
+946.56 - 951.04: floats are bigger than integers
+949.04 - 953.04: usually unless you define this as like
+951.04 - 955.279: an int 64.
+953.04 - 956.7199999999999: and so yeah you really i usually don't
+955.279 - 958.16: even worry about the data type too much
+956.72 - 961.279: i don't specify it but if you really
+958.16 - 963.36: want to be efficient try to specify this
+961.279 - 965.6: so that it fits all your data
+963.36 - 967.6800000000001: but um
+965.6 - 969.6: if yeah i guess it fits all your data as
+967.68 - 970.399: tightly as possible all right so now
+969.6 - 972.8000000000001: that we've gone through some of the
+970.399 - 975.199: basics let's actually show how we access
+972.8 - 980.16: change specific elements rows columns
+975.199 - 980.16: etc so imagine we have the array
+981.519 - 984.9590000000001: there's gonna be a two dimensional array
+983.12 - 986.5600000000001: so
+984.959 - 989.92: i'm gonna make this kind of long and
+986.56 - 989.92: you'll see why in a second
+993.199 - 998.959: okay so this is a two by seven
+997.12 - 1002.16: array
+998.959 - 1002.16: if i print that out
+1002.88 - 1005.68: okay and i could
+1004.16 - 1008.7199999999999: prove that it's a two by seven by doing
+1005.68 - 1010.7199999999999: a dot shape that's just a reminder
+1008.72 - 1013.519: so what if we wanted to get this a
+1010.72 - 1017.1990000000001: specific element
+1013.519 - 1020.32: well to do that we can use this notation
+1017.199 - 1022.24: of row comma column
+1020.32 - 1023.759: so this is the row index this is the
+1022.24 - 1026.88: column index so i could just do
+1023.759 - 1026.88: something just like a
+1027.28 - 1032.16: let's say i wanted to get this 13 right
+1030.079 - 1034.319: here well that would be in the
+1032.16 - 1037.1200000000001: second row but because we started python
+1034.319 - 1038.72: indexing at zero be the first row
+1037.12 - 1042.3999999999999: and then the
+1038.72 - 1044.48: zero one two three four five fifth
+1042.4 - 1047.039: column
+1044.48 - 1049.039: so yeah that gives us the 13 as you see
+1047.039 - 1051.2: down here and one thing that's kind of
+1049.039 - 1053.84: cool is you can also
+1051.2 - 1056.24: use the negative notation similar to
+1053.84 - 1058.0: lists so i could also say the negative
+1056.24 - 1059.679: second element would be
+1058.0 - 1062.08: 13 as well because this would be
+1059.679 - 1063.44: negative 1 and then negative 2.
+1062.08 - 1066.0: so there's a couple different ways to do
+1063.44 - 1067.44: this but we'll stick with the first one
+1066.0 - 1070.16: okay let's say we wanted to get a
+1067.44 - 1070.16: specific
+1072.16 - 1075.6000000000001: i can't spell
+1074.16 - 1077.3600000000001: row
+1075.6 - 1079.36: that's pretty straight forward as well
+1077.36 - 1081.84: so in this case if we wanted the first
+1079.36 - 1084.1599999999999: row we would do zero and then because we
+1081.84 - 1086.799: want all columns we use the basic slice
+1084.16 - 1088.0800000000002: syntax similar to lists i can just do a
+1086.799 - 1089.36: single column
+1088.08 - 1090.6399999999999: and that will get me everything in the
+1089.36 - 1092.799: row
+1090.64 - 1095.039: that's nice what if we want a
+1092.799 - 1096.48: specific column well if you know how to
+1095.039 - 1099.76: do rows you probably know how to do
+1096.48 - 1101.76: columns a let's say we wanted
+1099.76 - 1103.039: this row right or this column right here
+1101.76 - 1105.6: three and ten
+1103.039 - 1106.84: that would be all the rows and then the
+1105.6 - 1109.039: zero one
+1106.84 - 1111.039: two column
+1109.039 - 1112.96: that gives me the 310
+1111.039 - 1114.72: and from here we can do even some more
+1112.96 - 1115.1000000000001: like tricky stuff so
+1114.72 - 1116.88: um
+1115.1 - 1119.1999999999998: [Music]
+1116.88 - 1120.96: uh
+1119.2 - 1123.28: let me just say getting
+1120.96 - 1125.1200000000001: a little more fancy
+1123.28 - 1126.799: and we have the
+1125.12 - 1129.28: start index
+1126.799 - 1130.8799999999999: this is just a reminder start index
+1129.28 - 1134.24: end index
+1130.88 - 1137.3600000000001: and then finally the step size
+1134.24 - 1140.0: so if i wanted to let's say get
+1137.36 - 1141.84: between the numbers two and six every
+1140.0 - 1143.36: other element so two
+1141.84 - 1147.039: four and six
+1143.36 - 1149.6: well to specify that i would do
+1147.039 - 1151.76: well i want the first row
+1149.6 - 1153.36: and then i want to start at the first
+1151.76 - 1154.72: element
+1153.36 - 1156.0: the two
+1154.72 - 1158.799: and i actually screw that up it should
+1156.0 - 1160.88: be one so i start at the two then i want
+1158.799 - 1164.08: to end here at the six
+1160.88 - 1166.5590000000002: which is the
+1164.08 - 1168.24: it's exclusive so that would be
+1166.559 - 1170.16: uh i want to actually go to the sixth
+1168.24 - 1172.08: element and then i want to
+1170.16 - 1174.559: step by two because i wanted two four
+1172.08 - 1177.28: six so i do one six two
+1174.559 - 1180.32: and that gives me two four six and i can
+1177.28 - 1181.84: also use the negative here and do like
+1180.32 - 1184.0: negative two
+1181.84 - 1185.9189999999999: ah what happened there oh shoot that was
+1184.0 - 1188.559: going backwards i didn't want to change
+1185.919 - 1190.48: it there i wanted to change the six to
+1188.559 - 1192.72: be negative two
+1190.48 - 1194.64: ah okay it's exclusive so i wanted this
+1192.72 - 1196.24: to actually be negative one
+1194.64 - 1197.2800000000002: a little bit more of a fancy way to do
+1196.24 - 1200.32: that
+1197.28 - 1201.52: okay so that's how you access elements
+1200.32 - 1202.96: and then if we wanted to change
+1201.52 - 1205.039: something it's pretty straightforward
+1202.96 - 1207.6000000000001: too let's say i wanted to change that 13
+1205.039 - 1209.76: that i originally accessed
+1207.6 - 1210.6399999999999: well i can just do
+1209.76 - 1211.6: like
+1210.64 - 1214.7990000000002: 20.
+1211.6 - 1214.799: if i print out a now
+1215.039 - 1218.24: that original element that was 13 is now
+1217.28 - 1220.3999999999999: 20
+1218.24 - 1222.0: and you can do the same thing for
+1220.4 - 1224.3200000000002: um
+1222.0 - 1225.76: series of numbers so like for an entire
+1224.32 - 1227.9189999999999: column let's say we wanted to replace
+1225.76 - 1230.72: this 310 column
+1227.919 - 1232.88: i would do something like
+1230.72 - 1235.1200000000001: a
+1232.88 - 1237.7600000000002: colon two
+1235.12 - 1239.12: equals let's say i wanted it to be all
+1237.76 - 1242.0: fives
+1239.12 - 1245.4399999999998: i could start like this
+1242.0 - 1246.72: and as you see it's all fives five five
+1245.44 - 1248.0: and then if i wanted it to be two
+1246.72 - 1250.88: different numbers you just kind of
+1248.0 - 1252.88: specify the same shape as
+1250.88 - 1254.24: what you've subsequent so it'd be like
+1252.88 - 1256.48: one two
+1254.24 - 1259.36: so now you see that we have a one two in
+1256.48 - 1259.3600000000001: that's position
+1259.76 - 1264.1589999999999: really quickly let's just show a 3d
+1262.0 - 1269.28: example
+1264.159 - 1269.2800000000002: if i had a 3d so we'll say b equals
+1273.679 - 1280.799: numpy array of all this and if i print
+1278.72 - 1280.799: b
+1283.84 - 1286.799: so if we want to get a specific element
+1285.6 - 1288.6399999999999: here
+1286.799 - 1291.6: the recommendation i have is work
+1288.64 - 1294.0800000000002: outside in so work outside in so let's
+1291.6 - 1297.28: say i wanted this four right here
+1294.08 - 1299.52: well the farthest outside would be which
+1297.28 - 1302.48: one of these do i want and i want the
+1299.52 - 1305.039: first set so i want this area right here
+1302.48 - 1308.24: so if i wanted that i would do b
+1305.039 - 1310.559: zero and then now that i'm in here i
+1308.24 - 1312.24: want the second row
+1310.559 - 1313.84: so i want the three four
+1312.24 - 1317.28: so that would be one
+1313.84 - 1318.799: and now that i'm within this i want the
+1317.28 - 1320.6399999999999: first
+1318.799 - 1322.24: or the second yeah the second element
+1320.64 - 1324.48: but the first index
+1322.24 - 1326.88: like that so that gives me the four and
+1324.48 - 1329.44: you can do similar type stuff with like
+1326.88 - 1331.8400000000001: the colons in here so each one of these
+1329.44 - 1333.6000000000001: dimensions that you're indexing you can
+1331.84 - 1335.76: be all fancy with
+1333.6 - 1337.6: uh how you access elements so i can do
+1335.76 - 1338.799: something like this
+1337.6 - 1341.6: and
+1338.799 - 1343.2: you know get three four seven eight you
+1341.6 - 1344.559: can kind of play around with this and
+1343.2 - 1346.32: see how
+1344.559 - 1348.08: changing different things changes what
+1346.32 - 1349.52: you get
+1348.08 - 1350.72: and if you wanted to replace in this
+1349.52 - 1352.4: case
+1350.72 - 1354.159: um
+1352.4 - 1356.96: basically you just have to create a
+1354.159 - 1359.1200000000001: subsequence that's the same dimension
+1356.96 - 1360.72: so if i did b
+1359.12 - 1362.8799999999999: one
+1360.72 - 1364.4: this that gives me three four seven
+1362.88 - 1365.6000000000001: eight let's say i wanted to change that
+1364.4 - 1368.0800000000002: to
+1365.6 - 1370.6399999999999: nine nine
+1368.08 - 1370.6399999999999: eight eight
+1371.12 - 1375.9189999999999: as long as it's the same dimension
+1373.6 - 1377.52: it's gonna work so nine nine eight eight
+1375.919 - 1379.679: if i try to like do something like nine
+1377.52 - 1380.799: nine nine eight eight it's gonna have an
+1379.679 - 1382.159: error
+1380.799 - 1383.36: all right so that's the basics of
+1382.159 - 1385.1200000000001: indexing
+1383.36 - 1386.84: i think by the at the end of the video
+1385.12 - 1389.9189999999999: i'll do a little like
+1386.84 - 1392.32: um challenge problem on like some
+1389.919 - 1394.0800000000002: advanced indexing so look at the end of
+1392.32 - 1395.76: the video for that all right next let's
+1394.08 - 1398.32: go through how to initialize all sorts
+1395.76 - 1401.84: of different types of arrays so to start
+1398.32 - 1404.32: off let's uh initialize in all zeros
+1401.84 - 1406.6399999999999: matrix
+1404.32 - 1410.08: and to do that there's a nice built-in
+1406.64 - 1412.96: function called np.zeros
+1410.08 - 1415.12: and we can first i guess actually all we
+1412.96 - 1417.919: really need to do is specify a shape so
+1415.12 - 1420.4799999999998: i did like mp05 it's gonna just give me
+1417.919 - 1422.159: a vector of five length five but i also
+1420.48 - 1422.88: can pass in
+1422.159 - 1424.72: a
+1422.88 - 1427.3600000000001: more complex shape so if i wanted it to
+1424.72 - 1428.32: be like a two by two or two by three
+1427.36 - 1430.08: let's say
+1428.32 - 1432.72: as you see there i could do three
+1430.08 - 1434.24: dimensional two by three by three
+1432.72 - 1435.2: you could even do four dimensional if i
+1434.24 - 1437.84: wanted to
+1435.2 - 1440.64: two by three by three by two
+1437.84 - 1443.279: it gets pretty crazy but yeah uh you can
+1440.64 - 1446.159: do all sorts of
+1443.279 - 1446.159: zeros with that
+1446.559 - 1453.36: next let's do an all ones matrix pretty
+1449.84 - 1455.12: similar to the last one and p dot ones
+1453.36 - 1456.6399999999999: of
+1455.12 - 1460.2399999999998: let's say
+1456.64 - 1462.3200000000002: four by two by two
+1460.24 - 1464.88: and there you go and you can also
+1462.32 - 1468.6399999999999: specify the data type here so if you
+1464.88 - 1471.2: wanted like all ones but in 32
+1468.64 - 1472.7990000000002: uh you can go ahead and do that so all
+1471.2 - 1474.96: ones
+1472.799 - 1476.8799999999999: all zeros
+1474.96 - 1479.6000000000001: however you might want to initialize a
+1476.88 - 1482.3200000000002: matrix that's not
+1479.6 - 1485.52: ones or zeros any other number
+1482.32 - 1487.6789999999999: so for that you can do np.full
+1485.52 - 1490.48: and this one takes in two parameters so
+1487.679 - 1493.1200000000001: the first is the shape so
+1490.48 - 1495.7: two by two and then the next is the
+1493.12 - 1496.799: value so if i wanted all 99s
+1495.7 - 1498.8400000000001: [Music]
+1496.799 - 1502.8799999999999: then it's a two by two with
+1498.84 - 1504.3999999999999: 99 another useful
+1502.88 - 1506.88: and you can you know that has a data
+1504.4 - 1508.72: type too so if i wanted that to be float
+1506.88 - 1511.3600000000001: 32
+1508.72 - 1511.3600000000001: there you go
+1513.6 - 1517.76: and i'll put a link in the description
+1515.52 - 1519.6: to a list full of these like array
+1517.76 - 1523.039: creation routines
+1519.6 - 1527.7199999999998: uh useful to know is there's also this
+1523.039 - 1527.72: full like um
+1529.679 - 1534.72: there's this full like method and
+1532.159 - 1536.48: basically that just allows us to take a
+1534.72 - 1537.44: shape that's already built so let's
+1536.48 - 1541.1200000000001: imagine
+1537.44 - 1544.3200000000002: we wanted to reuse that
+1541.12 - 1545.76: this array that we i guess had in in the
+1544.32 - 1546.72: last section
+1545.76 - 1548.1589999999999: a
+1546.72 - 1549.84: well i think it's still loaded and let
+1548.159 - 1553.6000000000001: me just make sure
+1549.84 - 1557.4399999999998: well i can pass in and make a
+1553.6 - 1561.4399999999998: array that's the same size size
+1557.44 - 1563.679: of fours let's say by doing full
+1561.44 - 1563.679: like
+1564.0 - 1567.6: or actually i think i don't even have to
+1565.279 - 1568.96: pass in
+1567.6 - 1571.12: a dot shape
+1568.96 - 1573.6000000000001: i just have to pass in a
+1571.12 - 1575.279: there we go if i didn't use full like i
+1573.6 - 1576.1589999999999: would have to do full
+1575.279 - 1577.6: of
+1576.159 - 1579.2: a dot shape i don't know if that's that
+1577.6 - 1583.9599999999998: useful for you but
+1579.2 - 1583.96: i guess it's potentially good to know
+1585.679 - 1591.279: okay next one let's say we wanted to
+1589.039 - 1593.44: initialize
+1591.279 - 1593.44: a
+1593.6 - 1601.1999999999998: array or a matrix of random numbers so
+1597.76 - 1606.0: random decimal numbers to start
+1601.2 - 1607.8400000000001: to do that we do np dot random.rand
+1606.0 - 1610.4: and we specify the shape
+1607.84 - 1612.799: so let's say four by two
+1610.4 - 1615.039: oh no what did i do wrong
+1612.799 - 1615.039: uh
+1615.12 - 1619.84: huh
+1616.96 - 1619.8400000000001: actually confused
+1620.08 - 1625.24: tuple state
+1622.24 - 1625.24: oh
+1626.4 - 1630.0: okay yeah this one's a little bit
+1627.679 - 1632.88: different so instead of passing in a
+1630.0 - 1634.4: tuple you can pass in directly the
+1632.88 - 1636.5590000000002: integers you wanna
+1634.4 - 1638.64: the integers of the shape so it's a kind
+1636.559 - 1641.12: of a weird thing to remember
+1638.64 - 1642.96: so if i did the 4x2 this way i would
+1641.12 - 1644.6399999999999: actually pass it in like that and when
+1642.96 - 1646.72: you get errors like this oftentimes you
+1644.64 - 1648.72: can just do a quick google search
+1646.72 - 1650.48: and realize that that's what you need to
+1648.72 - 1652.559: do so i can even keep going so i could
+1650.48 - 1656.159: do a four by two by three
+1652.559 - 1658.96: of random numbers between 0 and 1.
+1656.159 - 1660.64: i could also pass in something like
+1658.96 - 1663.919: a dot shape i don't know if this would
+1660.64 - 1666.0: work let's try
+1663.919 - 1669.1200000000001: yeah so if you wanted to pass in like a
+1666.0 - 1671.12: shape you can do a random sample
+1669.12 - 1673.84: a dot shape
+1671.12 - 1677.6: and that now you see
+1673.84 - 1679.76: gives us the same shape as our a from
+1677.6 - 1682.08: up here
+1679.76 - 1685.039: so yeah rand and then there's random
+1682.08 - 1688.799: sample which is another method
+1685.039 - 1690.08: we'll keep it as random four by two
+1688.799 - 1692.48: okay what if you didn't want just
+1690.08 - 1696.12: decimal numbers but you wanted random
+1692.48 - 1696.1200000000001: like integer values
+1697.039 - 1701.2: well to do that
+1698.64 - 1704.159: we can do
+1701.2 - 1705.279: random.rand
+1704.159 - 1708.279: i'm getting
+1705.279 - 1708.279: np.random.brandint
+1708.48 - 1712.72: and in this one we're gonna pass in the
+1710.72 - 1714.799: start value or if you don't specify a
+1712.72 - 1716.0: start value it's gonna just start at
+1714.799 - 1717.52: zero
+1716.0 - 1720.799: um
+1717.52 - 1722.399: and so if you don't specify a shape then
+1720.799 - 1725.9189999999999: it's just gonna do one number so let's
+1722.399 - 1727.9189999999999: say we wanted a three by three
+1725.919 - 1730.64: ah what did i do wrong
+1727.919 - 1732.24: and this is not shaped it's actually
+1730.64 - 1734.0800000000002: size
+1732.24 - 1736.08: and yeah all the documentation has these
+1734.08 - 1738.1589999999999: like you know you're not expected to
+1736.08 - 1740.559: memorize all of these things what i
+1738.159 - 1741.919: think it is helpful to see is that you
+1740.559 - 1743.2: see that you can do these types of
+1741.919 - 1744.7990000000002: things so like when you're thinking
+1743.2 - 1746.799: about a problem
+1744.799 - 1748.8799999999999: you can like kind of point back like oh
+1746.799 - 1750.8799999999999: i remember that that's possible
+1748.88 - 1755.24: uh maybe do a google search on how to
+1750.88 - 1755.24: get it but yeah random.random07
+1755.6 - 1760.1589999999999: with size 3x3 is here you can also
+1758.32 - 1762.559: specify like a different parameter so
+1760.159 - 1764.72: let's say i wanted four to seven
+1762.559 - 1766.48: and i think and if i keep running this
+1764.72 - 1768.72: too it's kind of cool you can see it
+1766.48 - 1770.72: changing and so it looks like that seven
+1768.72 - 1772.88: is exclusive so if i wanted to include
+1770.72 - 1774.64: seven i would stop a little bit later
+1772.88 - 1777.279: you could also throw in like negative
+1774.64 - 1777.279: numbers here
+1777.76 - 1781.52: cool
+1779.12 - 1783.1999999999998: all right uh what else other than a
+1781.52 - 1786.0: random integers maybe you wanted to do
+1783.2 - 1788.799: like the identity matrix you do
+1786.0 - 1790.48: identity of three this one only needs
+1788.799 - 1792.559: one parameter because the identity
+1790.48 - 1795.279: matrix
+1792.559 - 1798.48: by its nature is going to be a square
+1795.279 - 1798.48: major matrix
+1803.279 - 1806.399: what else is useful
+1807.36 - 1812.559: maybe it's useful to repeat a array a
+1810.08 - 1815.12: few times so to do that you could do
+1812.559 - 1816.799: say we had the array
+1815.12 - 1819.039: um
+1816.799 - 1822.399: one two three
+1819.039 - 1825.12: let's say i wanted to repeat that
+1822.399 - 1825.12: three times
+1828.0 - 1832.96: pass in the array you want to repeat
+1830.08 - 1835.1999999999998: and then that's print r1 see what
+1832.96 - 1836.72: happens
+1835.2 - 1839.039: okay
+1836.72 - 1841.279: and then if i specify the axis equals
+1839.039 - 1842.0: zero oh no it did do anything
+1841.279 - 1843.44: uh
+1842.0 - 1845.52: what i can do is make this a two
+1843.44 - 1847.76: dimensional array i think because it was
+1845.52 - 1850.1589999999999: a vector it didn't do what i wanted to
+1847.76 - 1852.24: what i wanted to do is one two three or
+1850.159 - 1853.7600000000002: one two three
+1852.24 - 1855.44: one two three
+1853.76 - 1858.32: one two three
+1855.44 - 1860.64: so if i wanted to do that
+1858.32 - 1863.12: now i made this a two dimensional array
+1860.64 - 1865.8400000000001: and it will repeat the inner part
+1863.12 - 1867.76: uh on the zeroth axis so it'll be
+1865.84 - 1870.9599999999998: basically making it rows
+1867.76 - 1872.96: there you go so if i made this
+1870.96 - 1875.6000000000001: equal to one that's going to be what we
+1872.96 - 1875.6000000000001: saw before
+1876.799 - 1879.799: cool
+1894.32 - 1898.399: okay so next here's a picture
+1897.12 - 1900.32: of an array i want you to try to
+1898.399 - 1902.1589999999999: initialize using everything that we kind
+1900.32 - 1904.32: of just went through
+1902.159 - 1907.519: so all these different methods
+1904.32 - 1909.4399999999998: so look at this picture and then try to
+1907.519 - 1910.96: put it together without just manually
+1909.44 - 1913.3600000000001: typing out all the numbers because you
+1910.96 - 1916.24: can imagine like this isn't too too big
+1913.36 - 1918.0: but if you got into a matrix that was
+1916.24 - 1919.679: massive you'd want to know how to build
+1918.0 - 1922.399: it up using these kind of like
+1919.679 - 1924.48: fundamental concepts
+1922.399 - 1925.76: okay so here's the solution to that so i
+1924.48 - 1928.64: can do
+1925.76 - 1929.919: output equals
+1928.64 - 1931.6000000000001: i'm going to start with making
+1929.919 - 1934.24: everything ones
+1931.6 - 1936.799: so ones and it's gonna be a five by five
+1934.24 - 1936.799: of ones
+1937.36 - 1942.6399999999999: print output
+1940.159 - 1944.0: so this is what i have now
+1942.64 - 1946.3200000000002: okay and now basically what we're gonna
+1944.0 - 1947.6: do is fill in this middle part with
+1946.32 - 1948.72: zeros
+1947.6 - 1951.12: so
+1948.72 - 1953.279: z i'm going to just say equals np dot
+1951.12 - 1954.799: zeros and that's going to be a three by
+1953.279 - 1956.799: three
+1954.799 - 1960.0: and if i print
+1956.799 - 1962.399: z now we have this
+1960.0 - 1964.24: now what i can do is fill in
+1962.399 - 1966.7199999999998: the
+1964.24 - 1969.519: middle element so that's 1 1
+1966.72 - 1971.3600000000001: with a 9
+1969.519 - 1973.039: and now if i print z we get this and
+1971.36 - 1976.9599999999998: then finally we need to replace the
+1973.039 - 1978.96: middle part of the ones matrix so output
+1976.96 - 1981.6000000000001: the middle part so that's going to be
+1978.96 - 1984.159: the first row to the
+1981.6 - 1986.399: third row
+1984.159 - 1988.48: so i want the
+1986.399 - 1990.32: first row to the third row and then i
+1988.48 - 1991.519: want the same thing with columns because
+1990.32 - 1993.6: it's the middle
+1991.519 - 1995.279: first column to the
+1993.6 - 1997.1999999999998: third column and actually this is an
+1995.279 - 1998.399: exclusive value so it needs to go to
+1997.2 - 1999.63: four
+1998.399 - 2002.6989999999998: and that's going to equal
+1999.63 - 2002.699: [Music]
+2002.84 - 2008.399: z and now what happens when i print
+2006.0 - 2008.399: output
+2009.36 - 2013.039: is yay we got what we're looking for and
+2011.279 - 2013.84: actually one thing that i think is nice
+2013.039 - 2015.519: is
+2013.84 - 2017.9189999999999: instead of using four i can also do
+2015.519 - 2020.64: negative one so basically the from the
+2017.919 - 2021.519: first element to the last element
+2020.64 - 2023.76: uh
+2021.519 - 2025.519: do that and as you see it didn't change
+2023.76 - 2026.559: this last initialization i want to go
+2025.519 - 2029.1200000000001: through i guess is a little bit
+2026.559 - 2030.399: different it's uh over on the concept of
+2029.12 - 2032.4799999999998: copying but something you got to be
+2030.399 - 2035.6: really careful about so i'm just going
+2032.48 - 2035.6: to quickly mention it
+2039.279 - 2041.6: i want to do explanation points there we
+2040.72 - 2045.3600000000001: go
+2041.6 - 2046.559: um okay so imagine we have two
+2045.36 - 2049.5989999999997: arrays
+2046.559 - 2051.919: or we have one array
+2049.599 - 2054.7200000000003: let's call it a
+2051.919 - 2055.919: and so now a is just a normal array
+2054.72 - 2058.3199999999997: as you can see
+2055.919 - 2061.839: and let's say we want to make b a direct
+2058.32 - 2063.9190000000003: copy of a so now i'm going to just do b
+2061.839 - 2067.44: equals a
+2063.919 - 2069.2: and then print out b and as you can see
+2067.44 - 2071.2000000000003: it's still one two three
+2069.2 - 2073.2: and so i'm like okay i have this copy
+2071.2 - 2075.2799999999997: like things are cool it's fine
+2073.2 - 2077.6789999999996: i want to change the first element in b
+2075.28 - 2080.079: so i'm going to do b zero equals
+2077.679 - 2081.44: 100.
+2080.079 - 2083.2000000000003: here's the issue
+2081.44 - 2084.7200000000003: my printout b
+2083.2 - 2087.6789999999996: looks good
+2084.72 - 2089.2799999999997: the issue lies in if i print out a
+2087.679 - 2091.28: look what happens
+2089.28 - 2094.0: i just printed out a
+2091.28 - 2096.48: and a now has
+2094.0 - 2098.24: a 100 instead of the 123 that i
+2096.48 - 2100.32: initially set it as
+2098.24 - 2102.4799999999996: and that's because when we did b equals
+2100.32 - 2103.599: a we just said that
+2102.48 - 2106.16: the
+2103.599 - 2109.04: the variable name b points the same
+2106.16 - 2110.48: thing as a does we didn't tell like
+2109.04 - 2112.56: numpy to
+2110.48 - 2114.56: make a copy of what is
+2112.56 - 2116.7999999999997: the contents of a
+2114.56 - 2118.64: so that's that's why because we're just
+2116.8 - 2120.88: pointing at the same exact thing that a
+2118.64 - 2122.7999999999997: is pointing when we change the value it
+2120.88 - 2124.48: also changes the value of a
+2122.8 - 2126.8: so if we want to prevent that we can use
+2124.48 - 2129.76: this dot copy function oh sorry i
+2126.8 - 2131.28: shouldn't do it yet um b equals a dot
+2129.76 - 2133.6800000000003: copy
+2131.28 - 2135.8390000000004: and then when we run the cell as you can
+2133.68 - 2137.52: see one two three
+2135.839 - 2140.48: it's still there because now we're just
+2137.52 - 2142.48: copying the contents of what's in a
+2140.48 - 2144.4: and if i print b
+2142.48 - 2147.2: it has the 100 200
+2144.4 - 2149.839: 100 2 3. okay so one of the big uses of
+2147.2 - 2151.359: numpy is all the math capabilities it
+2149.839 - 2154.0789999999997: offers
+2151.359 - 2156.16: um so just to kind of show some of that
+2154.079 - 2158.5600000000004: um one thing that it can do is
+2156.16 - 2160.24: element-wise um
+2158.56 - 2162.56: i'll just make those four values
+2160.24 - 2165.68: element-wise addition subtractions
+2162.56 - 2167.52: element y is i guess arithmetic so
+2165.68 - 2169.839: here we have a
+2167.52 - 2172.24: print out a
+2169.839 - 2174.24: um and if i wanted to do something like
+2172.24 - 2176.7999999999997: a plus two
+2174.24 - 2178.72: um adds two to each element you can do a
+2176.8 - 2180.8: minus two
+2178.72 - 2182.24: subtract two from each element a
+2180.8 - 2183.92: times two
+2182.24 - 2188.24: as you can see
+2183.92 - 2189.599: uh a divided by two
+2188.24 - 2191.7599999999998: um
+2189.599 - 2193.599: divides everything by two
+2191.76 - 2194.96: uh one thing to note with and you can
+2193.599 - 2197.839: also do stuff like
+2194.96 - 2199.04: uh a plus equals two so now i printed
+2197.839 - 2201.119: out a
+2199.04 - 2203.68: in this column
+2201.119 - 2206.48: it's going to be
+2203.68 - 2207.5989999999997: 2 plus everything
+2206.48 - 2210.2400000000002: it's kind of cool you can do like the
+2207.599 - 2212.48: same type of math that you can do in
+2210.24 - 2214.3199999999997: python
+2212.48 - 2216.0: you can also create another array an
+2214.32 - 2219.04: mp.array
+2216.0 - 2219.04: and that's like let's say
+2219.68 - 2221.7599999999998: one
+2220.64 - 2223.04: zero
+2221.76 - 2224.2400000000002: one
+2223.04 - 2226.88: zero
+2224.24 - 2229.04: and i could do something like a plus b
+2226.88 - 2230.48: and that should be two two
+2229.04 - 2232.8: four four
+2230.48 - 2235.119: oh and because i added
+2232.8 - 2236.6400000000003: if i rerun this okay two two four four
+2235.119 - 2238.48: like we expect
+2236.64 - 2244.0789999999997: uh so all sorts of useful things you
+2238.48 - 2246.48: could even do like a to the second power
+2244.079 - 2248.32: 1 4 9 16 and that might have made it a
+2246.48 - 2249.92: bigger data type i'm not sure
+2248.32 - 2251.76: um
+2249.92 - 2253.92: cool
+2251.76 - 2256.48: we can do stuff like
+2253.92 - 2262.2400000000002: take the sine of all the values so let's
+2256.48 - 2264.2400000000002: say we had a we do np dot sine pass in a
+2262.24 - 2266.8799999999997: gives us all the
+2264.24 - 2269.2799999999997: sinusoid of all those values which
+2266.88 - 2270.4: you know and you have like the cosine of
+2269.28 - 2272.0: all those values
+2270.4 - 2275.52: all sorts of useful things that you can
+2272.0 - 2278.0: form on an entire array or entire matrix
+2275.52 - 2281.04: all at once and if you want all the
+2278.0 - 2282.96: different things that you can do
+2281.04 - 2285.52: i'll paste in a link
+2282.96 - 2286.96: here this will all be part of the as i
+2285.52 - 2289.2: mentioned before i have this on my
+2286.96 - 2292.7200000000003: github so if you look in the description
+2289.2 - 2296.0: you can find this exact notebook
+2292.72 - 2299.839: so yeah look up the routines right here
+2296.0 - 2299.839: for math all sorts of cool stuff
+2300.24 - 2304.3999999999996: all right
+2301.119 - 2306.7200000000003: moving on we're gonna still be in math
+2304.4 - 2309.359: but let's jump into
+2306.72 - 2312.0: linear algebra type stuff so here we are
+2309.359 - 2314.16: doing linear algebra
+2312.0 - 2315.68: so this is kind of like basic
+2314.16 - 2316.7999999999997: all sorts of functions you can do on
+2315.68 - 2318.96: elements
+2316.8 - 2320.7200000000003: uh linear algebra so this is like really
+2318.96 - 2322.7200000000003: i feel like when i'm using matlab it
+2320.72 - 2326.72: would be doing these linear algebra type
+2322.72 - 2328.3999999999996: stuff so let's say we have two matrices
+2326.72 - 2330.7999999999997: and the big difference with linear
+2328.4 - 2332.48: algebra is like we're not doing element
+2330.8 - 2334.6400000000003: wise so like
+2332.48 - 2337.119: in this case this b
+2334.64 - 2340.3199999999997: we're doing element-wise computation so
+2337.119 - 2340.32: like a times b
+2342.16 - 2346.48: in you know linear algebra you're trying
+2344.72 - 2350.48: to multiply matrices and that's a
+2346.48 - 2350.48: different process so let's say we have
+2350.72 - 2353.839: two matrices we'll have a
+2352.56 - 2355.68: and i'm going to use the syntax we
+2353.839 - 2361.2799999999997: learned about earlier i'm going to say
+2355.68 - 2361.2799999999997: this is a 2 by 3 matrix of all twos
+2361.68 - 2367.52: or actually let's make this
+2364.079 - 2369.2000000000003: 2 by 3 matrix of ones
+2367.52 - 2372.88: so we have a
+2369.2 - 2372.8799999999997: as you can see and then we'll have
+2373.92 - 2380.64: b which is equal to np dot full
+2377.76 - 2383.2000000000003: it's going to be a 3 by 2
+2380.64 - 2385.839: and it's going to be a value 2.
+2383.2 - 2388.0: so if i print out b
+2385.839 - 2390.7999999999997: now we have this and if you remember
+2388.0 - 2393.52: linear algebra you have to have the
+2390.8 - 2394.88: columns of the first matrix be the equal
+2393.52 - 2396.64: to the
+2394.88 - 2398.7200000000003: rows of the second one so as you can see
+2396.64 - 2400.7999999999997: this says three columns and this has
+2398.72 - 2403.7599999999998: three rows so we're good there so we
+2400.8 - 2406.1600000000003: would multiply this row by this column
+2403.76 - 2407.599: um and you know you do the the process
+2406.16 - 2408.72: of matric multiplication we're not going
+2407.599 - 2411.119: to walk through the whole thing but we
+2408.72 - 2416.16: should end up with a 2
+2411.119 - 2416.1600000000003: by 2 matrix at the end if we want to do
+2416.4 - 2419.28: matrix multiplication and it doesn't
+2417.92 - 2420.64: just automatically occur if you try to
+2419.28 - 2422.0: do a times b
+2420.64 - 2425.7599999999998: it's not going to work because these are
+2422.0 - 2427.92: different sizes so we can do is mp has a
+2425.76 - 2430.7200000000003: matrix multiply function and if i pass
+2427.92 - 2432.2400000000002: an a then pass in b
+2430.72 - 2436.48: we get
+2432.24 - 2439.2799999999997: 6 6 6 6. did i say enough sixes
+2436.48 - 2440.96: i don't know but uh yeah it uh multiply
+2439.28 - 2441.8390000000004: those two matrices
+2440.96 - 2443.839: um
+2441.839 - 2445.599: you know and if i try to switch up this
+2443.839 - 2447.7599999999998: dimension in the middle
+2445.599 - 2450.56: uh it's not gonna work because it's now
+2447.76 - 2450.5600000000004: incompatible
+2450.88 - 2454.4: uh yeah that's matrix multiplication
+2453.119 - 2456.56: you could also want to do maybe some
+2454.4 - 2459.52: other stuff with matrices so let's
+2456.56 - 2459.92: imagine i wanted to create the or to
+2459.52 - 2461.04: find the
+2459.92 - 2462.88: [Music]
+2461.04 - 2465.2: um
+2462.88 - 2467.92: let's say determinant of a matrix so
+2465.2 - 2469.4399999999996: we could as a sanity check you know make
+2467.92 - 2472.4: c equal the
+2469.44 - 2474.2400000000002: identity matrix and if you are familiar
+2472.4 - 2476.96: with linear algebra you know that
+2474.24 - 2478.7999999999997: the identity matrix has a determinant of
+2476.96 - 2480.7200000000003: one
+2478.8 - 2482.079: so if i do linear algebra dot
+2480.72 - 2484.56: determinant
+2482.079 - 2487.28: of c we should get one
+2484.56 - 2490.96: 1.0 as we get so
+2487.28 - 2490.96: find the determinant
+2491.76 - 2496.88: you know there's all sorts of other good
+2493.28 - 2500.4: things like eigenvalues
+2496.88 - 2502.88: you know the inverse of a matrix so what
+2500.4 - 2504.8: what do you multiply by a matrix to get
+2502.88 - 2505.599: the identity matrix
+2504.8 - 2507.6800000000003: um
+2505.599 - 2508.6400000000003: and so yeah all sorts of good stuff on
+2507.68 - 2511.7599999999998: that
+2508.64 - 2511.7599999999998: like i guess i'll do
+2512.48 - 2516.72: and if you want to have all this
+2514.72 - 2518.24: information on the other types of linear
+2516.72 - 2521.2799999999997: algebra stuff
+2518.24 - 2523.68: here is some useful information
+2521.28 - 2526.1600000000003: definitely go to this link and as i've
+2523.68 - 2528.3999999999996: said a couple times in this video
+2526.16 - 2529.7599999999998: this notebook is on my github page so
+2528.4 - 2532.079: you can find
+2529.76 - 2533.8390000000004: all this there but yeah there's so many
+2532.079 - 2536.6400000000003: different things that you can do
+2533.839 - 2539.599: with matrices and linear algebra using
+2536.64 - 2543.839: the numpy library
+2539.599 - 2545.28: okay continuing onwards let's look at
+2543.839 - 2548.24: some
+2545.28 - 2550.2400000000002: statistics with numpy
+2548.24 - 2553.68: so kind of the easiest things we might
+2550.24 - 2553.68: think about when we think about
+2554.319 - 2558.8: sorry
+2555.119 - 2560.2400000000002: um statistics there's like min mean max
+2558.8 - 2564.8390000000004: etc
+2560.24 - 2564.839: so let's say we have this array
+2565.28 - 2569.76: so let's say we want to take the min of
+2566.72 - 2571.52: it you can just do np.min
+2569.76 - 2573.119: of stats
+2571.52 - 2574.68: that's going to give us the one that you
+2573.119 - 2578.6400000000003: see there you can do
+2574.68 - 2580.56: mpmax of stats
+2578.64 - 2583.2: six you could also do it
+2580.56 - 2584.7999999999997: on like a row basis so if i said axis
+2583.2 - 2587.7599999999998: equals one
+2584.8 - 2590.48: that's going to give me the min of the
+2587.76 - 2592.5600000000004: first row and the min of the
+2590.48 - 2595.2: second row or maybe this is a better way
+2592.56 - 2596.56: to see it if i said x is equal to zero
+2595.2 - 2597.9199999999996: well it's going to give me all the
+2596.56 - 2600.7999999999997: values that are up top here because
+2597.92 - 2603.119: those are all the the mins
+2600.8 - 2607.3590000000004: uh so yeah you can do all sorts of cool
+2603.119 - 2609.6800000000003: stuff with min and max with this
+2607.359 - 2612.16: same thing with max let's say x is equal
+2609.68 - 2612.16: to zero
+2612.64 - 2616.96: x equals one
+2614.24 - 2618.24: three and six is the biggest value
+2616.96 - 2620.16: three is the biggest value and the six
+2618.24 - 2623.52: is the biggest value you can also do
+2620.16 - 2625.44: np.sum of stats if i do it
+2623.52 - 2627.119: just as is it's going to sum up all the
+2625.44 - 2630.56: elements in the
+2627.119 - 2631.6800000000003: matrix and then same thing i can do row
+2630.56 - 2633.2: or column
+2631.68 - 2635.839: so
+2633.2 - 2638.319: actually equals 0 is going to add up all
+2635.839 - 2640.0: these terms going downwards next let's
+2638.319 - 2642.24: talk a little bit about reorganizing
+2640.0 - 2644.72: arrays so kind of the i would say the
+2642.24 - 2646.56: key method within reorganizing arrays so
+2644.72 - 2649.56: if i have the array i'm going to call it
+2646.56 - 2649.56: before
+2650.0 - 2655.68: and let's say that that is equal to
+2653.68 - 2660.56: this value right here
+2655.68 - 2662.72: so we have before i'll print before out
+2660.56 - 2664.88: looks like that so let's say we wanted
+2662.72 - 2667.2: to instead of this
+2664.88 - 2669.92: shape that it currently has which is a
+2667.2 - 2673.359: two by four
+2669.92 - 2675.119: um let's say we wanted to make it a
+2673.359 - 2678.24: i don't know a
+2675.119 - 2680.48: eight by one or something or maybe a
+2678.24 - 2682.319: four by two um
+2680.48 - 2684.4: or a yeah all sorts of different things
+2682.319 - 2686.96: we could do i'll start with eight by one
+2684.4 - 2688.319: so we have before
+2686.96 - 2691.92: and if we wanted to make it something
+2688.319 - 2694.72: else we can do after equals
+2691.92 - 2697.04: before dot reshape and then we pass in
+2694.72 - 2699.2: the new size we want it to have so if we
+2697.04 - 2700.72: wanted it to be an eight by one
+2699.2 - 2703.2: you can pass it in like that and we can
+2700.72 - 2706.16: print out after
+2703.2 - 2708.0: as you can see it's an eight by one now
+2706.16 - 2709.839: i could also say maybe i wanted it to be
+2708.0 - 2711.68: a four by two
+2709.839 - 2714.48: so now you got that
+2711.68 - 2717.1189999999997: you could even pass it in as a
+2714.48 - 2718.88: two by two by two as long as it has the
+2717.119 - 2721.28: same amount of values like it's fair
+2718.88 - 2723.2000000000003: game so as you see
+2721.28 - 2724.5600000000004: two by two by two still works with the
+2723.2 - 2726.48: reshape
+2724.56 - 2728.319: uh what doesn't work is like if i wanted
+2726.48 - 2730.56: it to be two by three
+2728.319 - 2732.0: um the values don't fit in so when you
+2730.56 - 2733.839: get errors with using their shape it's
+2732.0 - 2735.28: usually because there's a mismatch
+2733.839 - 2739.7599999999998: between the shape you're trying to
+2735.28 - 2741.76: resize it to versus the original shape
+2739.76 - 2743.76: moving onwards let's look at vertical
+2741.76 - 2744.88: stacks so
+2743.76 - 2747.28: vertically
+2744.88 - 2749.76: stacking
+2747.28 - 2752.1600000000003: vectors or matrices
+2749.76 - 2754.4: and you know dimensions are important in
+2752.16 - 2756.7999999999997: vertical stack as well
+2754.4 - 2758.1600000000003: so vertical stacking matrices let's say
+2756.8 - 2761.52: we had
+2758.16 - 2763.52: these two arrays
+2761.52 - 2765.92: if i wanted to stack
+2763.52 - 2770.16: um you know one two three four on top of
+2765.92 - 2772.839: five six seven eight i can do mp.v stack
+2770.16 - 2776.16: and i can pass in v1
+2772.839 - 2778.4: v2 and as you see now they're part of
+2776.16 - 2780.7999999999997: the same matrix
+2778.4 - 2782.88: and one two three four is on top of five
+2780.8 - 2784.48: six seven eight what i can even do is
+2782.88 - 2786.88: keep passing these in so let's say i
+2784.48 - 2788.88: wanted like three copies of
+2786.88 - 2790.8: this five six seven eight and only one
+2788.88 - 2792.079: copy of this or i could enter tweet
+2790.8 - 2795.3590000000004: weave them
+2792.079 - 2798.0: that's a vertical stack
+2795.359 - 2800.64: horizontal stacks are pretty similar and
+2798.0 - 2803.599: also note here like i can't do that the
+2800.64 - 2804.72: size is mass mitch miss
+2803.599 - 2808.8: match
+2804.72 - 2809.839: so yep horizontal stack very similar
+2808.8 - 2812.1600000000003: um
+2809.839 - 2813.2: let's say we had
+2812.16 - 2815.1189999999997: um
+2813.2 - 2818.3999999999996: we'll use uh some notation we've learned
+2815.119 - 2820.319: before we had these two matrices
+2818.4 - 2823.839: so if i printed out h1
+2820.319 - 2826.96: you got like that and then h2 is this
+2823.839 - 2830.0789999999997: well i want h2 to be on the back of h1 i
+2826.96 - 2831.04: can just do an mp.h stack horizontal
+2830.079 - 2833.52: stack
+2831.04 - 2835.839: and that will be h1
+2833.52 - 2837.92: and then h2
+2835.839 - 2840.0789999999997: and that did not work
+2837.92 - 2841.28: because i did not surround this in
+2840.079 - 2842.96: parenthesis
+2841.28 - 2844.559: either parenthesis or brackets i think
+2842.96 - 2846.7200000000003: they both work yeah
+2844.559 - 2848.88: there you go so now we've
+2846.72 - 2850.8799999999997: horizontally stacked the zeros on top of
+2848.88 - 2852.8: the or to the right of the ones all
+2850.88 - 2856.079: right let's get into some miscellaneous
+2852.8 - 2857.6800000000003: things so first off imagine you have
+2856.079 - 2860.1600000000003: uh you know some sort of text file with
+2857.68 - 2861.9199999999996: all sorts of data and
+2860.16 - 2864.319: for whatever reason you choose you don't
+2861.92 - 2867.28: want to use pandas but you want to load
+2864.319 - 2869.04: all that data from that file into a
+2867.28 - 2871.52: numpy array
+2869.04 - 2872.48: well we can do that without too much
+2871.52 - 2875.28: trouble
+2872.48 - 2875.28: so i have this
+2875.359 - 2879.359: text file that i created as you can see
+2877.119 - 2880.88: here this is on my github page
+2879.359 - 2883.52: you can download it there this is just
+2880.88 - 2884.96: really simple data but it shows kind of
+2883.52 - 2887.119: what you can do
+2884.96 - 2890.079: with it all delimited by commas called
+2887.119 - 2890.079: data txt
+2890.319 - 2895.839: what i can do is i can do
+2893.2 - 2898.24: mp and i can use this function called
+2895.839 - 2900.72: gen from text
+2898.24 - 2903.2799999999997: and i pass in the name of the file which
+2900.72 - 2906.0: is data.txt and then i pass in a
+2903.28 - 2908.8: delimiter which is the separator and
+2906.0 - 2910.24: that's a comma and if i do that
+2908.8 - 2913.28: you see that i get
+2910.24 - 2915.5989999999997: that data that i just showed you
+2913.28 - 2917.8390000000004: um
+2915.599 - 2920.6400000000003: you get that i can increase
+2917.839 - 2920.64: the zoom here
+2922.319 - 2927.2: i get that um as an array so that's
+2925.04 - 2930.4: pretty nice so
+2927.2 - 2932.24: i'll just call this file data
+2930.4 - 2933.28: equals
+2932.24 - 2935.2: and
+2933.28 - 2936.1600000000003: file data
+2935.2 - 2937.839: yeah
+2936.16 - 2942.0: one thing you notice though is it
+2937.839 - 2944.16: automatically cast it to a
+2942.0 - 2946.0: float type
+2944.16 - 2949.44: and what if i wanted it to be an integer
+2946.0 - 2951.76: well i can do another function as type
+2949.44 - 2953.68: which basically copies all the data into
+2951.76 - 2957.3590000000004: a whatever
+2953.68 - 2959.7599999999998: format you specify so i'll say n32
+2957.359 - 2962.16: and as you can see now all this stuff is
+2959.76 - 2964.3190000000004: here and if i go ahead and print file
+2962.16 - 2967.359: data now
+2964.319 - 2969.04: it is back to what we had originally and
+2967.359 - 2971.2799999999997: the reason it's back is that this
+2969.04 - 2973.119: actually makes a copy because the
+2971.28 - 2974.8: float type and the n32 type are
+2973.119 - 2975.839: different sizes it can't just like in
+2974.8 - 2977.52: place
+2975.839 - 2980.319: um copy everything it doesn't really
+2977.52 - 2983.7599999999998: make sense to so if i did file data
+2980.319 - 2986.8: equals file data
+2983.76 - 2991.2000000000003: uh dot as type
+2986.8 - 2993.2000000000003: into 32 and then printed out file data
+2991.2 - 2995.5989999999997: as you can see now it's all floats so
+2993.2 - 2997.2: that's how you load data from a file and
+2995.599 - 2999.52: you can change up this delimiter based
+2997.2 - 3002.64: on how your data is split but i think
+2999.52 - 3004.559: that this gen from text will handle your
+3002.64 - 3006.8799999999997: new line breaks properly if that's how
+3004.559 - 3008.079: it's formatted
+3006.88 - 3009.76: write in the comments if you have any
+3008.079 - 3011.04: questions about this
+3009.76 - 3012.6400000000003: okay the second thing i want to go
+3011.04 - 3013.52: through is
+3012.64 - 3015.1189999999997: um
+3013.52 - 3017.44: what happened there
+3015.119 - 3019.6800000000003: i didn't want that to be marked down
+3017.44 - 3019.68: ah
+3019.839 - 3023.44: the second thing i want to go through
+3020.96 - 3024.839: with this miscellaneous section is
+3023.44 - 3028.16: some
+3024.839 - 3031.2: advanced indexing so there's some really
+3028.16 - 3032.8799999999997: cool stuff you can do with numpy
+3031.2 - 3035.04: i'm going to say
+3032.88 - 3036.319: boolean
+3035.04 - 3038.319: masking
+3036.319 - 3039.7599999999998: and advanced
+3038.319 - 3042.72: indexing
+3039.76 - 3045.44: so what can we do here so let's say i
+3042.72 - 3045.4399999999996: wanted to learn
+3045.52 - 3050.559: where in file data
+3048.16 - 3052.839: the value is greater than 50. so if i
+3050.559 - 3055.599: just type in file data greater than
+3052.839 - 3056.88: 50. it's pretty cool that you
+3055.599 - 3058.7200000000003: get
+3056.88 - 3061.119: false or true based on whether that
+3058.72 - 3062.9599999999996: specific location was greater than 50.
+3061.119 - 3065.04: so as you can see there's four falses
+3062.96 - 3068.319: and then a true if we go to our data
+3065.04 - 3070.16: four falses and then 196 is in fact
+3068.319 - 3071.7599999999998: greater than 50.
+3070.16 - 3073.5989999999997: so that's like one way and you can do
+3071.76 - 3075.6800000000003: all sorts of cool stuff with it it's
+3073.599 - 3076.559: like you could do greater than equal to
+3075.68 - 3079.04: you know
+3076.559 - 3080.559: all sorts of different combinations
+3079.04 - 3082.4: one thing that's pretty neat is you can
+3080.559 - 3083.599: do file data
+3082.4 - 3085.92: and then you can
+3083.599 - 3088.8: index based on
+3085.92 - 3089.52: where it is greater than 50.
+3088.8 - 3093.599: and
+3089.52 - 3095.359: by doing this you grab only the
+3093.599 - 3097.2000000000003: values that actually have a value
+3095.359 - 3099.2799999999997: greater than 50.
+3097.2 - 3101.68: so that is pretty cool and kind of the
+3099.28 - 3104.0: reason that this right here works is
+3101.68 - 3106.72: that one thing i did not
+3104.0 - 3109.359: mention until now
+3106.72 - 3113.2: is that you can
+3109.359 - 3114.88: can index with a list in numpy which is
+3113.2 - 3116.72: pretty cool so if you have the
+3114.88 - 3120.48: array
+3116.72 - 3121.52: one two three four five six seven eight
+3120.48 - 3123.28: nine
+3121.52 - 3127.2: and i wanted let's say
+3123.28 - 3129.599: the zeroth spot the second spot and then
+3127.2 - 3132.0789999999997: the last spot
+3129.599 - 3136.1600000000003: i could do
+3132.079 - 3137.92: mp or let's say that this is a
+3136.16 - 3139.44: i could do
+3137.92 - 3140.96: a of
+3139.44 - 3143.28: 0
+3140.96 - 3143.28: 1
+3143.359 - 3147.2799999999997: and or i wanted 2 3 and 9 so i would do
+3146.4 - 3148.2400000000002: 1
+3147.28 - 3150.559: 2
+3148.24 - 3152.4799999999996: and then 8.
+3150.559 - 3153.44: as you see that gives me two three and
+3152.48 - 3155.68: nine i
+3153.44 - 3158.079: passed in a list and it indexed those
+3155.68 - 3161.04: spots so basically it also works
+3158.079 - 3163.3590000000004: if you like had trues and falses it like
+3161.04 - 3165.359: basically if it is true then it knows to
+3163.359 - 3167.5989999999997: take it if it's false doesn't so that's
+3165.359 - 3170.0789999999997: why this up here
+3167.599 - 3170.079: works
+3178.88 - 3181.92: we could do all sorts of other things so
+3180.48 - 3184.8: let's say
+3181.92 - 3187.44: um i wanted to figure out
+3184.8 - 3190.88: if any value in any of these columns was
+3187.44 - 3192.88: greater than 50 so i can do a
+3190.88 - 3195.599: np.any
+3192.88 - 3197.28: file data greater than 50
+3195.599 - 3199.92: and the axis
+3197.28 - 3201.8390000000004: of zero so that should tell me like if
+3199.92 - 3204.0: we looked downwards
+3201.839 - 3206.72: on all of these are any of the values
+3204.0 - 3210.079: greater than 50. let's see what happens
+3206.72 - 3211.4399999999996: so false false false false true that's
+3210.079 - 3212.88: correct
+3211.44 - 3215.359: true these two values are greater than
+3212.88 - 3217.04: 50 this even though this one isn't
+3215.359 - 3218.0: um
+3217.04 - 3218.47: false
+3218.0 - 3220.88: true
+3218.47 - 3223.4399999999996: [Music]
+3220.88 - 3225.52: yeah true true false true
+3223.44 - 3227.28: cool so this is telling us you know
+3225.52 - 3228.8: where what columns have a value greater
+3227.28 - 3233.1600000000003: than 50
+3228.8 - 3233.1600000000003: and i can also do np.all
+3233.68 - 3238.0: and as you can see there's less trues in
+3235.68 - 3240.16: this case i think the only time that all
+3238.0 - 3241.2: the values are greater than 50 are right
+3240.16 - 3242.8799999999997: here
+3241.2 - 3244.16: yeah you see there's one true in the
+3242.88 - 3247.04: fifth spot
+3244.16 - 3251.2799999999997: which corresponds to this right here
+3247.04 - 3253.119: uh what else can we do with this
+3251.28 - 3254.2400000000002: um
+3253.119 - 3257.119: if you
+3254.24 - 3259.839: did axis equals one
+3257.119 - 3262.2400000000002: it's gonna be the rows
+3259.839 - 3264.5589999999997: you can also do multiple conditions so i
+3262.24 - 3267.04: could do like
+3264.559 - 3269.8390000000004: i want file data to be
+3267.04 - 3270.8: greater than 50
+3269.839 - 3274.0789999999997: and
+3270.8 - 3276.2400000000002: let's say file data is less than 100 and
+3274.079 - 3279.6800000000003: this syntax is very similar to pandas
+3276.24 - 3281.68: here and as i said before numpy builds
+3279.68 - 3282.72: is what's the base of panda so it makes
+3281.68 - 3285.2799999999997: sense
+3282.72 - 3285.2799999999997: ah no
+3286.16 - 3288.8799999999997: the
+3287.04 - 3290.4: truth value of an array with more than
+3288.88 - 3293.28: one element
+3290.4 - 3295.76: is ambiguous how do i do this
+3293.28 - 3298.2400000000002: i think if i do something like this it
+3295.76 - 3298.2400000000002: will work
+3302.48 - 3307.04: not positive let's see
+3305.44 - 3309.119: yeah what happened
+3307.04 - 3311.599: no i need to end it
+3309.119 - 3312.799: yeah cool so this is all the values that
+3311.599 - 3314.7200000000003: are
+3312.799 - 3316.96: greater than 50 but less than 100 so
+3314.72 - 3321.1189999999997: like the first true should happen at the
+3316.96 - 3322.64: sixth spot one two three four five six
+3321.119 - 3326.079: as you see
+3322.64 - 3326.0789999999997: uh and i could do something like
+3326.16 - 3329.839: all the spots if i wanted to
+3328.079 - 3330.799: make all this
+3329.839 - 3331.92: not
+3330.799 - 3334.96: so this
+3331.92 - 3337.04: means not greater than 50 and less than
+3334.96 - 3339.119: 100 this is going to be the reverse of
+3337.04 - 3342.0: what we just did
+3339.119 - 3343.359: so yeah now the
+3342.0 - 3346.64: um
+3343.359 - 3349.119: sixth spot is the first false
+3346.64 - 3350.799: so this meant not so yeah all sorts of
+3349.119 - 3354.319: cool stuff you can do with this boolean
+3350.799 - 3356.48: masking and advanced indexing
+3354.319 - 3358.079: i mean yeah any sort of like condition
+3356.48 - 3360.2400000000002: i'll put a link and some more
+3358.079 - 3363.119: information about this all right quick
+3360.24 - 3364.799: little quiz on uh indexing this is kind
+3363.119 - 3366.1600000000003: of using all sorts of advanced stuff
+3364.799 - 3368.079: that you just learned in that last
+3366.16 - 3370.64: section include and then also like some
+3368.079 - 3373.599: of the original stuff so first question
+3370.64 - 3374.8799999999997: uh basically pause the video after i ask
+3373.599 - 3377.52: it and then try to figure out what the
+3374.88 - 3379.92: command would be so we have this matrix
+3377.52 - 3382.559: and how would you index this part of the
+3379.92 - 3382.559: matrix
+3385.599 - 3388.88: so this is the
+3389.359 - 3393.68: second and third row and the first and
+3392.319 - 3396.319: second column
+3393.68 - 3399.1189999999997: or zero and first column so it looks
+3396.319 - 3399.119: something like this
+3399.2 - 3403.52: rows columns
+3400.88 - 3405.28: next question how would you index
+3403.52 - 3407.52: this this is something we haven't done
+3405.28 - 3409.76: before but you potentially with that
+3407.52 - 3412.799: last section might have an idea
+3409.76 - 3412.7990000000004: if not no worries
+3414.559 - 3417.6800000000003: so to do this one
+3417.76 - 3422.4: you need to use two different lists
+3421.04 - 3423.92: within your
+3422.4 - 3427.119: uh indexing
+3423.92 - 3429.52: so it's gonna look something like this
+3427.119 - 3431.2000000000003: we need the zeroth first second and
+3429.52 - 3433.04: third row
+3431.2 - 3435.7599999999998: and then the first second third and
+3433.04 - 3438.319: fourth columns that's what that is and
+3435.76 - 3440.88: then final question
+3438.319 - 3443.119: how would you index this
+3440.88 - 3444.799: this is like also something we haven't
+3443.119 - 3446.96: immediately looked at but you might be
+3444.799 - 3449.2: able to get especially with that last
+3446.96 - 3449.2: one
+3449.28 - 3452.1600000000003: take a second
+3454.24 - 3458.799: all right that would look something like
+3457.04 - 3460.88: this
+3458.799 - 3462.559: where you get the zeroth fourth and
+3460.88 - 3464.6400000000003: fifth row zero
+3462.559 - 3467.52: fourth and fifth rows
+3464.64 - 3469.68: and then you want columns three onwards
+3467.52 - 3471.359: so this would
+3469.68 - 3473.2799999999997: like three onwards works you could also
+3471.359 - 3475.2799999999997: do like three to five
+3473.28 - 3477.52: you'd also do three or like a list of
+3475.28 - 3479.3590000000004: three four but yeah that's one way to do
+3477.52 - 3481.359: it it's a fun little quiz i don't know
+3479.359 - 3482.799: it's i guess good to revisit this type
+3481.359 - 3483.68: of thing and like think critically about
+3482.799 - 3485.359: it
+3483.68 - 3486.96: all right thank you guys very much for
+3485.359 - 3488.48: watching i think this is all i have for
+3486.96 - 3491.119: this video
+3488.48 - 3491.119: peace out

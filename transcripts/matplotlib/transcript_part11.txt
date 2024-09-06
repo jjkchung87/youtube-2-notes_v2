@@ -1,0 +1,49 @@
+es
+5375.3 - 5379.919: the inside of the box so what happens
+5377.399 - 5383.789000000001: when I do easier easier or easier this
+5379.919 - 5386.039: is a grayish color unknown property face
+5383.789 - 5387.78: color this was something that I found
+5386.039 - 5391.29: super annoying when I was trying to do
+5387.78 - 5393.719999999999: this so if you're trying to set the fee
+5391.29 - 5396.99: a box-and-whisker chart doesn't
+5393.72 - 5398.67: recognize I can't like recognize this
+5396.99 - 5400.41: property face color for whatever reason
+5398.67 - 5404.1: by default see actually if I set this
+5400.41 - 5405.84: patch artists property to true to allow
+5404.1 - 5408.54: you to change the face color so now we
+5405.84 - 5413.0: have these graphs I think that looks a
+5408.54 - 5415.23: bit better we could also change up the
+5413.0 - 5418.02: median line so you could do it within
+5415.23 - 5421.74: this format or another way we can do it
+5418.02 - 5424.620000000001: is one of the properties of boxplot is
+5421.74 - 5427.5599999999995: median props so you can also pass in
+5424.62 - 5429.45: like a dictionary of median props and so
+5427.56 - 5431.43: we could pass in a line width here too
+5429.45 - 5436.59: so let's say we wanted this line to have
+5431.43 - 5438.75: the same thickness as the outline pass
+5436.59 - 5443.34: that in and there we go
+5438.75 - 5447.33: a lot of the styling stuff it's really a
+5443.34 - 5448.89: matter of google searching really like
+5447.33 - 5450.36: you can look at the documentation find
+5448.89 - 5453.51: some things from the documentation but I
+5450.36 - 5455.88: find is sometimes quicker is to say how
+5453.51 - 5458.34: do I change the outline color in a box
+5455.88 - 5460.89: and whiskers chart Google search that
+5458.34 - 5463.08: find a Stack Overflow post and then like
+5460.89 - 5465.81: from there figure out I can do this type
+5463.08 - 5469.53: of technique that's what works usually
+5465.81 - 5473.070000000001: well for me all right so yeah now we
+5469.53 - 5474.3: have these three teams being compared
+5473.07 - 5476.19: I'm going to strengthen graph a little
+5474.3 - 5478.14: bit so you can see better I think this
+5476.19 - 5481.379999999999: is a kind of a cool way to visualize how
+5478.14 - 5483.42: teams compare in FIFA all right I'm
+5481.38 - 5484.89: gonna end the video here hopefully these
+5483.42 - 5487.38: graphs were helpful hopefully it is
+5484.89 - 5489.84: helpful to combine the pandas and like
+5487.38 - 5492.24: the CSV is with the matplotlib library
+5489.84 - 5494.43: if you found this video useful make sure
+5492.24 - 5496.29: to throw it a big thumbs up and also
+5494.43 - 5499.29: don't forget to subscribe because I'll
+5496.29 - 5501.5: be posting a lot of videos in the near
+5499.29 - 5501.5: future

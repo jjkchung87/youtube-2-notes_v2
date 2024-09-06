@@ -1,0 +1,168 @@
+8.729 - 3223.589: data you got like the name of the player
+3221.94 - 3226.43: and you should probably recognize some
+3223.589 - 3231.479: of these guys names Leo Messi Ronaldo
+3226.43 - 3233.3089999999997: Neymar all very good players I think
+3231.479 - 3236.8799999999997: it's right now sorted probably by their
+3233.309 - 3238.799: overall but yet all the stats from the
+3236.88 - 3242.219: game FIFA for these guys and I think it
+3238.799 - 3245.579: just provides a good set of data to work
+3242.219 - 3247.529: from and also I took this data from a
+3245.579 - 3250.529: cat goal challenge I'm gonna link to the
+3247.529 - 3252.569: original source of the data as well down
+3250.529 - 3256.67: the description ok so what can we do
+3252.569 - 3260.119: with this so to start off let's do some
+3256.67 - 3260.119: histogram stuff
+3264.32 - 3269.82: okay so what I think is cool first thing
+3267.36 - 3273.3900000000003: to do is plot the overall skill level
+3269.82 - 3274.86: here that you see on the right just
+3273.39 - 3277.2: figure out in the game like how many
+3274.86 - 3280.6800000000003: people have above a 90 how many people
+3277.2 - 3282.5099999999998: have between an 80 and 90 etc so what we
+3280.68 - 3284.04: can do to do that is we have our data
+3282.51 - 3291.9900000000002: already loaded I don't have to reload a
+3284.04 - 3296.19: 10 but I can go ahead and do let's see
+3291.99 - 3298.62: plot and the way that I remember these
+3296.19 - 3302.3: commands is like I showed in the last
+3298.62 - 3304.7599999999998: video you can kind of use the PI plot
+3302.3 - 3307.05: documentation as your kind of your
+3304.76 - 3309.3: starting point and then if you're
+3307.05 - 3311.67: looking to try to do a histogram lookup
+3309.3 - 3312.9900000000002: histogram within that documentation the
+3311.67 - 3315.03: link to the documentation is in the
+3312.99 - 3320.49: description and you'll find the command
+3315.03 - 3323.8100000000004: hist so what I can pass into history to
+3320.49 - 3330.2999999999997: set we're going to pass in the overall
+3323.81 - 3332.67: skill level as my input and let's see
+3330.3 - 3335.04: what happened going to do that and then
+3332.67 - 3338.4300000000003: I'll do a plot Dutch show so I don't get
+3335.04 - 3340.65: all this random stuff okay that looks
+3338.43 - 3343.74: pretty good it's already starting to get
+3340.65 - 3348.4500000000003: there what would probably be more
+3343.74 - 3350.97: helpful is if this kind of these tick
+3348.45 - 3355.29: marks were centered for each bin that we
+3350.97 - 3358.8599999999997: have and I'll do that in a sec all right
+3355.29 - 3361.77: we're gonna set the bins every 10
+3358.86 - 3363.63: overall skill level points so like the
+3361.77 - 3365.7599999999998: highest you would be and the FIFA game
+3363.63 - 3369.63: is 100 the lowest you could be as a zero
+3365.76 - 3372.36: so we'll do our bins at intervals of 10
+3369.63 - 3374.7000000000003: up to from zero to a hundred so the
+3372.36 - 3376.2000000000003: first bin that we have will be all
+3374.7 - 3379.74: players that have a skill level between
+3376.2 - 3387.7999999999997: 0 and 10 and it's counting that number
+3379.74 - 3391.5899999999997: 50 60 70 80 90 and then finally 100 cool
+3387.8 - 3395.3100000000004: so oh I didn't do anything yet now we
+3391.59 - 3399.3: can set the bins parameter of the
+3395.31 - 3403.62: the histogram to our bins now we got a
+3399.3 - 3405.42: nice a little bit nicer of a graph now
+3403.62 - 3409.83: the next thing I'm going to do is set
+3405.42 - 3413.1800000000003: our X ticks to be the bins as well so
+3409.83 - 3415.47: now it's nicely labeled each interval
+3413.18 - 3417.93: corresponds exactly with what we have
+3415.47 - 3421.3199999999997: here but it looks like we have some
+3417.93 - 3425.04: unnecessary data so it looks like
+3421.32 - 3429.3: there's very little players over here so
+3425.04 - 3435.02: maybe I'll limit this start at 40 and go
+3429.3 - 3435.02: up to 100 and what's kind of crazy is
+3435.29 - 3441.39: you know the players that are over a 90
+3438.15 - 3443.82: are really a rarity because you can't
+3441.39 - 3451.0699999999997: even see that bar from the 90 to 100
+3443.82 - 3453.1200000000003: range there so let's do a little bit
+3451.07 - 3456.54: you're not a title the same way as
+3453.12 - 3460.7599999999998: before got a while a ball so I'll do a
+3456.54 - 3469.07: wide labor real quick number of players
+3460.76 - 3471.1800000000003: and the X label would be the skill level
+3469.07 - 3480.3900000000003: and we could have a title that would be
+3471.18 - 3481.23: like distribution of player skills in in
+3480.39 - 3485.97: FIFA
+3481.23 - 3489.17: I think it's FIFA 2018 might be 2019 not
+3485.97 - 3493.5899999999997: positive so that's a cool little
+3489.17 - 3495.27: visualization and you can get more into
+3493.59 - 3501.8700000000003: details like to actually see that there
+3495.27 - 3507.48: are some values there you could do you
+3501.87 - 3514.5499999999997: change up your white X to be let's say 0
+3507.48 - 3514.55: to 100 okay that didn't work
+3523.07 - 3530.25: yeah yes it's kind of tough with all of
+3528.42 - 3534.0: these players but if we did move it from
+3530.25 - 3536.46: like 80 to 100 you see that yeah there
+3534.0 - 3538.98: are actually players that are above a 90
+3536.46 - 3540.93: is just very very few compared to the
+3538.98 - 3542.4: amount of players in the game another
+3540.93 - 3547.41: thing you could potentially do is maybe
+3542.4 - 3548.9100000000003: break it up use the data and only look
+3547.41 - 3550.68: at the stats of players and certain
+3548.91 - 3554.31: teams and then you wouldn't get all the
+3550.68 - 3558.75: noise I guess in the lower skill levels
+3554.31 - 3560.73: that I put all the people in here one
+3558.75 - 3562.5: little modification we can make to this
+3560.73 - 3566.22: is let's say we wanted to change the
+3562.5 - 3567.84: color of our bar I could set this you
+3566.22 - 3570.33: know I could set it to red usually like
+3567.84 - 3575.61: that or I could set it to a hexadecimal
+3570.33 - 3578.2799999999997: value very easily and what I recommend
+3575.61 - 3580.23: whatever you want a certain color what
+3578.28 - 3583.26: you can do is just like do a google
+3580.23 - 3588.48: search for a color picker as you see
+3583.26 - 3590.61: here I can just move this bar around and
+3588.48 - 3592.26: no matter what color I want so let's say
+3590.61 - 3597.98: I want this greenish color I copy that
+3592.26 - 3601.4100000000003: hex code hide this paste in the hex code
+3597.98 - 3604.47: now I get that green color I kind of
+3601.41 - 3605.67: like the bluish color so I'm gonna go
+3604.47 - 3607.47: with that but yeah you can play around
+3605.67 - 3609.84: and get any color you want with that pot
+3607.47 - 3613.7099999999996: lid all right let's do pie chart snacks
+3609.84 - 3616.02: and just to start off I kind of
+3613.71 - 3617.67: mentioned this the histograms but to
+3616.02 - 3620.57: like figure out how to do a pie chart I
+3617.67 - 3624.2400000000002: usually just start at this documentation
+3620.57 - 3628.92: lookup pie plot a pie chart is right
+3624.24 - 3631.47: there and then with this page I can kind
+3628.92 - 3634.08: of get all the details of what I can
+3631.47 - 3640.29: pass in and what are the parameters that
+3634.08 - 3644.61: I can play around with yeah a lot of
+3640.29 - 3645.21: good stuff here okay so the wedge sizes
+3644.61 - 3647.9100000000003: are
+3645.21 - 3649.92: so that's what we're gonna input here so
+3647.91 - 3651.839: what does that look like okay so I want
+3649.92 - 3656.19: to just output some of our data again
+3651.839 - 3659.2799999999997: and what I think we're gonna do for this
+3656.19 - 3663.54: first chart is one of the components of
+3659.28 - 3668.19: this I guess we can't see it here but if
+3663.54 - 3670.71: you open up the full I can't see all of
+3668.19 - 3673.619: it if you opened up the full file within
+3670.71 - 3679.46: like Excel you'd see that one of the
+3673.619 - 3679.46: parameters we can have is preferred foot
+3680.15 - 3685.589: so if I look up that you see that left
+3685.02 - 3687.24: or right
+3685.589 - 3689.52: it's what whether you play left you're
+3687.24 - 3691.3799999999997: ready in soccer so what I'm thinking
+3689.52 - 3695.309: would be interesting to do a pie chart
+3691.38 - 3696.869: on is the percentage of people that play
+3695.309 - 3698.6400000000003: with their left foot versus their right
+3696.869 - 3703.29: foot so how would we do something like
+3698.64 - 3705.0589999999997: that well we can count the number of
+3703.29 - 3707.64: people that play with our left foot by
+3705.059 - 3710.099: doing the following and this plays into
+3707.64 - 3714.66: the stuff that I taught in the that we
+3710.099 - 3716.819: went through in the pandas video but we
+3714.66 - 3719.7599999999998: can use the dot lok to kind of like look
+3716.819 - 3722.25: up the data set and kind of filter the
+3719.76 - 3725.4300000000003: data set by specific condition in this
+3722.25 - 3729.42: case for left we want to the condition
+3725.43 - 3733.339: to be apologize one sec when the
+3729.42 - 3740.849: condition to be if the preferred foot
+3733.339 - 3743.19: column is equal to left then we want
+3740.849 - 3745.23: only the data that this condition holds
+3743.19 - 3749.25: and because we're going to need to pass
+3745.23 - 3752.64: this into a pie chart what we'll want to
+3749.25 - 3756.45: do is get the count of that I believe
+3752.64 - 3758.7599999999998: this count gives us an array I can
+3756.45 - 3764.0989999999997: probably check so let's see what is the
+3758.76 - 3768.0: left yeah it's like an array here so if
+3764.099 - 3768.559: we do count 0 we'll actually get a
+3768.0 - 3773.67: number
+3768.559 - 3776.849: as you can see 4211 players prefer their
+3773.67 - 3779.29: left foot and so we can do the same
+3776.849 - 3789.5: thing with right FIFA
+3779.29 - 3791.0: FIFA bird foot equa

@@ -1,0 +1,111 @@
+e salespeople by doing salesperson
+5369.84 - 5372.84: here
+5372.96 - 5379.2390000000005: um so useful things you can do by
+5376.6 - 5382.96: interacting with chat
+5379.239 - 5384.759999999999: GPT and I might ask like is there a
+5382.96 - 5393.4800000000005: difference
+5384.76 - 5393.4800000000005: between pd. pivot and pd. pivot table
+5400.36 - 5405.92: okay so it seems like pivot table has a
+5402.6 - 5408.6: little bit more than just
+5405.92 - 5411.719: pivot like such as the a function here
+5408.6 - 5414.280000000001: so that's cool to know chat gbt very
+5411.719 - 5416.92: helpful all right uh is there anything
+5414.28 - 5418.96: else another way you might use chat gbt
+5416.92 - 5420.88: is let's say
+5418.96 - 5425.96: create a
+5420.88 - 5425.96: histogram plot based on my initial
+5426.639 - 5429.639: Olympic
+5429.76 - 5436.76: athletes data set of people's Heights in
+5435.44 - 5441.839999999999: the
+5436.76 - 5445.2390000000005: Olympics use a log scale if you need
+5441.84 - 5449.119000000001: to so plotting can be super helpful with
+5445.239 - 5454.0: the use of chat GPT and whatnot see some
+5449.119 - 5457.199: useful stuff here copy that paste it in
+5454.0 - 5460.159: run it if it ever says you don't have a
+5457.199 - 5463.32: library you can actually write in your
+5460.159 - 5468.159: um code editor do pip install with a
+5463.32 - 5468.159: explanation point I'll do M plot
+5469.56 - 5475.04: lib now it's installed didn't even have
+5472.199 - 5478.119: to open up any fancy terminal or
+5475.04 - 5480.4: anything and look at that we got our
+5478.119 - 5482.759999999999: distribution of heights this is using I
+5480.4 - 5484.44: think a log scale this is the number of
+5482.76 - 5486.76: athletes with a log scale scale just so
+5484.44 - 5489.04: we can see the outliers so Shaquille
+5486.76 - 5490.679: O'Neal is up here somewhere you got some
+5489.04 - 5493.28: really short people over here but
+5490.679 - 5495.4800000000005: everyone large count of people in this
+5493.28 - 5499.32: range looks like a normal distribution
+5495.48 - 5501.119: cool another useful AI helper I think
+5499.32 - 5503.679: that's some of the the key things to
+5501.119 - 5505.159: know about for new functionality one
+5503.679 - 5506.84: recommendation I have is like you can
+5505.159 - 5509.839999999999: get wild with the types of queries you
+5506.84 - 5512.639: send to chat gbt can be super helpful so
+5509.84 - 5515.0: definitely leverage that but I would say
+5512.639 - 5517.0: don't rely on it 100% you want to know
+5515.0 - 5518.32: the basics and have an intuition
+5517.0 - 5520.679: understand kind of what's working behind
+5518.32 - 5522.759999999999: under the hood but use it to help speed
+5520.679 - 5526.32: up use the AI to help speed up your
+5522.76 - 5527.92: processes so I I recommend next to just
+5526.32 - 5529.719: keep practicing on your skills use your
+5527.92 - 5532.0: own data sets maybe explore these
+5529.719 - 5534.08: Olympics data set a bit more or have
+5532.0 - 5536.199: chat gbd generate you novel things to
+5534.08 - 5538.719: test out different pandis functionality
+5536.199 - 5541.239: all super useful stuff explicitly as far
+5538.719 - 5543.44: as tutorials go I recommend checking out
+5541.239 - 5545.839999999999: a tutorial that I did cleaning the
+5543.44 - 5548.28: Olympic data set that you saw in a lot
+5545.84 - 5553.56: of this tutorial I'll link that right
+5548.28 - 5556.199: here or here I also did 100 minus some I
+5553.56 - 5558.4400000000005: think the the full repo had like 66
+5556.199 - 5560.44: pandas puzzles and I find like doing all
+5558.44 - 5563.48: sorts of pandas puzzles super helpful so
+5560.44 - 5565.159: also did a video on that here or here or
+5563.48 - 5566.799999999999: I'll link it in the description if not
+5565.159 - 5568.879999999999: definitely recommend checking that out
+5566.8 - 5571.320000000001: you can check out some other real world
+5568.88 - 5573.84: data analysis videos that I have also
+5571.32 - 5575.84: like platforms like strata scratch or
+5573.84 - 5577.639: analyst Builder also linked in the
+5575.84 - 5579.4800000000005: description that you can check out
+5577.639 - 5581.36: honestly too like I've learned a lot
+5579.48 - 5582.839999999999: recently by just watching YouTube videos
+5581.36 - 5585.92: like kind of exploring you should I
+5582.84 - 5587.400000000001: would say spend 75% of or more of your
+5585.92 - 5589.4800000000005: time actually building and using this
+5587.4 - 5591.638999999999: code but do spend some time just reading
+5589.48 - 5593.759999999999: papers or reading watching YouTube
+5591.639 - 5596.0: videos even though I have I don't know
+5593.76 - 5597.2390000000005: like 10 years of experience with has
+5596.0 - 5600.04: Panda's been around for 10 years yeah it
+5597.239 - 5602.119: definitely has uh like maybe not fully
+5600.04 - 5603.159: 10 years but like up there years of
+5602.119 - 5605.44: experience with pandas I'm still
+5603.159 - 5606.638999999999: learning new things every day so you
+5605.44 - 5608.0: never know what you'll find even if you
+5606.639 - 5610.28: think you're an expert it doesn't hurt
+5608.0 - 5611.96: to check out videos and and blog posts
+5610.28 - 5613.4: that people post on these libraries
+5611.96 - 5615.0: there's always like little tricks and
+5613.4 - 5616.759999999999: tips that you know never can be covered
+5615.0 - 5618.28: in just one single video alone
+5616.76 - 5619.360000000001: definitely recommend that but I think
+5618.28 - 5621.36: that's all we're going to do in this
+5619.36 - 5623.44: video hopefully you enjoyed this
+5621.36 - 5625.28: tutorial happy to be back with an
+5623.44 - 5626.5199999999995: updated version if you felt like there
+5625.28 - 5627.759999999999: was things that I was missing in this
+5626.52 - 5629.6: tutorial please let me know in the
+5627.76 - 5631.280000000001: comments it will not only help me make
+5629.6 - 5632.76: better tutorials in the future but also
+5631.28 - 5635.679: let everyone watching this video know
+5632.76 - 5637.52: some other useful stuff to check out but
+5635.679 - 5639.2390000000005: I think with that that's all we're going
+5637.52 - 5641.76: to do if you like this video make sure
+5639.239 - 5644.839999999999: to throw it a thumbs up subscribe if you
+5641.76 - 5647.320000000001: haven't more tutorials on the way pandas
+5644.84 - 5651.1990000000005: baby we love it thank you all for
+5647.32 - 5651.199: watching peace

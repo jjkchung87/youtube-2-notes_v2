@@ -1,0 +1,222 @@
+d use the other 50 to test the data
+1052.96 - 1057.3600000000001: let's see what happens if i if i put
+1055.679 - 1058.24: 20 on test
+1057.36 - 1060.6399999999999: set
+1058.24 - 1064.24: and i want to shuffle the data so i put
+1060.64 - 1066.4: true and what happens is in this case
+1064.24 - 1067.919: in which we don't transform without
+1066.4 - 1070.72: stock any
+1067.919 - 1073.2: any function and we don't uh transform
+1070.72 - 1075.2: anything shuffling that is not
+1073.2 - 1077.6000000000001: something bad to do
+1075.2 - 1078.96: because what happens is uh what that
+1077.6 - 1082.0: what the
+1078.96 - 1084.16: linear regression does it measures the
+1082.0 - 1086.64: the instant in the same week how many
+1084.16 - 1089.6000000000001: variation has been in the input and
+1086.64 - 1091.44: measure what happened in the same record
+1089.6 - 1092.48: in the same week what happened to the
+1091.44 - 1093.28: output
+1092.48 - 1095.039: so
+1093.28 - 1096.6399999999999: if we shuffle the data there's no
+1095.039 - 1098.559: seasonality there's
+1096.64 - 1099.8400000000001: there's literally nothing that can
+1098.559 - 1102.32: impact
+1099.84 - 1102.32: um
+1102.799 - 1107.6: negatively the
+1104.24 - 1111.28: the linear russian because most of times
+1107.6 - 1113.039: what happens is the efficiency and the
+1111.28 - 1116.32: effectiveness of our
+1113.039 - 1118.8799999999999: our advertising until this point
+1116.32 - 1119.84: are in one way but after this point or
+1118.88 - 1123.44: another
+1119.84 - 1126.559: let's take for example if this here was
+1123.44 - 1129.52: april 2021
+1126.559 - 1131.6789999999999: obviously uh the effectiveness of our
+1129.52 - 1133.84: facebook card or google ads would be
+1131.679 - 1135.76: different in the previous period of
+1133.84 - 1138.48: april 2021
+1135.76 - 1141.36: compared to the next period
+1138.48 - 1143.52: because we obviously had a change on
+1141.36 - 1145.52: restriction cookie policies that
+1143.52 - 1148.08: affected all our
+1145.52 - 1150.6399999999999: all our advertising so the dynamics
+1148.08 - 1153.1999999999998: change after this that point
+1150.64 - 1155.3600000000001: and what we want now
+1153.2 - 1157.2: is uh in a simple linear regression we
+1155.36 - 1159.84: want to first shuffle the data so we are
+1157.2 - 1162.32: more agnostic we're not influenced to
+1159.84 - 1163.6789999999999: the changes
+1162.32 - 1164.6399999999999: over time
+1163.679 - 1165.6000000000001: so
+1164.64 - 1167.6000000000001: uh
+1165.6 - 1169.6789999999999: let's model
+1167.6 - 1171.4399999999998: let's do twenty percent of test that we
+1169.679 - 1175.1200000000001: shot the data
+1171.44 - 1178.0: oh wow that's it it's even more
+1175.12 - 1180.3999999999999: bigger than the training set which is
+1178.0 - 1182.64: let's do refresh again
+1180.4 - 1185.2: this doesn't make any sense
+1182.64 - 1185.2: all right
+1185.52 - 1189.28: all right still um
+1187.52 - 1192.72: obviously
+1189.28 - 1195.84: twenty percent is six records out of 30
+1192.72 - 1198.32: records obviously so it tries to find
+1195.84 - 1201.12: what's the are square on
+1198.32 - 1203.84: that six records and they find it which
+1201.12 - 1205.4399999999998: is pretty good they converge a little
+1203.84 - 1206.559: and
+1205.44 - 1207.44: obviously
+1206.559 - 1209.6: there
+1207.44 - 1212.559: there will be required
+1209.6 - 1215.12: more records in order to drive and do a
+1212.559 - 1218.32: regression analysis that's done well
+1215.12 - 1218.32: anyway so um
+1218.799 - 1223.679: what i want to do i want to see the axes
+1222.0 - 1225.84: in this case
+1223.679 - 1227.6000000000001: all right so what we have here we have a
+1225.84 - 1229.1999999999998: constant
+1227.6 - 1231.84: and this constant
+1229.2 - 1235.8400000000001: does not make but let's see well let's
+1231.84 - 1239.28: see the coefficient right so model
+1235.84 - 1242.0: model dot coeff
+1239.28 - 1244.0: we have zero
+1242.0 - 1245.6: let's see what
+1244.0 - 1248.64: and i want to see
+1245.6 - 1250.48: x dot columns
+1248.64 - 1253.1200000000001: so we have constant which is a zero
+1250.48 - 1255.6: coefficient so we don't take it as an
+1253.12 - 1257.12: input we have facebook
+1255.6 - 1259.9189999999999: which has
+1257.12 - 1263.6: 0.049
+1259.919 - 1264.64: and tv which has 0.16 let's see if it's
+1263.6 - 1267.6399999999999: different
+1264.64 - 1267.64: 0.046
+1268.159 - 1274.24: here 0.49
+1271.039 - 1274.24: and here we have
+1275.36 - 1281.28: uh we have the coefficient let's see
+1278.48 - 1282.88: and then we have 0.16
+1281.28 - 1284.3999999999999: uh
+1282.88 - 1286.96: 0.16
+1284.4 - 1289.679: all right so they're really similar
+1286.96 - 1292.48: let's see the intercept model dot
+1289.679 - 1292.48: intercept
+1292.679 - 1297.2: 3.03
+1294.32 - 1298.799: in here is being 3.17
+1297.2 - 1301.679: all right
+1298.799 - 1304.559: so what we want to do now let me change
+1301.679 - 1307.919: these two
+1304.559 - 1308.96: x dot columns
+1307.919 - 1311.44: perfect
+1308.96 - 1314.48: so we know that the first co-f is for
+1311.44 - 1318.559: constant the second code is for facebook
+1314.48 - 1320.48: and and the third co-f is for tv now
+1318.559 - 1323.6: what i want to see now
+1320.48 - 1323.6: is um
+1323.76 - 1328.48: let's drive and see what is the
+1328.88 - 1333.1200000000001: uh what's the prediction all right so we
+1331.12 - 1334.0: do df
+1333.12 - 1336.799: uh
+1334.0 - 1337.76: parenthesis prediction so we add a new
+1336.799 - 1342.559: column
+1337.76 - 1344.96: put it equal to model dot predict
+1342.559 - 1347.2: we put x in here
+1344.96 - 1349.28: now we want to see how the prediction
+1347.2 - 1350.48: how accurate is the prediction so we do
+1349.28 - 1351.9189999999999: uh
+1350.48 - 1354.32: fig
+1351.919 - 1355.76: equal to px dot
+1354.32 - 1358.08: line
+1355.76 - 1361.84: df
+1358.08 - 1361.84: x it's equal to time
+1362.559 - 1369.039: as always and then epsilon is equal to
+1367.36 - 1371.1999999999998: let's say
+1369.039 - 1376.32: yeah dot columns
+1371.2 - 1379.44: so to make it easier so fig dot show
+1376.32 - 1381.9189999999999: let's print it i don't want facebook tv
+1379.44 - 1384.799: and radio click on it look at that
+1381.919 - 1386.72: so it's pretty good
+1384.799 - 1388.72: it's pretty efficient right
+1386.72 - 1390.96: so
+1388.72 - 1392.08: it drives and can predict pretty well
+1390.96 - 1394.48: all the
+1392.08 - 1397.4399999999998: spikes positive spikes number spikes
+1394.48 - 1399.3600000000001: except some of them which are here which
+1397.44 - 1401.52: are here
+1399.36 - 1404.1589999999999: my question is how would it differ if we
+1401.52 - 1407.52: didn't shuffle it so
+1404.159 - 1409.44: we put false and we have a really low r
+1407.52 - 1411.76: square in the test set
+1409.44 - 1414.24: 38
+1411.76 - 1415.84: the coefficient changed by a lot
+1414.24 - 1417.039: let's see what happens if we do a
+1415.84 - 1420.799: prediction
+1417.039 - 1422.559: we eliminate facebook tv and radio
+1420.799 - 1424.96: they're actually still
+1422.559 - 1426.24: there they're still pretty good
+1424.96 - 1428.64: so
+1426.24 - 1430.559: right all right there is more variance
+1428.64 - 1433.6000000000001: in here
+1430.559 - 1435.6789999999999: because this would be probably test set
+1433.6 - 1436.8799999999999: tested will start here there is more
+1435.679 - 1438.88: variance
+1436.88 - 1442.0: let's see if i
+1438.88 - 1442.0: put 0.5
+1442.72 - 1445.84: all right
+1448.4 - 1453.2: the test that will start here and it
+1451.52 - 1455.2: will predict pretty well actually it's
+1453.2 - 1459.44: not that bad
+1455.2 - 1461.2: let's see if we want to analyze how was
+1459.44 - 1464.48: how it is the
+1461.2 - 1467.6000000000001: uh the cpo so we have for facebook
+1464.48 - 1470.08: we have a 0.05
+1467.6 - 1472.559: so we have uh
+1470.08 - 1477.039: facebook is equal to
+1472.559 - 1479.6: zero one divided by zero point zero five
+1477.039 - 1482.559: we have the cpr so we need to divide the
+1479.6 - 1484.8799999999999: coefficient of our
+1482.559 - 1487.52: uh our model
+1484.88 - 1489.3600000000001: one divided by coefficient we have the
+1487.52 - 1491.279: approximated
+1489.36 - 1493.279: uh cpl
+1491.279 - 1496.0: which is considered constant so if we
+1493.279 - 1498.159: run facebook we have a 20
+1496.0 - 1502.559: euro or dollar cpl
+1498.159 - 1506.0390000000002: if we run for tv in which we have 0.12
+1502.559 - 1508.0: tv is equal to 1 divided by
+1506.039 - 1509.679: 0.12
+1508.0 - 1512.4: we run tv
+1509.679 - 1515.039: we have an 8.3
+1512.4 - 1515.039: 333 33
+1515.36 - 1517.9189999999999: cpl
+1518.08 - 1519.76: so
+1518.88 - 1522.96: um
+1519.76 - 1524.24: radio it's not considered and let's see
+1522.96 - 1526.0: how many
+1524.24 - 1529.44: model dot intercept
+1526.0 - 1532.48: it's 3.13 which is the number of sales
+1529.44 - 1533.679: we will get if we did not spend in any
+1532.48 - 1536.08: of these two
+1533.679 - 1536.0800000000002: channels
+1537.12 - 1541.6: now obviously um
+1539.279 - 1544.72: we have to
+1541.6 - 1548.1589999999999: we have to figure it out a way of
+1544.72 - 1550.159: um of doing diminishing returns and add
+1548.159 - 1553.2: stock on this um
+1550.159 - 1554.88: on this graph on this on this project
+1553.2 - 1556.559: but i want to stop right here for the
+1554.88 - 1558.48: moment because
+1556.559 - 1561.039: we covered a lot it's almost half an
+1558.48 - 1563.52: hour of a project and
+1561.039 - 1564.96: uh i don't want to put too much stuff in
+1563.52 - 1568.24: the first step let me know in the
+1564.96 - 1572.0: comments uh if everything was clear so
+1568.24 - 1575.36: far i tried to be obviously as always as
+1572.0 - 1577.44: clear as possible and
+1575.36 - 1580.3999999999999: i want to check your feedback before
+1577.44 - 1583.279: doing the step two and implementing all
+1580.4 - 1585.919: the diminishing returns and stock
+1583.279 - 1587.919: and see how we can optimize budgets
+1585.919 - 1589.279: using python right
+1587.919 - 1590.48: so
+1589.279 - 15

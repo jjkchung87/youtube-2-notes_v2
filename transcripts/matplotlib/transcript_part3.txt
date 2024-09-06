@@ -1,0 +1,169 @@
+17: colors supported so check out the plot
+1049.5 - 1055.36: documentation to see all that all right
+1053.17 - 1058.3300000000002: let's move on to our next thing and that
+1055.36 - 1059.11: will be I guess let's just add another
+1058.33 - 1061.84: line
+1059.11 - 1069.2199999999998: quick to our graph so we have our first
+1061.84 - 1070.4199999999998: line let's add line number two and this
+1069.22 - 1074.32: one will make a little bit more
+1070.42 - 1076.5700000000002: interesting and the thing is like here
+1074.32 - 1079.36: we had a very straightforward like you
+1076.57 - 1080.799: have X any other Y but this is not
+1079.36 - 1083.53: always easy to do especially if you have
+1080.799 - 1086.53: like a function like sign where you want
+1083.53 - 1088.12: to plot it at like a bunch of values but
+1086.53 - 1090.28: those values are all like you know crazy
+1088.12 - 1092.1999999999998: decimals so I'm going to show you how
+1090.28 - 1096.46: you can handle something like that so
+1092.2 - 1098.53: this is where we use numpy so nobody
+1096.46 - 1105.0: call this x2 I'm going to say that x2
+1098.53 - 1108.9289999999999: equals NP a range 0 to 4 and we'll go by
+1105.0 - 1113.29: 0.5 as our tick so if I print out x2
+1108.929 - 1117.3700000000001: real quick you see that this gives us a
+1113.29 - 1120.58: numpy array with zero zero point 5 1 1.5
+1117.37 - 1122.6789999999999: to 2 point 5 3 to 3.5 I'll actually make
+1120.58 - 1125.1399999999999: it good a 4 point 5 so it goes at the
+1122.679 - 1127.919: same spot as our other graph because
+1125.14 - 1134.41: this is a exclusive here so we have that
+1127.919 - 1139.0300000000002: so that's gonna be our XS and so what I
+1134.41 - 1142.24: can do here is I can go ahead and plot
+1139.03 - 1145.299: that and I'm going to plot the square
+1142.24 - 1147.52: function for it so I'm gonna pass in x2
+1145.299 - 1149.83: and then instead of passing in a why I'm
+1147.52 - 1153.8799999999999: just gonna do x2 and I'm gonna do
+1149.83 - 1156.49: squared what happens here so now you see
+1153.88 - 1158.44: we get x2 squared
+1156.49 - 1160.21: it goes a little bit higher than our
+1158.44 - 1162.73: original axis was set so I'm going to
+1160.21 - 1164.74: change up the ticks or maybe I'll just
+1162.73 - 1166.69: kind of comment this out and see what
+1164.74 - 1168.58: happens for a tick marks yeah I'm fine
+1166.69 - 1170.919: with just leaving the default that it
+1168.58 - 1173.8899999999999: gave us looks good to me
+1170.919 - 1176.47: and now we have two blue colors so let's
+1173.89 - 1179.5: make this a different color maybe you
+1176.47 - 1182.23: make it red we want to give it a label
+1179.5 - 1187.11: as well so I'm going to do red and I'm
+1182.23 - 1189.8: going to say the label is equal to x
+1187.11 - 1191.8999999999999: squared
+1189.8 - 1194.0: and one thing that's cool is that it
+1191.9 - 1195.8300000000002: automatically moved this legend to the
+1194.0 - 1198.29: top left because the positioning was
+1195.83 - 1201.71: better now that this goes up to the top
+1198.29 - 1204.05: right okay so we have two two lines up
+1201.71 - 1205.6100000000001: there and from the original image I
+1204.05 - 1208.43: showed there's some stuff that's still
+1205.61 - 1211.4599999999998: different one thing that's kind of cool
+1208.43 - 1213.3500000000001: that you could do is let's say you had a
+1211.46 - 1215.78: graph that stopped but you wanted to
+1213.35 - 1218.48: kind of show the projection of it not in
+1215.78 - 1221.44: the future so what I did to show that
+1218.48 - 1228.59: type of a phenomenon is I did like X to
+1221.44 - 1230.3600000000001: take the first four values here it'll
+1228.59 - 1239.98: plot that what did I do
+1230.36 - 1245.06: oh shoot first four so what I want I
+1239.98 - 1247.4: think that will work take the first
+1245.06 - 1259.6699999999998: floor and plot that and then for the
+1247.4 - 1261.65: last values so from let's say five or
+1259.67 - 1272.0900000000001: three all right let's make this a little
+1261.65 - 1278.3300000000002: bigger like this six or five bear with
+1272.09 - 1279.98: me here from four onward we'll make it a
+1278.33 - 1281.33: dash line and I had a little bit of
+1279.98 - 1286.07: overlap because I think it'll look
+1281.33 - 1288.74: better you'll see in a sec four - make
+1286.07 - 1290.95: this still the same function but this
+1288.74 - 1293.78: time we're gonna make it a dashed line
+1290.95 - 1294.95: so there you see and I'm going to
+1293.78 - 1297.79: actually make this a little bit
+1294.95 - 1297.79: different
+1303.61 - 1308.7199999999998: there you see like maybe something ended
+1306.2 - 1310.27: here and then you make it - the rest of
+1308.72 - 1314.66: the way you could do something like that
+1310.27 - 1316.7: using the format I just showed all right
+1314.66 - 1318.0700000000002: what else do we have probably clean this
+1316.7 - 1320.71: code up a little bit
+1318.07 - 1323.27: another thing that I showed in the
+1320.71 - 1327.05: original graph that I showed when I was
+1323.27 - 1328.79: a introducing this video was a resize so
+1327.05 - 1331.52: let's say we wanted to resize our graph
+1328.79 - 1334.3999999999999: well we should do that by near the top
+1331.52 - 1344.6299999999999: of our graph so I'm going to go ahead
+1334.4 - 1347.99: and do resize your graph I'm going to go
+1344.63 - 1350.5100000000002: ahead and do plot dot figure pass in fix
+1347.99 - 1354.38: size and we're going to say let's make
+1350.51 - 1357.83: the dimensions 5 by 3 it's kind of an
+1354.38 - 1361.0400000000002: arbitrary 5 by 3 that will give you kind
+1357.83 - 1363.8: of the ratio of your X to Y or Y but to
+1361.04 - 1365.03: specify how many pixels it is you're
+1363.8 - 1368.09: gonna want to pass in a second parameter
+1365.03 - 1371.84: which is dpi which basically is pixels
+1368.09 - 1375.6499999999999: per inch so I recommend using a value of
+1371.84 - 1378.1699999999998: around 300 here if you do smaller values
+1375.65 - 1380.65: you'll have more pixelated graphs so if
+1378.17 - 1384.71: you can afford having a bigger image
+1380.65 - 1387.41: having a bigger dpi is often nice so in
+1384.71 - 1389.8700000000001: this case we have pixels per inch of 300
+1387.41 - 1392.6000000000001: so this is going to actually be 5 inches
+1389.87 - 1396.9799999999998: by 3 inches so that Tolle pixels will be
+1392.6 - 1399.1399999999999: 1500 by 900 here in this graph so now
+1396.98 - 1404.81: it's much much bigger maybe that's a
+1399.14 - 1407.45: little bit too big I didn't I'm going to
+1404.81 - 1411.6499999999999: be blocking this graph so I'm gonna make
+1407.45 - 1415.43: it a little bit smaller but you get the
+1411.65 - 1421.3700000000001: idea then here so we'll make it like two
+1415.43 - 1422.64: by 1.5 that's not a good dimensions now
+1421.37 - 1425.12: though
+1422.64 - 1429.0800000000002: [Music]
+1425.12 - 1430.58: I mean just play around with this the
+1429.08 - 1434.51: the biggest issue I have right now is
+1430.58 - 1438.05: the graph looks so big because I have my
+1434.51 - 1441.26: screen super high resolution or super
+1438.05 - 1442.6399999999999: the view is like very up close because I
+1441.26 - 1446.89: want to make sure you guys can see my
+1442.64 - 1450.3200000000002: code but yeah this would be at 1500 by
+1446.89 - 1454.8500000000001: 900 graph I'm gonna just for the sake of
+1450.32 - 1458.09: the graph decrease the DPI and make it
+1454.85 - 1459.53: more reasonable that the issue you can't
+1458.09 - 1461.6899999999998: really tell from this image but if you
+1459.53 - 1464.18: really zoom into the graph and maybe if
+1461.69 - 1466.46: you like printed the graph out it would
+1464.18 - 1470.54: look maybe a little bit pixelated with a
+1466.46 - 1474.2: dpi of 100 so probably try to keep this
+1470.54 - 1480.32: value higher if possible and then
+1474.2 - 1483.44: another thing you want to do is you'll
+1480.32 - 1496.6399999999999: want to save your graph so to say we can
+1483.44 - 1500.72: do plot dot savefig and when you do say
+1496.64 - 1503.96: buy graph dot PNG and one thing that's
+1500.72 - 1507.5: nice too is like I pass in the DPI
+1503.96 - 1509.0: parameter here as well so let's say when
+1507.5 - 1510.62: I actually see if my graph wanted to be
+1509.0 - 1513.08: bigger but for the sake of being able to
+1510.62 - 1516.26: show you guys in a smaller format I
+1513.08 - 1519.8: wanted the 100 above I can still go
+1516.26 - 1522.5: ahead and save it with 300 and then kind
+1519.8 - 1525.29: of solves both of my problems and so
+1522.5 - 1527.27: this then my graph dot PNG will save in
+1525.29 - 1531.6499999999999: the current directory that this MATLAB
+1527.27 - 1532.82: matplotlib tutorial is in it was yeah
+1531.65 - 1534.14: well saving that current the current
+1532.82 - 1535.9399999999998: director whatever fought whatever
+1534.14 - 1538.3400000000001: directory of your file not pot Lib
+1535.94 - 1541.5800000000002: tutorial is in this graph will also save
+1538.34 - 1546.47: there when we run this cool now we have
+1541.58 - 1549.6399999999999: that saved all right let me clean this
+1546.47 - 1549.64: up a little bit
+1565.23 - 1570.06: and just to note the reason I did this
+1567.15 - 1573.7800000000002: is because this is exclusive the six
+1570.06 - 1576.57: here so when I do five onwards it picks
+1573.78 - 1578.97: up this actually ends at five because it
+1576.57 - 1582.4399999999998: doesn't include six so it actually
+1578.97 - 1582.44: covers everything here
+1608.05 - 1613.9099999999999: all right now that we've shown line
+1610.28 - 1616.91: graphs a bit let's go and do quickly do
+1613.91 - 1618.3200000000002: bar charts and after bar charts I think
+1616.91 - 1620.0900000000001: we're going to just end this video short
+1618.32 - 1622.79: and I'll do the real-world examples in a
+1620.09 - 1624.23: video that I'll post next week I just
+1622.79 - 1626.21: think this video might get a bit too
+1624.23 - 1629.81: long if I include everything in just one
+1626.

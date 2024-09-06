@@ -1,0 +1,172 @@
+der and this would be
+1379.6 - 1382.1589999999999: decreasing
+1384.36 - 1388.6789999999999: order also I don't really recommend this
+1386.679 - 1390.52: for a lot of use cases but there are
+1388.679 - 1393.0: times that you just need to iterate
+1390.52 - 1394.48: through row by Row in your data frame
+1393.0 - 1397.0: this is going to lose you some of the
+1394.48 - 1398.84: memory performance benefits of python
+1397.0 - 1403.12: pandas but if you wanted to do that you
+1398.84 - 1404.36: could do for index comma Row in coffee.
+1403.12 - 1408.6789999999999: Itor
+1404.36 - 1411.9599999999998: rows and you could then print index
+1408.679 - 1414.88: print row and I'll print some spaces
+1411.96 - 1418.0: here just so you know that I'm actually
+1414.88 - 1420.159: getting each row one one at a time so
+1418.0 - 1422.12: output is truncated but you can see what
+1420.159 - 1424.72: I mean and this is helpful because for a
+1422.12 - 1427.1589999999999: specific row I could grab like just the
+1424.72 - 1429.88: units
+1427.159 - 1431.48: sold so iterating but you lose some
+1429.88 - 1434.0: performance by doing something like that
+1431.48 - 1436.88: but still good to know my recommendation
+1434.0 - 1439.12: is use that sparingly but oftentimes
+1436.88 - 1440.64: performance isn't the most crucial thing
+1439.12 - 1442.1999999999998: if you're just doing some analysis fine
+1440.64 - 1445.72: to do it that way but just know it's not
+1442.2 - 1448.32: the most pandas syntax it doesn't align
+1445.72 - 1450.559: as closely with the panda syntax and
+1448.32 - 1452.6: what pandas has been optimized for so
+1450.559 - 1454.6789999999999: try to stick to pandas built-in methods
+1452.6 - 1457.1999999999998: when you can let's get into some more
+1454.679 - 1459.5590000000002: interesting items and we'll start with
+1457.2 - 1460.8400000000001: filtering data so I think for the most
+1459.559 - 1462.72: of the rest of this tutorial let's work
+1460.84 - 1465.32: with more interesting data and start
+1462.72 - 1467.44: manipulating those Olympics data sets
+1465.32 - 1470.12: that we loaded in so we'll look up
+1467.44 - 1473.1200000000001: specifically the Buy so looking at the
+1470.12 - 1474.9599999999998: BIOS information we see this is like
+1473.12 - 1477.039: tons and tons of Olympic athletes
+1474.96 - 1479.52: throughout the years and we see some
+1477.039 - 1483.24: information about them we could also do
+1479.52 - 1485.76: bios. tale to get the end of this but
+1483.24 - 1487.96: what would be interesting to do here and
+1485.76 - 1491.0: filter on so I think it might be
+1487.96 - 1493.919: interesting to start with filtering by
+1491.0 - 1497.039: let's say height and weight so if I look
+1493.919 - 1499.96: at this data frame and do do info we see
+1497.039 - 1502.44: that height is a float 64 and weight is
+1499.96 - 1505.159: a float 64 if I wanted to filter based
+1502.44 - 1508.2: on that I could do something like bios.
+1505.159 - 1511.7990000000002: Loke and I want to let's say let's
+1508.2 - 1513.48: figure out what athletes are greater
+1511.799 - 1517.1589999999999: than
+1513.48 - 1520.3990000000001: 220 centimeters tall so quite quite or
+1517.159 - 1522.0: 20 let's say 10 centimeters tall what
+1520.399 - 1526.6: these are the tallest Olympic athletes
+1522.0 - 1529.64: probably I could do bios. Lo bios height
+1526.6 - 1532.48: cm is greater than
+1529.64 - 1536.3990000000001: 215 and I want to grab all
+1532.48 - 1538.48: columns do that and we'll probably see I
+1536.399 - 1541.039: guess it doesn't say exactly what sport
+1538.48 - 1543.48: these people comp competed with but
+1541.039 - 1545.039: knowing basketball players I know that
+1543.48 - 1547.44: Shaquille O Neil is very much a
+1545.039 - 1549.12: basketball player and is on this list
+1547.44 - 1551.72: probably going to see a lot of Olympic
+1549.12 - 1553.52: basketball players by doing this filter
+1551.72 - 1557.3600000000001: if you wanted to just make this a little
+1553.52 - 1561.48: bit simpler you could grab specific
+1557.36 - 1564.76: columns by doing let's say name and and
+1561.48 - 1567.64: height centimeters like that and get a
+1564.76 - 1571.08: reduced list
+1567.64 - 1573.3200000000002: here so we filter the rows based on this
+1571.08 - 1576.039: condition and grabb these specific
+1573.32 - 1578.84: columns one nice thing that we can do
+1576.039 - 1580.64: here is there's a shorthand syntax that
+1578.84 - 1584.24: allows us to filter a little bit more
+1580.64 - 1588.7990000000002: simply I could have just done bios
+1584.24 - 1593.24: bracket bios height is greater than 200
+1588.799 - 1595.559: 5 and I could have run that and we see
+1593.24 - 1598.279: you get the same exact name Shaquille
+1595.559 - 1600.039: oio still there we can see their heights
+1598.279 - 1605.6: and I could have grabbed the specific
+1600.039 - 1609.6: columns by doing bracket let's say name
+1605.6 - 1612.36: and height centimeters here we get that
+1609.6 - 1614.6789999999999: so two different ways this bracket
+1612.36 - 1617.36: syntax this kind of binary syntax is
+1614.679 - 1618.52: kind of a shorthand method cool what if
+1617.36 - 1620.0: we wanted to combine things things what
+1618.52 - 1622.0: if we wanted to have multiple conditions
+1620.0 - 1625.44: that we filter on well we can add
+1622.0 - 1628.52: parentheses to this we can add an and
+1625.44 - 1631.1200000000001: character and then parentheses again and
+1628.52 - 1633.76: add some additional conditions so if we
+1631.12 - 1635.9189999999999: looked at our data one of the parameters
+1633.76 - 1638.44: is their born country so maybe I'd be
+1635.919 - 1641.039: curious about basketball players that
+1638.44 - 1645.1200000000001: were born specifically in the USA so I
+1641.039 - 1647.1589999999999: could do um bios born
+1645.12 - 1649.279: country equals
+1647.159 - 1653.24: equals
+1649.279 - 1655.679: USA and now if we look at that we see
+1653.24 - 1659.1200000000001: it's a much smaller list and Shaquille
+1655.679 - 1661.3600000000001: O'Neal is still there holding it down
+1659.12 - 1663.1999999999998: and look how much more he weigh has
+1661.36 - 1666.12: weighed as an Olympic Athlete than some
+1663.2 - 1668.3600000000001: of these other people big big man Shaq
+1666.12 - 1669.76: if you're watching this probably not but
+1668.36 - 1673.12: it'd be cool if you
+1669.76 - 1676.2: were shout out to Shaq cool that's two
+1673.12 - 1678.4799999999998: conditions and this is based on a string
+1676.2 - 1680.8400000000001: condition we can start getting more more
+1678.48 - 1683.44: interesting with our conditionals by
+1680.84 - 1686.1589999999999: doing some specific filters based on
+1683.44 - 1688.3990000000001: string operations so one thing that I
+1686.159 - 1690.6000000000001: like to do is maybe I wanted to look at
+1688.399 - 1692.279: just the names that start with Keith
+1690.6 - 1699.1999999999998: bios
+1692.279 - 1699.2: name. string do contains let's say
+1699.799 - 1705.6: Keith run this oh no there's no keiths
+1703.24 - 1707.6: in the Olympics I guess well there was a
+1705.6 - 1709.039: small mistake there I probably should
+1707.6 - 1712.76: capitalize this this is going to by
+1709.039 - 1715.039: default be case sensitive so there's
+1712.76 - 1718.2: this string method that gets the string
+1715.039 - 1720.08: property of a data frame field and
+1718.2 - 1722.6000000000001: there's items like contains that are
+1720.08 - 1725.1589999999999: very useful contains has some additional
+1722.6 - 1727.6399999999999: things such as case which I could set
+1725.159 - 1729.919: case equals false and if I run this
+1727.64 - 1732.3990000000001: again with the lower case we see we do
+1729.919 - 1734.64: get all these names Duncan Keith I'm an
+1732.399 - 1736.559: ice hockey player so I always thought
+1734.64 - 1739.44: about getting a Duncan Keith Jersey that
+1736.559 - 1743.12: would been cool cool bunch of keiths
+1739.44 - 1744.679: maybe I want it to see if it contains
+1743.12 - 1747.799: Keith
+1744.679 - 1750.519: or Patrick so this you can start using
+1747.799 - 1754.8799999999999: regex
+1750.519 - 1756.6: syntax this is saying or Patrick I don't
+1754.88 - 1759.3600000000001: know why I I was totally thinking
+1756.6 - 1760.76: SpongeBob that's why I said Patrick cool
+1759.36 - 1762.7199999999998: real quick I want to just stress how
+1760.76 - 1765.8799999999999: powerful these regular Expressions can
+1762.72 - 1767.159: be in pandas so some additional examples
+1765.88 - 1769.5590000000002: of what you could do with regular
+1767.159 - 1771.679: expressions with be finding all athletes
+1769.559 - 1774.799: born in cities that start with just a
+1771.679 - 1778.2: vowel you could find athletes with names
+1774.799 - 1778.2: that contain exactly two
+1780.519 - 1785.32: vowels you could find athletes with
+1783.32 - 1788.399: names that have repeated consecutive
+1785.32 - 1792.1589999999999: letters like Erin and EMT and if you
+1788.399 - 1794.039: started this with a carrot and added a
+1792.159 - 1796.159: case equals false here you could just
+1794.039 - 1797.8799999999999: get double letters at the start there's
+1796.159 - 1800.679: all sorts of things you could do find
+1797.88 - 1803.0390000000002: out athlete names ending with sun or sen
+1800.679 - 1804.76: do that and if you added made this a
+1803.039 - 1807.279: space instead of a dollar sign dollar
+1804.76 - 1811.2: sign means end you could have it just be
+1807.279 - 1815.6: the first name of sin or sen so Carson
+1811.2 - 1818.2: Jason Tyson Etc the na equals false is
+1815.6 - 1822.08: just how you handle null values in the
+1818.2 - 1823.799: row name so by making it false it makes
+1822.08 - 1826.36: the contains always false so it just
+1823.799 - 1829.32: kind of filters those out find athletes
+1826.36 - 1831.399: born in the year starting with 19 could
+1829.32 - 1832.9189999999999: do something like this find athletes
+1831.399 - 1835.76: with names that do not contain any
+1832.919 - 1838.76: vowels 

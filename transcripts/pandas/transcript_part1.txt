@@ -1,0 +1,177 @@
+0.359 - 3.84: hey what's up everyone and welcome back
+2.0 - 5.4: to another video super excited for this
+3.84 - 8.36: one in it we're going to be doing
+5.4 - 10.24: another complete python pandas tutorial
+8.36 - 12.12: walkth through so first off super
+10.24 - 14.08: grateful for all the support on the
+12.12 - 16.68: previous iteration of this video but
+14.08 - 18.52: it's been like 5 years and I've learned
+16.68 - 20.759999999999998: a lot more about pandas there's been a
+18.52 - 22.56: lot of updates to the pandas library and
+20.76 - 24.519000000000002: there's just a lot more modern tools
+22.56 - 26.64: that we can incorporate into a tutorial
+24.519 - 29.0: like this so figured it was a great time
+26.64 - 31.119: to do another walk through this video
+29.0 - 33.0: will be great for for someone that's
+31.119 - 34.64: just getting started with python pandas
+33.0 - 37.12: you'll learn all of the basics that you
+34.64 - 39.64: need to know working with and analyzing
+37.12 - 41.718999999999994: manipulating spreadsheet tabular data
+39.64 - 44.16: with python pandas but this video will
+41.719 - 45.800000000000004: also be great for more experienced users
+44.16 - 47.68: that have maybe used pandas a bunch in
+45.8 - 50.28: the real world but really want to
+47.68 - 52.28: uplevel that skill set and apply new
+50.28 - 54.6: types of things to your day-to-day I
+52.28 - 56.879000000000005: know personally that I'm learning new
+54.6 - 59.519: things about pandas almost every day it
+56.879 - 61.358999999999995: is really a goal of mine to communicate
+59.519 - 63.6: some of that and hopefully everyone can
+61.359 - 65.43900000000001: walk away from this video with some
+63.6 - 67.32000000000001: concrete action items that you can apply
+65.439 - 70.03999999999999: to your own data sets enough of me
+67.32 - 71.96: talking though let's get right into the
+70.04 - 73.92: tutorial there's many different ways you
+71.96 - 77.0: can get started with pandas probably the
+73.92 - 79.96000000000001: easiest is by going to cab. research.com
+77.0 - 82.04: and you can edit code and use pandas
+79.96 - 83.64: right there in your browser but if you
+82.04 - 86.159: prefer to work locally maybe you like
+83.64 - 89.07900000000001: using visual studio code or pycharm or
+86.159 - 90.43900000000001: Jupiter lab then you can go to the repo
+89.079 - 93.55999999999999: that is corresponding responding to this
+90.439 - 97.079: video you can copy this link you can
+93.56 - 100.479: open open up a terminal window and clone
+97.079 - 103.119: the repo so I'm going to go into my code
+100.479 - 104.759: folder I'm going to colog the link that
+103.119 - 106.36: I just
+104.759 - 109.759: copied
+106.36 - 111.079: and now we have once it loads there's a
+109.759 - 113.84: bunch of data files here so it might
+111.079 - 116.55999999999999: take a second then I can go into that
+113.84 - 120.43900000000001: folder and we can look at the files
+116.56 - 122.36: there and then a good next step is to
+120.439 - 125.119: this is just good python practice is to
+122.36 - 125.119: create a virtual
+126.039 - 130.039: environment and activate that virtual
+128.36 - 133.87900000000002: environment I'll make sure to put the
+130.039 - 137.51899999999998: corresponding Windows command up Source
+133.879 - 140.67999999999998: M tutorial is where I just created the
+137.519 - 142.8: virtual environment bin activate and now
+140.68 - 145.36: we can see we have it
+142.8 - 147.84: activated and I want to install all the
+145.36 - 149.4: necessary libraries for this tutorial
+147.84 - 150.48: which can be done with Pip 3 install
+149.4 - 153.08: requirements
+150.48 - 154.67999999999998: requirements.txt again though don't
+153.08 - 156.239: worry if you don't follow these exact
+154.68 - 158.68: steps this is just kind of the best
+156.239 - 160.64000000000001: practice for most python projects but
+158.68 - 162.31900000000002: you can kind of install packages as you
+160.64 - 165.0: go and you don't necessarily need to
+162.319 - 166.879: have a virtual environment set up like
+165.0 - 169.72: if you're using Jupiter if you're using
+166.879 - 174.239: the cab. research. gooogle totally fine
+169.72 - 176.64: okay perfect now next step I use Visual
+174.239 - 180.12: Studio code personally usually so I'm
+176.64 - 182.55999999999997: going to open up the folder that we just
+180.12 - 186.12: created and I'm going to go ahead and
+182.56 - 190.4: create a IPython notebook so I'll call
+186.12 - 193.56: this tutorial. I python notebook and in
+190.4 - 195.59900000000002: here I can start running python commands
+193.56 - 197.879: I do want to set my python interpreter
+195.599 - 199.35999999999999: to what we just set up for that virtual
+197.879 - 201.319: environment so I'm going to do command
+199.36 - 203.28: shift p on my Mac I think it will be
+201.319 - 205.67999999999998: control shift p if you're on Windows
+203.28 - 207.84: select interpreter and we see we have
+205.68 - 210.08: this new virtual environment tutorial
+207.84 - 214.76: select that and we can go ahead and and
+210.08 - 214.76000000000002: do print hello
+218.4 - 224.68: world and then we can go ahead and
+221.879 - 228.04: import pandas as PD and that will
+224.68 - 229.28: accomplish the first step perfect we now
+228.04 - 232.48: have pandas
+229.28 - 235.72: installed again if you're using
+232.48 - 239.23899999999998: collab research. Google just run import
+235.72 - 241.72: panas at PD ASD already exists all right
+239.239 - 243.64000000000001: given you imported pandas correctly
+241.72 - 246.879: let's start learning about data frames
+243.64 - 249.55999999999997: and a data frame is really the main data
+246.879 - 251.319: structure of the Python Panda's library
+249.56 - 254.4: and you can basically think of data
+251.319 - 257.28: frames as tables with all sorts of extra
+254.4 - 259.32: functionality sprinkled sprinkled on so
+257.28 - 261.4: it allows us to work with spreadsheets
+259.32 - 263.88: and other types of tables very easily
+261.4 - 266.03999999999996: within python okay so what is a data
+263.88 - 268.44: frame look like well we can create our
+266.04 - 272.44: own data frame very easily by doing
+268.44 - 274.199: something like DF equals pd. dataframe
+272.44 - 276.84: I'm going to just sprinkle in some dummy
+274.199 - 284.91900000000004: data one two three we'll make this a
+276.84 - 288.56: little 2D array 1 two 3 four five 6 7
+284.919 - 290.71999999999997: 8 nine run that well we can start
+288.56 - 292.24: looking at things within this data frame
+290.72 - 294.36: and start seeing the components that
+292.24 - 297.28000000000003: make it a data frame so we can do data
+294.36 - 299.40000000000003: frame. head to see the first five rows
+297.28 - 300.55999999999995: in this case is just three rows and
+299.4 - 302.79999999999995: there's a couple different things that
+300.56 - 310.199: we see there I'm going to also add real
+302.8 - 310.199: quick columns equals a b and
+310.6 - 315.32000000000005: c all right there's already a few things
+312.68 - 318.24: that we can look at first off we have
+315.32 - 320.919: the header here so we specified with
+318.24 - 323.08: that with columns but oftentimes in our
+320.919 - 326.479: files that we load in this will be kind
+323.08 - 330.52: of populated by default and we see that
+326.479 - 331.96: we can view the data with DF head I
+330.52 - 333.919: could look at just the first row by
+331.96 - 336.35999999999996: doing DF head one I could look at the
+333.919 - 338.12: first two rows by doing DF head 2 I
+336.36 - 341.72: could look at the bottom two rows by
+338.12 - 345.08: doing uh DF tail
+341.72 - 346.8: 2 but there's some useful functions that
+345.08 - 348.24: we should know first off if I just
+346.8 - 351.919: wanted to see what the headers are I can
+348.24 - 354.56: do DF do columns if I wanted to see if
+351.919 - 356.15999999999997: we look at the data frame again these
+354.56 - 358.759: values right here this is known as the
+356.16 - 360.88000000000005: index and I can access those by doing DF
+358.759 - 362.96000000000004: do index
+360.88 - 365.4: and I guess you could also do two list
+362.96 - 367.68: to really see it index can be helpful we
+365.4 - 369.71999999999997: can also specify this as a non-numeric
+367.68 - 373.16: it's going to automatically populate as
+369.72 - 375.759: you know 0 1 two Etc by default but we
+373.16 - 376.96000000000004: could also specify our index we're doing
+375.759 - 378.56: something like
+376.96 - 381.56: x
+378.56 - 381.56: y
+382.68 - 389.12: z and now if we look at our data frame
+385.759 - 391.319: get this and if I did DF do index we see
+389.12 - 394.199: we get YZ other useful things to know
+391.319 - 398.199: about data frame right out of the box is
+394.199 - 399.91900000000004: we can do do DF doino to see information
+398.199 - 402.16: about our data frame we see right now
+399.919 - 404.84: that we have three different columns
+402.16 - 408.639: they're all int 64 types that means they
+404.84 - 410.479: use 64 bytes bite is eight bits of
+408.639 - 412.56: information so we're using a little bit
+410.479 - 414.28: more than we should probably right here
+412.56 - 415.68: if you want to be more efficient this is
+414.28 - 417.23999999999995: one thing that you'd play around with is
+415.68 - 419.68: like these data types it's going to be
+417.24 - 421.319: using numpy under the hood by default
+419.68 - 423.639: later on in this video we'll see how we
+421.319 - 425.599: can change kind of the the engine under
+423.639 - 428.12: the hood to make things more efficient
+425.599 - 430.52: we see the size here 96 bytes another
+428.12 - 433.039: thing that's useful to do is we can do
+430.52 - 435.12: DF do
+433.039 - 436.8: describe and this will tell us some
+435.12 - 438.8: meaningful information about our data
+436.8 - 441.40000000000003: such as uh the number of items in each
+438.8 - 445.08: column the mean of the items in those
+441.4 - 446.87899999999996: columns standard deviation

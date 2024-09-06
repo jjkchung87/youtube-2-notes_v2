@@ -1,0 +1,177 @@
+ Min value Etc
+445.08 - 448.68: and it might be look helpful to look at
+446.879 - 450.12: this side by side with the actual data
+448.68 - 453.84000000000003: frame
+450.12 - 457.199: you can see that we can also do unique
+453.84 - 459.44: to find the unique values in each number
+457.199 - 462.72: unique to find how many unique values
+459.44 - 464.56: are in each column uh this is sometimes
+462.72 - 466.91900000000004: also helpful if you do you know filter
+464.56 - 469.36: by specific column and then you can find
+466.919 - 471.31899999999996: those specific unique values not that
+469.36 - 474.12: interesting in this very toy example but
+471.319 - 477.599: useful in other examples also very
+474.12 - 479.96: useful to know we can do do
+477.599 - 482.159: shape which gives us the shape of our
+479.96 - 486.96: data frame if we added an extra let's
+482.159 - 486.96: say row 10 11
+488.599 - 496.479: 12 and we see that it has four rows
+491.68 - 500.199: three columns row columns useful in info
+496.479 - 502.08: it shows us the memory impact so 128
+500.199 - 504.639: bytes we could also just see the total
+502.08 - 507.0: number of items by doing size all sorts
+504.639 - 508.68: of useful things defining a data frame
+507.0 - 510.28: like this manually is one way to do
+508.68 - 513.2: things but in the real world we're going
+510.28 - 515.4789999999999: to be loading our data in from files so
+513.2 - 517.9190000000001: let's start with some warm-up data there
+515.479 - 520.2: and work our way up into more complex
+517.919 - 523.3199999999999: real world in this video we'll be doing
+520.2 - 524.9590000000001: Olympics data set analysis using pandas
+523.32 - 526.6400000000001: let's work our way up there in the
+524.959 - 528.1999999999999: repository that we cloned and don't
+526.64 - 529.48: worry if you didn't clone the repository
+528.2 - 532.0400000000001: I'll show you how to load these data
+529.48 - 534.36: files in in another way but we have two
+532.04 - 535.76: folders We have data and warm-up data
+534.36 - 539.0: the first thing we'll want to see is how
+535.76 - 541.8389999999999: we can load in a simple data frame using
+539.0 - 544.64: the pd. read CSV function and you can
+541.839 - 548.1600000000001: see this is just a week of coffee sales
+544.64 - 550.76: at a madeup coffee store CSV means comma
+548.16 - 553.3199999999999: separated values file and we can load
+550.76 - 557.2: this in with python pandas by doing the
+553.32 - 559.44: following pd. read CSV we're going to go
+557.2 - 562.24: into our warm-up data folder and then
+559.44 - 567.8000000000001: we're going to load in coffee. CSV we'll
+562.24 - 571.519: save that as coffee equals pd. read CSV
+567.8 - 574.12: coffee and if we look coffee. head we
+571.519 - 577.04: see we have that file loaded in one
+574.12 - 579.72: really cool trick you can do with pandas
+577.04 - 582.16: is if you didn't download this file
+579.72 - 585.44: locally you can actually go to the
+582.16 - 586.4399999999999: repository you can click on warmup data
+585.44 - 589.519: and this is all Linked In the
+586.44 - 591.1600000000001: description you can click on copy. CSV
+589.519 - 593.079: you can see the sample right there but
+591.16 - 596.48: what we actually want to click on is raw
+593.079 - 600.04: and you can copy this URL and actually
+596.48 - 602.36: paste it in within quotes
+600.04 - 604.959: to our
+602.36 - 607.6800000000001: repository and we'll see that we still
+604.959 - 609.0: have coffee file there for the sake of
+607.68 - 611.0: this tutorial I'm going to go back to
+609.0 - 612.88: the other version but this is good to
+611.0 - 614.959: know some things you should know about
+612.88 - 617.36: loading in files is that CSV is probably
+614.959 - 619.1999999999999: the most popular file format but it's
+617.36 - 621.44: not always the best file format
+619.2 - 624.6800000000001: depending on your use case one nice
+621.44 - 627.6800000000001: thing about csvs is that it is they are
+624.68 - 630.92: readable you can look at a big CSV file
+627.68 - 633.519: and understand what's going on within it
+630.92 - 636.519: but one of the big issues with CSV files
+633.519 - 638.32: is if we look at the size of a CSV file
+636.519 - 641.16: so for example we'll look at this
+638.32 - 643.12: results which is Olympic Results for all
+641.16 - 645.92: sorts of athletes for I think the
+643.12 - 649.079: Olympic data from like 1860 onward we
+645.92 - 651.04: see that this file results. CSV is 31
+649.079 - 654.12: megabytes there's other file formats
+651.04 - 657.1999999999999: that we can use such as the feather file
+654.12 - 660.36: format which is 12.2 megabytes for that
+657.2 - 661.9200000000001: same exact data or a paret file which is
+660.36 - 664.72: very popular in the data engineering
+661.92 - 667.519: World which is only 4.74 megabytes for
+664.72 - 671.0: that same file alternatively you could
+667.519 - 673.32: combine multiple CSV files into an Excel
+671.0 - 676.2: file and that would work too but it's
+673.32 - 679.1600000000001: going to also be a bit of a larger file
+676.2 - 681.9200000000001: format within python we can load in all
+679.16 - 684.639: these other files by doing the following
+681.92 - 688.88: so we'll say results which is Olympic
+684.639 - 690.48: Results equals pd. reads we'll do Park
+688.88 - 693.92: of
+690.48 - 698.9200000000001: data results.
+693.92 - 700.76: par run that and we do results. head we
+698.92 - 703.76: see that we get all these Olympic
+700.76 - 706.36: results in a data frame pretty easily we
+703.76 - 710.0: could also load in a Excel file by doing
+706.36 - 713.6: the following we could do Olympics data
+710.0 - 716.32: equals pd. read Excel pass in that Excel
+713.6 - 719.76: file which was data/
+716.32 - 722.839: Olympics data I think it was Excel
+719.76 - 724.8389999999999: X is that right ah give it a shot it
+722.839 - 726.5600000000001: looks like it's loading it took a lot
+724.839 - 728.48: longer to load in though and then with
+726.56 - 731.399: that Olympic
+728.48 - 734.0: data we see that we get the Olympics
+731.399 - 736.399: bios information by default but we can
+734.0 - 739.959: also specify specific
+736.399 - 742.199: sheets within an Excel file such as
+739.959 - 744.2399999999999: let's say there's a results sheet here
+742.199 - 747.88: and we could rerun this and we'll see
+744.24 - 750.519: that when we run the Olympics data. head
+747.88 - 752.32: that the results change
+750.519 - 754.68: again look at how much longer it took to
+752.32 - 757.44: read an Excel file versus the parquet
+754.68 - 759.199: file if Speed and Performance is high
+757.44 - 761.2790000000001: priority for you probably better to work
+759.199 - 762.5999999999999: with pares but if you have to work and
+761.279 - 764.32: collaborate with people that maybe
+762.6 - 766.5600000000001: aren't comfortable with format like
+764.32 - 769.6: paret or feather then probably stick to
+766.56 - 772.5189999999999: CSV or Excel CSV is usually a pretty
+769.6 - 774.639: safe bet for most situations and if we
+772.519 - 776.839: run olympics. head we see that that now
+774.639 - 779.48: changes note if you're curious about
+776.839 - 782.399: where this data comes from it's all SCP
+779.48 - 784.6: from a site called olympia.org and I
+782.399 - 787.24: actually did a tutorial on cleaning this
+784.6 - 790.6800000000001: data set that I'll
+787.24 - 792.0: link right here so there's going to be
+790.68 - 793.4399999999999: three different data files that we're
+792.0 - 796.04: working with throughout this video and
+793.44 - 797.8800000000001: just to simplify things I'll just load
+796.04 - 800.279: them all in now so we'll also have
+797.88 - 804.68: Olympic bio information and I'll read in
+800.279 - 804.68: that CSV file corresponding to
+804.92 - 809.24: that also worth mentioning while we're
+807.839 - 814.1600000000001: here but you'll see later on in the the
+809.24 - 817.6: video there's also a similar two CSV two
+814.16 - 819.8389999999999: Park two Excel functions that you can
+817.6 - 821.88: apply directly on data frames that make
+819.839 - 824.0400000000001: your life easier if you have to resave
+821.88 - 826.16: these okay next let's see how we can
+824.04 - 829.92: access data and different ways using
+826.16 - 831.6: pandas so we have this coffee data frame
+829.92 - 833.959: again we can see the first five rows of
+831.6 - 835.759: it by doing coffee. head we can see the
+833.959 - 838.3599999999999: full data frame by just listing out
+835.759 - 840.519: coffee and if you're using a different
+838.36 - 842.12: editor that doesn't automatically show
+840.519 - 845.399: this stuff when you run a cell you could
+842.12 - 848.12: do something like print coffee just
+845.399 - 850.6: within most notebooks they give you some
+848.12 - 852.199: nice syntax out of the box you could
+850.6 - 855.8000000000001: also get that same syntax with these
+852.199 - 858.0: notebooks by doing display and running
+855.8 - 861.639: that but this is our data frame it's
+858.0 - 864.199: some coffee sales for a week at some
+861.639 - 866.9590000000001: random madeup store and we got that by
+864.199 - 868.5999999999999: just doing coffee okay so again we can
+866.959 - 870.56: access the first five rows by doing
+868.6 - 873.48: coffee
+870.56 - 875.199: head we can access the first 10 rows by
+873.48 - 878.12: doing coffee. head and passing in a
+875.199 - 880.399: value we can get the last five rows by
+878.12 - 881.92: doing coffee. tail we see that it's you
+880.399 - 884.8: know Friday and Saturday and Sunday
+881.92 - 886.4399999999999: versus Monday Tuesday Wednesday and you
+884.8 - 888.4399999999999: know if we didn't pass in a value there
+886.44 - 890.519: also would give us five by default could
+888.44 - 892.32: do 10 that's one way to access data if
+890.519 - 894.399: you wanted to just access random data
+892.32 - 896.759: you can do coffee. sample and you could
+894.399 - 898.639: pass in some values this is helpful if
+896.759 - 9

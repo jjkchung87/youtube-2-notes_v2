@@ -1,0 +1,102 @@
+t's the same dimension
+1356.96 - 1360.72: so if i did b
+1359.12 - 1362.8799999999999: one
+1360.72 - 1364.4: this that gives me three four seven
+1362.88 - 1365.6000000000001: eight let's say i wanted to change that
+1364.4 - 1368.0800000000002: to
+1365.6 - 1370.6399999999999: nine nine
+1368.08 - 1370.6399999999999: eight eight
+1371.12 - 1375.9189999999999: as long as it's the same dimension
+1373.6 - 1377.52: it's gonna work so nine nine eight eight
+1375.919 - 1379.679: if i try to like do something like nine
+1377.52 - 1380.799: nine nine eight eight it's gonna have an
+1379.679 - 1382.159: error
+1380.799 - 1383.36: all right so that's the basics of
+1382.159 - 1385.1200000000001: indexing
+1383.36 - 1386.84: i think by the at the end of the video
+1385.12 - 1389.9189999999999: i'll do a little like
+1386.84 - 1392.32: um challenge problem on like some
+1389.919 - 1394.0800000000002: advanced indexing so look at the end of
+1392.32 - 1395.76: the video for that all right next let's
+1394.08 - 1398.32: go through how to initialize all sorts
+1395.76 - 1401.84: of different types of arrays so to start
+1398.32 - 1404.32: off let's uh initialize in all zeros
+1401.84 - 1406.6399999999999: matrix
+1404.32 - 1410.08: and to do that there's a nice built-in
+1406.64 - 1412.96: function called np.zeros
+1410.08 - 1415.12: and we can first i guess actually all we
+1412.96 - 1417.919: really need to do is specify a shape so
+1415.12 - 1420.4799999999998: i did like mp05 it's gonna just give me
+1417.919 - 1422.159: a vector of five length five but i also
+1420.48 - 1422.88: can pass in
+1422.159 - 1424.72: a
+1422.88 - 1427.3600000000001: more complex shape so if i wanted it to
+1424.72 - 1428.32: be like a two by two or two by three
+1427.36 - 1430.08: let's say
+1428.32 - 1432.72: as you see there i could do three
+1430.08 - 1434.24: dimensional two by three by three
+1432.72 - 1435.2: you could even do four dimensional if i
+1434.24 - 1437.84: wanted to
+1435.2 - 1440.64: two by three by three by two
+1437.84 - 1443.279: it gets pretty crazy but yeah uh you can
+1440.64 - 1446.159: do all sorts of
+1443.279 - 1446.159: zeros with that
+1446.559 - 1453.36: next let's do an all ones matrix pretty
+1449.84 - 1455.12: similar to the last one and p dot ones
+1453.36 - 1456.6399999999999: of
+1455.12 - 1460.2399999999998: let's say
+1456.64 - 1462.3200000000002: four by two by two
+1460.24 - 1464.88: and there you go and you can also
+1462.32 - 1468.6399999999999: specify the data type here so if you
+1464.88 - 1471.2: wanted like all ones but in 32
+1468.64 - 1472.7990000000002: uh you can go ahead and do that so all
+1471.2 - 1474.96: ones
+1472.799 - 1476.8799999999999: all zeros
+1474.96 - 1479.6000000000001: however you might want to initialize a
+1476.88 - 1482.3200000000002: matrix that's not
+1479.6 - 1485.52: ones or zeros any other number
+1482.32 - 1487.6789999999999: so for that you can do np.full
+1485.52 - 1490.48: and this one takes in two parameters so
+1487.679 - 1493.1200000000001: the first is the shape so
+1490.48 - 1495.7: two by two and then the next is the
+1493.12 - 1496.799: value so if i wanted all 99s
+1495.7 - 1498.8400000000001: [Music]
+1496.799 - 1502.8799999999999: then it's a two by two with
+1498.84 - 1504.3999999999999: 99 another useful
+1502.88 - 1506.88: and you can you know that has a data
+1504.4 - 1508.72: type too so if i wanted that to be float
+1506.88 - 1511.3600000000001: 32
+1508.72 - 1511.3600000000001: there you go
+1513.6 - 1517.76: and i'll put a link in the description
+1515.52 - 1519.6: to a list full of these like array
+1517.76 - 1523.039: creation routines
+1519.6 - 1527.7199999999998: uh useful to know is there's also this
+1523.039 - 1527.72: full like um
+1529.679 - 1534.72: there's this full like method and
+1532.159 - 1536.48: basically that just allows us to take a
+1534.72 - 1537.44: shape that's already built so let's
+1536.48 - 1541.1200000000001: imagine
+1537.44 - 1544.3200000000002: we wanted to reuse that
+1541.12 - 1545.76: this array that we i guess had in in the
+1544.32 - 1546.72: last section
+1545.76 - 1548.1589999999999: a
+1546.72 - 1549.84: well i think it's still loaded and let
+1548.159 - 1553.6000000000001: me just make sure
+1549.84 - 1557.4399999999998: well i can pass in and make a
+1553.6 - 1561.4399999999998: array that's the same size size
+1557.44 - 1563.679: of fours let's say by doing full
+1561.44 - 1563.679: like
+1564.0 - 1567.6: or actually i think i don't even have to
+1565.279 - 1568.96: pass in
+1567.6 - 1571.12: a dot shape
+1568.96 - 1573.6000000000001: i just have to pass in a
+1571.12 - 1575.279: there we go if i didn't use full like i
+1573.6 - 1576.1589999999999: would have to do full
+1575.279 - 1577.6: of
+1576.159 - 1579.2: a dot shape i don't know if that's that
+1577.6 - 1583.9599999999998: useful for you but
+1579.2 - 1583.96: i guess it's potentially good to know
+1585.679 - 1591.279: okay next one let's say we wanted to
+1589.039 - 1593.44: initialize
+1591.279 - 1593.44: a
+1593.6 - 1601.199999999999

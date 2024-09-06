@@ -1,0 +1,100 @@
+ike right next to each other we
+432.88 - 436.8: can utilize this
+434.4 - 440.15999999999997: unit and basically what cimd stands for
+436.8 - 441.84000000000003: is single instruction multiple data
+440.16 - 444.16: so we can like if we have to do an
+441.84 - 445.919: addition of like a lot of values
+444.16 - 448.8: instead of just doing one addition at a
+445.919 - 450.56: time we can use this cmd vector unit and
+448.8 - 453.36: basically perform
+450.56 - 454.479: computations on all these values at one
+453.36 - 456.47900000000004: time
+454.479 - 458.71999999999997: so it's quicker in that regard another
+456.479 - 461.44: reason it's quicker is that we more
+458.72 - 462.8: effectively utilize our cache so our
+461.44 - 465.12: kind of our quicker memory in our
+462.8 - 466.639: computer basically if we load in all
+465.12 - 468.0: these values
+466.639 - 471.84000000000003: we can keep them
+468.0 - 473.599: close to where we need to access them
+471.84 - 475.67999999999995: and like perform all sorts of operations
+473.599 - 478.87899999999996: while as in the list case you'd maybe
+475.68 - 480.479: load in like half of this but then this
+478.879 - 482.879: other half because it's scattered around
+480.479 - 486.08: in different places you'd have to like
+482.879 - 487.759: go back and like reload that in
+486.08 - 489.039: uh to your cache
+487.759 - 490.639: like
+489.039 - 492.87899999999996: you know just be overall slower because
+490.639 - 495.44: you'd have to do more like longer memory
+492.879 - 497.91900000000004: lookups within your computer
+495.44 - 499.919: okay so we kind of went over some of the
+497.919 - 501.52: performance benefits but how are lists
+499.919 - 503.84: different from numpy
+501.52 - 506.87899999999996: well lists we can do insertion deletion
+503.84 - 509.44: appending concatenation etc and we can
+506.879 - 511.36: also do those same exact things in numpy
+509.44 - 514.399: i guess the big difference though is
+511.36 - 516.399: that within numpy we can do all that
+514.399 - 518.959: and we can do lots and lots more and
+516.399 - 521.12: we'll see the lot slots more
+518.959 - 523.4399999999999: throughout the video but as a simple
+521.12 - 525.519: example imagine we have
+523.44 - 526.72: these two arrays
+525.519 - 528.72: one thing that we can do that's really
+526.72 - 532.88: nice in numpy is that if we try to
+528.72 - 535.2: multiply these one item at a time
+532.88 - 537.279: we could do that in in lists you
+535.2 - 538.24: couldn't multiply one and one three and
+537.279 - 540.72: two
+538.24 - 543.36: uh five and three
+540.72 - 545.44: um etc but when we do the exact same
+543.36 - 549.44: computation within numpy it allows us to
+545.44 - 550.8000000000001: do these you know single value like
+549.44 - 552.8800000000001: item-wise
+550.8 - 555.12: computations which is pretty neat and
+552.88 - 556.399: pretty useful so that's one example and
+555.12 - 558.5600000000001: you'll see a lot more throughout the
+556.399 - 560.08: video uh so applications are known by
+558.56 - 561.76: there's all sorts of applications i
+560.08 - 563.76: think the first one the kind of the
+561.76 - 565.92: first one that comes to my mind is that
+563.76 - 568.0: is a kind of a
+565.92 - 570.399: matlab replacement you can do all sorts
+568.0 - 572.8: of mathematics with numpy i think i
+570.399 - 574.08: should say that i think the scipy
+572.8 - 577.279: library
+574.08 - 579.519: has even more mathematics like functions
+577.279 - 580.399: and whatnot so if numpy isn't cutting it
+579.519 - 582.48: for you
+580.399 - 584.32: try to look through the scipy
+582.48 - 586.88: documentation you might be able to find
+584.32 - 589.6: even more but yeah it's pretty powerful
+586.88 - 592.8: the math that numpy can do
+589.6 - 594.399: it's useful in plotting it is
+592.8 - 596.8: the back end of many different
+594.399 - 598.88: applications so pandas
+596.8 - 601.519: which i've done a video on before
+598.88 - 603.279: it is just like the core
+601.519 - 605.2: component of pandas library it really
+603.279 - 607.519: allows pandas to work
+605.2 - 610.48: um if you've seen my connect 4 how to
+607.519 - 612.24: program that video i use numpy to store
+610.48 - 613.76: the board
+612.24 - 614.88: and then in future videos i'm going to
+613.76 - 616.8389999999999: do
+614.88 - 620.399: you can you can actually store
+616.839 - 623.0400000000001: images uh through numpy so like png
+620.399 - 624.959: images you can use numpy to store all
+623.04 - 626.959: the information and like do all sorts of
+624.959 - 628.16: cool stuff that i'll uh post future
+626.959 - 630.16: videos on
+628.16 - 633.76: uh let's see also
+630.16 - 636.16: another i think useful reason to know
+633.76 - 637.68: numpy is that it's kind of like pretty
+636.16 - 639.6: important for machine learning
+637.68 - 641.4399999999999: applications
+639.6 - 643.44: both directly and then also kind of
+641.44 - 645.36: indirectly because
+643.44 - 647.12: one of the key
+645.36 - 648.48: libraries 

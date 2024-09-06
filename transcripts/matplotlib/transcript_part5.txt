@@ -1,0 +1,171 @@
+ be looking at the
+2138.26 - 2146.15: actual CSV file and like excel so gasps
+2143.119 - 2148.31: we have year and then we have all these
+2146.15 - 2151.609: different countries and their price and
+2148.31 - 2154.5499999999997: US dollars per gallon for gas that year
+2151.609 - 2160.43: so the way I look at this we're gonna
+2154.55 - 2163.52: have year as our x input so ah stop
+2160.43 - 2168.71: texting me so based on the year each
+2163.52 - 2170.3: country has a different gas price so the
+2168.71 - 2176.09: way we can access that is we can do
+2170.3 - 2181.79: something like PLT dot plot and so our X
+2176.09 - 2183.9500000000003: data is going to be gas a year our Y
+2181.79 - 2187.52: data is gonna be let's say we start with
+2183.95 - 2189.109: USA so USA is all caps here so I have to
+2187.52 - 2193.88: follow that same syntax when I'm
+2189.109 - 2196.0699999999997: accessing that gas that USA and then I
+2193.88 - 2197.75: can do a plot dot show and I think
+2196.07 - 2200.3590000000004: already there we'll have a basic graph
+2197.75 - 2206.81: up and running so as you can see yep
+2200.359 - 2208.52: this is the basic graph for our data and
+2206.81 - 2214.33: we could also add another country we can
+2208.52 - 2220.4: do plot plot let's add Canada year gas
+2214.33 - 2222.17: Canada I think yeah as you can see now
+2220.4 - 2225.32: we have two different graphs and as you
+2222.17 - 2227.21: can see from this it's easy to see more
+2225.32 - 2227.96: easily than just reading the CSV that oh
+2227.21 - 2230.54: okay
+2227.96 - 2234.71: every year gas and Canada is
+2230.54 - 2236.54: consistently higher than in the USA but
+2234.71 - 2238.16: we have some problems with this graph so
+2236.54 - 2241.64: like one thing that I see that's an
+2238.16 - 2242.8999999999996: issue is all these years like I don't
+2241.64 - 2245.359: know I think it just makes more sense to
+2242.9 - 2247.609: be looking at the exact year especially
+2245.359 - 2249.95: since this data wasn't like broken up by
+2247.609 - 2253.359: month so like I don't like the x axis
+2249.95 - 2255.5699999999997: labels we have no title we have no real
+2253.359 - 2257.22: good indicator of
+2255.57 - 2259.7400000000002: these values mean up here here on the
+2257.22 - 2262.3199999999997: y-axis so we need to start fixing some
+2259.74 - 2265.41: things up and quickly to know if you
+2262.32 - 2267.21: have like a multi-word name this format
+2265.41 - 2272.1: of dot year probably won't work so you
+2267.21 - 2275.4900000000002: could also do bracket notation to access
+2272.1 - 2277.5: that field as you see it still works so
+2275.49 - 2279.1499999999996: if we had something with two names and I
+2277.5 - 2283.97: don't remember let me look at the data
+2279.15 - 2283.9700000000003: again see if any countries have that
+2284.3 - 2290.88: South Korea for example like we would
+2287.43 - 2294.68: have to use this syntax so I'll actually
+2290.88 - 2304.13: plot South Korea's gas in this list
+2294.68 - 2304.1299999999997: their gas prices so plot plot gas year
+2304.28 - 2309.0600000000004: gas South Korea wouldn't work maybe
+2308.01 - 2310.86: actually it would work with the
+2309.06 - 2313.35: underlines I'm not sure yeah
+2310.86 - 2319.71: South Korea's having issues so what we
+2313.35 - 2320.79: can do is south space Korea now we have
+2319.71 - 2322.8: three lines and Wow
+2320.79 - 2324.6: yeah the gas in South Korea is even more
+2322.8 - 2326.9100000000003: expensive okay it's just kind of
+2324.6 - 2328.38: bothering me mixing these different ways
+2326.91 - 2331.3199999999997: to do this so I'm going to change this
+2328.38 - 2334.23: back to here change this back to year
+2331.32 - 2335.88: and only leave the South Korea like that
+2334.23 - 2338.27: because it has to be like that okay so
+2335.88 - 2341.4300000000003: now we have some plots let's make this
+2338.27 - 2344.91: graph overall better though so to start
+2341.43 - 2347.0699999999997: let's add a title so to add a title if
+2344.91 - 2349.56: you remember from my last video and feel
+2347.07 - 2354.32: free to review that again we can just
+2349.56 - 2366.24: use peel detail I can label this like
+2354.32 - 2367.73: gas prices over time and US dollars and
+2366.24 - 2371.04: so it still doesn't make too much sense
+2367.73 - 2372.69: because you see all these lines but you
+2371.04 - 2374.04: don't know what they represent I mean we
+2372.69 - 2376.62: only know that what they represent
+2374.04 - 2378.93: because we see the code here but we
+2376.62 - 2381.3599999999997: should add a legend and so to add a
+2378.93 - 2383.1: legend we're not to first give these
+2381.36 - 2385.35: plots labels because if I don't give
+2383.1 - 2387.49: these labels watch what happens plot dot
+2385.35 - 2393.97: legend
+2387.49 - 2399.6099999999997: oh wow it worked I was not actually
+2393.97 - 2400.9599999999996: expecting that to work try to think why
+2399.61 - 2403.1800000000003: that is that it worked
+2400.96 - 2406.51: whatever it worked without needing to
+2403.18 - 2408.7: add the labels specifically so that's
+2406.51 - 2411.4300000000003: kind of nice for us I guess due to the
+2408.7 - 2414.2799999999997: fact that we're reading this in and we
+2411.43 - 2416.71: kind of from a nice CSV that already has
+2414.28 - 2421.51: headers it probably worked but in our
+2416.71 - 2423.04: last video you had to add label so I
+2421.51 - 2424.63: could actually change the label if I
+2423.04 - 2429.4: wanted to if I wanted this to just say
+2424.63 - 2432.07: United States see that change it like
+2429.4 - 2433.69: that so you can add this optional label
+2432.07 - 2436.21: parameter if things aren't working for
+2433.69 - 2439.33: you properly but for us it just kind of
+2436.21 - 2441.28: magically did the trick okay so this is
+2439.33 - 2443.25: looking already a little bit better I
+2441.28 - 2448.4500000000003: might make the graph a little bit bigger
+2443.25 - 2455.62: let's do that I can do plot dot figure
+2448.45 - 2458.6499999999996: big size equals say 8 by 5 so now that's
+2455.62 - 2460.69: a nicer sizing it's more easy to see
+2458.65 - 2463.2000000000003: everything the legend is a more
+2460.69 - 2466.39: reasonable size and comparison of
+2463.2 - 2469.72: everything in there so that's bit better
+2466.39 - 2471.4: what else can we do to this well we
+2469.72 - 2473.2: don't have any labels for axes so we
+2471.4 - 2474.7000000000003: should definitely do that also I really
+2473.2 - 2477.52: don't like that these tick marks are not
+2474.7 - 2479.77: exact years so I think the next thing
+2477.52 - 2485.86: I'm going to do is change up the ticks
+2479.77 - 2488.89: so x ticks what we can pass in is just
+2485.86 - 2493.2400000000002: the year here so now it will have a tick
+2488.89 - 2496.99: for every year that we have data for Wow
+2493.24 - 2499.6899999999996: and that looks absolutely fantastic yeah
+2496.99 - 2503.8599999999997: obviously issues with this - squished
+2499.69 - 2508.5: together so what can work well is if I
+2503.86 - 2511.6: print out gas that year you see we have
+2508.5 - 2514.21: part of a panda's data frame but we have
+2511.6 - 2517.95: over one of these years if we remember
+2514.21 - 2520.11: you know some good old list
+2517.95 - 2523.6499999999996: comprehension
+2520.11 - 2526.31: this comprehension the list iterating
+2523.65 - 2528.4500000000003: syntax maybe that will be the word but
+2526.31 - 2529.95: you know when you want to get certain
+2528.45 - 2533.1299999999997: items like the first five items on a
+2529.95 - 2535.77: list you go zero to five or you could
+2533.13 - 2538.38: even just do five what we want to do is
+2535.77 - 2540.5099999999998: iterate you know maybe take every three
+2538.38 - 2542.04: years so what we could do to do that is
+2540.51 - 2543.3: we don't care where we start it so we're
+2542.04 - 2546.36: gonna start at the beginning we want to
+2543.3 - 2549.27: end at the end but we want to skip every
+2546.36 - 2554.31: three years so now we get all the years
+2549.27 - 2556.29: in a we get every third year which will
+2554.31 - 2558.33: probably be better when we graph it down
+2556.29 - 2562.5: here so I'm going to do that now so
+2558.33 - 2567.83: guess year tick tick three colon colon
+2562.5 - 2567.83: three cool that looks pretty good all
+2567.86 - 2573.03: right
+2569.22 - 2576.0899999999997: I also kind of would like to have exact
+2573.03 - 2578.88: values here kind of show exactly where
+2576.09 - 2581.3700000000003: we're plotting the points so to do that
+2578.88 - 2585.59: if you remember the shorthand notation
+2581.37 - 2594.96: from the last video we can do stuff like
+2585.59 - 2599.07: will make us a blue dot - so blue is the
+2594.96 - 2601.88: color and we want a dot - we want dot
+2599.07 - 2605.55: markers and a dash a straight line
+2601.88 - 2607.77: basically we're saying cool so now we
+2605.55 - 2610.0800000000004: have every third year but we have points
+2607.77 - 2612.78: for every time we actually have a data
+2610.08 - 2618.96: point so that looks good we do the same
+2612.78 - 2621.03: thing for the other ones red - and
+2618.96 - 2622.71: what's cool - is you see that the legend
+2621.03 - 2631.4700000000003: changes as we do that
+2622.71 - 2634.08: South Korea let's say green dot - cool I
+2631.47 - 2636.56: like the look of this still we need to
+2634.08 - 2642.36: do some more modifications let's add
+2636.56 - 2644.97: labels to our X and y-axis so X label
+2642.36 - 2651.42: will be year that's pretty
+2644.97 - 2665.5299999999997: self-explanatory then the Y label
+2651.42 - 2669.7000000000003: we'll be US dollars cool so now you can
+2665.53 - 2675.55: see you know okay and year 2008 South
+2669.7 - 2677.77: Korea paid approximately $6 per gallon
+2675.55 - 2680.92: of gas we're all translating all these
+2677.77 - 2686.59: values to US dollars while Canada paid
+2680.92 - 2690.88: about four dollars and the u.s. played
+2686.59 - 2693.19: about three dollars so that looks pretty
+2690.88 - 2700.53: good to 

@@ -1,0 +1,101 @@
+part of
+2776.16 - 2780.7999999999997: the same matrix
+2778.4 - 2782.88: and one two three four is on top of five
+2780.8 - 2784.48: six seven eight what i can even do is
+2782.88 - 2786.88: keep passing these in so let's say i
+2784.48 - 2788.88: wanted like three copies of
+2786.88 - 2790.8: this five six seven eight and only one
+2788.88 - 2792.079: copy of this or i could enter tweet
+2790.8 - 2795.3590000000004: weave them
+2792.079 - 2798.0: that's a vertical stack
+2795.359 - 2800.64: horizontal stacks are pretty similar and
+2798.0 - 2803.599: also note here like i can't do that the
+2800.64 - 2804.72: size is mass mitch miss
+2803.599 - 2808.8: match
+2804.72 - 2809.839: so yep horizontal stack very similar
+2808.8 - 2812.1600000000003: um
+2809.839 - 2813.2: let's say we had
+2812.16 - 2815.1189999999997: um
+2813.2 - 2818.3999999999996: we'll use uh some notation we've learned
+2815.119 - 2820.319: before we had these two matrices
+2818.4 - 2823.839: so if i printed out h1
+2820.319 - 2826.96: you got like that and then h2 is this
+2823.839 - 2830.0789999999997: well i want h2 to be on the back of h1 i
+2826.96 - 2831.04: can just do an mp.h stack horizontal
+2830.079 - 2833.52: stack
+2831.04 - 2835.839: and that will be h1
+2833.52 - 2837.92: and then h2
+2835.839 - 2840.0789999999997: and that did not work
+2837.92 - 2841.28: because i did not surround this in
+2840.079 - 2842.96: parenthesis
+2841.28 - 2844.559: either parenthesis or brackets i think
+2842.96 - 2846.7200000000003: they both work yeah
+2844.559 - 2848.88: there you go so now we've
+2846.72 - 2850.8799999999997: horizontally stacked the zeros on top of
+2848.88 - 2852.8: the or to the right of the ones all
+2850.88 - 2856.079: right let's get into some miscellaneous
+2852.8 - 2857.6800000000003: things so first off imagine you have
+2856.079 - 2860.1600000000003: uh you know some sort of text file with
+2857.68 - 2861.9199999999996: all sorts of data and
+2860.16 - 2864.319: for whatever reason you choose you don't
+2861.92 - 2867.28: want to use pandas but you want to load
+2864.319 - 2869.04: all that data from that file into a
+2867.28 - 2871.52: numpy array
+2869.04 - 2872.48: well we can do that without too much
+2871.52 - 2875.28: trouble
+2872.48 - 2875.28: so i have this
+2875.359 - 2879.359: text file that i created as you can see
+2877.119 - 2880.88: here this is on my github page
+2879.359 - 2883.52: you can download it there this is just
+2880.88 - 2884.96: really simple data but it shows kind of
+2883.52 - 2887.119: what you can do
+2884.96 - 2890.079: with it all delimited by commas called
+2887.119 - 2890.079: data txt
+2890.319 - 2895.839: what i can do is i can do
+2893.2 - 2898.24: mp and i can use this function called
+2895.839 - 2900.72: gen from text
+2898.24 - 2903.2799999999997: and i pass in the name of the file which
+2900.72 - 2906.0: is data.txt and then i pass in a
+2903.28 - 2908.8: delimiter which is the separator and
+2906.0 - 2910.24: that's a comma and if i do that
+2908.8 - 2913.28: you see that i get
+2910.24 - 2915.5989999999997: that data that i just showed you
+2913.28 - 2917.8390000000004: um
+2915.599 - 2920.6400000000003: you get that i can increase
+2917.839 - 2920.64: the zoom here
+2922.319 - 2927.2: i get that um as an array so that's
+2925.04 - 2930.4: pretty nice so
+2927.2 - 2932.24: i'll just call this file data
+2930.4 - 2933.28: equals
+2932.24 - 2935.2: and
+2933.28 - 2936.1600000000003: file data
+2935.2 - 2937.839: yeah
+2936.16 - 2942.0: one thing you notice though is it
+2937.839 - 2944.16: automatically cast it to a
+2942.0 - 2946.0: float type
+2944.16 - 2949.44: and what if i wanted it to be an integer
+2946.0 - 2951.76: well i can do another function as type
+2949.44 - 2953.68: which basically copies all the data into
+2951.76 - 2957.3590000000004: a whatever
+2953.68 - 2959.7599999999998: format you specify so i'll say n32
+2957.359 - 2962.16: and as you can see now all this stuff is
+2959.76 - 2964.3190000000004: here and if i go ahead and print file
+2962.16 - 2967.359: data now
+2964.319 - 2969.04: it is back to what we had originally and
+2967.359 - 2971.2799999999997: the reason it's back is that this
+2969.04 - 2973.119: actually makes a copy because the
+2971.28 - 2974.8: float type and the n32 type are
+2973.119 - 2975.839: different sizes it can't just like in
+2974.8 - 2977.52: place
+2975.839 - 2980.319: um copy everything it doesn't really
+2977.52 - 2983.7599999999998: make sense to so if i did file data
+2980.319 - 2986.8: equals file data
+2983.76 - 2991.2000000000003: uh dot as type
+2986.8 - 2993.2000000000003: into 32 and then printed out file data
+2991.2 - 2995.5989999999997: as you can see now it's all floats so
+2993.2 - 2997.2: that's how you load data from a file and
+2995.599 - 2999.52: you can change up this delimiter based
+2997.2 - 3002.64: on how your data is split but i think
+2999.52 - 3004.559: that this gen from text will handle your
+3002.64 - 3006.8799999999997: new line breaks properly if that's how
+3004.559 - 3008.079: it's for

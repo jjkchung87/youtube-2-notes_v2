@@ -1,0 +1,228 @@
+0.56 - 5.92: hello and welcome to the first episode
+3.28 - 8.72: about mark about applying marketing mix
+5.92 - 11.84: modeling using python
+8.72 - 12.96: all right so uh we're gonna do what
+11.84 - 14.799: we're gonna
+12.96 - 17.84: to cover today is
+14.799 - 20.48: we're gonna try to do a bridge of
+17.84 - 24.0: uh what we've done in the past using
+20.48 - 26.560000000000002: uh linear regression uh in excel
+24.0 - 28.88: doing that all the expiration phase uh
+26.56 - 30.479999999999997: create a simple model and see how
+28.88 - 32.64: accurate it is
+30.48 - 34.399: we're going to do the same thing
+32.64 - 36.32: using python
+34.399 - 37.04: so the steps that we're going to cover
+36.32 - 39.2: are
+37.04 - 41.839999999999996: what libraries we need to import and how
+39.2 - 41.84: to import them
+42.079 - 46.079: we're going to import our data frame and
+44.0 - 47.52: we're gonna see how
+46.079 - 49.92: and
+47.52 - 52.64: let's see if i all right we're gonna see
+49.92 - 54.96: how and then we're gonna show graphs and
+52.64 - 56.559: do some exploration analysis
+54.96 - 59.28: we're gonna use
+56.559 - 62.0: ordinary squares library
+59.28 - 64.72: uh or stats models library that has a
+62.0 - 67.2: function called ordinary squares to do
+64.72 - 68.96: some statistical analysis we're going to
+67.2 - 70.96000000000001: see what metrics we need
+68.96 - 74.15899999999999: to understand in order to validate our
+70.96 - 75.759: hypothesis and create an mmm project
+74.159 - 77.28: done well
+75.759 - 79.759: then we're going to use a linear
+77.28 - 81.52: regression function from socket learn
+79.759 - 83.36: and then we're going to do some post
+81.52 - 86.15899999999999: modeling analysis
+83.36 - 87.68: so let's start importing libraries we
+86.159 - 89.759: actually need
+87.68 - 92.72000000000001: only four or five libraries it's going
+89.759 - 94.0: to be super easy first one is
+92.72 - 96.4: pandas
+94.0 - 99.68: we need to have a way libras is a
+96.4 - 102.56: library used to
+99.68 - 104.72000000000001: manipulate data sets it's super
+102.56 - 107.84: incredible easy to use and super
+104.72 - 109.52: powerful so i'm gonna do import pandas
+107.84 - 112.96000000000001: as pd
+109.52 - 116.399: then import uh poly
+112.96 - 118.96: x dot express as px
+116.399 - 121.84: plus express is a library that allows us
+118.96 - 124.88: to have interactive graphs which we can
+121.84 - 128.0: zoom in zoom out and
+124.88 - 128.959: it's incredible it's really incredible
+128.0 - 134.879: um
+128.959 - 136.879: then we're gonna import uh stats models
+134.879 - 138.319: as xm
+136.879 - 142.64: and then we're gonna do
+138.319 - 144.48: from socket learn dot linear model
+142.64 - 146.55999999999997: underscore model
+144.48 - 148.07999999999998: uh import
+146.56 - 150.48: linear
+148.08 - 152.8: regression
+150.48 - 154.56: and
+152.8 - 157.68: from
+154.56 - 159.84: socket learn
+157.68 - 161.04000000000002: that model
+159.84 - 163.28: selection
+161.04 - 165.28: we're gonna import
+163.28 - 167.76: uh train
+165.28 - 170.239: underscore test
+167.76 - 173.04: split
+170.239 - 175.84: and this function is used to do
+173.04 - 178.0: something that in data science uh is
+175.84 - 179.28: it's a must in order to validate your
+178.0 - 182.72: hypothesis
+179.28 - 185.68: really well we if this function
+182.72 - 186.72: allows us to easily separate and divide
+185.68 - 187.59900000000002: into
+186.72 - 189.519: um
+187.599 - 191.44: our data sets in two parts in which
+189.519 - 192.56: we're gonna use the first part to train
+191.44 - 194.07999999999998: our model
+192.56 - 196.84: and then we're gonna do
+194.08 - 199.92000000000002: we're gonna use the second part
+196.84 - 202.31900000000002: to validate our model
+199.92 - 204.39999999999998: how well to validate how well it can
+202.319 - 205.11999999999998: predict it can predict
+204.4 - 207.68: so
+205.12 - 211.04: let's uh shift
+207.68 - 213.84: uh let's run it perfect now
+211.04 - 216.239: uh let's define our data set so we've
+213.84 - 219.36: done the first part let's import our
+216.239 - 222.0: data frame our data frame is df equal
+219.36 - 225.44000000000003: we're going to use the function read csv
+222.0 - 227.84: from pandas so pd.read
+225.44 - 231.44: underscore csv
+227.84 - 233.12: open parentheses uh we're gonna do
+231.44 - 234.4: we're gonna copy
+233.12 - 236.64000000000001: the path
+234.4 - 239.04: from
+236.64 - 241.04: this uh csv file
+239.04 - 243.439: and then we're going to route that head
+241.04 - 248.4: that's rough right let's
+243.439 - 248.4: describe let's see what comes out
+248.64 - 250.64: all right
+249.76 - 253.28: um
+250.64 - 255.2: now let's let's just run the f
+253.28 - 257.68: this is our data set
+255.2 - 260.15999999999997: and how pandas show
+257.68 - 261.6: shows data sets basically and we can see
+260.16 - 263.68: that we have an aggregate a weekly
+261.6 - 266.96000000000004: aggression as we had in
+263.68 - 269.68: the past episodes in in excel
+266.96 - 271.19899999999996: we have 30 records in these 30 records
+269.68 - 272.56: we have sales
+271.199 - 274.16: time frame
+272.56 - 276.24: how much we spend on facebook how much
+274.16 - 277.44: we spend on tv and how much we spent on
+276.24 - 280.56: radio
+277.44 - 283.199: now we imported this df what i'm gonna
+280.56 - 285.36: want to see now is how they behave over
+283.199 - 287.84000000000003: time in order to see if
+285.36 - 290.08000000000004: all the inputs over time
+287.84 - 292.96: are correlated in some way so if they
+290.08 - 295.03999999999996: move up also sales move up
+292.96 - 298.08: that's what i want to find out
+295.04 - 300.24: let's do and we do that using plug
+298.08 - 301.039: express so
+300.24 - 303.36: uh
+301.039 - 304.479: coding wise what we do is fig
+303.36 - 307.759: equal
+304.479 - 309.75899999999996: to px dot line
+307.759 - 312.16: open parenthesis
+309.759 - 315.039: we define what's the data framework we
+312.16 - 319.44: need to take into consideration
+315.039 - 321.12: then the x-axis needs to be time
+319.44 - 322.24: as we've seen here
+321.12 - 325.52: and then
+322.24 - 328.8: in the y-axis what i want is
+325.52 - 330.4: uh df.columns so i want everything i
+328.8 - 333.039: just want to see
+330.4 - 336.28: how everything is showing i'm going to
+333.039 - 336.28: do fig.show
+336.72 - 342.24: and it's gonna show me everything
+338.8 - 343.6: so here what we have is uh sales right
+342.24 - 345.68: so
+343.6 - 347.84000000000003: they have different dimension dimensions
+345.68 - 350.84000000000003: so this is really high
+347.84 - 352.71999999999997: and what i want to see if
+350.84 - 354.479: is yeah
+352.72 - 357.44000000000005: as we've seen in the past episode in
+354.479 - 360.4: excel uh this is facebook and once
+357.44 - 361.36: when facebook is rising also sales rise
+360.4 - 362.63899999999995: with that
+361.36 - 364.24: um
+362.639 - 365.6: let's see here
+364.24 - 368.8: um
+365.6 - 371.91900000000004: yeah facebook rises uh sales rises too
+368.8 - 371.91900000000004: uh this is tv
+372.0 - 378.08: tv seems a little a little correlated
+375.6 - 379.36: but we can see that radio has positive
+378.08 - 380.639: spikes when
+379.36 - 382.8: uh
+380.639 - 385.759: when sails have downward spikes so
+382.8 - 389.12: they're not really correlated i've seen
+385.759 - 390.96000000000004: let's check real quick if um the
+389.12 - 393.68: correlation the piercer correlation
+390.96 - 395.84: metrics and python is a python and
+393.68 - 399.56: pandas app a really simple way to do it
+395.84 - 399.56: it's just df.car
+399.6 - 402.639: run it
+400.8 - 405.6: as you can see we have correlation
+402.639 - 408.0: between sales and facebook sales and tv
+405.6 - 410.319: sales and radio there is an incredibly
+408.0 - 412.319: low correlation between radio and sales
+410.319 - 413.759: okay correlation between tv and sales
+412.319 - 415.84000000000003: but really high correlation between
+413.759 - 417.52000000000004: facebook and sales
+415.84 - 419.19899999999996: that's good
+417.52 - 421.039: now
+419.199 - 422.8: what we want to do is we want to do
+421.039 - 424.8: scatter plots
+422.8 - 426.96000000000004: so
+424.8 - 430.319: what we do is uh
+426.96 - 431.84: we define a new fig equal
+430.319 - 432.72: let's call it click one
+431.84 - 433.919: just
+432.72 - 435.52000000000004: put some
+433.919 - 437.75899999999996: clearance
+435.52 - 441.52: across all the notebook so we're gonna
+437.759 - 444.16: do px dot uh scatter
+441.52 - 447.52: open parenthesis we're gonna define df
+444.16 - 450.639: as a exact as a data set
+447.52 - 451.68: that is it x is equal to
+450.639 - 454.24: um
+451.68 - 456.56: facebook all right we're gonna
+454.24 - 460.24: facebook and y
+456.56 - 460.24: is gonna be equal to sales
+461.84 - 466.96: fake one
+463.44 - 468.71999999999997: let's wait let's do something faster so
+466.96 - 471.52: i'm gonna copy three times i'm gonna
+468.72 - 473.759: call it big one pick two from three
+471.52 - 476.84: uh
+473.759 - 479.91900000000004: we're gonna change this tv and
+476.84 - 482.0: radio and let's show everything let's
+479.919 - 483.84: pick one show
+482.0 - 485.44: copy it
+483.84 - 487.28: three times
+485.44 - 489.12: two and three
+487.28 - 491.19899999999996: let's run it
+489.12 - 492.72: all right as we can see seals and
+491.199 - 495.759: facebook are
+492.72 - 498.47900000000004: really correlated so if you see a trend
+495.759 - 500.96000000000004: when when the budget is invested it's
+498.479 - 502.479: increasing if we have a positive
+500.96 - 505.12: correlation so
+502.479 - 507.039: the points are going up
+505.12 - 510.479: it means that there is a
+507.039 - 513.8389999999999: clear correlation in here
+510.479 - 516.479: uh sales and tv are
+513.839 - 518.8800000000001: a little correlated there are some um as
+516.479 - 520.399: you can see here these are anomalies
+518.88 - 521.519: that
+520.399 - 522.959: we can
+521.519 - 524.159: weaken the
+522.959 - 528.2399999999999: uh
+524.159 - 531.2: made the correlation u

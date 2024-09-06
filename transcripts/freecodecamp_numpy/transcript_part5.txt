@@ -1,0 +1,106 @@
+ortant functions with this
+882.48 - 887.04: we could do a dot item size
+884.48 - 888.32: so this should tell me two bytes
+887.04 - 892.8: as it does
+888.32 - 894.399: if we left this as an int 32
+892.8 - 897.279: it will tell me
+894.399 - 899.68: four bytes down here
+897.279 - 902.88: as it does
+899.68 - 902.88: you can also do i think
+903.12 - 906.0: the total size
+911.279 - 915.199: um i guess a dot size
+913.92 - 917.12: is
+915.199 - 918.8: uh the total number of elements so the
+917.12 - 922.72: total size would be
+918.8 - 924.56: a dot size times a dot item size
+922.72 - 926.639: um another way to do that is i think
+924.56 - 928.56: just number of bytes
+926.639 - 929.759: as you see that's the same thing
+928.56 - 931.3599999999999: and
+929.759 - 933.759: um
+931.36 - 935.279: you can also do this with b it's like b
+933.759 - 937.44: dot item size
+935.279 - 939.92: bs are floats and i believe that this is
+937.44 - 942.399: an eight byte type so if i do b item
+939.92 - 944.399: size as you see yeah it's eight so
+942.399 - 946.56: floats are going to be bigger than
+944.399 - 949.04: um
+946.56 - 951.04: floats are bigger than integers
+949.04 - 953.04: usually unless you define this as like
+951.04 - 955.279: an int 64.
+953.04 - 956.7199999999999: and so yeah you really i usually don't
+955.279 - 958.16: even worry about the data type too much
+956.72 - 961.279: i don't specify it but if you really
+958.16 - 963.36: want to be efficient try to specify this
+961.279 - 965.6: so that it fits all your data
+963.36 - 967.6800000000001: but um
+965.6 - 969.6: if yeah i guess it fits all your data as
+967.68 - 970.399: tightly as possible all right so now
+969.6 - 972.8000000000001: that we've gone through some of the
+970.399 - 975.199: basics let's actually show how we access
+972.8 - 980.16: change specific elements rows columns
+975.199 - 980.16: etc so imagine we have the array
+981.519 - 984.9590000000001: there's gonna be a two dimensional array
+983.12 - 986.5600000000001: so
+984.959 - 989.92: i'm gonna make this kind of long and
+986.56 - 989.92: you'll see why in a second
+993.199 - 998.959: okay so this is a two by seven
+997.12 - 1002.16: array
+998.959 - 1002.16: if i print that out
+1002.88 - 1005.68: okay and i could
+1004.16 - 1008.7199999999999: prove that it's a two by seven by doing
+1005.68 - 1010.7199999999999: a dot shape that's just a reminder
+1008.72 - 1013.519: so what if we wanted to get this a
+1010.72 - 1017.1990000000001: specific element
+1013.519 - 1020.32: well to do that we can use this notation
+1017.199 - 1022.24: of row comma column
+1020.32 - 1023.759: so this is the row index this is the
+1022.24 - 1026.88: column index so i could just do
+1023.759 - 1026.88: something just like a
+1027.28 - 1032.16: let's say i wanted to get this 13 right
+1030.079 - 1034.319: here well that would be in the
+1032.16 - 1037.1200000000001: second row but because we started python
+1034.319 - 1038.72: indexing at zero be the first row
+1037.12 - 1042.3999999999999: and then the
+1038.72 - 1044.48: zero one two three four five fifth
+1042.4 - 1047.039: column
+1044.48 - 1049.039: so yeah that gives us the 13 as you see
+1047.039 - 1051.2: down here and one thing that's kind of
+1049.039 - 1053.84: cool is you can also
+1051.2 - 1056.24: use the negative notation similar to
+1053.84 - 1058.0: lists so i could also say the negative
+1056.24 - 1059.679: second element would be
+1058.0 - 1062.08: 13 as well because this would be
+1059.679 - 1063.44: negative 1 and then negative 2.
+1062.08 - 1066.0: so there's a couple different ways to do
+1063.44 - 1067.44: this but we'll stick with the first one
+1066.0 - 1070.16: okay let's say we wanted to get a
+1067.44 - 1070.16: specific
+1072.16 - 1075.6000000000001: i can't spell
+1074.16 - 1077.3600000000001: row
+1075.6 - 1079.36: that's pretty straight forward as well
+1077.36 - 1081.84: so in this case if we wanted the first
+1079.36 - 1084.1599999999999: row we would do zero and then because we
+1081.84 - 1086.799: want all columns we use the basic slice
+1084.16 - 1088.0800000000002: syntax similar to lists i can just do a
+1086.799 - 1089.36: single column
+1088.08 - 1090.6399999999999: and that will get me everything in the
+1089.36 - 1092.799: row
+1090.64 - 1095.039: that's nice what if we want a
+1092.799 - 1096.48: specific column well if you know how to
+1095.039 - 1099.76: do rows you probably know how to do
+1096.48 - 1101.76: columns a let's say we wanted
+1099.76 - 1103.039: this row right or this column right here
+1101.76 - 1105.6: three and ten
+1103.039 - 1106.84: that would be all the rows and then the
+1105.6 - 1109.039: zero one
+1106.84 - 1111.039: two column
+1109.039 - 1112.96: that gives me the 310
+1111.039 - 1114.72: and from here we can do even some more
+1112.96 - 1115.1000000000001: like tricky stuff so
+1114.72 - 1116.88: um
+1115.1 - 1119.1999999999998: [Music]
+1116.88 - 1120.96: uh
+1119.2 - 1123.28: let me just say getting
+1120.96 - 1125.1200000000001: a little more fancy
+1123.28 - 1126.799: 

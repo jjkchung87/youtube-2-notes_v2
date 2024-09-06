@@ -1,0 +1,174 @@
+0.06 - 3.419: what's up guys and welcome back to
+1.589 - 5.009: another video so in today's video we
+3.419 - 7.5600000000000005: will go through the bat plot live
+5.009 - 9.48: library of Python and this is a super
+7.56 - 12.599: useful library for all things data
+9.48 - 14.099: visualization in Python so the video
+12.599 - 16.68: will start off with going through the
+14.099 - 18.6: matplotlib basics so as you see on the
+16.68 - 20.46: screen will be creating like line graphs
+18.6 - 22.5: such as the one you see here you'll
+20.46 - 24.869: learn how to format these lines in
+22.5 - 26.939: different ways you'll be able to add a
+24.869 - 30.3: title you'll be able to add labels to
+26.939 - 33.12: your x and y-axes format your tick marks
+30.3 - 35.13: properly add a legend etc so all the
+33.12 - 37.86: kind of basic matplotlib things you want
+35.13 - 40.410000000000004: to know then we'll move into other types
+37.86 - 42.69: of graphs such as bar charts and we'll
+40.41 - 44.669999999999995: finish this video off with going through
+42.69 - 46.289: all sorts of like real world examples
+44.67 - 49.53: where you can kind of combine your data
+46.289 - 51.27: science skills that you might have using
+49.53 - 52.44: like pandas library and if you haven't
+51.27 - 53.910000000000004: learned anything about the pandas
+52.44 - 57.57: library I recommend you watch my video
+53.91 - 59.06999999999999: on that so with that the kind of real
+57.57 - 61.35: world examples will do stuff such as
+59.07 - 64.32: like plot the USA versus Canada gas
+61.35 - 67.38: prices off of data that we have a little
+64.32 - 70.52999999999999: link to in a CSV we'll do some histogram
+67.38 - 73.74: stuff we'll do some pie chart stuff and
+70.53 - 76.08: we will do some box and whiskers chart
+73.74 - 78.27: stuff I can't get through every type of
+76.08 - 79.979: graph in this one video but if there's
+78.27 - 81.119: certain things that I didn't cover and
+79.979 - 83.58: you really want me to cover it let me
+81.119 - 87.99: know in the comments that would be super
+83.58 - 90.53999999999999: duper yeah that's all I got to start
+87.99 - 92.1: this video let's just jump into it all
+90.54 - 93.45: right let's start out by loading in the
+92.1 - 95.75: libraries that we need for this tutorial
+93.45 - 101.369: so we're an import and map plot live as
+95.75 - 105.36: our dot pie plot as peel of T we're
+101.369 - 107.759: gonna import numpy as NP and we're gonna
+105.36 - 111.72: for the later examples import pandas as
+107.759 - 113.57900000000001: PD and run that and so if you have all
+111.72 - 115.079: these us like already installed you
+113.579 - 116.82: won't get any errors if you do get these
+115.079 - 118.16999999999999: get an error when you're trying to run
+116.82 - 119.78999999999999: them onto these you find need to install
+118.17 - 123.0: it so you can either do a pip install
+119.79 - 125.61000000000001: matplotlib pip install numpy pip install
+123.0 - 126.78: pandas or you could install a Python
+125.61 - 129.149: distribution that already has these
+126.78 - 129.8: packages such as anaconda I'll link to
+129.149 - 132.11: how to do this
+129.8 - 134.57000000000002: the description okay so now we have our
+132.11 - 145.85000000000002: libraries loaded let's now build our
+134.57 - 147.79999999999998: basic graph so I just think it's kind of
+145.85 - 149.48: the hardest part about anything with
+147.8 - 153.05: Python in general is starting with that
+149.48 - 155.82999999999998: blank blank space so what I recommend
+153.05 - 158.69: for matplotlib is always start at the
+155.83 - 161.18: documentation so I have a link for this
+158.69 - 163.25: in the description but here is the home
+161.18 - 165.62: page of the matplotlib pipe lot
+163.25 - 166.7: documentation and what I recommend is
+165.62 - 169.16: like whenever we're trying to do
+166.7 - 171.58999999999997: something new just do a ctrl F and like
+169.16 - 173.18: look for it so if we look for plot here
+171.59 - 176.93: that's like we're just trying to get a
+173.18 - 178.55: line graph on the on the screen box
+176.93 - 181.43: plots not only one we don't want it been
+178.55 - 183.53: plot okay this looks good plot y versus
+181.43 - 186.23000000000002: X as lines or markers so this is what
+183.53 - 187.7: we'll start off by doing as you can see
+186.23 - 190.48999999999998: right here and the examples it gives
+187.7 - 193.48: gives plot X comma y so that's the
+190.49 - 196.61: command will F the run to make this work
+193.48 - 199.09: and just to know what x and y are if we
+196.61 - 201.41000000000003: go down to parameters they tell us that
+199.09 - 204.05: commonly these parameters are 1d arrays
+201.41 - 208.57999999999998: so we know we need to pass in 1d array
+204.05 - 216.83: to the plot function so if we do plot 1
+208.58 - 221.78: 2 3 that's gonna be our x + 2 4 6 will
+216.83 - 224.84: be our Y I can't type and run that plot
+221.78 - 227.239: is not defined so we imported pipe lot
+224.84 - 229.82: as plot so when we run this function we
+227.239 - 233.66: actually have to do P love T dot plot
+229.82 - 235.54999999999998: and then this is our X and the second
+233.66 - 238.67: array is our Y so let's see what happens
+235.55 - 242.09: there yay we got a graph and to clean
+238.67 - 245.51: this up a little bit I recommend moving
+242.09 - 251.54: our variables into removing our arrays
+245.51 - 258.53: into variables so X is 1 2 3 and Y is 2
+251.54 - 260.269: 4 6 and we can change now this to X Y
+258.53 - 261.44: and one thing that's annoying with the
+260.269 - 263.09000000000003: matplotlib if you're doing this in
+261.44 - 265.21999999999997: Jupiter notebook by default is you have
+263.09 - 266.45: this annoying little line here so you
+265.22 - 270.17: want to get rid of that you can just
+266.45 - 271.99: actually call plot dot show and that's
+270.17 - 278.09000000000003: the correct way to actually show this
+271.99 - 280.97: graph okay now that we have just a line
+278.09 - 283.13: on the screen let's start adding a
+280.97 - 285.14000000000004: little bit more to our graph so to do
+283.13 - 289.7: this let's go back to our documentation
+285.14 - 290.93: and go back to just the pie plot so I
+289.7 - 292.94: think this is a good spot to start
+290.93 - 294.35: because you always can kind of just ctrl
+292.94 - 296.03: F and find something you're looking for
+294.35 - 300.08000000000004: so let's say we wanted to add a title to
+296.03 - 301.52: our graph if I type in title it points
+300.08 - 303.38: me right to a couple different places
+301.52 - 305.39: that I probably want to look at and
+303.38 - 309.43: right here is what we're looking for so
+305.39 - 312.28999999999996: set a title for the axes click that and
+309.43 - 315.71: this tells me all sorts of stuff about
+312.29 - 322.91: how I call this so it looks like I use
+315.71 - 331.94: do pie plot title so I can do plot title
+322.91 - 335.57000000000005: and let's just do our first graph and
+331.94 - 340.06: run that as you can see our title is now
+335.57 - 343.46: there and same thing for a lot of the
+340.06 - 346.19: different parameters so going back to
+343.46 - 349.94: the documentation if I want an X level
+346.19 - 353.71999999999997: on a while label I just type in right I
+349.94 - 357.83: guess I knew that but let's just say Y
+353.72 - 360.62: label nothing comes up Y or just even
+357.83 - 363.44: label C label label a contour plot
+360.62 - 369.02: that's none of us the fig labels no pie
+363.44 - 372.8: no title no X label Y label let's how we
+369.02 - 375.26: get there so you can keep doing this and
+372.8 - 378.04: really easily find what you're looking
+375.26 - 380.9: for I think it's a good place to go if
+378.04 - 382.28000000000003: you kind of just if you forget things
+380.9 - 385.78999999999996: because I always forget things in that
+382.28 - 389.53: plot lid okay so adding a label to x and
+385.79 - 393.35: y plot an X label
+389.53 - 394.78999999999996: x-axes and I guess I'm getting really
+393.35 - 397.87: enthusiastic because we keep adding
+394.79 - 400.79: exclamation points to all of my stuff
+397.87 - 404.06: y-axes yay
+400.79 - 405.5: see what happens yeah and I want to just
+404.06 - 408.31: get rid of these recommendations I don't
+405.5 - 412.67: need them okay so now we have a graph
+408.31 - 415.76: and we have a title and we have y axis x
+412.67 - 417.98: axis in a real graph we would label
+415.76 - 419.51: these properly but for the sake of this
+417.98 - 422.21000000000004: example we're just kind of getting a
+419.51 - 424.4: feel for how we add these alright so now
+422.21 - 425.78: that we have our title and labels one
+424.4 - 430.42999999999995: thing we might want to do to them is
+425.78 - 432.71: resize them so if we look at the the
+430.43 - 435.41: documentation for title one thing you'll
+432.71 - 438.46999999999997: notice is that you can use you can pass
+435.41 - 439.91: in this font dictionary and it gives you
+438.47 - 442.28000000000003: a little bit of details about the font
+439.91 - 444.29: dictionary here but basically there's
+442.28 - 446.35999999999996: all sorts of options that we can do and
+444.29 - 449.09000000000003: like play around with our font so let's
+446.36 - 452.09000000000003: say I wanted to change the font of our
+449.09 - 457.76: title a new font dict equals and I can
+452.09 - 461.95: pass in a font name and let's say I my
+457.76 - 465.71: good old trusty reliable comic sans ms
+461.95 - 469.52: will be our new font and if you look at
+465.71 - 472.78999999999996: that we got a nice new font on a graph
+469.52 - 475.84999999999997: and if you can't see it well then in
+472.79 - 479.21000000000004: that case I'll change the font size to
+475.85 - 481.37: be something like 20 now you should
+479.21 - 485.39: definitely be able to tell that I've
+481.37 - 488.0: changed the font type and in the
+485.39 - 491.27: description I listed I put a link to all
+488.0 - 493.16: the known matplotlib fonts that you can
+491.27 - 494.59999

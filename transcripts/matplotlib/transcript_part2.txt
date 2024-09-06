@@ -1,0 +1,176 @@
+999999997: use and if you look through the
+493.16 - 496.76000000000005: documentation you kind of find some
+494.6 - 499.61: different options you can do with this
+496.76 - 503.34999999999997: and you can also do the same thing with
+499.61 - 507.82: the labels I could do like font dict
+503.35 - 508.94: equals let's say I wanted to make this
+507.82 - 511.58: font
+508.94 - 514.669: arielle and that obviously might be the
+511.58 - 517.09: default but if I did it like Comic Sans
+514.669 - 517.09: as well
+517.199 - 523.539: you can tell that x-axis now has changed
+521.139 - 529.69: but I wouldn't just leave that this be
+523.539 - 531.55: for now okay so we did labels all right
+529.69 - 533.5290000000001: so that one thing that's bothering me is
+531.55 - 536.68: the tick marks I want to let's say I
+533.529 - 538.18: just want to do integer numbers and I'm
+536.68 - 540.939: gonna add a couple more values to our
+538.18 - 545.529: graph so I'm gonna go to five I'm gonna
+540.939 - 549.579: start at zero and Y would go from Y is
+545.529 - 552.459: always going to be two times X so it's
+549.579 - 553.959: gonna look like that oh I would
+552.459 - 558.459: magically did it for us
+553.959 - 560.649: at that case I don't want it to
+558.459 - 563.319: magically do it for us okay let's say we
+560.649 - 565.06: went to four and we wanted just the
+563.319 - 567.0999999999999: integer values we didn't want any
+565.06 - 572.29: decimal value so how do we change our
+567.1 - 578.769: ticks so we can do that by doing plot X
+572.29 - 580.93: ticks and our X ticks will do 0 0 1 2 3
+578.769 - 582.85: and I also just found remember this
+580.93 - 588.5999999999999: command by using the documentation and
+582.85 - 600.5400000000001: our wide ticks will be I have a 0 to 10
+588.6 - 604.8100000000001: every 2 so it was 0 2 4 6 oh my gosh 10
+600.54 - 606.55: as you can see that now we have the tick
+604.81 - 609.25: marks working properly and maybe I
+606.55 - 612.25: wanted to add 4 as well so now we
+609.25 - 613.66: labeled our ticks differently and one
+612.25 - 615.579: thing that's cool to know is that the
+613.66 - 618.49: graph will automatically resize based on
+615.579 - 622.0: how we set this so if I set one tick to
+618.49 - 626.559: a thousand well now our graph kind of
+622.0 - 630.189: looks like not too good but it's nice
+626.559 - 633.759: that you can easily do that 4 is better
+630.189 - 635.439: but and you can do the same thing with y
+633.759 - 640.17: I'd say when do they make the last one
+635.439 - 642.459: 100 as you can see it changes up the
+640.17 - 644.29: sizing of the graph one thing that's
+642.459 - 646.42: also cool though is find it even if I
+644.29 - 647.61: didn't even lis space these out if I did
+646.42 - 651.959: like 7 he
+647.61 - 654.779: and then 7.5 as you can see it properly
+651.959 - 658.5889999999999: puts those at the right spot in the
+654.779 - 661.14: graph I'll leave it like this I'll leave
+658.589 - 663.089: it a little bit weird but yeah that
+661.14 - 666.149: looks good to me okay so we have our
+663.089 - 668.7600000000001: first graph let's add a legend and make
+666.149 - 671.459: this line a little bit more exciting
+668.76 - 674.42: color wise so if we wanted to add a
+671.459 - 676.1999999999999: legend we can do and I'm gonna actually
+674.42 - 680.8499999999999: kind of like showing how the
+676.2 - 681.69: documentation is helpful if I looked up
+680.85 - 685.529: legend
+681.69 - 688.37: Figg legends that might be work just
+685.529 - 690.899: this legend place a legend on the axes
+688.37 - 693.36: like by looking up legend I I've figured
+690.899 - 695.19: out that the call is just legend and it
+693.36 - 699.0500000000001: gives me some examples so I always like
+695.19 - 702.57: to refer to this documentation okay so
+699.05 - 706.29: PLT legend and what happens when I do
+702.57 - 708.269: that no handles with labels fans put in
+706.29 - 710.3389999999999: legends so it's complaining because we
+708.269 - 713.0600000000001: don't have anything to label what it's
+710.339 - 716.6700000000001: saying is how do we label this line and
+713.06 - 719.67: the way we do that is by passing in a
+716.67 - 724.649: label to our plot function so in this
+719.67 - 726.51: case our X&Y we plotted X to be or Y to
+724.649 - 731.97: be 2 times X so I'm going to call the
+726.51 - 733.519: label here 2x and as you can see we get
+731.97 - 735.87: 2x right there
+733.519 - 738.449: okay let's say now that we wanted to
+735.87 - 741.93: change up the color of this line maybe
+738.449 - 747.29: make it thicker do some other things to
+741.93 - 747.29: it if we go to plot
+750.08 - 757.08: whereas plot we'll see all sorts of
+754.44 - 759.21: properties that we can do and plot so
+757.08 - 762.36: what I'm seeing right here is you can
+759.21 - 766.08: pass in all these different parameters
+762.36 - 768.99: to our plot and it probably lists off
+766.08 - 772.0500000000001: what we can put maybe not it's not super
+768.99 - 773.79: specific but if you look hard enough you
+772.05 - 777.99: can see all these properties that you
+773.79 - 782.91: can pass into the plot function so one
+777.99 - 789.1800000000001: thing we could plot pass in is color so
+782.91 - 791.0699999999999: if I passed in color equals red will
+789.18 - 795.2299999999999: work and it will know well I think the
+791.07 - 797.7600000000001: common color so if I did yellow if I did
+795.23 - 800.0600000000001: like yellow which is not a color it's
+797.76 - 803.15: gonna yell at me might even work with y
+800.06 - 805.17: yeah cool and we also can pass in
+803.15 - 807.48: hexadecimal colors so I could do like a
+805.17 - 811.05: B a B a B and we got like a grayish
+807.48 - 813.09: color you get this is helpful because
+811.05 - 815.4: you can pick use like a color picker
+813.09 - 819.38: tool and pick pretty much any color you
+815.4 - 821.9399999999999: want here but we'll stay with red for no
+819.38 - 826.08: the other parameters I could pass into
+821.94 - 830.9100000000001: that let's see what else we had I could
+826.08 - 836.19: do I think line size equals let's say 12
+830.91 - 838.17: oh that is not a print parameter not
+836.19 - 845.82: remembered either go back to Maya
+838.17 - 848.52: documentation size marker size maybe
+845.82 - 853.19: that's a marker size oh I also see you
+848.52 - 853.1899999999999: line width here so line width equals 2
+857.3 - 864.51: ohmygosh line with equals 12 makes this
+860.58 - 867.24: big line maybe two it's a bit bigger
+864.51 - 870.45: than I think what we had we can also do
+867.24 - 874.6800000000001: we can label a marker so let's say I
+870.45 - 877.2900000000001: wanted to add dots into this as you can
+874.68 - 878.9699999999999: see you can't really see it too too well
+877.29 - 881.5799999999999: but maybe I made the marker size a
+878.97 - 883.2900000000001: little bit bigger and I'm just kind of
+881.58 - 884.07: passing this in so you could kind of see
+883.29 - 887.79: what you can do
+884.07 - 889.98: oh that didn't work let's say 10 yeah as
+887.79 - 898.62: you can see nicely big dots on our graph
+889.98 - 900.089: I can also do marker edge color there's
+898.62 - 902.7: all sorts of properties I'm just like
+900.089 - 905.9590000000001: continually passing these in but now you
+902.7 - 908.37: see a different type of dot and whatnot
+905.959 - 910.26: so this is pretty cool that we can have
+908.37 - 912.0: all this customization it sometimes
+910.26 - 915.87: takes a little while to get what we want
+912.0 - 918.6: but it's usually it just is nice to have
+915.87 - 925.339: this power and one final thing I'll pass
+918.6 - 925.339: in is line style
+930.19 - 935.24: so there's all sorts of line styles we
+932.81 - 937.6099999999999: can pass it and you can read all into
+935.24 - 942.6800000000001: the different ways you can do this in
+937.61 - 943.64: the documentation one thing that's
+942.68 - 945.3499999999999: pretty cool
+943.64 - 947.0: is that instead of listing all of these
+945.35 - 948.65: keyword arguments sometimes we just want
+947.0 - 951.65: to make a different type of line quickly
+948.65 - 953.6899999999999: so there's actually a shorthand that you
+951.65 - 954.5: can use to kind of do pretty much the
+953.69 - 956.45: same thing
+954.5 - 960.56: so I comment this out real quick we have
+956.45 - 963.32: no graph what you can do is there's a
+960.56 - 964.91: shorthand notation that allows you to
+963.32 - 969.6500000000001: kind of have a pretty good amount of
+964.91 - 972.9499999999999: customization quickly so the shorthand
+969.65 - 975.8: notation is color marker line style I
+972.95 - 982.96: guess so if we go and copy this line
+975.8 - 991.279: from above let's say we just passed in
+982.96 - 994.5500000000001: this now what we can do is before we add
+991.279 - 998.03: our label we can pass in the shorthand
+994.55 - 1000.1899999999999: notation so I can do color will say read
+998.03 - 1001.78: it I think just accepts letters you can
+1000.19 - 1002.5300000000001: look into the documentation see exactly
+1001.78 - 1005.38: what it does
+1002.53 - 1008.02: marker will do a dot and then line will
+1005.38 - 1012.37: do a dash so watch what happens when I
+1008.02 - 1016.81: do this gives us a nice line with dots
+1012.37 - 1019.45: in it if I do two dashes gives us a
+1016.81 - 1021.28: dotted line if I do like a different
+1019.45 - 1024.28: type of marker you can pass in like a
+1021.28 - 1026.1399999999999: carat like that gives us a line with
+1024.28 - 1028.8999999999999: carrots in it it's kind of cool that you
+1026.14 - 1031.14: can do this shorthand notation and get
+1028.9 - 1034.0300000000002: different types of lines very easily
+1031.14 - 1038.199: just to follow up on the whole shorthand
+1034.03 - 1041.11: notation pulling in the docs for the
+1038.199 - 1043.27: plot function it shows all the different
+1041.11 - 1045.4289999999999: markers you can use and the different
+1043.27 - 1049.5: line Styles supported and the different
+1045.429 - 1053.

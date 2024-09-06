@@ -1,0 +1,2037 @@
+0.359 - 3.84: hey what's up everyone and welcome back
+2.0 - 5.4: to another video super excited for this
+3.84 - 8.36: one in it we're going to be doing
+5.4 - 10.24: another complete python pandas tutorial
+8.36 - 12.12: walkth through so first off super
+10.24 - 14.08: grateful for all the support on the
+12.12 - 16.68: previous iteration of this video but
+14.08 - 18.52: it's been like 5 years and I've learned
+16.68 - 20.759999999999998: a lot more about pandas there's been a
+18.52 - 22.56: lot of updates to the pandas library and
+20.76 - 24.519000000000002: there's just a lot more modern tools
+22.56 - 26.64: that we can incorporate into a tutorial
+24.519 - 29.0: like this so figured it was a great time
+26.64 - 31.119: to do another walk through this video
+29.0 - 33.0: will be great for for someone that's
+31.119 - 34.64: just getting started with python pandas
+33.0 - 37.12: you'll learn all of the basics that you
+34.64 - 39.64: need to know working with and analyzing
+37.12 - 41.718999999999994: manipulating spreadsheet tabular data
+39.64 - 44.16: with python pandas but this video will
+41.719 - 45.800000000000004: also be great for more experienced users
+44.16 - 47.68: that have maybe used pandas a bunch in
+45.8 - 50.28: the real world but really want to
+47.68 - 52.28: uplevel that skill set and apply new
+50.28 - 54.6: types of things to your day-to-day I
+52.28 - 56.879000000000005: know personally that I'm learning new
+54.6 - 59.519: things about pandas almost every day it
+56.879 - 61.358999999999995: is really a goal of mine to communicate
+59.519 - 63.6: some of that and hopefully everyone can
+61.359 - 65.43900000000001: walk away from this video with some
+63.6 - 67.32000000000001: concrete action items that you can apply
+65.439 - 70.03999999999999: to your own data sets enough of me
+67.32 - 71.96: talking though let's get right into the
+70.04 - 73.92: tutorial there's many different ways you
+71.96 - 77.0: can get started with pandas probably the
+73.92 - 79.96000000000001: easiest is by going to cab. research.com
+77.0 - 82.04: and you can edit code and use pandas
+79.96 - 83.64: right there in your browser but if you
+82.04 - 86.159: prefer to work locally maybe you like
+83.64 - 89.07900000000001: using visual studio code or pycharm or
+86.159 - 90.43900000000001: Jupiter lab then you can go to the repo
+89.079 - 93.55999999999999: that is corresponding responding to this
+90.439 - 97.079: video you can copy this link you can
+93.56 - 100.479: open open up a terminal window and clone
+97.079 - 103.119: the repo so I'm going to go into my code
+100.479 - 104.759: folder I'm going to colog the link that
+103.119 - 106.36: I just
+104.759 - 109.759: copied
+106.36 - 111.079: and now we have once it loads there's a
+109.759 - 113.84: bunch of data files here so it might
+111.079 - 116.55999999999999: take a second then I can go into that
+113.84 - 120.43900000000001: folder and we can look at the files
+116.56 - 122.36: there and then a good next step is to
+120.439 - 125.119: this is just good python practice is to
+122.36 - 125.119: create a virtual
+126.039 - 130.039: environment and activate that virtual
+128.36 - 133.87900000000002: environment I'll make sure to put the
+130.039 - 137.51899999999998: corresponding Windows command up Source
+133.879 - 140.67999999999998: M tutorial is where I just created the
+137.519 - 142.8: virtual environment bin activate and now
+140.68 - 145.36: we can see we have it
+142.8 - 147.84: activated and I want to install all the
+145.36 - 149.4: necessary libraries for this tutorial
+147.84 - 150.48: which can be done with Pip 3 install
+149.4 - 153.08: requirements
+150.48 - 154.67999999999998: requirements.txt again though don't
+153.08 - 156.239: worry if you don't follow these exact
+154.68 - 158.68: steps this is just kind of the best
+156.239 - 160.64000000000001: practice for most python projects but
+158.68 - 162.31900000000002: you can kind of install packages as you
+160.64 - 165.0: go and you don't necessarily need to
+162.319 - 166.879: have a virtual environment set up like
+165.0 - 169.72: if you're using Jupiter if you're using
+166.879 - 174.239: the cab. research. gooogle totally fine
+169.72 - 176.64: okay perfect now next step I use Visual
+174.239 - 180.12: Studio code personally usually so I'm
+176.64 - 182.55999999999997: going to open up the folder that we just
+180.12 - 186.12: created and I'm going to go ahead and
+182.56 - 190.4: create a IPython notebook so I'll call
+186.12 - 193.56: this tutorial. I python notebook and in
+190.4 - 195.59900000000002: here I can start running python commands
+193.56 - 197.879: I do want to set my python interpreter
+195.599 - 199.35999999999999: to what we just set up for that virtual
+197.879 - 201.319: environment so I'm going to do command
+199.36 - 203.28: shift p on my Mac I think it will be
+201.319 - 205.67999999999998: control shift p if you're on Windows
+203.28 - 207.84: select interpreter and we see we have
+205.68 - 210.08: this new virtual environment tutorial
+207.84 - 214.76: select that and we can go ahead and and
+210.08 - 214.76000000000002: do print hello
+218.4 - 224.68: world and then we can go ahead and
+221.879 - 228.04: import pandas as PD and that will
+224.68 - 229.28: accomplish the first step perfect we now
+228.04 - 232.48: have pandas
+229.28 - 235.72: installed again if you're using
+232.48 - 239.23899999999998: collab research. Google just run import
+235.72 - 241.72: panas at PD ASD already exists all right
+239.239 - 243.64000000000001: given you imported pandas correctly
+241.72 - 246.879: let's start learning about data frames
+243.64 - 249.55999999999997: and a data frame is really the main data
+246.879 - 251.319: structure of the Python Panda's library
+249.56 - 254.4: and you can basically think of data
+251.319 - 257.28: frames as tables with all sorts of extra
+254.4 - 259.32: functionality sprinkled sprinkled on so
+257.28 - 261.4: it allows us to work with spreadsheets
+259.32 - 263.88: and other types of tables very easily
+261.4 - 266.03999999999996: within python okay so what is a data
+263.88 - 268.44: frame look like well we can create our
+266.04 - 272.44: own data frame very easily by doing
+268.44 - 274.199: something like DF equals pd. dataframe
+272.44 - 276.84: I'm going to just sprinkle in some dummy
+274.199 - 284.91900000000004: data one two three we'll make this a
+276.84 - 288.56: little 2D array 1 two 3 four five 6 7
+284.919 - 290.71999999999997: 8 nine run that well we can start
+288.56 - 292.24: looking at things within this data frame
+290.72 - 294.36: and start seeing the components that
+292.24 - 297.28000000000003: make it a data frame so we can do data
+294.36 - 299.40000000000003: frame. head to see the first five rows
+297.28 - 300.55999999999995: in this case is just three rows and
+299.4 - 302.79999999999995: there's a couple different things that
+300.56 - 310.199: we see there I'm going to also add real
+302.8 - 310.199: quick columns equals a b and
+310.6 - 315.32000000000005: c all right there's already a few things
+312.68 - 318.24: that we can look at first off we have
+315.32 - 320.919: the header here so we specified with
+318.24 - 323.08: that with columns but oftentimes in our
+320.919 - 326.479: files that we load in this will be kind
+323.08 - 330.52: of populated by default and we see that
+326.479 - 331.96: we can view the data with DF head I
+330.52 - 333.919: could look at just the first row by
+331.96 - 336.35999999999996: doing DF head one I could look at the
+333.919 - 338.12: first two rows by doing DF head 2 I
+336.36 - 341.72: could look at the bottom two rows by
+338.12 - 345.08: doing uh DF tail
+341.72 - 346.8: 2 but there's some useful functions that
+345.08 - 348.24: we should know first off if I just
+346.8 - 351.919: wanted to see what the headers are I can
+348.24 - 354.56: do DF do columns if I wanted to see if
+351.919 - 356.15999999999997: we look at the data frame again these
+354.56 - 358.759: values right here this is known as the
+356.16 - 360.88000000000005: index and I can access those by doing DF
+358.759 - 362.96000000000004: do index
+360.88 - 365.4: and I guess you could also do two list
+362.96 - 367.68: to really see it index can be helpful we
+365.4 - 369.71999999999997: can also specify this as a non-numeric
+367.68 - 373.16: it's going to automatically populate as
+369.72 - 375.759: you know 0 1 two Etc by default but we
+373.16 - 376.96000000000004: could also specify our index we're doing
+375.759 - 378.56: something like
+376.96 - 381.56: x
+378.56 - 381.56: y
+382.68 - 389.12: z and now if we look at our data frame
+385.759 - 391.319: get this and if I did DF do index we see
+389.12 - 394.199: we get YZ other useful things to know
+391.319 - 398.199: about data frame right out of the box is
+394.199 - 399.91900000000004: we can do do DF doino to see information
+398.199 - 402.16: about our data frame we see right now
+399.919 - 404.84: that we have three different columns
+402.16 - 408.639: they're all int 64 types that means they
+404.84 - 410.479: use 64 bytes bite is eight bits of
+408.639 - 412.56: information so we're using a little bit
+410.479 - 414.28: more than we should probably right here
+412.56 - 415.68: if you want to be more efficient this is
+414.28 - 417.23999999999995: one thing that you'd play around with is
+415.68 - 419.68: like these data types it's going to be
+417.24 - 421.319: using numpy under the hood by default
+419.68 - 423.639: later on in this video we'll see how we
+421.319 - 425.599: can change kind of the the engine under
+423.639 - 428.12: the hood to make things more efficient
+425.599 - 430.52: we see the size here 96 bytes another
+428.12 - 433.039: thing that's useful to do is we can do
+430.52 - 435.12: DF do
+433.039 - 436.8: describe and this will tell us some
+435.12 - 438.8: meaningful information about our data
+436.8 - 441.40000000000003: such as uh the number of items in each
+438.8 - 445.08: column the mean of the items in those
+441.4 - 446.87899999999996: columns standard deviation Min value Etc
+445.08 - 448.68: and it might be look helpful to look at
+446.879 - 450.12: this side by side with the actual data
+448.68 - 453.84000000000003: frame
+450.12 - 457.199: you can see that we can also do unique
+453.84 - 459.44: to find the unique values in each number
+457.199 - 462.72: unique to find how many unique values
+459.44 - 464.56: are in each column uh this is sometimes
+462.72 - 466.91900000000004: also helpful if you do you know filter
+464.56 - 469.36: by specific column and then you can find
+466.919 - 471.31899999999996: those specific unique values not that
+469.36 - 474.12: interesting in this very toy example but
+471.319 - 477.599: useful in other examples also very
+474.12 - 479.96: useful to know we can do do
+477.599 - 482.159: shape which gives us the shape of our
+479.96 - 486.96: data frame if we added an extra let's
+482.159 - 486.96: say row 10 11
+488.599 - 496.479: 12 and we see that it has four rows
+491.68 - 500.199: three columns row columns useful in info
+496.479 - 502.08: it shows us the memory impact so 128
+500.199 - 504.639: bytes we could also just see the total
+502.08 - 507.0: number of items by doing size all sorts
+504.639 - 508.68: of useful things defining a data frame
+507.0 - 510.28: like this manually is one way to do
+508.68 - 513.2: things but in the real world we're going
+510.28 - 515.4789999999999: to be loading our data in from files so
+513.2 - 517.9190000000001: let's start with some warm-up data there
+515.479 - 520.2: and work our way up into more complex
+517.919 - 523.3199999999999: real world in this video we'll be doing
+520.2 - 524.9590000000001: Olympics data set analysis using pandas
+523.32 - 526.6400000000001: let's work our way up there in the
+524.959 - 528.1999999999999: repository that we cloned and don't
+526.64 - 529.48: worry if you didn't clone the repository
+528.2 - 532.0400000000001: I'll show you how to load these data
+529.48 - 534.36: files in in another way but we have two
+532.04 - 535.76: folders We have data and warm-up data
+534.36 - 539.0: the first thing we'll want to see is how
+535.76 - 541.8389999999999: we can load in a simple data frame using
+539.0 - 544.64: the pd. read CSV function and you can
+541.839 - 548.1600000000001: see this is just a week of coffee sales
+544.64 - 550.76: at a madeup coffee store CSV means comma
+548.16 - 553.3199999999999: separated values file and we can load
+550.76 - 557.2: this in with python pandas by doing the
+553.32 - 559.44: following pd. read CSV we're going to go
+557.2 - 562.24: into our warm-up data folder and then
+559.44 - 567.8000000000001: we're going to load in coffee. CSV we'll
+562.24 - 571.519: save that as coffee equals pd. read CSV
+567.8 - 574.12: coffee and if we look coffee. head we
+571.519 - 577.04: see we have that file loaded in one
+574.12 - 579.72: really cool trick you can do with pandas
+577.04 - 582.16: is if you didn't download this file
+579.72 - 585.44: locally you can actually go to the
+582.16 - 586.4399999999999: repository you can click on warmup data
+585.44 - 589.519: and this is all Linked In the
+586.44 - 591.1600000000001: description you can click on copy. CSV
+589.519 - 593.079: you can see the sample right there but
+591.16 - 596.48: what we actually want to click on is raw
+593.079 - 600.04: and you can copy this URL and actually
+596.48 - 602.36: paste it in within quotes
+600.04 - 604.959: to our
+602.36 - 607.6800000000001: repository and we'll see that we still
+604.959 - 609.0: have coffee file there for the sake of
+607.68 - 611.0: this tutorial I'm going to go back to
+609.0 - 612.88: the other version but this is good to
+611.0 - 614.959: know some things you should know about
+612.88 - 617.36: loading in files is that CSV is probably
+614.959 - 619.1999999999999: the most popular file format but it's
+617.36 - 621.44: not always the best file format
+619.2 - 624.6800000000001: depending on your use case one nice
+621.44 - 627.6800000000001: thing about csvs is that it is they are
+624.68 - 630.92: readable you can look at a big CSV file
+627.68 - 633.519: and understand what's going on within it
+630.92 - 636.519: but one of the big issues with CSV files
+633.519 - 638.32: is if we look at the size of a CSV file
+636.519 - 641.16: so for example we'll look at this
+638.32 - 643.12: results which is Olympic Results for all
+641.16 - 645.92: sorts of athletes for I think the
+643.12 - 649.079: Olympic data from like 1860 onward we
+645.92 - 651.04: see that this file results. CSV is 31
+649.079 - 654.12: megabytes there's other file formats
+651.04 - 657.1999999999999: that we can use such as the feather file
+654.12 - 660.36: format which is 12.2 megabytes for that
+657.2 - 661.9200000000001: same exact data or a paret file which is
+660.36 - 664.72: very popular in the data engineering
+661.92 - 667.519: World which is only 4.74 megabytes for
+664.72 - 671.0: that same file alternatively you could
+667.519 - 673.32: combine multiple CSV files into an Excel
+671.0 - 676.2: file and that would work too but it's
+673.32 - 679.1600000000001: going to also be a bit of a larger file
+676.2 - 681.9200000000001: format within python we can load in all
+679.16 - 684.639: these other files by doing the following
+681.92 - 688.88: so we'll say results which is Olympic
+684.639 - 690.48: Results equals pd. reads we'll do Park
+688.88 - 693.92: of
+690.48 - 698.9200000000001: data results.
+693.92 - 700.76: par run that and we do results. head we
+698.92 - 703.76: see that we get all these Olympic
+700.76 - 706.36: results in a data frame pretty easily we
+703.76 - 710.0: could also load in a Excel file by doing
+706.36 - 713.6: the following we could do Olympics data
+710.0 - 716.32: equals pd. read Excel pass in that Excel
+713.6 - 719.76: file which was data/
+716.32 - 722.839: Olympics data I think it was Excel
+719.76 - 724.8389999999999: X is that right ah give it a shot it
+722.839 - 726.5600000000001: looks like it's loading it took a lot
+724.839 - 728.48: longer to load in though and then with
+726.56 - 731.399: that Olympic
+728.48 - 734.0: data we see that we get the Olympics
+731.399 - 736.399: bios information by default but we can
+734.0 - 739.959: also specify specific
+736.399 - 742.199: sheets within an Excel file such as
+739.959 - 744.2399999999999: let's say there's a results sheet here
+742.199 - 747.88: and we could rerun this and we'll see
+744.24 - 750.519: that when we run the Olympics data. head
+747.88 - 752.32: that the results change
+750.519 - 754.68: again look at how much longer it took to
+752.32 - 757.44: read an Excel file versus the parquet
+754.68 - 759.199: file if Speed and Performance is high
+757.44 - 761.2790000000001: priority for you probably better to work
+759.199 - 762.5999999999999: with pares but if you have to work and
+761.279 - 764.32: collaborate with people that maybe
+762.6 - 766.5600000000001: aren't comfortable with format like
+764.32 - 769.6: paret or feather then probably stick to
+766.56 - 772.5189999999999: CSV or Excel CSV is usually a pretty
+769.6 - 774.639: safe bet for most situations and if we
+772.519 - 776.839: run olympics. head we see that that now
+774.639 - 779.48: changes note if you're curious about
+776.839 - 782.399: where this data comes from it's all SCP
+779.48 - 784.6: from a site called olympia.org and I
+782.399 - 787.24: actually did a tutorial on cleaning this
+784.6 - 790.6800000000001: data set that I'll
+787.24 - 792.0: link right here so there's going to be
+790.68 - 793.4399999999999: three different data files that we're
+792.0 - 796.04: working with throughout this video and
+793.44 - 797.8800000000001: just to simplify things I'll just load
+796.04 - 800.279: them all in now so we'll also have
+797.88 - 804.68: Olympic bio information and I'll read in
+800.279 - 804.68: that CSV file corresponding to
+804.92 - 809.24: that also worth mentioning while we're
+807.839 - 814.1600000000001: here but you'll see later on in the the
+809.24 - 817.6: video there's also a similar two CSV two
+814.16 - 819.8389999999999: Park two Excel functions that you can
+817.6 - 821.88: apply directly on data frames that make
+819.839 - 824.0400000000001: your life easier if you have to resave
+821.88 - 826.16: these okay next let's see how we can
+824.04 - 829.92: access data and different ways using
+826.16 - 831.6: pandas so we have this coffee data frame
+829.92 - 833.959: again we can see the first five rows of
+831.6 - 835.759: it by doing coffee. head we can see the
+833.959 - 838.3599999999999: full data frame by just listing out
+835.759 - 840.519: coffee and if you're using a different
+838.36 - 842.12: editor that doesn't automatically show
+840.519 - 845.399: this stuff when you run a cell you could
+842.12 - 848.12: do something like print coffee just
+845.399 - 850.6: within most notebooks they give you some
+848.12 - 852.199: nice syntax out of the box you could
+850.6 - 855.8000000000001: also get that same syntax with these
+852.199 - 858.0: notebooks by doing display and running
+855.8 - 861.639: that but this is our data frame it's
+858.0 - 864.199: some coffee sales for a week at some
+861.639 - 866.9590000000001: random madeup store and we got that by
+864.199 - 868.5999999999999: just doing coffee okay so again we can
+866.959 - 870.56: access the first five rows by doing
+868.6 - 873.48: coffee
+870.56 - 875.199: head we can access the first 10 rows by
+873.48 - 878.12: doing coffee. head and passing in a
+875.199 - 880.399: value we can get the last five rows by
+878.12 - 881.92: doing coffee. tail we see that it's you
+880.399 - 884.8: know Friday and Saturday and Sunday
+881.92 - 886.4399999999999: versus Monday Tuesday Wednesday and you
+884.8 - 888.4399999999999: know if we didn't pass in a value there
+886.44 - 890.519: also would give us five by default could
+888.44 - 892.32: do 10 that's one way to access data if
+890.519 - 894.399: you wanted to just access random data
+892.32 - 896.759: you can do coffee. sample and you could
+894.399 - 898.639: pass in some values this is helpful if
+896.759 - 900.32: you you know your data scattered and
+898.639 - 901.399: maybe the top and the bottom isn't that
+900.32 - 903.839: important but you kind of want to get a
+901.399 - 905.279: sense of things and so you'll see if we
+903.839 - 908.6800000000001: keep running this
+905.279 - 911.0: cell and I'm doing control enter to keep
+908.68 - 914.2399999999999: running this we see we get different
+911.0 - 919.079: pieces of data as we run this you can
+914.24 - 921.0: also pass in a random state to make this
+919.079 - 923.04: uh what is the word I'm looking for like
+921.0 - 925.16: repeatable so like it doesn't change I
+923.04 - 926.92: forget the actual technical word here
+925.16 - 928.7199999999999: next things you want to know is that's
+926.92 - 930.88: great for getting the top and bottom and
+928.72 - 933.12: r rows but what if we wanted to access
+930.88 - 936.68: specific values well the two functions
+933.12 - 940.199: you'll want to know about are Lo and IO
+936.68 - 943.12: so let's start with lo lo allows us to
+940.199 - 945.7199999999999: filter by rows and Columns of our data
+943.12 - 951.24: frame so our data frame again is coffee
+945.72 - 954.1600000000001: and we can use Lo and then rows comma
+951.24 - 956.8: columns is what we kind of pass in to
+954.16 - 959.199: this so what rows do we want and what
+956.8 - 961.68: columns do we want within this l
+959.199 - 963.7589999999999: function so to start let's say we wanted
+961.68 - 966.8389999999999: all rows or like maybe just the first
+963.759 - 969.88: row we could do coffee. lo0 and that's
+966.839 - 972.8000000000001: based on these indexes here and that
+969.88 - 975.12: would give us you know just this first
+972.8 - 977.399: day of our data frame I'll show the data
+975.12 - 981.759: frame again just so you can easily
+977.399 - 985.92: follow along see this is correct if we
+981.759 - 987.519: wanted the let's say zeroth first and
+985.92 - 992.4799999999999: second
+987.519 - 995.44: location we could do do this and we'll
+992.48 - 997.12: see do we get the first three rows this
+995.44 - 999.399: is nice because we could also you know
+997.12 - 1001.16: put in like the fifth row here and get
+999.399 - 1003.839: different things we can also use
+1001.16 - 1006.8389999999999: actually the slice syntax so I could do
+1003.839 - 1009.8800000000001: 0 to three I could also do something
+1006.839 - 1012.519: like zero onwards maybe it would be more
+1009.88 - 1017.4399999999999: interesting if I did five
+1012.519 - 1022.04: onwards you could do 5 to
+1017.44 - 1024.88: 12 5 uh eight all sorts of things you
+1022.04 - 1027.039: can do here and then additionally as I
+1024.88 - 1029.2800000000002: mentioned before this is rows and column
+1027.039 - 1031.52: so if I do a comma I can also grab rows
+1029.28 - 1034.6: so maybe I wanted to grab the day only
+1031.52 - 1039.0: the day maybe I wanted to grab the day
+1034.6 - 1039.0: and the number of units
+1040.039 - 1046.16: sold we see that so you can combine
+1043.64 - 1048.72: these things if you wanted all rows and
+1046.16 - 1050.799: just certain columns you can do this IO
+1048.72 - 1053.919: is pretty similar but instead of using
+1050.799 - 1057.48: labels like this it uses just index
+1053.919 - 1060.3200000000002: locations so if I did IO of this we see
+1057.48 - 1063.679: we'll get an error error but if I
+1060.32 - 1066.039: grabbed the zeroth indexed and the
+1063.679 - 1066.039: second
+1067.4 - 1073.799: index we'll see we get the same exact
+1070.2 - 1076.0: information in this situation the io so
+1073.799 - 1078.6: passing in values like this because the
+1076.0 - 1081.64: index is a integer value it is actually
+1078.6 - 1083.6399999999999: the index it's the same exact thing but
+1081.64 - 1086.76: one thing that you can do is I could do
+1083.64 - 1090.48: something like coffee.
+1086.76 - 1090.48: index equals
+1091.0 - 1098.919: coffee.day and so I can access specific
+1093.96 - 1100.3600000000001: columns by doing Dot column name or by
+1098.919 - 1102.1200000000001: doing
+1100.36 - 1105.36: Coffee
+1102.12 - 1107.76: Day if I set the index now if we look at
+1105.36 - 1111.12: our data
+1107.76 - 1113.4: frame we see that there's no numerical
+1111.12 - 1116.1589999999999: values there anymore and if I used a DOT
+1113.4 - 1119.039: a Lo and tried to grab just the first
+1116.159 - 1123.1200000000001: three rows we'll get an error but I
+1119.039 - 1126.6: could now do something like L
+1123.12 - 1128.76: Monday just get the Monday values I
+1126.6 - 1131.1999999999998: could even do something like Monday
+1128.76 - 1133.919: through
+1131.2 - 1135.52: Wednesday and filter by just those
+1133.919 - 1137.48: values and maybe I just wanted to grab
+1135.52 - 1139.4: units sold so you can combine all these
+1137.48 - 1142.76: things very useful
+1139.4 - 1147.44: so to you know in summary Lo allows us
+1142.76 - 1150.96: to get the rows and columns I look lets
+1147.44 - 1153.96: us grab the rows and columns as well but
+1150.96 - 1156.24: only using index
+1153.96 - 1157.64: values and then finally I think one
+1156.24 - 1159.6: thing that's worth
+1157.64 - 1162.44: mentioning just going to reload this
+1159.6 - 1164.6: coffee data frame so it has the index
+1162.44 - 1166.3200000000002: back to normal and finally one thing
+1164.6 - 1168.1999999999998: that I think is worth mentioning is
+1166.32 - 1171.9189999999999: let's say I wanted to set a specific
+1168.2 - 1174.2: value so look at our data frame coffee
+1171.919 - 1177.2800000000002: maybe we had a mistake in our data in
+1174.2 - 1179.88: the unit sold on Monday for lattes was
+1177.28 - 1182.1589999999999: actually off maybe it was actually 10
+1179.88 - 1184.88: units sold I can modify that value by
+1182.159 - 1187.5590000000002: doing something like coffee the row
+1184.88 - 1190.96: would be dolo
+1187.559 - 1192.6789999999999: one because it's the first index the
+1190.96 - 1196.159: value I want to edit is going to be
+1192.679 - 1199.72: units sold and I want to set it now to
+1196.159 - 1201.64: be equal to 10 if we look at our data
+1199.72 - 1206.08: frame after this
+1201.64 - 1208.0: step we see now it is 10 you could also
+1206.08 - 1211.52: set multiple values so maybe multiple
+1208.0 - 1213.799: values were 10 and if we run our data
+1211.52 - 1215.96: frame again we see we get 10 for all of
+1213.799 - 1218.9189999999999: those values so you can start modifying
+1215.96 - 1221.96: values within your data frame using L as
+1218.919 - 1223.7990000000002: well going to rerun coffee again worth
+1221.96 - 1225.4: really quickly mentioning that there's a
+1223.799 - 1228.679: slightly more optimized way to get
+1225.4 - 1232.72: specific values and that's using I at
+1228.679 - 1236.159: and at so if I did at and I specifically
+1232.72 - 1237.64: wanted zeroth index unit sold and just
+1236.159 - 1240.5590000000002: one single
+1237.64 - 1242.88: value could do that but if I try to pass
+1240.559 - 1244.24: in multiple values here it's gon to yell
+1242.88 - 1246.919: at
+1244.24 - 1248.28: me same thing with integer at it's not
+1246.919 - 1251.64: going to like me if I try to grab
+1248.28 - 1255.039: multiple things at once but I
+1251.64 - 1256.8400000000001: can grab a specific item like Monday
+1255.039 - 1258.679: this way but this only works for
+1256.84 - 1261.6399999999999: specific values I could also very
+1258.679 - 1264.2: similar just do IO here I find I use IO
+1261.64 - 1265.5590000000002: and lo way more than I would use and I
+1264.2 - 1267.4: but if you really needed to efficiently
+1265.559 - 1269.08: grab one single value quickly those
+1267.4 - 1271.64: would be the ones to do it all right
+1269.08 - 1274.4399999999998: this is all good but there's other ways
+1271.64 - 1276.0800000000002: to access data first off as we mentioned
+1274.44 - 1279.559: before to grab columns you can do
+1276.08 - 1282.76: brackets column name we can also if it's
+1279.559 - 1286.52: a single word you can do coffee dot just
+1282.76 - 1289.039: the value of that so I could do coffee
+1286.52 - 1290.76: unit sold like this but I think it you
+1289.039 - 1292.84: there's no way because it has a space in
+1290.76 - 1295.08: it I don't think you can
+1292.84 - 1297.76: do maybe you can yeah it's not going to
+1295.08 - 1300.6789999999999: work like that so if it is a single word
+1297.76 - 1303.279: you can do the dot syntax to grab a
+1300.679 - 1305.76: column but you can do bracket syntax
+1303.279 - 1309.039: always so bracket syntax is a bit more
+1305.76 - 1311.64: robust that graes us a column one thing
+1309.039 - 1314.799: we may want to do is sort our
+1311.64 - 1319.72: data so we can do sort values and we can
+1314.799 - 1322.2: provide a column name such as units sold
+1319.72 - 1323.96: and run this and we see now it's in
+1322.2 - 1326.279: increasing order if we wanted that
+1323.96 - 1330.44: instead to be in decreasing order we can
+1326.279 - 1332.72: pass ascending equals false now it's in
+1330.44 - 1334.799: decreasing order you could also filter
+1332.72 - 1338.64: by two parameters so I could do first
+1334.799 - 1343.679: filter by let's say unit sold and then I
+1338.64 - 1346.039: want you to fil or to sort by the coffee
+1343.679 - 1348.0: type so this means there will be it will
+1346.039 - 1350.1589999999999: first sort by unit sold and if there's
+1348.0 - 1352.64: ever a value Val such as this first one
+1350.159 - 1355.44: that has the same exact unit sold for
+1352.64 - 1358.4: both then it will sort by coffee type in
+1355.44 - 1360.2: this case coffee type is a string so
+1358.4 - 1362.88: that would be in alphabetical order by
+1360.2 - 1365.52: default and you can specify different
+1362.88 - 1368.919: things to be in in a sending descending
+1365.52 - 1371.96: differently by doing something like 01
+1368.919 - 1374.1200000000001: so this would say unit sold is false
+1371.96 - 1376.44: don't make it ascending but for coffee
+1374.12 - 1379.6: type make that ascending so this would
+1376.44 - 1382.159: be alphabetical order and this would be
+1379.6 - 1382.1589999999999: decreasing
+1384.36 - 1388.6789999999999: order also I don't really recommend this
+1386.679 - 1390.52: for a lot of use cases but there are
+1388.679 - 1393.0: times that you just need to iterate
+1390.52 - 1394.48: through row by Row in your data frame
+1393.0 - 1397.0: this is going to lose you some of the
+1394.48 - 1398.84: memory performance benefits of python
+1397.0 - 1403.12: pandas but if you wanted to do that you
+1398.84 - 1404.36: could do for index comma Row in coffee.
+1403.12 - 1408.6789999999999: Itor
+1404.36 - 1411.9599999999998: rows and you could then print index
+1408.679 - 1414.88: print row and I'll print some spaces
+1411.96 - 1418.0: here just so you know that I'm actually
+1414.88 - 1420.159: getting each row one one at a time so
+1418.0 - 1422.12: output is truncated but you can see what
+1420.159 - 1424.72: I mean and this is helpful because for a
+1422.12 - 1427.1589999999999: specific row I could grab like just the
+1424.72 - 1429.88: units
+1427.159 - 1431.48: sold so iterating but you lose some
+1429.88 - 1434.0: performance by doing something like that
+1431.48 - 1436.88: but still good to know my recommendation
+1434.0 - 1439.12: is use that sparingly but oftentimes
+1436.88 - 1440.64: performance isn't the most crucial thing
+1439.12 - 1442.1999999999998: if you're just doing some analysis fine
+1440.64 - 1445.72: to do it that way but just know it's not
+1442.2 - 1448.32: the most pandas syntax it doesn't align
+1445.72 - 1450.559: as closely with the panda syntax and
+1448.32 - 1452.6: what pandas has been optimized for so
+1450.559 - 1454.6789999999999: try to stick to pandas built-in methods
+1452.6 - 1457.1999999999998: when you can let's get into some more
+1454.679 - 1459.5590000000002: interesting items and we'll start with
+1457.2 - 1460.8400000000001: filtering data so I think for the most
+1459.559 - 1462.72: of the rest of this tutorial let's work
+1460.84 - 1465.32: with more interesting data and start
+1462.72 - 1467.44: manipulating those Olympics data sets
+1465.32 - 1470.12: that we loaded in so we'll look up
+1467.44 - 1473.1200000000001: specifically the Buy so looking at the
+1470.12 - 1474.9599999999998: BIOS information we see this is like
+1473.12 - 1477.039: tons and tons of Olympic athletes
+1474.96 - 1479.52: throughout the years and we see some
+1477.039 - 1483.24: information about them we could also do
+1479.52 - 1485.76: bios. tale to get the end of this but
+1483.24 - 1487.96: what would be interesting to do here and
+1485.76 - 1491.0: filter on so I think it might be
+1487.96 - 1493.919: interesting to start with filtering by
+1491.0 - 1497.039: let's say height and weight so if I look
+1493.919 - 1499.96: at this data frame and do do info we see
+1497.039 - 1502.44: that height is a float 64 and weight is
+1499.96 - 1505.159: a float 64 if I wanted to filter based
+1502.44 - 1508.2: on that I could do something like bios.
+1505.159 - 1511.7990000000002: Loke and I want to let's say let's
+1508.2 - 1513.48: figure out what athletes are greater
+1511.799 - 1517.1589999999999: than
+1513.48 - 1520.3990000000001: 220 centimeters tall so quite quite or
+1517.159 - 1522.0: 20 let's say 10 centimeters tall what
+1520.399 - 1526.6: these are the tallest Olympic athletes
+1522.0 - 1529.64: probably I could do bios. Lo bios height
+1526.6 - 1532.48: cm is greater than
+1529.64 - 1536.3990000000001: 215 and I want to grab all
+1532.48 - 1538.48: columns do that and we'll probably see I
+1536.399 - 1541.039: guess it doesn't say exactly what sport
+1538.48 - 1543.48: these people comp competed with but
+1541.039 - 1545.039: knowing basketball players I know that
+1543.48 - 1547.44: Shaquille O Neil is very much a
+1545.039 - 1549.12: basketball player and is on this list
+1547.44 - 1551.72: probably going to see a lot of Olympic
+1549.12 - 1553.52: basketball players by doing this filter
+1551.72 - 1557.3600000000001: if you wanted to just make this a little
+1553.52 - 1561.48: bit simpler you could grab specific
+1557.36 - 1564.76: columns by doing let's say name and and
+1561.48 - 1567.64: height centimeters like that and get a
+1564.76 - 1571.08: reduced list
+1567.64 - 1573.3200000000002: here so we filter the rows based on this
+1571.08 - 1576.039: condition and grabb these specific
+1573.32 - 1578.84: columns one nice thing that we can do
+1576.039 - 1580.64: here is there's a shorthand syntax that
+1578.84 - 1584.24: allows us to filter a little bit more
+1580.64 - 1588.7990000000002: simply I could have just done bios
+1584.24 - 1593.24: bracket bios height is greater than 200
+1588.799 - 1595.559: 5 and I could have run that and we see
+1593.24 - 1598.279: you get the same exact name Shaquille
+1595.559 - 1600.039: oio still there we can see their heights
+1598.279 - 1605.6: and I could have grabbed the specific
+1600.039 - 1609.6: columns by doing bracket let's say name
+1605.6 - 1612.36: and height centimeters here we get that
+1609.6 - 1614.6789999999999: so two different ways this bracket
+1612.36 - 1617.36: syntax this kind of binary syntax is
+1614.679 - 1618.52: kind of a shorthand method cool what if
+1617.36 - 1620.0: we wanted to combine things things what
+1618.52 - 1622.0: if we wanted to have multiple conditions
+1620.0 - 1625.44: that we filter on well we can add
+1622.0 - 1628.52: parentheses to this we can add an and
+1625.44 - 1631.1200000000001: character and then parentheses again and
+1628.52 - 1633.76: add some additional conditions so if we
+1631.12 - 1635.9189999999999: looked at our data one of the parameters
+1633.76 - 1638.44: is their born country so maybe I'd be
+1635.919 - 1641.039: curious about basketball players that
+1638.44 - 1645.1200000000001: were born specifically in the USA so I
+1641.039 - 1647.1589999999999: could do um bios born
+1645.12 - 1649.279: country equals
+1647.159 - 1653.24: equals
+1649.279 - 1655.679: USA and now if we look at that we see
+1653.24 - 1659.1200000000001: it's a much smaller list and Shaquille
+1655.679 - 1661.3600000000001: O'Neal is still there holding it down
+1659.12 - 1663.1999999999998: and look how much more he weigh has
+1661.36 - 1666.12: weighed as an Olympic Athlete than some
+1663.2 - 1668.3600000000001: of these other people big big man Shaq
+1666.12 - 1669.76: if you're watching this probably not but
+1668.36 - 1673.12: it'd be cool if you
+1669.76 - 1676.2: were shout out to Shaq cool that's two
+1673.12 - 1678.4799999999998: conditions and this is based on a string
+1676.2 - 1680.8400000000001: condition we can start getting more more
+1678.48 - 1683.44: interesting with our conditionals by
+1680.84 - 1686.1589999999999: doing some specific filters based on
+1683.44 - 1688.3990000000001: string operations so one thing that I
+1686.159 - 1690.6000000000001: like to do is maybe I wanted to look at
+1688.399 - 1692.279: just the names that start with Keith
+1690.6 - 1699.1999999999998: bios
+1692.279 - 1699.2: name. string do contains let's say
+1699.799 - 1705.6: Keith run this oh no there's no keiths
+1703.24 - 1707.6: in the Olympics I guess well there was a
+1705.6 - 1709.039: small mistake there I probably should
+1707.6 - 1712.76: capitalize this this is going to by
+1709.039 - 1715.039: default be case sensitive so there's
+1712.76 - 1718.2: this string method that gets the string
+1715.039 - 1720.08: property of a data frame field and
+1718.2 - 1722.6000000000001: there's items like contains that are
+1720.08 - 1725.1589999999999: very useful contains has some additional
+1722.6 - 1727.6399999999999: things such as case which I could set
+1725.159 - 1729.919: case equals false and if I run this
+1727.64 - 1732.3990000000001: again with the lower case we see we do
+1729.919 - 1734.64: get all these names Duncan Keith I'm an
+1732.399 - 1736.559: ice hockey player so I always thought
+1734.64 - 1739.44: about getting a Duncan Keith Jersey that
+1736.559 - 1743.12: would been cool cool bunch of keiths
+1739.44 - 1744.679: maybe I want it to see if it contains
+1743.12 - 1747.799: Keith
+1744.679 - 1750.519: or Patrick so this you can start using
+1747.799 - 1754.8799999999999: regex
+1750.519 - 1756.6: syntax this is saying or Patrick I don't
+1754.88 - 1759.3600000000001: know why I I was totally thinking
+1756.6 - 1760.76: SpongeBob that's why I said Patrick cool
+1759.36 - 1762.7199999999998: real quick I want to just stress how
+1760.76 - 1765.8799999999999: powerful these regular Expressions can
+1762.72 - 1767.159: be in pandas so some additional examples
+1765.88 - 1769.5590000000002: of what you could do with regular
+1767.159 - 1771.679: expressions with be finding all athletes
+1769.559 - 1774.799: born in cities that start with just a
+1771.679 - 1778.2: vowel you could find athletes with names
+1774.799 - 1778.2: that contain exactly two
+1780.519 - 1785.32: vowels you could find athletes with
+1783.32 - 1788.399: names that have repeated consecutive
+1785.32 - 1792.1589999999999: letters like Erin and EMT and if you
+1788.399 - 1794.039: started this with a carrot and added a
+1792.159 - 1796.159: case equals false here you could just
+1794.039 - 1797.8799999999999: get double letters at the start there's
+1796.159 - 1800.679: all sorts of things you could do find
+1797.88 - 1803.0390000000002: out athlete names ending with sun or sen
+1800.679 - 1804.76: do that and if you added made this a
+1803.039 - 1807.279: space instead of a dollar sign dollar
+1804.76 - 1811.2: sign means end you could have it just be
+1807.279 - 1815.6: the first name of sin or sen so Carson
+1811.2 - 1818.2: Jason Tyson Etc the na equals false is
+1815.6 - 1822.08: just how you handle null values in the
+1818.2 - 1823.799: row name so by making it false it makes
+1822.08 - 1826.36: the contains always false so it just
+1823.799 - 1829.32: kind of filters those out find athletes
+1826.36 - 1831.399: born in the year starting with 19 could
+1829.32 - 1832.9189999999999: do something like this find athletes
+1831.399 - 1835.76: with names that do not contain any
+1832.919 - 1838.76: vowels you could do this find athletes
+1835.76 - 1840.919: whose name contains a hyphen or an
+1838.76 - 1842.519: apostrophe find athletes with names that
+1840.919 - 1845.279: start and end with the same
+1842.519 - 1847.279: letter find athletes with a born city
+1845.279 - 1849.64: that has exactly seven
+1847.279 - 1852.6: characters uh find athletes with names
+1849.64 - 1854.039: containing three or more vels so you can
+1852.6 - 1855.76: see there's a lot you can do pretty much
+1854.039 - 1857.08: anything you can imagine you could
+1855.76 - 1858.919: probably create a regular expression to
+1857.08 - 1860.6789999999999: filter by that if you want to understand
+1858.919 - 1862.6000000000001: regular Expressions more I did make a
+1860.679 - 1864.88: video on Regular Expressions I'll link
+1862.6 - 1866.559: it up above and also in the description
+1864.88 - 1868.72: but I do want to just stress that these
+1866.559 - 1871.84: can be very very powerful regular
+1868.72 - 1873.6390000000001: Expressions combined with pandas and if
+1871.84 - 1875.76: you ever wanted to turn off the regx
+1873.639 - 1877.559: search capability you can also pass in
+1875.76 - 1880.12: the keyword argument to do that you just
+1877.559 - 1882.519: do regx equals false and then we'll see
+1880.12 - 1885.399: this Keith or Patrick will not return
+1882.519 - 1887.519: anything because there's never a exact
+1885.399 - 1891.08: match of this it's no longer using the
+1887.519 - 1893.2: Reg X search functionality you can other
+1891.08 - 1896.279: there's other methods such as like
+1893.2 - 1898.1200000000001: string. is in and this is going to be a
+1896.279 - 1900.679: trickier thing it's going to say okay
+1898.12 - 1903.399: you have a list so maybe my list is just
+1900.679 - 1907.519: Keith and it's saying which of these
+1903.399 - 1907.5189999999998: names is in
+1908.08 - 1914.4399999999998: Keith we run
+1910.88 - 1917.519: this it fails fails
+1914.44 - 1918.76: again I think maybe we just run do is in
+1917.519 - 1922.3990000000001: sorry
+1918.76 - 1923.919: no no value specifically is in Keith but
+1922.399 - 1927.0: this is more interesting if we did maybe
+1923.919 - 1930.5590000000002: like born country and we use some
+1927.0 - 1932.24: abbreviations so if I did like
+1930.559 - 1934.6: USA
+1932.24 - 1938.0: France Great Britain would that work I
+1934.6 - 1941.0: don't know if it's gbr yeah it is gbr we
+1938.0 - 1942.72: can filter based on that condition and
+1941.0 - 1948.279: again we can combine this so I could do
+1942.72 - 1951.96: and bios name equals equals
+1948.279 - 1954.639: or string.
+1951.96 - 1957.8400000000001: contains I think I can even do starts
+1954.639 - 1961.799: with Keith so if I didn't want last name
+1957.84 - 1964.9599999999998: Keith I could do this run that and we
+1961.799 - 1967.36: see some keiths from USA Great Britain
+1964.96 - 1969.44: and I don't think there's any french
+1967.36 - 1972.039: keiths but you can do this with your own
+1969.44 - 1975.519: name see what Olympic athletes there
+1972.039 - 1977.1589999999999: were cool given I'm being super full of
+1975.519 - 1978.559: myself and using myself in all the
+1977.159 - 1980.8400000000001: examples I think I think this is a good
+1978.559 - 1982.2: time to shamelessly plug if you've
+1980.84 - 1984.0: learned something from this tutorial so
+1982.2 - 1986.799: far make sure to hit that subscribe
+1984.0 - 1990.279: button and throw this video a like but
+1986.799 - 1993.399: let's keep moving on another cool thing
+1990.279 - 1996.159: we can do by filtering data is we can
+1993.399 - 1999.76: use so like one issue sometimes is that
+1996.159 - 2001.519: like by doing this there's just a lot of
+1999.76 - 2003.36: like repeat characters it seems a little
+2001.519 - 2006.08: bit clunky to have to do bios and then
+2003.36 - 2008.12: bios again and then bios again so one
+2006.08 - 2011.24: cool thing that we can do is we can use
+2008.12 - 2014.2399999999998: a query function and I could get stuff
+2011.24 - 2016.08: like born I pass it into string here and
+2014.24 - 2019.84: I basically say born country equals
+2016.08 - 2021.6: equals USA it's like kind of another way
+2019.84 - 2024.32: I guess I have to use single quates
+2021.6 - 2028.08: sorry it's another way
+2024.32 - 2030.84: to oh foreign country equals USA and I
+2028.08 - 2033.039: need to pass this in in quotes but it's
+2030.84 - 2035.6789999999999: another way to filter data based on a
+2033.039 - 2037.84: condition so look at query functions may
+2035.679 - 2040.519: be useful I honestly don't see it a ton
+2037.84 - 2043.32: in the wild but maybe that's just
+2040.519 - 2047.3990000000001: because not enough people know about it
+2043.32 - 2050.399: and forign City
+2047.399 - 2050.399: equals
+2051.56 - 2056.639: Seattle
+2053.52 - 2059.24: cool so another way you can do
+2056.639 - 2061.32: that I think that's good for filtering
+2059.24 - 2063.7599999999998: data all right let's go ahead and see
+2061.32 - 2067.3990000000003: how we can add and remove coms from our
+2063.76 - 2068.5600000000004: data frame so looking at this data frame
+2067.399 - 2070.2: we
+2068.56 - 2073.0: do couple different things here let's
+2070.2 - 2076.1589999999997: say we just wanted to add some sort of
+2073.0 - 2079.56: price column and maybe the price for
+2076.159 - 2082.0: both espressos and lattes is a
+2079.56 - 2083.52: flat coffee is expensive these days it's
+2082.0 - 2088.119: like you know
+2083.52 - 2088.119: $4.99 right run
+2089.079 - 2093.679: that and we see that we now have this
+2091.399 - 2095.679: new column called price cool that's a
+2093.679 - 2098.48: good start but what if we wanted to be a
+2095.679 - 2101.0: little bit more I guess specific with
+2098.48 - 2102.599: the column we added so one thing we
+2101.0 - 2105.119: might want to do is let's say we had one
+2102.599 - 2108.3590000000004: price for espresso one price for latte
+2105.119 - 2112.4: well we can do that with call this new
+2108.359 - 2114.3199999999997: price we can leverage a numpy helper
+2112.4 - 2120.839: method here so we're going to import
+2114.32 - 2123.6400000000003: nump as NP and we can do this np. wear
+2120.839 - 2126.48: which allows us to use conditionals so
+2123.64 - 2128.68: let's say we said espressos were a
+2126.48 - 2133.359: little bit cheaper than latte so we
+2128.68 - 2137.16: could do coffee coffee type equals
+2133.359 - 2141.0789999999997: equals espresso if that's the case if
+2137.16 - 2144.68: that's true then we want it to be about
+2141.079 - 2147.92: 3.99 and otherwise we want it to be 5.99
+2144.68 - 2147.9199999999996: so lattes are actually quite
+2148.44 - 2155.599: expensive and let's see our
+2152.839 - 2160.319: coffee that latte is now
+2155.599 - 2162.76: 5.99 and espresso is 3.99 that looks
+2160.319 - 2164.24: cool but now we kind of have two prices
+2162.76 - 2168.4: we don't want two prices so how do we
+2164.24 - 2172.56: drop that one column we could do coffee.
+2168.4 - 2174.1600000000003: drop and we can specify so if we don't
+2172.56 - 2176.44: specify it's going to drop an index so
+2174.16 - 2179.2799999999997: if I dropped let's say
+2176.44 - 2181.48: Monday oh I guess that didn't work I
+2179.28 - 2182.76: guess it's not the label because it's
+2181.48 - 2185.28: not the index right now but I could do
+2182.76 - 2187.599: drop zero and we get rid of the zeroth
+2185.28 - 2190.2000000000003: index the nice thing is if we look at
+2187.599 - 2192.3590000000004: coffee again we didn't actually modify
+2190.2 - 2195.04: the actual data frame we just ran that
+2192.359 - 2197.88: command and that returned a modified
+2195.04 - 2200.16: version of it so we could do drop and
+2197.88 - 2203.8: because we couldn't just pass in like
+2200.16 - 2207.3999999999996: price it won't work we need to specify
+2203.8 - 2209.3590000000004: that we want to drop the columns equal
+2207.4 - 2212.8: to
+2209.359 - 2216.319: price and now you see that it's only the
+2212.8 - 2218.319: new price there however again if we look
+2216.319 - 2220.56: at coffee
+2218.319 - 2222.359: we see that it still has that price
+2220.56 - 2224.0: because we didn't actually modify it if
+2222.359 - 2229.52: we want to actually modify it we need to
+2224.0 - 2229.52: do in place equals true and now we'll
+2231.88 - 2237.92: see now we'll see just what we expect
+2236.24 - 2241.24: couple caveats here that I want to
+2237.92 - 2244.359: mention so I'm going to load in
+2241.24 - 2247.0789999999997: the file from scratch
+2244.359 - 2250.0789999999997: again let's say I want to do this all on
+2247.079 - 2251.52: a new new data frame so I'm going to say
+2250.079 - 2256.8: how
+2251.52 - 2259.079: about coffee new equals
+2256.8 - 2261.8: coffee now I want to modify make all
+2259.079 - 2264.76: these modifications on coffee new so if
+2261.8 - 2266.5600000000004: we look at Coffee new we'll see it has
+2264.76 - 2270.3190000000004: that price
+2266.56 - 2272.7599999999998: column cool the thing is that's weird is
+2270.319 - 2275.24: that if we also looked at Coffee we see
+2272.76 - 2277.92: that it also has the price thing this
+2275.24 - 2280.72: kind of comes down to how panda stes
+2277.92 - 2282.64: memory right now the way we set this
+2280.72 - 2285.319: coffee new is just pointing to the same
+2282.64 - 2288.0789999999997: memory space as our data frame coffee so
+2285.319 - 2288.079: if we wanted to
+2288.359 - 2293.88: actually make this separate we'd have to
+2290.839 - 2296.56: do coffee new equals coffee. copy and
+2293.88 - 2297.76: just so you can see what's actually
+2296.56 - 2300.7599999999998: happening here I'm going to load in
+2297.76 - 2302.2000000000003: coffee one more time and I know I said I
+2300.76 - 2304.119: was going to use the Olympic data but I
+2302.2 - 2306.8799999999997: feel like this little data set is easy
+2304.119 - 2308.04: to use for some educational points like
+2306.88 - 2311.28: a coffee
+2308.04 - 2315.56: no price but if we did coffee
+2311.28 - 2317.76: new. copy and then we looked at Coffee
+2315.56 - 2319.319: we see no price that's cool but if we
+2317.76 - 2323.2400000000002: looked at Coffee
+2319.319 - 2326.319: new dude I need coffee right now uh it
+2323.24 - 2328.24: worked cool cool I don't really care to
+2326.319 - 2329.72: mod like I'm fine modifying the original
+2328.24 - 2332.319: one though so I'm not going to do the
+2329.72 - 2335.359: copy necessarily maybe I'll leave this
+2332.319 - 2338.52: code in here anyway though um okay so
+2335.359 - 2341.359: coffee new price equals NP
+2338.52 - 2346.079: Weare I going to bring this back
+2341.359 - 2349.0789999999997: to normal though coffee
+2346.079 - 2349.079: equals
+2359.359 - 2364.52: this all right we're going to rerun this
+2361.64 - 2366.56: line if we look at this we have two
+2364.52 - 2369.119: things so we saw that in place true
+2366.56 - 2372.48: works we also could have done this same
+2369.119 - 2374.359: exact Line Coffee equals coffee. drop
+2372.48 - 2375.88: columns price this also would have
+2374.359 - 2378.56: worked we're basically just dropping
+2375.88 - 2382.359: that one column and then resetting it to
+2378.56 - 2384.7999999999997: coffee and now if we looked at
+2382.359 - 2387.16: Coffee uh we see we just have the new
+2384.8 - 2388.88: price another thing we could have done
+2387.16 - 2392.3999999999996: is we could have said coffee equals
+2388.88 - 2394.7200000000003: let's say like coffee and we only we
+2392.4 - 2396.64: could have just set it to equal it with
+2394.72 - 2398.7999999999997: only the columns that we wanted so like
+2396.64 - 2402.8799999999997: day
+2398.8 - 2404.88: coffee type unit sold this is a little
+2402.88 - 2406.56: bit slower of a way but it can be
+2404.88 - 2408.6400000000003: helpful if we you only need a couple
+2406.56 - 2411.0: specific columns this also would have
+2408.64 - 2412.16: worked to drop out that price column all
+2411.0 - 2414.0: right now we have a data frame that
+2412.16 - 2416.16: looks like this I could see it being
+2414.0 - 2420.44: very useful to have a column that's
+2416.16 - 2426.52: called Revenue so I might do coffee
+2420.44 - 2430.079: Revenue equals coffee units sold times
+2426.52 - 2430.079: coffee new
+2430.24 - 2436.1189999999997: price and you so you can actually
+2432.28 - 2439.5600000000004: multiply and combine columns like this
+2436.119 - 2439.56: and if we see what we
+2440.079 - 2445.96: get if you want to do the math in your
+2442.2 - 2450.8799999999997: head but 25 * 3.99 so that's like close
+2445.96 - 2454.599: to 25 * 4 that' be 100 and 100 minus the
+2450.88 - 2455.76: 1 C off that's 9975 so that looks good
+2454.599 - 2457.7200000000003: another thing we might want to do is not
+2455.76 - 2460.5200000000004: new price we might want to rename that
+2457.72 - 2463.16: column so coffee.
+2460.52 - 2465.8: rename and now you can specify what you
+2463.16 - 2468.0: want to rename so I'm going to say
+2465.8 - 2470.079: columns and I'm going to pass in a
+2468.0 - 2474.119: dictionary I'm going to say if the
+2470.079 - 2475.5600000000004: column is new price I want it to be
+2474.119 - 2479.2000000000003: equal to
+2475.56 - 2482.319: price and now we see we get price there
+2479.2 - 2484.8799999999997: instead of new price but once again if I
+2482.319 - 2488.2799999999997: look at Coffee it still says new price
+2484.88 - 2491.04: because we need to do input Place equals
+2488.28 - 2494.6400000000003: true or set
+2491.04 - 2496.2: this um back equal like this so I
+2494.64 - 2499.2799999999997: typically I feel like like resetting
+2496.2 - 2499.2799999999997: something like
+2499.839 - 2504.04: this look at that couple of additional
+2502.68 - 2508.24: things you might want to see so let's
+2504.04 - 2510.92: now move over to our bio bio information
+2508.24 - 2515.0: on our athletes esape y to make this a
+2510.92 - 2516.88: code cell after being marked down and I
+2515.0 - 2519.8: think a good thing would be maybe to get
+2516.88 - 2522.2000000000003: just the first name from these people or
+2519.8 - 2524.599: maybe to just get the birth year from
+2522.2 - 2526.3999999999996: this date how might we do that few
+2524.599 - 2528.319: different things we can do so if I
+2526.4 - 2532.4: wanted to just get the first name I
+2528.319 - 2533.92: might do bios first
+2532.4 - 2536.079: name
+2533.92 - 2539.839: equals and let's make a copy of this
+2536.079 - 2542.44: real quick bios new equals
+2539.839 - 2545.24: bios.
+2542.44 - 2547.88: copy if I wanted to just get the first
+2545.24 - 2550.7999999999997: name I might do bios new first
+2547.88 - 2553.4: name equals bios
+2550.8 - 2558.119: new
+2553.4 - 2560.2000000000003: dotname dolit or string and sometimes I
+2558.119 - 2561.6800000000003: really recommend having a editor that
+2560.2 - 2563.2: gives you autocompletes because you can
+2561.68 - 2564.68: see all the functions you have available
+2563.2 - 2567.9199999999996: and this definitely is helpful but
+2564.68 - 2569.3999999999996: string dot split basically all of our
+2567.92 - 2572.28: string Methods are going to go off of
+2569.4 - 2576.2400000000002: this do string method split we'll split
+2572.28 - 2578.1600000000003: on a space and then we want to grab just
+2576.24 - 2580.4399999999996: the first element from that I think
+2578.16 - 2583.16: we'll do this think that this will work
+2580.44 - 2586.559: let's try it
+2583.16 - 2588.48: bios new and we're going to see the new
+2586.559 - 2591.8390000000004: column all the way over at the right
+2588.48 - 2598.119: here and now if I looked at bios
+2591.839 - 2600.48: new um let's say query first name name
+2598.119 - 2603.599: equals equals Keith we'll get some
+2600.48 - 2605.4: results I guess not oh it always it
+2603.599 - 2607.2400000000002: needs to be in quotes because this is a
+2605.4 - 2610.48: string
+2607.24 - 2612.64: cool other new columns we might want to
+2610.48 - 2614.839: add another new column we might want to
+2612.64 - 2617.68: add is just the birth year so if we look
+2614.839 - 2620.44: at bios new. info and we check out the
+2617.68 - 2622.72: data types we see like we have this
+2620.44 - 2624.76: athlete ID that's int then we have a
+2622.72 - 2627.68: bunch of objects some floats and some
+2624.76 - 2630.079: more objects to work with dates like
+2627.68 - 2632.7599999999998: this more easily I recommend converting
+2630.079 - 2636.28: them to a datetime type object so if we
+2632.76 - 2638.1600000000003: go to bios new and we do born date we
+2636.28 - 2643.119: can set this to a date time object by
+2638.16 - 2647.1189999999997: doing bios new or I guess we can do pd.
+2643.119 - 2650.48: two date time and then pass in this bios
+2647.119 - 2652.599: new and how about we call this uh could
+2650.48 - 2655.4: either set it as a new column let call
+2652.599 - 2657.319: it a new column let's do born date time
+2655.4 - 2658.52: how about just so it's it's separate
+2657.319 - 2663.5589999999997: bios
+2658.52 - 2666.04: new born date we run this and now if we
+2663.559 - 2668.1600000000003: look at now if we look at
+2666.04 - 2670.319: this and we look at the new column that
+2668.16 - 2672.92: was created doesn't look any different
+2670.319 - 2677.2: but if we look at the
+2672.92 - 2679.119: info we see that it is a datetime object
+2677.2 - 2682.4399999999996: and why is this useful well what you can
+2679.119 - 2686.48: do with this new column is you could
+2682.44 - 2688.44: create a year column by doing bios new
+2686.48 - 2695.0: have a born
+2688.44 - 2698.079: year equals bios new born date
+2695.0 - 2700.839: time date this is this is like string
+2698.079 - 2703.1600000000003: where if you do DT once it's a daytime
+2700.839 - 2706.16: object you have access to all sorts of
+2703.16 - 2707.839: useful things so you could even like
+2706.16 - 2710.16: create a column based on like the day of
+2707.839 - 2714.319: the week they are born but we want
+2710.16 - 2718.3999999999996: specifically the year and run this we
+2714.319 - 2723.7599999999998: look at our data I'll just show the how
+2718.4 - 2727.6800000000003: about two columns name and born year we
+2723.76 - 2729.44: see we just get that year cool
+2727.68 - 2730.7999999999997: and this gives you access to all sorts
+2729.44 - 2732.8: of useful things that would be hard to
+2730.8 - 2735.7200000000003: write from scratch like one thing I just
+2732.8 - 2737.48: saw there is like is leap year you could
+2735.72 - 2739.0: add and if you wanted to find just the
+2737.48 - 2741.2: Olympic athletes that were born in a
+2739.0 - 2744.04: leap year or even on leap day you could
+2741.2 - 2746.2: do that with useful date functions off
+2744.04 - 2748.04: of this converted using this two date
+2746.2 - 2750.24: time one thing you should know about the
+2748.04 - 2751.8: two date time is that sometimes you'll
+2750.24 - 2753.839: to get errors because the format won't
+2751.8 - 2755.7200000000003: be the same so you can like course your
+2753.839 - 2759.7599999999998: errors which will help resolve them
+2755.72 - 2760.9199999999996: gracefully you also can specify a format
+2759.76 - 2762.8390000000004: and I recommend looking at the
+2760.92 - 2764.48: documentation to understand this more so
+2762.839 - 2767.2799999999997: if you know your column is set up in a
+2764.48 - 2770.559: way that it's like year
+2767.28 - 2772.4: month day let's say you can pass in the
+2770.559 - 2775.079: format explicitly and that will help
+2772.4 - 2778.1600000000003: this to date time convert things
+2775.079 - 2780.3590000000004: properly these percentage symbols I'll
+2778.16 - 2781.7599999999998: link in the description a cheat sheet of
+2780.359 - 2783.96: all the different things you can use
+2781.76 - 2785.6800000000003: here very useful to know especially
+2783.96 - 2789.0: because like here in the United States
+2785.68 - 2791.64: we use month day year and I feel like
+2789.0 - 2795.68: everywhere else in the world does day
+2791.64 - 2797.24: month year so it's helpful to specify
+2795.68 - 2799.319: what you're
+2797.24 - 2802.1189999999997: converting and then if we wanted to save
+2799.319 - 2804.0: our updated bios new data frame this is
+2802.119 - 2806.52: just making explicit something I
+2804.0 - 2812.16: casually mentioned earlier we could do2
+2806.52 - 2813.96: CSV we could do SL dat bios new. CSV I
+2812.16 - 2816.5589999999997: typically recommend doing index equals
+2813.96 - 2818.559: false otherwise it will save a extra
+2816.559 - 2820.8390000000004: column with all these values which
+2818.559 - 2823.2000000000003: aren't really necessary but because of
+2820.839 - 2825.2799999999997: kind of how pandas was built and
+2823.2 - 2828.5589999999997: backwards compatibility they keep in
+2825.28 - 2830.3590000000004: Saving the index by default save that
+2828.559 - 2832.599: and if we looked in our data we would
+2830.359 - 2834.2: now see this bio's new that has the
+2832.599 - 2837.319: updates that we made in the new columns
+2834.2 - 2839.839: that we added taking this a bit further
+2837.319 - 2842.16: we could add custom columns to our data
+2839.839 - 2843.96: frame by doing something like following
+2842.16 - 2846.359: let's say we wanted to classify people
+2843.96 - 2847.559: into short average and Tall we could do
+2846.359 - 2851.16: something like
+2847.559 - 2855.7200000000003: bios height category
+2851.16 - 2859.48: equals bios height cm and then we could
+2855.72 - 2862.72: apply use this do apply method and apply
+2859.48 - 2867.28: a Lambda function that looks at the
+2862.72 - 2871.24: values so just going to say short if the
+2867.28 - 2871.2400000000002: x value is
+2872.119 - 2878.359: less then let's say
+2874.88 - 2883.6400000000003: 165 and then we could do lse
+2878.359 - 2889.119: average if x is less than about
+2883.64 - 2892.2799999999997: 185 and then we could do else or else
+2889.119 - 2895.7200000000003: tall run
+2892.28 - 2899.8: that we look at our data
+2895.72 - 2901.9599999999996: frame we look at the final thing tall
+2899.8 - 2903.7200000000003: average tall and you know you can find
+2901.96 - 2905.8: someone that would be short in there as
+2903.72 - 2907.5989999999997: well so that's applying a custom
+2905.8 - 2909.48: function you can do anything with I'm
+2907.599 - 2911.8: using Lambda again because this is
+2909.48 - 2913.92: custom it's not going to be optimized
+2911.8 - 2915.8390000000004: perfectly with Panda's built-in so use a
+2913.92 - 2917.839: built-in whenever you can but something
+2915.839 - 2919.359: like this Lambda function can be helpful
+2917.839 - 2921.68: if you need to do something you know
+2919.359 - 2923.16: very specific another thing if we wanted
+2921.68 - 2925.3999999999996: to take this even further maybe we gave
+2923.16 - 2927.319: them like a weight category like you
+2925.4 - 2929.6800000000003: know how big is this person and big
+2927.319 - 2932.359: could either mean tall or heavy we could
+2929.68 - 2935.3999999999996: do something like Define a function that
+2932.359 - 2938.2: would be called like categorize athlete
+2935.4 - 2942.839: take in row data for this function and
+2938.2 - 2944.5989999999997: how about if you know the row height is
+2942.839 - 2950.88: less than how about
+2944.599 - 2954.6800000000003: 175 and row weight is less than 70 they
+2950.88 - 2956.92: are considered light weight and we could
+2954.68 - 2961.5989999999997: add any custom logic we want in here we
+2956.92 - 2964.4: do lsf row height centim have a less
+2961.599 - 2966.1600000000003: than 185 so kind of keep copying what we
+2964.4 - 2968.7200000000003: had before I guess slightly different
+2966.16 - 2973.44: cuz we had 1 75 the first one and row or
+2968.72 - 2978.799: how about or row weight kg is less than
+2973.44 - 2984.319: or equal to 80 then we return middle
+2978.799 - 2988.2: weight then finally else I return heavy
+2984.319 - 2990.96: weight and we could apply this to our
+2988.2 - 2990.96: data frame by
+2994.839 - 2999.839: doing bios app so just like we had the
+2997.68 - 3001.96: Lambda function before but this time we
+2999.839 - 3004.2799999999997: want to pass in our
+3001.96 - 3006.559: function and we need to specify that
+3004.28 - 3010.8390000000004: this is on rows so we need to say axis
+3006.559 - 3012.119: equals one one is rows zero is columns
+3010.839 - 3014.799: and we run
+3012.119 - 3016.6400000000003: this again it not optimized for pandas
+3014.799 - 3017.7599999999998: by doing this custom functions but
+3016.64 - 3019.319: sometimes you just need to apply
+3017.76 - 3023.96: something and it doesn't matter how fast
+3019.319 - 3023.96: or slow it runs if we look at
+3025.28 - 3033.6400000000003: bios we get you know this and we could
+3029.04 - 3033.64: add any logic we want to here very very
+3035.68 - 3040.24: useful but I'm going to go ahead real
+3037.68 - 3042.72: quick and reset our bios to be what it
+3040.24 - 3042.72: was
+3042.76 - 3047.1600000000003: default all right next we'll build on
+3045.4 - 3048.64: the adding and removing columns and
+3047.16 - 3051.64: we're going to do that at scale with
+3048.64 - 3054.5589999999997: merging and concatenating data so
+3051.64 - 3057.48: looking at our bios information one
+3054.559 - 3059.28: thing that we might want to do is take
+3057.48 - 3061.0: this born country and we see we just
+3059.28 - 3063.92: have a three-letter code we might want
+3061.0 - 3065.92: to convert into the actual country name
+3063.92 - 3067.319: and that actually could be separate from
+3065.92 - 3069.28: where they compete so there's definitely
+3067.319 - 3072.2799999999997: people that compete for example we see
+3069.28 - 3074.1600000000003: born in Great Britain and competed in
+3072.28 - 3076.7200000000003: France so I think we want to make it
+3074.16 - 3078.0789999999997: more explicit ways to compare where they
+3076.72 - 3080.16: are born and where they competed and
+3078.079 - 3083.079: maybe just filter on data based on that
+3080.16 - 3085.799: so in the data folder within those repo
+3083.079 - 3087.2000000000003: there's a file called we'll just call it
+3085.799 - 3091.359: NOC
+3087.2 - 3095.16: equals pd. read CSV
+3091.359 - 3097.5589999999997: data/ regions. CSV I found this file on
+3095.16 - 3099.2799999999997: a pre-existing kaggle data set so shout
+3097.559 - 3104.2400000000002: out to that I'll link the kaggle data
+3099.28 - 3104.2400000000002: set in the description we look at this
+3106.119 - 3112.839: file we see there's this code threel
+3109.76 - 3115.6400000000003: code and the region SL country so what
+3112.839 - 3118.599: we can do here is we can go ahead and
+3115.64 - 3120.72: merge the dat data so we had our data
+3118.599 - 3123.799: looked like
+3120.72 - 3124.9199999999996: this and we want to take this column
+3123.799 - 3126.559: it's a little bit confusing because we
+3124.92 - 3128.559: also have a column called National
+3126.559 - 3131.6800000000003: Olympic Committee and we basically want
+3128.559 - 3136.76: to do a born country full or something
+3131.68 - 3138.96: like that so we can do pd. merge our
+3136.76 - 3141.6800000000003: BIOS with the
+3138.96 - 3142.96: no's and because they're two different
+3141.68 - 3145.5589999999997: column names we're not going to use the
+3142.96 - 3148.4: same column for both normally we just do
+3145.559 - 3152.3190000000004: on equals say nooc but we actually want
+3148.4 - 3154.92: to compare no from this data frame with
+3152.319 - 3157.0: a different column this born country for
+3154.92 - 3165.88: this one so we can actually specify left
+3157.0 - 3168.88: on is born country and right on equals
+3165.88 - 3171.04: nooc we want to specify the how so this
+3168.88 - 3173.76: is very important I think by default
+3171.04 - 3176.04: it's inner which basically just looks at
+3173.76 - 3178.1600000000003: takes basically all the rows that both
+3176.04 - 3181.079: have in actual match so like the born
+3178.16 - 3183.359: country exists and it pairs up nicely
+3181.079 - 3185.48: with something in the no's and you just
+3183.359 - 3187.52: take those rows but if you wanted to
+3185.48 - 3189.88: make sure all of your rows in this
+3187.52 - 3191.24: original bios were kept and even if
+3189.88 - 3193.319: there wasn't a perfect match for one of
+3191.24 - 3195.72: these country codes it didn't it just
+3193.319 - 3198.96: used like a nan which is like a null
+3195.72 - 3201.52: value you could do how equals left I'll
+3198.96 - 3203.32: pop up here a little visual that can
+3201.52 - 3204.559: help you understand
+3203.32 - 3208.559: [Music]
+3204.559 - 3211.0: this cool and and we could set this you
+3208.559 - 3214.119: know either back to our original data
+3211.0 - 3218.16: frame or we could call it like iOS new
+3214.119 - 3218.1600000000003: we run this now we look
+3219.24 - 3224.5589999999997: at we're going to see over here on the
+3221.44 - 3227.44: right we have this region now and so it
+3224.559 - 3230.3590000000004: might make more sense to call this we'll
+3227.44 - 3230.359: do a
+3231.119 - 3241.52: rename to how about born country full
+3237.319 - 3241.52: and we'll do that in place equals
+3244.359 - 3249.44: true and we see now it's called Born
+3247.04 - 3252.319: country full and one thing to note is
+3249.44 - 3254.76: that because both of the original data
+3252.319 - 3258.92: frame and the new data frame had this
+3254.76 - 3261.44: nooc column it adds a suffix to both of
+3258.92 - 3263.319: them and you can specify that suffix by
+3261.44 - 3267.119: doing left
+3263.319 - 3268.92: suffix oh suffixes equals
+3267.119 - 3271.28: I think if you just do a single thing oh
+3268.92 - 3274.7200000000003: I think you actually have to pass in two
+3271.28 - 3277.2000000000003: so I could do like bios and I could do
+3274.72 - 3279.04: nodf or something like that if I ran
+3277.2 - 3282.2: this
+3279.04 - 3284.4: again we would see the new suffix is
+3282.2 - 3285.7599999999998: this specifying it but I don't really
+3284.4 - 3287.0: like that new suffix but I just wanted
+3285.76 - 3289.3590000000004: to show you that you could do that if
+3287.0 - 3293.24: you had duplicate
+3289.359 - 3297.04: columns run that I hate these suffixes
+3293.24 - 3297.04: go back to the original
+3297.319 - 3303.0: and we will
+3298.4 - 3307.64: compare bios new nooc
+3303.0 - 3311.799: X is not equal to believe not equals
+3307.64 - 3316.68: this way we want to compare it to bio
+3311.799 - 3316.68: new uh born country
+3318.559 - 3325.119: full this was a lowercase x cool so
+3323.72 - 3326.72: there's actually a decent number of
+3325.119 - 3329.079: people
+3326.72 - 3332.4399999999996: I guess we actually wanted to compare it
+3329.079 - 3335.8390000000004: to yeah that looks good and you might
+3332.44 - 3335.839: simplify this just to
+3340.039 - 3343.8390000000004: see you might want to just grab the rows
+3342.359 - 3346.4: you
+3343.839 - 3348.2799999999997: want do it this
+3346.4 - 3350.92: way
+3348.28 - 3353.6800000000003: cool and so in some situations it looks
+3350.92 - 3356.28: like we just didn't properly convert
+3353.68 - 3358.72: things so you might want to do some n
+3356.28 - 3359.8390000000004: filtering and whatnot here too but this
+3358.72 - 3362.48: gives you an
+3359.839 - 3363.96: idea another thing you might want to do
+3362.48 - 3365.76: is let's say we just wanted to take
+3363.96 - 3371.4: people from the
+3365.76 - 3374.3190000000004: USA USA equals bios bios forign
+3371.4 - 3377.079: country equals equals
+3374.319 - 3379.599: USA we'll make a
+3377.079 - 3385.0: copy and maybe we wanted to have a Great
+3379.599 - 3387.92: Britain equals bios bios born country
+3385.0 - 3391.039: equals equals
+3387.92 - 3393.44: gbr do
+3391.039 - 3397.76: copy we can look at these two data
+3393.44 - 3397.76: frames see everyone is
+3398.44 - 3403.799: USA everyone's USA gbr
+3403.92 - 3408.6800000000003: doad everyone's England cool if we
+3406.88 - 3412.52: wanted to make a new data frame that's
+3408.68 - 3416.3999999999996: just USA and England so new DF we could
+3412.52 - 3420.319: do pd. concat and we can pass in a list
+3416.4 - 3422.76: of data frames so USA gbr and by default
+3420.319 - 3424.2: it should just append them top to bottom
+3422.76 - 3426.2000000000003: there might be some situations where you
+3424.2 - 3427.68: would want to append on them to the
+3426.2 - 3429.0789999999997: other side but usually I think You' just
+3427.68 - 3430.96: use a merge in that
+3429.079 - 3433.319: situation like you would just want to
+3430.96 - 3436.2: append two data frames together but if
+3433.319 - 3436.2: we look at our new data
+3437.559 - 3442.96: frame and now we look at the taale of
+3439.72 - 3446.48: that we'll see the Great Britain so that
+3442.96 - 3448.319: was us joining both of those with con P
+3446.48 - 3450.96: so that's putting one on top of the
+3448.319 - 3453.24: other an additional example of merging
+3450.96 - 3455.799: that we might want to see is we take our
+3453.24 - 3458.9599999999996: results here and we see that this is a
+3455.799 - 3461.4: specific event for a specific person and
+3458.96 - 3463.839: because we have an athlete ID we can tie
+3461.4 - 3468.96: that with their bio information so I
+3463.839 - 3470.68: might do combined DF equals pd. merge
+3468.96 - 3472.64: First Data frame will be our results in
+3470.68 - 3477.839: this situation second data frame will be
+3472.64 - 3481.52: the BIOS the on here will be a Elite
+3477.839 - 3483.16: ID and the how we really want to just
+3481.52 - 3485.839: make sure that all of these events are
+3483.16 - 3487.1189999999997: kept we don't care if the events are
+3485.839 - 3489.96: most important this time we want to
+3487.119 - 3491.52: attach the bio information to the the
+3489.96 - 3494.2400000000002: event information so we'll say how
+3491.52 - 3495.4: equals left run that and if we looked at
+3494.24 - 3497.5989999999997: our
+3495.4 - 3501.6800000000003: combined DF
+3497.599 - 3504.079: now we're going to have a bunch of
+3501.68 - 3506.72: columns because now we've appended that
+3504.079 - 3508.96: so another example of merging two data
+3506.72 - 3511.52: frames together in this case we had a
+3508.96 - 3513.68: shared column name athlete ID and it
+3511.52 - 3516.319: worked a little bit more straightforward
+3513.68 - 3518.0389999999998: next let us look at how we can handle no
+3516.319 - 3520.7599999999998: values in our data so going back to the
+3518.039 - 3523.8390000000004: simple coffee data frame let's imagine
+3520.76 - 3525.92: we didn't have all this information
+3523.839 - 3527.359: let's say we had some null values going
+3525.92 - 3530.2000000000003: back to previous stuff we learned we
+3527.359 - 3533.68: could maybe say like maybe there was a
+3530.2 - 3538.8799999999997: null value on the unit
+3533.68 - 3542.64: sold for specifically the indexes zero
+3538.88 - 3548.1600000000003: and one so this row and this row that's
+3542.64 - 3552.4: going to equal np. na I think we can do
+3548.16 - 3555.1189999999997: this if we look at our coffee data frame
+3552.4 - 3558.319: now just look at the full thing we see
+3555.119 - 3560.2000000000003: we get these not a numbers here you'll
+3558.319 - 3562.52: see these all over the place with your
+3560.2 - 3564.68: data frames and you can keep track of
+3562.52 - 3567.119: them if you do the dataframe doino
+3564.68 - 3568.839: you'll see that part of this has the
+3567.119 - 3571.839: non-null count so like 12 in this
+3568.839 - 3575.16: situation can use the is Na and do like
+3571.839 - 3578.52: a sum here to see the number of explicit
+3575.16 - 3580.64: n values but what would we do if in the
+3578.52 - 3583.7599999999998: real world we looked at our data frame
+3580.64 - 3586.1189999999997: and saw we didn't have unit sold for our
+3583.76 - 3588.599: Monday value here well there's a few
+3586.119 - 3591.2000000000003: things we could do one of them is you
+3588.599 - 3591.2000000000003: can do
+3591.64 - 3597.48: a Phill a and in this situation there's
+3596.16 - 3601.2799999999997: a couple things you could do you could
+3597.48 - 3605.079: just arbitrarily P pick like you know
+3601.28 - 3607.039: 10,000 and run that and you see changes
+3605.079 - 3608.88: that obviously that's you know maybe not
+3607.039 - 3612.0: the smartest thing we can do but it does
+3608.88 - 3615.599: work a smarter thing would be to do
+3612.0 - 3617.68: coffee do unit sold and we can actually
+3615.599 - 3620.6800000000003: do a do mean I'll show some more about
+3617.68 - 3622.64: this in a bit but we run this then it's
+3620.68 - 3624.48: 35 and that's you know a much more
+3622.64 - 3627.2: realistic value because that's the mean
+3624.48 - 3629.2400000000002: of that whole column so make sense even
+3627.2 - 3632.1189999999997: smarter still might be to like
+3629.24 - 3634.3999999999996: conditionally fill this based on the
+3632.119 - 3637.599: coffee type another cool thing you could
+3634.4 - 3640.1600000000003: do is use this
+3637.599 - 3642.079: interpolate fill that oh I guess it
+3640.16 - 3643.72: didn't work in this situation it didn't
+3642.079 - 3645.52: quite know how to do it but interpolate
+3643.72 - 3648.1189999999997: is cool because if there's a pattern
+3645.52 - 3650.079: with your data it will know to continue
+3648.119 - 3651.52: that pattern in the column and
+3650.079 - 3653.88: interpolate basically looks at the
+3651.52 - 3655.119: neighbors of this so because we're doing
+3653.88 - 3657.359: interpolate on the first one I think
+3655.119 - 3660.52: that's why we got the N so I'm going to
+3657.359 - 3663.52: try this again but instead of doing the
+3660.52 - 3668.28: unit sold here I'll do two and three
+3663.52 - 3670.0: rerun this look at coffee again I guess
+3668.28 - 3672.76: now we need to repopulate the initial
+3670.0 - 3675.96: values for one and
+3672.76 - 3680.0: two we could say like you know 15 how
+3675.96 - 3680.0: about oh I guess it was zero and
+3682.88 - 3689.2000000000003: one look at coffee
+3686.52 - 3691.16: we can do the interpolate which if we
+3689.2 - 3692.72: look at this right looks like they're
+3691.16 - 3694.24: kind of steadily going up they get the
+3692.72 - 3698.4399999999996: highest around the weekend so we would
+3694.24 - 3701.2: hope for a value between 25 and 35 and
+3698.44 - 3706.839: 15 here if we interpolate on the Tuesday
+3701.2 - 3709.5589999999997: values so I'll do coffee units sold do
+3706.839 - 3714.839: interpolate and watch what happens we
+3709.559 - 3716.4: run this we get values there and you see
+3714.839 - 3719.119: that those two values that were added
+3716.4 - 3722.119: are nicely between kind of the values
+3719.119 - 3724.92: that we expect in our data frame so
+3722.119 - 3727.599: that's cool to see and to set this to
+3724.92 - 3730.44: the actual value you could do coffee
+3727.599 - 3730.44: units
+3735.76 - 3741.559: sold and you look at that interpolate is
+3738.76 - 3743.599: another cool way to handle Nan's um you
+3741.559 - 3748.88: could also maybe just drop the rows that
+3743.599 - 3748.88: are are n so again we reset this to
+3749.0 - 3756.68: Nan's maybe you just wanted to throw out
+3751.64 - 3759.319: any data that had n you could do drop
+3756.68 - 3762.68: Na and we see that we get the data frame
+3759.319 - 3764.359: back without those missing na rows this
+3762.68 - 3767.1189999999997: is a little bit you want to be careful
+3764.359 - 3769.4: on because it drops the full entire row
+3767.119 - 3772.1600000000003: maybe you wanted to do something like
+3769.4 - 3775.319: only if unit sold was n do you want to
+3772.16 - 3777.839: do this whereas if the price was n you
+3775.319 - 3781.279: could fit fill it you can do subset
+3777.839 - 3783.0389999999998: equals like just unit sold to only drop
+3781.279 - 3785.44: rows if it's the unit sold that's
+3783.039 - 3786.88: specifically na uh and then again
+3785.44 - 3788.44: remember if you want to actually change
+3786.88 - 3791.2000000000003: this in memory you have to do in place
+3788.44 - 3795.279: equals true or you have to reset this
+3791.2 - 3795.279: using coffee equals
+3795.44 - 3800.039: that one last thing that we might be
+3798.0 - 3803.52: useful here is going back to looking at
+3800.039 - 3806.5200000000004: a data frame if I wanted to just get the
+3803.52 - 3811.64: rows that had Nas in them I could do
+3806.52 - 3811.64: you know coffee oh oops what just
+3815.839 - 3820.48: happened do
+3818.039 - 3822.4: isna we could do something like this to
+3820.48 - 3825.96: just get those rows and if we wanted a
+3822.4 - 3829.96: rows that didn't have unit sold we could
+3825.96 - 3832.319: do a na and do our filtering conditions
+3829.96 - 3834.16: like we've seen in the past cool stuff
+3832.319 - 3836.599: here that's kind of the basics of null
+3834.16 - 3838.7599999999998: values find that if they exist in our
+3836.599 - 3840.6400000000003: data frame fill them if you think it
+3838.76 - 3843.5200000000004: makes sense but sometimes it also just
+3840.64 - 3845.359: makes sense to let them be and not worry
+3843.52 - 3846.96: too much about them in our data as we
+3845.359 - 3848.799: continue down the tutorial one thing
+3846.96 - 3852.2: that's super useful is how we can
+3848.799 - 3855.4: aggregate data so combine things group
+3852.2 - 3858.0: things uh use pivot tables Etc probably
+3855.4 - 3860.4: the most basic aggregation that I find
+3858.0 - 3863.44: super useful is going to be value
+3860.4 - 3866.359: accounts so if we look at our bio
+3863.44 - 3869.599: information on our athletes maybe I'm
+3866.359 - 3871.279: really curious what the top cities for
+3869.599 - 3875.279: Olympic athletes to come from are I
+3871.279 - 3877.44: could do bios. value counts and I would
+3875.279 - 3881.88: explicitly want to do the value counts
+3877.44 - 3884.7200000000003: on the column born City and we see
+3881.88 - 3887.44: Budapest leading the charge with Moscow
+3884.72 - 3889.799: second Oslo third and we can start
+3887.44 - 3892.64: combining things here I could do bios
+3889.799 - 3896.319: bios born
+3892.64 - 3899.279: country equals equals USA
+3896.319 - 3902.16: and then maybe I want to do get the born
+3899.279 - 3905.799: region and do value counts on that so
+3902.16 - 3908.2: filtering only on people from the us and
+3905.799 - 3909.4: we see that of the states in the US most
+3908.2 - 3911.8799999999997: Olympic athletes have come from
+3909.4 - 3914.6800000000003: California makes sense California is
+3911.88 - 3916.44: massive then you get New York second
+3914.68 - 3919.52: definitely makes sense Chicago and
+3916.44 - 3922.799: Illinois third uh Massachusetts where I
+3919.52 - 3924.72: am at most of the time rounding out the
+3922.799 - 3926.7599999999998: top five and you could you know look at
+3924.72 - 3929.64: the tale of this as well
+3926.76 - 3932.079: well uh Wyoming not producing many
+3929.64 - 3935.24: Olympic athletes I was proud to see New
+3932.079 - 3937.7200000000003: Hampshire had a decent amount I think I
+3935.24 - 3941.359: had all the go all the way back yeah to
+3937.72 - 3943.0: the I guess right at like 83 not many
+3941.359 - 3944.0789999999997: but probably some skiers and stuff when
+3943.0 - 3947.119: we're beating Vermont so that's
+3944.079 - 3948.96: important I'm from New Hampshire so cool
+3947.119 - 3951.0: that's some value counts what else can
+3948.96 - 3953.599: we do here so
+3951.0 - 3956.96: bios cool maybe we would want to group
+3953.599 - 3959.6800000000003: by a specific Sport and then then check
+3956.96 - 3962.079: what the average weight or height is
+3959.68 - 3964.44: based on that sport or maybe like we
+3962.079 - 3965.92: would want to sort by country and see
+3964.44 - 3967.48: what the average height of athletes
+3965.92 - 3969.6800000000003: coming from that country are you could
+3967.48 - 3971.039: imagine doing all sorts of things one
+3969.68 - 3972.7599999999998: interesting thing might be shorting by
+3971.039 - 3975.2400000000002: like birth de and seeing the height and
+3972.76 - 3978.599: weight and how it changes over time so a
+3975.24 - 3980.7599999999998: useful function in the pandas world is
+3978.599 - 3981.88: Group by and I think it'll be easier to
+3980.76 - 3984.44: understand some of this stuff if we
+3981.88 - 3986.319: start with the the toy coffee examples
+3984.44 - 3989.7200000000003: I'm going reload it
+3986.319 - 3992.72: from maybe I'll just use the
+3989.72 - 3992.72: interpolated
+4000.0 - 4004.4: value just going to fill this data so we
+4002.119 - 4004.4: have no
+4004.52 - 4009.279: nans guess it doesn't really make sense
+4006.92 - 4011.839: to have a fractional unit sold but that
+4009.279 - 4014.64: is Life okay aggregating data group buys
+4011.839 - 4016.0389999999998: are useful so we could do group bu and
+4014.64 - 4019.279: maybe we wanted to
+4016.039 - 4024.44: just do some calculations on the coffee
+4019.279 - 4027.72: type so you do group by do coffee type
+4024.44 - 4030.64: and then maybe we wanted to grab just
+4027.72 - 4033.7599999999998: the total number of units sold based on
+4030.64 - 4037.48: that coffee type and we can do a sum
+4033.76 - 4041.88: like this we see 246 for the espresso
+4037.48 - 4044.96: 203 for the lot we can also do like the
+4041.88 - 4046.88: average per day for each of those types
+4044.96 - 4049.119: one thing that's cool is let's say we
+4046.88 - 4052.2000000000003: wanted to calculate different things
+4049.119 - 4054.48: based on our data we could doag and
+4052.2 - 4057.48: actually pass in a dictionary here so
+4054.48 - 4061.319: maybe for our unit sold we wanted to
+4057.48 - 4062.799: calculate the sum but for our price it
+4061.319 - 4065.079: wouldn't make sense to calculate the sum
+4062.799 - 4067.799: of the price but maybe that one we would
+4065.079 - 4070.2000000000003: want to calculate the average price and
+4067.799 - 4071.96: we see we get that because the price
+4070.2 - 4074.52: never changed for either of those we see
+4071.96 - 4077.559: it's just $3.99 and $5.99 but it's cool
+4074.52 - 4079.16: that we can see like the unit sold this
+4077.559 - 4081.2000000000003: and then taking the average price you'd
+4079.16 - 4083.5989999999997: get like a and you multiplying that you
+4081.2 - 4086.96: could get something useful there Group
+4083.599 - 4089.6800000000003: by very very important very helpful you
+4086.96 - 4091.2: can actually Group by multiple
+4089.68 - 4094.1189999999997: properties so you could also like group
+4091.2 - 4095.839: by the day of the week here too wouldn't
+4094.119 - 4097.400000000001: be as useful in this situation because I
+4095.839 - 4099.0: think we only have one day of the week
+4097.4 - 4100.199: for each but you could imagine in a
+4099.0 - 4102.4: different use case where you wouldd want
+4100.199 - 4106.44: to group by multiple things and then do
+4102.4 - 4108.679: these aggregations similar to group buys
+4106.44 - 4111.839: another useful thing is what's known as
+4108.679 - 4115.6: a pivot table so we have our coffee
+4111.839 - 4117.96: right one way to do the same type of
+4115.6 - 4119.96: things but maybe is a little bit more
+4117.96 - 4123.96: easy to work with longer term is to
+4119.96 - 4125.719: create a pivot on our data so what I
+4123.96 - 4128.719: mean by this is we have this original
+4125.719 - 4132.679: data frame looks like this how about we
+4128.719 - 4134.839: get espresso and Latte as columns and we
+4132.679 - 4135.96: just look at the units sold based on the
+4134.839 - 4138.359: day of the week
+4135.96 - 4140.04: or like the revenue four of those based
+4138.359 - 4144.4400000000005: on the day of the week so we could do
+4140.04 - 4148.08: pivot equals coffee. pivot The Columns
+4144.44 - 4152.759: will be equal to Coffee
+4148.08 - 4158.04: type the the index will be equal to the
+4152.759 - 4160.92: day and the values will be how about our
+4158.04 - 4162.759: Revenue so pivot table takes our data
+4160.92 - 4166.04: that looks like this as is on the screen
+4162.759 - 4168.48: right now and it converts it into into a
+4166.04 - 4172.64: format that
+4168.48 - 4174.3189999999995: looks like this one thing that we see is
+4172.64 - 4176.719: a little bit annoying here is that it
+4174.319 - 4178.1990000000005: did make this weird order of our day a
+4176.719 - 4180.719: bit different you can leverage
+4178.199 - 4182.3189999999995: categorical variables to reorder this
+4180.719 - 4184.64: the way that you want I don't know if
+4182.319 - 4186.279: I'll cover that right now but with these
+4184.64 - 4188.159000000001: pivot tables one thing that's cool is
+4186.279 - 4189.839000000001: like now you can you have a new way to
+4188.159 - 4193.08: access this information that's pretty
+4189.839 - 4195.88: easy like I could grab Monday's latte
+4193.08 - 4200.48: count very easily like this I could also
+4195.88 - 4202.8: do a sum on the table and see the total
+4200.48 - 4205.44: revenue for both espresso and Latte we
+4202.8 - 4210.64: could also look at the total revenue on
+4205.44 - 4214.5199999999995: a day count by doing sum AIS equals
+4210.64 - 4217.6: one and we see we get the total revenue
+4214.52 - 4219.92: summed the other way so sum is useful
+4217.6 - 4221.92: pivot tables are useful let's do some
+4219.92 - 4226.56: more I guess Advanced examples maybe
+4221.92 - 4226.56: with our sports information
+4226.76 - 4231.1990000000005: let's say we wanted to group people by
+4229.239 - 4235.28: the year they were born to do that we
+4231.199 - 4237.678999999999: could do something like bios. group by
+4235.28 - 4240.12: you know we maybe have to add a I think
+4237.679 - 4241.4800000000005: we could actually just do could do born
+4240.12 - 4244.84: date I just want to make sure this is a
+4241.48 - 4248.28: date time first date. year and then we
+4244.84 - 4248.28: could do a DOT
+4249.28 - 4252.719: count count
+4252.8 - 4262.4800000000005: here and we see not as useful looking at
+4257.12 - 4262.48: it like this I could even just do name.
+4263.0 - 4267.48: count and we can see how many people
+4265.28 - 4271.92: were born by each year maybe it would be
+4267.48 - 4271.919999999999: more useful to to sort
+4272.199 - 4278.239: values you can reset the
+4275.64 - 4281.56: index which basically if we look at our
+4278.239 - 4284.599999999999: grouped by
+4281.56 - 4287.4800000000005: right looks like this if we reset the
+4284.6 - 4290.1990000000005: index it's going to look more like a
+4287.48 - 4292.718999999999: nice table with these values here and a
+4290.199 - 4295.159: born date and then a new index looks
+4292.719 - 4296.36: like that and that's easier to do sort
+4295.159 - 4298.199: values
+4296.36 - 4301.759999999999: on
+4298.199 - 4306.4: name uh and we see if we do
+4301.76 - 4308.52: ascending equals false 1972 most popular
+4306.4 - 4310.799999999999: year for Olympics athlete athletes to be
+4308.52 - 4315.0: born so far I feel like you'll probably
+4310.8 - 4317.28: see uh this shift maybe uh as they add
+4315.0 - 4318.96: more Sports and as people that you know
+4317.28 - 4320.48: they're still probably our athletes
+4318.96 - 4322.639: they're very much still our athletes you
+4320.48 - 4325.5599999999995: know in the 75 beyond that are competing
+4322.639 - 4328.04: in the Olympics so you you probably
+4325.56 - 4330.96: expect these number to taper off and
+4328.04 - 4330.96: maybe some of these
+4345.4 - 4349.5599999999995: that you could even aggregate by like
+4348.04 - 4353.0: the month
+4349.56 - 4353.0: born and the
+4358.88 - 4362.88: year doing a lot here
+4363.96 - 4368.2390000000005: now apparently I can't close my
+4370.88 - 4375.4400000000005: parentheses I think if we converted this
+4373.639 - 4378.96: a bit different way and did this ahead
+4375.44 - 4378.96: of time it would probably work for
+4393.96 - 4401.4: us we want a first group by the year
+4398.639 - 4403.88: born then we'd want
+4401.4 - 4407.599999999999: to group
+4403.88 - 4407.6: by the month
+4414.239 - 4422.599999999999: born and you could see there that 1971
+4419.12 - 4425.12: in January most popular month you see it
+4422.6 - 4426.719: seems like there's a lot of January born
+4425.12 - 4428.679: dates I don't know if that's because
+4426.719 - 4430.2390000000005: maybe these months are missing or
+4428.679 - 4432.159: something and it's just defaulting to
+4430.239 - 4434.638999999999: January or maybe it gives you an
+4432.159 - 4437.599999999999: advantage to be born it definitely makes
+4434.639 - 4440.32: sense at the start of your year because
+4437.6 - 4442.6: if things are separated by birth year
+4440.32 - 4445.44: let's say the people born in January
+4442.6 - 4447.08: compared to the people born in the same
+4445.44 - 4448.759999999999: year all the way in December the people
+4447.08 - 4450.44: in January are much older than the
+4448.76 - 4452.159000000001: people in December so they kind of have
+4450.44 - 4454.5599999999995: this upper hand I know that that was the
+4452.159 - 4457.239: case at least in ice hockey you'll see a
+4454.56 - 4459.120000000001: lot more early month borns January
+4457.239 - 4461.44: February March even though I'm a
+4459.12 - 4463.0: February birthday I guess I didn't reap
+4461.44 - 4465.879999999999: that Advantage because I'm very much not
+4463.0 - 4467.36: a Olympic ice hockey player but uh it's
+4465.88 - 4471.04: something interesting to think about
+4467.36 - 4473.88: group by cool I think that's good for
+4471.04 - 4475.5199999999995: group by for now you could play around
+4473.88 - 4478.719: with other
+4475.52 - 4479.92: aggregations cool that is group buys
+4478.719 - 4481.679: let's quickly touch on some more
+4479.92 - 4485.719: advanced functionality some things that
+4481.679 - 4488.719: come to mind to me are shift rank
+4485.719 - 4491.52: rolling functions trying to think if
+4488.719 - 4494.2390000000005: there's anything else cumulative sum I
+4491.52 - 4497.639: guess sum is a rolling function
+4494.239 - 4500.44: specific one start with shift let's say
+4497.639 - 4502.52: you wanted to see how your Revenue was
+4500.44 - 4503.919999999999: doing compared to the day before or
+4502.52 - 4506.4800000000005: something like that or you can imagine
+4503.92 - 4509.159: like aggregating things by week and then
+4506.48 - 4511.959999999999: shifting to compare last week to this
+4509.159 - 4516.32: week Etc can be useful so in our coffee
+4511.96 - 4518.92: data if we did like yesterday Revenue
+4516.32 - 4521.599999999999: that would be equal to
+4518.92 - 4526.32: Coffee
+4521.6 - 4528.2390000000005: revenue. shift one and we look at now
+4526.32 - 4531.719: our new
+4528.239 - 4533.04: coffee so now you could compare like I
+4531.719 - 4535.679: guess this wouldn't be a perfect fit I
+4533.04 - 4537.679: would have to shift it to to get it
+4535.679 - 4541.52: perfectly to
+4537.679 - 4541.52: fit because there's two
+4542.56 - 4547.92: types but now you could easily compare
+4545.04 - 4553.4: like okay on Tuesday we had a revenue of
+4547.92 - 4556.04: $120 roughly yesterday's Revenue was
+4553.4 - 4559.12: 99.75 and you could do like a percent
+4556.04 - 4562.56: increase which would be percent change
+4559.12 - 4566.92: would be equal to
+4562.56 - 4568.8: revenue divided by yesterday Revenue
+4566.92 - 4571.28: might error out because of the N I'm not
+4568.8 - 4573.08: sure hopefully it will just fill the
+4571.28 - 4577.5199999999995: nans with
+4573.08 - 4578.8: n cool so like this was a 120% increase
+4577.52 - 4580.719: and if you really wanted to make things
+4578.8 - 4584.400000000001: explicit I guess you could even multiply
+4580.719 - 4586.88: this resulting value by 100 and we get
+4584.4 - 4588.4: this so this would be the actual percent
+4586.88 - 4591.04: but if you wanted the fraction it was
+4588.4 - 4593.28: what we had before so that was a shift
+4591.04 - 4595.639: by two periods you could also shift
+4593.28 - 4598.04: backwards um by doing negative values
+4595.639 - 4601.639: here what else might you want to do well
+4598.04 - 4604.12: if we go to our biographical data here
+4601.639 - 4605.76: on our athletes maybe you would want to
+4604.12 - 4607.679: look at where someone's height and
+4605.76 - 4611.719: weight compared to the rest of the
+4607.679 - 4616.08: athlete so you could do bios height rank
+4611.719 - 4618.639: equals bios height C
+4616.08 - 4621.239: Rank and that will compare the heights
+4618.639 - 4623.400000000001: you know to everyone and give someone a
+4621.239 - 4626.04: rating so if we now sorted our values
+4623.4 - 4626.04: based on height
+4626.52 - 4633.320000000001: Rank and we'll say
+4629.92 - 4633.32: ascending equals
+4635.679 - 4641.56: false guess probably would want to do
+4638.0 - 4641.56: short values pass this
+4642.76 - 4648.719: in we see that Yao Ming is number one so
+4646.679 - 4652.04: it is cool to see and we'll see that his
+4648.719 - 4655.32: height rank um the way that it's done is
+4652.04 - 4658.48: I guess this is the max value and we can
+4655.32 - 4661.199: specify I guess uh how do we specify
+4658.48 - 4663.44: this another Advanced functionality is
+4661.199 - 4665.4: using GitHub co-pilot so if you are
+4663.44 - 4667.759999999999: using uh Visual Studio code you can
+4665.4 - 4669.5199999999995: install GitHub co-pilot I think through
+4667.76 - 4672.88: the
+4669.52 - 4676.92: extensions extensions
+4672.88 - 4680.0: GitHub co-pilot install this and I think
+4676.92 - 4682.52: Co co-pilot chat you might want too I
+4680.0 - 4684.76: guess that would be using this both are
+4682.52 - 4687.8: useful but if you have co-pilot
+4684.76 - 4694.12: installed I could do something like set
+4687.8 - 4696.04: height rank to bios height
+4694.12 - 4700.36: centim do
+4696.04 - 4705.0: rank but make but make make tallest
+4700.36 - 4706.719: person have rank one
+4705.0 - 4708.32: we can use GitHub co-pilot to help us
+4706.719 - 4710.52: here so ascending equals false is what
+4708.32 - 4712.96: we'd want to pass here accept that so I
+4710.52 - 4716.040000000001: use co-pilot a lot to help me figure out
+4712.96 - 4718.36: things like this and now if we sort
+4716.04 - 4721.8: values we get some really tall probably
+4718.36 - 4724.08: gymnasts here but if I now have it set
+4721.8 - 4725.04: like this we see Yao Ming again and this
+4724.08 - 4728.12: time
+4725.04 - 4729.679: his uh height rank will be one and this
+4728.12 - 4732.0: is just cool because if you're looking
+4729.679 - 4735.2390000000005: at a sample of the data
+4732.0 - 4737.199: frame let say like get like 10 rows you
+4735.239 - 4740.08: could see how someone's height compares
+4737.199 - 4742.919999999999: to every other Olympic Athlete like
+4740.08 - 4747.239: right here in the so how about we do
+4742.92 - 4747.2390000000005: like name height
+4747.6 - 4751.6: rank uh right there in the data frame
+4750.239 - 4753.44: and if they don't have a height you know
+4751.6 - 4755.320000000001: it's going to be an N here but it's kind
+4753.44 - 4757.04: of cool if you're like looking at a
+4755.32 - 4758.84: specific athlete that you like you could
+4757.04 - 4762.04: see how their height has compared to
+4758.84 - 4765.04: other people in the Olympics so rank is
+4762.04 - 4766.92: useful rolling functions
+4765.04 - 4768.8: coffee
+4766.92 - 4771.4: dot
+4768.8 - 4773.1990000000005: head a rolling function might or we'll
+4771.4 - 4774.48: look at the full coffee maybe you would
+4773.199 - 4777.799999999999: want to see the last three days of
+4774.48 - 4780.159: Revenue so I could do cumulative sum or
+4777.8 - 4782.719: actually cumulative sum would take your
+4780.159 - 4786.04: total revenue over time I could run that
+4782.719 - 4789.4800000000005: oh shoot and maybe I would want to just
+4786.04 - 4793.159: get the integer data type columns you
+4789.48 - 4796.678999999999: can use this select D types function
+4793.159 - 4798.36: cumulative sum that did not work I guess
+4796.679 - 4801.92: maybe in
+4798.36 - 4801.92: 64 let's go
+4803.88 - 4809.92: back I guess these are all floats so if
+4807.28 - 4813.239: we want to grab our
+4809.92 - 4817.04: floats columns and then do commun of sum
+4813.239 - 4821.0: and maybe I think reset the
+4817.04 - 4823.199: index that did not work how about this
+4821.0 - 4826.639: this grabs all the float columns but
+4823.199 - 4826.638999999999: maybe we just want to do r
+4828.719 - 4835.84: now and we could do cumulative sum on
+4833.08 - 4835.84: that and set it
+4840.96 - 4844.32: to this would
+4845.28 - 4851.8: work and you see that it is adding
+4848.84 - 4854.159000000001: things up as we go can be useful you
+4851.8 - 4856.639: could also do like Revenue over like the
+4854.159 - 4856.638999999999: past three
+4857.28 - 4862.719: days and that would be something like
+4859.88 - 4865.2390000000005: rolling so how about we do a data frame
+4862.719 - 4868.04: of just our espresso or just our lattes
+4865.239 - 4868.04: because it's a shorter
+4881.08 - 4886.159: word maybe I wanted to do a cumulative
+4883.56 - 4888.8: sum over 3 days I could do
+4886.159 - 4892.839999999999: rolling then I think we can do periods
+4888.8 - 4894.4400000000005: window equals 3 and sum and we probably
+4892.84 - 4897.719: would want to do that specifically on
+4894.44 - 4902.759999999999: let's say like unit
+4897.719 - 4905.4800000000005: sold and you could call this latte 3day
+4902.76 - 4905.4800000000005: or something like
+4907.4 - 4911.12: that and now if we look at
+4912.199 - 4923.4: latte we see 15 + 28 is 43 plus 25 is 68
+4920.199 - 4924.678999999999: and there's that 33 so this gives us 3
+4923.4 - 4927.199: days and there's ways to fill these
+4924.679 - 4929.28: values but just useful to know cool
+4927.199 - 4931.239: Advanced functionality let's quickly go
+4929.28 - 4933.84: into some of the new functionality of
+4931.239 - 4935.799999999999: pandas and really the big switch from my
+4933.84 - 4938.679: previous tutorial to this one is the
+4935.8 - 4942.0: jump from pandas 1.0 version you know
+4938.679 - 4944.159: 1.x to 2 point I think it's like 2.2
+4942.0 - 4946.159: right now or 2.3 as I record this video
+4944.159 - 4949.92: but we could actually I guess check that
+4946.159 - 4954.239: for explicitly by doing pd.
+4949.92 - 4956.32: verion I guess I need to type it Fly
+4954.239 - 4961.239: 2.2.2
+4956.32 - 4964.759999999999: 2.2.2 point2 point2 is the incorporation
+4961.239 - 4967.199: of the pi Arrow back end and basically
+4964.76 - 4969.360000000001: the difference between pi arrow and what
+4967.199 - 4973.839999999999: was there in version 1.0 which was a
+4969.36 - 4976.759999999999: numpy back end is that Pi Aro gives us a
+4973.84 - 4979.679: lot more optimization and can do things
+4976.76 - 4981.96: more efficiently and can interupt with a
+4979.679 - 4984.08: lot of other data engineering uh data
+4981.96 - 4986.8: sciency type tools probably more
+4984.08 - 4987.96: robustly than we can with numpy and some
+4986.8 - 4989.84: of the key things that you'll actually
+4987.96 - 4992.0: see as a user though come down to
+4989.84 - 4994.96: Performance so if I load both of these
+4992.0 - 4998.639: files in if I did something like results
+4994.96 - 5000.6: numpy Dost string. contains have or
+4998.639 - 5001.88: let's look at the just the the data
+5000.6 - 5005.120000000001: frame real
+5001.88 - 5006.159000000001: quick right we got this and and let's
+5005.12 - 5010.04: look
+5006.159 - 5012.12: at info cool we have some floats objects
+5010.04 - 5016.28: Etc if we go down and look at our
+5012.12 - 5019.159: results arrow and do a.info
+5016.28 - 5021.08: we'll see that we have some different
+5019.159 - 5025.5199999999995: stuff first off we'll see we have these
+5021.08 - 5027.5199999999995: string types here uh versus the object
+5025.52 - 5029.88: types here and string operations is one
+5027.52 - 5032.120000000001: of the biggest optimizations within the
+5029.88 - 5034.1990000000005: arrow backend versus numpy numpy is
+5032.12 - 5036.32: definitely not designed to handle string
+5034.199 - 5038.879999999999: stuff stuff great you know super
+5036.32 - 5040.679: efficiently but in practice we can just
+5038.88 - 5043.92: basically do a lot more things
+5040.679 - 5045.0: efficiently uh another difference and
+5043.92 - 5047.2390000000005: and I'm not going to get into all the
+5045.0 - 5050.04: details here of optimizations I'll link
+5047.239 - 5052.04: a blog post that was posted when pandas
+5050.04 - 5054.08: 2.0 is first release that I I recommend
+5052.04 - 5056.0: checking out but just as a simple
+5054.08 - 5059.96: example if I did something like results
+5056.0 - 5062.36: numpy do uh let's say there's a name
+5059.96 - 5066.88: column which is basically as and you
+5062.36 - 5072.48: know it's an object here do as.
+5066.88 - 5075.96: string tains uh use my my name again
+5072.48 - 5075.959999999999: that work what's going
+5077.719 - 5083.4: on run that I guess it did it pretty
+5091.96 - 5097.96: quick but basically nothing functionally
+5095.639 - 5101.92: changes this is still data frame in both
+5097.96 - 5104.679: situations but by using more specific
+5101.92 - 5107.639: types like these string types within Pi
+5104.679 - 5110.08: Arrow we can optimize at scale with
+5107.639 - 5113.0: operations that you know include strings
+5110.08 - 5114.5599999999995: that include Boolean values lot of
+5113.0 - 5118.44: different things we can optimize for
+5114.56 - 5120.6: here so really the this back end in most
+5118.44 - 5122.239: situations if performance matters I
+5120.6 - 5124.679: recommend switching to the pi Arrow back
+5122.239 - 5126.599999999999: end you'll have to install pi Arrow but
+5124.679 - 5128.4400000000005: that was in the requirements.txt that
+5126.6 - 5129.92: was included with this video definitely
+5128.44 - 5131.799999999999: recommend checking out the blog post
+5129.92 - 5133.32: that's one of the biggest things other
+5131.8 - 5135.84: new functionality and it's not
+5133.32 - 5138.36: necessarily like Panda specific but I
+5135.84 - 5141.88: think in this AI driven world right now
+5138.36 - 5144.799999999999: it's worth knowing and doing a bit more
+5141.88 - 5147.52: with AI stuff so command I will open up
+5144.8 - 5151.04: co-pilot chat so maybe I said you know
+5147.52 - 5155.1990000000005: bios. head I could do like co-pilot chat
+5151.04 - 5159.04: and just say use my BIOS data frame
+5155.199 - 5163.04: to grab people that are
+5159.04 - 5167.679: Olympians from either New
+5163.04 - 5173.56: Hampshire from the Bourne region New
+5167.679 - 5176.36: Hampshire or from the born City San
+5173.56 - 5178.76: Francisco pretty complex query but
+5176.36 - 5181.36: copilot is pretty smart so this can be
+5178.76 - 5183.52: really helpful if you
+5181.36 - 5186.32: are trying to do some Panda stuff
+5183.52 - 5188.2390000000005: quickly so so let's look at
+5186.32 - 5190.92: filtered
+5188.239 - 5194.199: bios and look at that did a pretty dang
+5190.92 - 5196.159: good job shout out to Ral Garcia from
+5194.199 - 5198.719: New Hampshire could look it even more I
+5196.159 - 5200.879999999999: could do a sample to check out more rows
+5198.719 - 5204.0: of this we're going to see probably a
+5200.88 - 5206.6: lot more people from San Francisco oh
+5204.0 - 5206.6: hey another New
+5208.639 - 5213.119: Hampshire cool so that was one thing
+5211.199 - 5215.32: with copilot chat another thing we could
+5213.119 - 5219.08: do though is
+5215.32 - 5221.239: I could pass that same type of query
+5219.08 - 5224.4: into chat
+5221.239 - 5229.32: GPT um to do that I could do something
+5224.4 - 5233.759999999999: like I have a data frame called
+5229.32 - 5236.719: bios that looks like
+5233.76 - 5240.92: this and I just copied the you know the
+5236.719 - 5244.8: head there please give me the pandas
+5240.92 - 5249.36: code to filter the data BAS
+5244.8 - 5253.159000000001: on finding someone either from New
+5249.36 - 5256.239: Hampshire or from I guess I probably
+5253.159 - 5257.839999999999: should specify either from the Bourne
+5256.239 - 5261.718999999999: region New
+5257.84 - 5263.52: Hampshire or the Bourne City San
+5261.719 - 5264.6: Francisco and it's going to give me
+5263.52 - 5267.159000000001: something
+5264.6 - 5269.92: similar yeah as we can see that looks
+5267.159 - 5271.48: exactly like what co-pilot gave us
+5269.92 - 5274.4: another cool thing you can do with chat
+5271.48 - 5277.32: GPT I'm using GPT for but it should work
+5274.4 - 5281.28: well with GPD 3.5 as well but you can do
+5277.32 - 5285.32: something like please give me a toy data
+5281.28 - 5287.8: frame I can use to play around with
+5285.32 - 5287.799999999999: pivot
+5289.159 - 5293.599999999999: tables and so really interactively I
+5291.679 - 5296.2390000000005: feel like working on certain skills like
+5293.6 - 5298.8: this with little toy data frames can be
+5296.239 - 5301.48: super useful to understand how these
+5298.8 - 5303.1990000000005: things operate and I'm gonna actually
+5301.48 - 5304.839999999999: copy this code and show you what I'm
+5303.199 - 5307.879999999999: talking about here
+5304.84 - 5310.2390000000005: paste this in I don't like print DF I
+5307.88 - 5312.88: like just doing DF and I bet you it's G
+5310.239 - 5314.638999999999: to have us pivot this based on the
+5312.88 - 5318.0: salesperson the salesperson will
+5314.639 - 5320.639: probably be our columns I would think
+5318.0 - 5323.92: and maybe the unit sold our values and
+5320.639 - 5327.08: probably could maybe keep the dates the
+5323.92 - 5330.159: same we'll see what they recommend and
+5327.08 - 5332.88: then it gives us this pivot
+5330.159 - 5335.96: table so the values are the unit sold
+5332.88 - 5339.719: index stays the date columns
+5335.96 - 5343.0: item a function sum oh interesting so
+5339.719 - 5345.119: it's summing the total number of items
+5343.0 - 5350.04: depend not not not worrying about the
+5345.119 - 5350.04: salesperson so if we look at the pivot
+5351.76 - 5357.4400000000005: table we see the total number of apples
+5354.6 - 5361.84: bananas and oranges sold we can also
+5357.44 - 5364.678999999999: like look at the total number of units
+5361.84 - 5369.84: sold uh irregardless of it
+5364.679 - 5372.84: by the salespeople by doing salesperson
+5369.84 - 5372.84: here
+5372.96 - 5379.2390000000005: um so useful things you can do by
+5376.6 - 5382.96: interacting with chat
+5379.239 - 5384.759999999999: GPT and I might ask like is there a
+5382.96 - 5393.4800000000005: difference
+5384.76 - 5393.4800000000005: between pd. pivot and pd. pivot table
+5400.36 - 5405.92: okay so it seems like pivot table has a
+5402.6 - 5408.6: little bit more than just
+5405.92 - 5411.719: pivot like such as the a function here
+5408.6 - 5414.280000000001: so that's cool to know chat gbt very
+5411.719 - 5416.92: helpful all right uh is there anything
+5414.28 - 5418.96: else another way you might use chat gbt
+5416.92 - 5420.88: is let's say
+5418.96 - 5425.96: create a
+5420.88 - 5425.96: histogram plot based on my initial
+5426.639 - 5429.639: Olympic
+5429.76 - 5436.76: athletes data set of people's Heights in
+5435.44 - 5441.839999999999: the
+5436.76 - 5445.2390000000005: Olympics use a log scale if you need
+5441.84 - 5449.119000000001: to so plotting can be super helpful with
+5445.239 - 5454.0: the use of chat GPT and whatnot see some
+5449.119 - 5457.199: useful stuff here copy that paste it in
+5454.0 - 5460.159: run it if it ever says you don't have a
+5457.199 - 5463.32: library you can actually write in your
+5460.159 - 5468.159: um code editor do pip install with a
+5463.32 - 5468.159: explanation point I'll do M plot
+5469.56 - 5475.04: lib now it's installed didn't even have
+5472.199 - 5478.119: to open up any fancy terminal or
+5475.04 - 5480.4: anything and look at that we got our
+5478.119 - 5482.759999999999: distribution of heights this is using I
+5480.4 - 5484.44: think a log scale this is the number of
+5482.76 - 5486.76: athletes with a log scale scale just so
+5484.44 - 5489.04: we can see the outliers so Shaquille
+5486.76 - 5490.679: O'Neal is up here somewhere you got some
+5489.04 - 5493.28: really short people over here but
+5490.679 - 5495.4800000000005: everyone large count of people in this
+5493.28 - 5499.32: range looks like a normal distribution
+5495.48 - 5501.119: cool another useful AI helper I think
+5499.32 - 5503.679: that's some of the the key things to
+5501.119 - 5505.159: know about for new functionality one
+5503.679 - 5506.84: recommendation I have is like you can
+5505.159 - 5509.839999999999: get wild with the types of queries you
+5506.84 - 5512.639: send to chat gbt can be super helpful so
+5509.84 - 5515.0: definitely leverage that but I would say
+5512.639 - 5517.0: don't rely on it 100% you want to know
+5515.0 - 5518.32: the basics and have an intuition
+5517.0 - 5520.679: understand kind of what's working behind
+5518.32 - 5522.759999999999: under the hood but use it to help speed
+5520.679 - 5526.32: up use the AI to help speed up your
+5522.76 - 5527.92: processes so I I recommend next to just
+5526.32 - 5529.719: keep practicing on your skills use your
+5527.92 - 5532.0: own data sets maybe explore these
+5529.719 - 5534.08: Olympics data set a bit more or have
+5532.0 - 5536.199: chat gbd generate you novel things to
+5534.08 - 5538.719: test out different pandis functionality
+5536.199 - 5541.239: all super useful stuff explicitly as far
+5538.719 - 5543.44: as tutorials go I recommend checking out
+5541.239 - 5545.839999999999: a tutorial that I did cleaning the
+5543.44 - 5548.28: Olympic data set that you saw in a lot
+5545.84 - 5553.56: of this tutorial I'll link that right
+5548.28 - 5556.199: here or here I also did 100 minus some I
+5553.56 - 5558.4400000000005: think the the full repo had like 66
+5556.199 - 5560.44: pandas puzzles and I find like doing all
+5558.44 - 5563.48: sorts of pandas puzzles super helpful so
+5560.44 - 5565.159: also did a video on that here or here or
+5563.48 - 5566.799999999999: I'll link it in the description if not
+5565.159 - 5568.879999999999: definitely recommend checking that out
+5566.8 - 5571.320000000001: you can check out some other real world
+5568.88 - 5573.84: data analysis videos that I have also
+5571.32 - 5575.84: like platforms like strata scratch or
+5573.84 - 5577.639: analyst Builder also linked in the
+5575.84 - 5579.4800000000005: description that you can check out
+5577.639 - 5581.36: honestly too like I've learned a lot
+5579.48 - 5582.839999999999: recently by just watching YouTube videos
+5581.36 - 5585.92: like kind of exploring you should I
+5582.84 - 5587.400000000001: would say spend 75% of or more of your
+5585.92 - 5589.4800000000005: time actually building and using this
+5587.4 - 5591.638999999999: code but do spend some time just reading
+5589.48 - 5593.759999999999: papers or reading watching YouTube
+5591.639 - 5596.0: videos even though I have I don't know
+5593.76 - 5597.2390000000005: like 10 years of experience with has
+5596.0 - 5600.04: Panda's been around for 10 years yeah it
+5597.239 - 5602.119: definitely has uh like maybe not fully
+5600.04 - 5603.159: 10 years but like up there years of
+5602.119 - 5605.44: experience with pandas I'm still
+5603.159 - 5606.638999999999: learning new things every day so you
+5605.44 - 5608.0: never know what you'll find even if you
+5606.639 - 5610.28: think you're an expert it doesn't hurt
+5608.0 - 5611.96: to check out videos and and blog posts
+5610.28 - 5613.4: that people post on these libraries
+5611.96 - 5615.0: there's always like little tricks and
+5613.4 - 5616.759999999999: tips that you know never can be covered
+5615.0 - 5618.28: in just one single video alone
+5616.76 - 5619.360000000001: definitely recommend that but I think
+5618.28 - 5621.36: that's all we're going to do in this
+5619.36 - 5623.44: video hopefully you enjoyed this
+5621.36 - 5625.28: tutorial happy to be back with an
+5623.44 - 5626.5199999999995: updated version if you felt like there
+5625.28 - 5627.759999999999: was things that I was missing in this
+5626.52 - 5629.6: tutorial please let me know in the
+5627.76 - 5631.280000000001: comments it will not only help me make
+5629.6 - 5632.76: better tutorials in the future but also
+5631.28 - 5635.679: let everyone watching this video know
+5632.76 - 5637.52: some other useful stuff to check out but
+5635.679 - 5639.2390000000005: I think with that that's all we're going
+5637.52 - 5641.76: to do if you like this video make sure
+5639.239 - 5644.839999999999: to throw it a thumbs up subscribe if you
+5641.76 - 5647.320000000001: haven't more tutorials on the way pandas
+5644.84 - 5651.1990000000005: baby we love it thank you all for
+5647.32 - 5651.199: watching peace

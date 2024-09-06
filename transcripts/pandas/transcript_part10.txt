@@ -1,0 +1,183 @@
+: more useful to to sort
+4272.199 - 4278.239: values you can reset the
+4275.64 - 4281.56: index which basically if we look at our
+4278.239 - 4284.599999999999: grouped by
+4281.56 - 4287.4800000000005: right looks like this if we reset the
+4284.6 - 4290.1990000000005: index it's going to look more like a
+4287.48 - 4292.718999999999: nice table with these values here and a
+4290.199 - 4295.159: born date and then a new index looks
+4292.719 - 4296.36: like that and that's easier to do sort
+4295.159 - 4298.199: values
+4296.36 - 4301.759999999999: on
+4298.199 - 4306.4: name uh and we see if we do
+4301.76 - 4308.52: ascending equals false 1972 most popular
+4306.4 - 4310.799999999999: year for Olympics athlete athletes to be
+4308.52 - 4315.0: born so far I feel like you'll probably
+4310.8 - 4317.28: see uh this shift maybe uh as they add
+4315.0 - 4318.96: more Sports and as people that you know
+4317.28 - 4320.48: they're still probably our athletes
+4318.96 - 4322.639: they're very much still our athletes you
+4320.48 - 4325.5599999999995: know in the 75 beyond that are competing
+4322.639 - 4328.04: in the Olympics so you you probably
+4325.56 - 4330.96: expect these number to taper off and
+4328.04 - 4330.96: maybe some of these
+4345.4 - 4349.5599999999995: that you could even aggregate by like
+4348.04 - 4353.0: the month
+4349.56 - 4353.0: born and the
+4358.88 - 4362.88: year doing a lot here
+4363.96 - 4368.2390000000005: now apparently I can't close my
+4370.88 - 4375.4400000000005: parentheses I think if we converted this
+4373.639 - 4378.96: a bit different way and did this ahead
+4375.44 - 4378.96: of time it would probably work for
+4393.96 - 4401.4: us we want a first group by the year
+4398.639 - 4403.88: born then we'd want
+4401.4 - 4407.599999999999: to group
+4403.88 - 4407.6: by the month
+4414.239 - 4422.599999999999: born and you could see there that 1971
+4419.12 - 4425.12: in January most popular month you see it
+4422.6 - 4426.719: seems like there's a lot of January born
+4425.12 - 4428.679: dates I don't know if that's because
+4426.719 - 4430.2390000000005: maybe these months are missing or
+4428.679 - 4432.159: something and it's just defaulting to
+4430.239 - 4434.638999999999: January or maybe it gives you an
+4432.159 - 4437.599999999999: advantage to be born it definitely makes
+4434.639 - 4440.32: sense at the start of your year because
+4437.6 - 4442.6: if things are separated by birth year
+4440.32 - 4445.44: let's say the people born in January
+4442.6 - 4447.08: compared to the people born in the same
+4445.44 - 4448.759999999999: year all the way in December the people
+4447.08 - 4450.44: in January are much older than the
+4448.76 - 4452.159000000001: people in December so they kind of have
+4450.44 - 4454.5599999999995: this upper hand I know that that was the
+4452.159 - 4457.239: case at least in ice hockey you'll see a
+4454.56 - 4459.120000000001: lot more early month borns January
+4457.239 - 4461.44: February March even though I'm a
+4459.12 - 4463.0: February birthday I guess I didn't reap
+4461.44 - 4465.879999999999: that Advantage because I'm very much not
+4463.0 - 4467.36: a Olympic ice hockey player but uh it's
+4465.88 - 4471.04: something interesting to think about
+4467.36 - 4473.88: group by cool I think that's good for
+4471.04 - 4475.5199999999995: group by for now you could play around
+4473.88 - 4478.719: with other
+4475.52 - 4479.92: aggregations cool that is group buys
+4478.719 - 4481.679: let's quickly touch on some more
+4479.92 - 4485.719: advanced functionality some things that
+4481.679 - 4488.719: come to mind to me are shift rank
+4485.719 - 4491.52: rolling functions trying to think if
+4488.719 - 4494.2390000000005: there's anything else cumulative sum I
+4491.52 - 4497.639: guess sum is a rolling function
+4494.239 - 4500.44: specific one start with shift let's say
+4497.639 - 4502.52: you wanted to see how your Revenue was
+4500.44 - 4503.919999999999: doing compared to the day before or
+4502.52 - 4506.4800000000005: something like that or you can imagine
+4503.92 - 4509.159: like aggregating things by week and then
+4506.48 - 4511.959999999999: shifting to compare last week to this
+4509.159 - 4516.32: week Etc can be useful so in our coffee
+4511.96 - 4518.92: data if we did like yesterday Revenue
+4516.32 - 4521.599999999999: that would be equal to
+4518.92 - 4526.32: Coffee
+4521.6 - 4528.2390000000005: revenue. shift one and we look at now
+4526.32 - 4531.719: our new
+4528.239 - 4533.04: coffee so now you could compare like I
+4531.719 - 4535.679: guess this wouldn't be a perfect fit I
+4533.04 - 4537.679: would have to shift it to to get it
+4535.679 - 4541.52: perfectly to
+4537.679 - 4541.52: fit because there's two
+4542.56 - 4547.92: types but now you could easily compare
+4545.04 - 4553.4: like okay on Tuesday we had a revenue of
+4547.92 - 4556.04: $120 roughly yesterday's Revenue was
+4553.4 - 4559.12: 99.75 and you could do like a percent
+4556.04 - 4562.56: increase which would be percent change
+4559.12 - 4566.92: would be equal to
+4562.56 - 4568.8: revenue divided by yesterday Revenue
+4566.92 - 4571.28: might error out because of the N I'm not
+4568.8 - 4573.08: sure hopefully it will just fill the
+4571.28 - 4577.5199999999995: nans with
+4573.08 - 4578.8: n cool so like this was a 120% increase
+4577.52 - 4580.719: and if you really wanted to make things
+4578.8 - 4584.400000000001: explicit I guess you could even multiply
+4580.719 - 4586.88: this resulting value by 100 and we get
+4584.4 - 4588.4: this so this would be the actual percent
+4586.88 - 4591.04: but if you wanted the fraction it was
+4588.4 - 4593.28: what we had before so that was a shift
+4591.04 - 4595.639: by two periods you could also shift
+4593.28 - 4598.04: backwards um by doing negative values
+4595.639 - 4601.639: here what else might you want to do well
+4598.04 - 4604.12: if we go to our biographical data here
+4601.639 - 4605.76: on our athletes maybe you would want to
+4604.12 - 4607.679: look at where someone's height and
+4605.76 - 4611.719: weight compared to the rest of the
+4607.679 - 4616.08: athlete so you could do bios height rank
+4611.719 - 4618.639: equals bios height C
+4616.08 - 4621.239: Rank and that will compare the heights
+4618.639 - 4623.400000000001: you know to everyone and give someone a
+4621.239 - 4626.04: rating so if we now sorted our values
+4623.4 - 4626.04: based on height
+4626.52 - 4633.320000000001: Rank and we'll say
+4629.92 - 4633.32: ascending equals
+4635.679 - 4641.56: false guess probably would want to do
+4638.0 - 4641.56: short values pass this
+4642.76 - 4648.719: in we see that Yao Ming is number one so
+4646.679 - 4652.04: it is cool to see and we'll see that his
+4648.719 - 4655.32: height rank um the way that it's done is
+4652.04 - 4658.48: I guess this is the max value and we can
+4655.32 - 4661.199: specify I guess uh how do we specify
+4658.48 - 4663.44: this another Advanced functionality is
+4661.199 - 4665.4: using GitHub co-pilot so if you are
+4663.44 - 4667.759999999999: using uh Visual Studio code you can
+4665.4 - 4669.5199999999995: install GitHub co-pilot I think through
+4667.76 - 4672.88: the
+4669.52 - 4676.92: extensions extensions
+4672.88 - 4680.0: GitHub co-pilot install this and I think
+4676.92 - 4682.52: Co co-pilot chat you might want too I
+4680.0 - 4684.76: guess that would be using this both are
+4682.52 - 4687.8: useful but if you have co-pilot
+4684.76 - 4694.12: installed I could do something like set
+4687.8 - 4696.04: height rank to bios height
+4694.12 - 4700.36: centim do
+4696.04 - 4705.0: rank but make but make make tallest
+4700.36 - 4706.719: person have rank one
+4705.0 - 4708.32: we can use GitHub co-pilot to help us
+4706.719 - 4710.52: here so ascending equals false is what
+4708.32 - 4712.96: we'd want to pass here accept that so I
+4710.52 - 4716.040000000001: use co-pilot a lot to help me figure out
+4712.96 - 4718.36: things like this and now if we sort
+4716.04 - 4721.8: values we get some really tall probably
+4718.36 - 4724.08: gymnasts here but if I now have it set
+4721.8 - 4725.04: like this we see Yao Ming again and this
+4724.08 - 4728.12: time
+4725.04 - 4729.679: his uh height rank will be one and this
+4728.12 - 4732.0: is just cool because if you're looking
+4729.679 - 4735.2390000000005: at a sample of the data
+4732.0 - 4737.199: frame let say like get like 10 rows you
+4735.239 - 4740.08: could see how someone's height compares
+4737.199 - 4742.919999999999: to every other Olympic Athlete like
+4740.08 - 4747.239: right here in the so how about we do
+4742.92 - 4747.2390000000005: like name height
+4747.6 - 4751.6: rank uh right there in the data frame
+4750.239 - 4753.44: and if they don't have a height you know
+4751.6 - 4755.320000000001: it's going to be an N here but it's kind
+4753.44 - 4757.04: of cool if you're like looking at a
+4755.32 - 4758.84: specific athlete that you like you could
+4757.04 - 4762.04: see how their height has compared to
+4758.84 - 4765.04: other people in the Olympics so rank is
+4762.04 - 4766.92: useful rolling functions
+4765.04 - 4768.8: coffee
+4766.92 - 4771.4: dot
+4768.8 - 4773.1990000000005: head a rolling function might or we'll
+4771.4 - 4774.48: look at the full coffee maybe you would
+4773.199 - 4777.799999999999: want to see the last three days of
+4774.48 - 4780.159: Revenue so I could do cumulative sum or
+4777.8 - 4782.719: actually cumulative sum would take your
+4780.159 - 4786.04: total revenue over time I could run that
+4782.719 - 4789.4800000000005: oh shoot and maybe I would want to just
+4786.04 - 4793.159: get the integer data type columns you
+4789.48 - 4796.678999999999: can use this select D types function
+4793.159 - 4798.36: cumulative sum that did not work I guess
+4796.679 - 4801.92: maybe in
+4798.36 - 4801.92: 64 let's go
+4803.88 - 4809.92: back I guess these are all floats so if
+4807.28 - 4813.239: we want to grab our
+4809.92 - 4817.04: floats columns and then do commun of sum
+4813.239 - 4821.0: and maybe I think reset the
+48

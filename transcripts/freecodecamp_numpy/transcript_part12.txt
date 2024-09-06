@@ -1,0 +1,101 @@
+
+2536.64 - 2543.839: the numpy library
+2539.599 - 2545.28: okay continuing onwards let's look at
+2543.839 - 2548.24: some
+2545.28 - 2550.2400000000002: statistics with numpy
+2548.24 - 2553.68: so kind of the easiest things we might
+2550.24 - 2553.68: think about when we think about
+2554.319 - 2558.8: sorry
+2555.119 - 2560.2400000000002: um statistics there's like min mean max
+2558.8 - 2564.8390000000004: etc
+2560.24 - 2564.839: so let's say we have this array
+2565.28 - 2569.76: so let's say we want to take the min of
+2566.72 - 2571.52: it you can just do np.min
+2569.76 - 2573.119: of stats
+2571.52 - 2574.68: that's going to give us the one that you
+2573.119 - 2578.6400000000003: see there you can do
+2574.68 - 2580.56: mpmax of stats
+2578.64 - 2583.2: six you could also do it
+2580.56 - 2584.7999999999997: on like a row basis so if i said axis
+2583.2 - 2587.7599999999998: equals one
+2584.8 - 2590.48: that's going to give me the min of the
+2587.76 - 2592.5600000000004: first row and the min of the
+2590.48 - 2595.2: second row or maybe this is a better way
+2592.56 - 2596.56: to see it if i said x is equal to zero
+2595.2 - 2597.9199999999996: well it's going to give me all the
+2596.56 - 2600.7999999999997: values that are up top here because
+2597.92 - 2603.119: those are all the the mins
+2600.8 - 2607.3590000000004: uh so yeah you can do all sorts of cool
+2603.119 - 2609.6800000000003: stuff with min and max with this
+2607.359 - 2612.16: same thing with max let's say x is equal
+2609.68 - 2612.16: to zero
+2612.64 - 2616.96: x equals one
+2614.24 - 2618.24: three and six is the biggest value
+2616.96 - 2620.16: three is the biggest value and the six
+2618.24 - 2623.52: is the biggest value you can also do
+2620.16 - 2625.44: np.sum of stats if i do it
+2623.52 - 2627.119: just as is it's going to sum up all the
+2625.44 - 2630.56: elements in the
+2627.119 - 2631.6800000000003: matrix and then same thing i can do row
+2630.56 - 2633.2: or column
+2631.68 - 2635.839: so
+2633.2 - 2638.319: actually equals 0 is going to add up all
+2635.839 - 2640.0: these terms going downwards next let's
+2638.319 - 2642.24: talk a little bit about reorganizing
+2640.0 - 2644.72: arrays so kind of the i would say the
+2642.24 - 2646.56: key method within reorganizing arrays so
+2644.72 - 2649.56: if i have the array i'm going to call it
+2646.56 - 2649.56: before
+2650.0 - 2655.68: and let's say that that is equal to
+2653.68 - 2660.56: this value right here
+2655.68 - 2662.72: so we have before i'll print before out
+2660.56 - 2664.88: looks like that so let's say we wanted
+2662.72 - 2667.2: to instead of this
+2664.88 - 2669.92: shape that it currently has which is a
+2667.2 - 2673.359: two by four
+2669.92 - 2675.119: um let's say we wanted to make it a
+2673.359 - 2678.24: i don't know a
+2675.119 - 2680.48: eight by one or something or maybe a
+2678.24 - 2682.319: four by two um
+2680.48 - 2684.4: or a yeah all sorts of different things
+2682.319 - 2686.96: we could do i'll start with eight by one
+2684.4 - 2688.319: so we have before
+2686.96 - 2691.92: and if we wanted to make it something
+2688.319 - 2694.72: else we can do after equals
+2691.92 - 2697.04: before dot reshape and then we pass in
+2694.72 - 2699.2: the new size we want it to have so if we
+2697.04 - 2700.72: wanted it to be an eight by one
+2699.2 - 2703.2: you can pass it in like that and we can
+2700.72 - 2706.16: print out after
+2703.2 - 2708.0: as you can see it's an eight by one now
+2706.16 - 2709.839: i could also say maybe i wanted it to be
+2708.0 - 2711.68: a four by two
+2709.839 - 2714.48: so now you got that
+2711.68 - 2717.1189999999997: you could even pass it in as a
+2714.48 - 2718.88: two by two by two as long as it has the
+2717.119 - 2721.28: same amount of values like it's fair
+2718.88 - 2723.2000000000003: game so as you see
+2721.28 - 2724.5600000000004: two by two by two still works with the
+2723.2 - 2726.48: reshape
+2724.56 - 2728.319: uh what doesn't work is like if i wanted
+2726.48 - 2730.56: it to be two by three
+2728.319 - 2732.0: um the values don't fit in so when you
+2730.56 - 2733.839: get errors with using their shape it's
+2732.0 - 2735.28: usually because there's a mismatch
+2733.839 - 2739.7599999999998: between the shape you're trying to
+2735.28 - 2741.76: resize it to versus the original shape
+2739.76 - 2743.76: moving onwards let's look at vertical
+2741.76 - 2744.88: stacks so
+2743.76 - 2747.28: vertically
+2744.88 - 2749.76: stacking
+2747.28 - 2752.1600000000003: vectors or matrices
+2749.76 - 2754.4: and you know dimensions are important in
+2752.16 - 2756.7999999999997: vertical stack as well
+2754.4 - 2758.1600000000003: so vertical stacking matrices let's say
+2756.8 - 2761.52: we had
+2758.16 - 2763.52: these two arrays
+2761.52 - 2765.92: if i wanted to stack
+2763.52 - 2770.16: um you know one two three four on top of
+2765.92 - 2772.839: five six seven eight i can do mp.v stack
+2770.16 - 2776.16: and i can pass in v1
+2772.839 - 2778.4: v2 and as you see now they're 

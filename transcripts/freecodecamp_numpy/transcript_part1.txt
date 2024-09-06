@@ -1,0 +1,100 @@
+0.16 - 3.52: how's it going everyone and welcome back
+1.68 - 5.8389999999999995: to another video today we're going to be
+3.52 - 8.639: going through the numpy library which is
+5.839 - 11.120000000000001: considered to be kind of the fundamental
+8.639 - 13.28: package for all scientific computing in
+11.12 - 15.12: python so it's a super super important
+13.28 - 16.56: library uh
+15.12 - 17.358999999999998: it's kind of the base for a lot of the
+16.56 - 19.358999999999998: other
+17.359 - 20.8: like major data science libraries in
+19.359 - 22.880000000000003: python so like
+20.8 - 25.199: pandas that i've done a video on before
+22.88 - 27.599: it builds pretty much like entirely off
+25.199 - 29.840000000000003: of the numpy library so it's super
+27.599 - 31.84: important and kind of because it's
+29.84 - 32.719: important it's because it's this like
+31.84 - 34.64: base
+32.719 - 35.84: uh the way we're gonna do this video is
+34.64 - 38.559: i'm gonna start off with kind of a
+35.84 - 40.239000000000004: background information on how numpy
+38.559 - 41.919999999999995: works and i think really having that
+40.239 - 43.279999999999994: intuition is helpful for when you
+41.92 - 45.28: actually start writing code with it so
+43.28 - 46.879000000000005: we'll do the background information and
+45.28 - 49.52: then after that we'll jump into all
+46.879 - 52.32: sorts of useful
+49.52 - 54.800000000000004: methods and ways you can utilize this
+52.32 - 56.480000000000004: library as far as actual code goes as
+54.8 - 58.48: always make sure to
+56.48 - 60.718999999999994: smash that subscribe button throw this
+58.48 - 62.879: video a thumbs up uh
+60.719 - 68.159: follow my tweeters
+62.879 - 71.36: tweetergram instagram twitter github too
+68.159 - 73.92: hit the bell for the notifications
+71.36 - 74.88: throw this another thumbs up
+73.92 - 77.28: yeah
+74.88 - 79.19999999999999: to begin numpy is a multi-dimensional
+77.28 - 81.43900000000001: array library so what that means is you
+79.2 - 82.159: can use numpy to store all sorts of data
+81.439 - 84.08: in
+82.159 - 85.759: one-dimensional arrays two-dimensional
+84.08 - 88.88: arrays three-dimensional race
+85.759 - 90.72: four-dimensional rays etc
+88.88 - 93.67999999999999: and so the common question you kind of
+90.72 - 95.439: ask or i'm commonly asked when
+93.68 - 97.28: you know you first bring up numpy is why
+95.439 - 98.15899999999999: do you use numpy
+97.28 - 102.0: over
+98.159 - 105.2: lists so the main difference comes from
+102.0 - 107.28: the speed so lists they are very slow
+105.2 - 108.479: meanwhile numpy
+107.28 - 111.52: is
+108.479 - 114.88: very fast and so why are lists slow and
+111.52 - 118.079: numpy fast well one reason is because
+114.88 - 120.0: numpy uses fixed types
+118.079 - 121.27999999999999: so what that means is imagine we have
+120.0 - 124.159: this
+121.28 - 125.52: three by four matrix three rows four
+124.159 - 127.759: columns
+125.52 - 129.119: and it's all integer values and we're
+127.759 - 130.479: going to kind of look at how those
+129.119 - 133.84: integer values
+130.479 - 135.84: differ between numpy and lists so let's
+133.84 - 137.68: just zoom in on that 5 that's there in
+135.84 - 141.36: that matrix
+137.68 - 145.20000000000002: so our computers they don't c5 they see
+141.36 - 145.20000000000002: binary that represents five
+145.68 - 149.68: and so
+147.52 - 150.87900000000002: this is the number five in binary and
+149.68 - 152.87900000000002: it's eight
+150.879 - 156.72: bits which makes up a byte so our
+152.879 - 159.28: computers read uh information in bytes
+156.72 - 160.56: so when we use numpy
+159.28 - 164.959: this
+160.56 - 166.64000000000001: this one bit five is actually by default
+164.959 - 169.36: going to be
+166.64 - 171.67999999999998: casted to this int 32 type which
+169.36 - 174.56: consists of four bytes
+171.68 - 177.59900000000002: uh and so it represents five in
+174.56 - 179.519: a total memory space of four bytes
+177.599 - 181.76: so in 32 and you also you can even
+179.519 - 184.08: specify so by default it's in 32 but you
+181.76 - 186.319: could even specify that you didn't need
+184.08 - 188.959: all four bytes to represent this value
+186.319 - 191.76: so you could specify within numpy that
+188.959 - 194.08: you wanted maybe an n16 which is 16 bits
+191.76 - 195.44: or two bytes or even if you had really
+194.08 - 197.36: small values
+195.44 - 198.959: into eight which is just a single byte
+197.36 - 201.92000000000002: on the other hand
+198.959 - 201.92000000000002: with lists
+202.959 - 206.879: there's a lot more information you need
+204.48 - 210.319: to store as an integer so
+206.879 - 213.04: in lists lists use a built-in int type
+210.319 - 214.72: for python and so that built-in in type
+213.04 - 217.67999999999998: consists of four different things it
+214.72 - 220.319: consists of the object value
+217.68 - 222.959: which you know has its own bits
+220.319 - 224.879: associated with it object type
+222.959 - 225.76: the reference co

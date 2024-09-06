@@ -1,0 +1,104 @@
+or key kind of concepts you
+647.12 - 650.5600000000001: learn with
+648.48 - 652.16: machine learning is the idea of like
+650.56 - 654.88: tensors
+652.16 - 657.279: and tensors are pretty connected to kind
+654.88 - 659.12: of like the tensor libraries are pretty
+657.279 - 661.519: similar to like the numpy library it's
+659.12 - 662.24: just a way to store all sorts of values
+661.519 - 664.72: so
+662.24 - 665.76: knowing numpy will help you
+664.72 - 667.279: kind of
+665.76 - 668.56: be able to do some stuff with machine
+667.279 - 670.0: learning
+668.56 - 671.1999999999999: all right to get started with the code
+670.0 - 673.279: the first thing you're going to do is
+671.2 - 674.9590000000001: import the numpy library
+673.279 - 677.04: and just so we're on the same page i'm
+674.959 - 679.3599999999999: using a jupiter notebook to use to code
+677.04 - 681.76: this up but you can use whatever editor
+679.36 - 683.36: you prefer also all this code that i'll
+681.76 - 685.2: be going through will be on my github
+683.36 - 686.64: and the link to that will be in the
+685.2 - 689.44: description
+686.64 - 691.1999999999999: okay so import numpy as np if that works
+689.44 - 693.6: for you great if it didn't work you'll
+691.2 - 696.72: have to do a pip install
+693.6 - 701.72: so you can go ahead into your terminal
+696.72 - 701.72: and type in pip install numpy
+705.12 - 708.9590000000001: and so
+706.399 - 710.0: uh it's already installed for me
+708.959 - 712.0: so
+710.0 - 714.48: and if pip doesn't work for you try pip
+712.0 - 715.76: 3 install numpy that should work
+714.48 - 718.0: so the first thing that's important to
+715.76 - 720.56: know is how to initialize an array so
+718.0 - 723.36: we'll just say that a equals
+720.56 - 725.1199999999999: np dot array
+723.36 - 726.88: and then within this we just basically
+725.12 - 728.8: pass in a list
+726.88 - 730.8: so one two three this would be a one
+728.8 - 732.3199999999999: dimensional array containing the values
+730.8 - 733.76: one two three
+732.32 - 735.839: as you see
+733.76 - 738.72: uh and you can go ahead you're not using
+735.839 - 740.639: jupyter notebooks and print a
+738.72 - 742.399: okay cool so we could also initialize a
+740.639 - 743.12: little bit more complex arrays so we
+742.399 - 745.519: could
+743.12 - 748.079: do like a 2d array of floats and i could
+745.519 - 751.76: do that the following way
+748.079 - 751.76: we're going to have a list within a list
+754.72 - 759.2: so here's some floating values and then
+757.68 - 760.7199999999999: we're going to make this two dimensional
+759.2 - 763.6800000000001: so here's some more
+760.72 - 763.6800000000001: float values
+766.0 - 771.04: and let's go ahead and
+769.04 - 773.519: print b
+771.04 - 776.56: cool so now that we know how to
+773.519 - 779.12: initialize arrays uh and you can keep
+776.56 - 780.399: doing this like i can nest lists within
+779.12 - 783.519: a list within a list to create a
+780.399 - 785.12: three-dimensional array etc
+783.519 - 786.88: some other useful things to know about
+785.12 - 790.399: this is
+786.88 - 791.519: how to how do you get the dimension of
+790.399 - 796.0: your
+791.519 - 796.0: numpy arrays so if i did a dot
+796.16 - 800.48: number dimensions
+798.16 - 803.76: so this tells me that it's one
+800.48 - 805.12: dimensional for a and if i did b dot and
+803.76 - 806.56: m
+805.12 - 808.9590000000001: it would be two
+806.56 - 810.16: shape is another important function so
+808.959 - 812.3199999999999: get shape
+810.16 - 814.7199999999999: uh if we do the first one a dot shape
+812.32 - 816.0: this is all we have to do it's a vector
+814.72 - 817.6: so it's only going to tell me the one
+816.0 - 820.079: dimension because it only has one
+817.6 - 821.6: dimension so it's size three
+820.079 - 823.92: if i do b dot shape it's going to tell
+821.6 - 825.9200000000001: me the rows and the columns so this is
+823.92 - 829.04: two rows and three columns so it should
+825.92 - 831.04: print out two by three as it does
+829.04 - 834.16: okay other things we want to know how
+831.04 - 836.8: much memory our numpy arrays take up so
+834.16 - 838.8: we can get the type and also get the
+836.8 - 840.8: size so
+838.8 - 844.399: if we want to get the type we do
+840.8 - 844.399: just a dot type
+845.12 - 850.079: oh sorry a dot data type
+847.76 - 852.0: in 32 by default
+850.079 - 855.68: so even though these are small values by
+852.0 - 858.8: default it specifies that it should take
+855.68 - 861.8389999999999: up four bytes or be an n32 if we wanted
+858.8 - 864.24: to specify what type we wanted to store
+861.839 - 866.32: at so maybe we knew that we didn't have
+864.24 - 869.12: many like big values
+866.32 - 871.839: so we could do like an n16 and so that
+869.12 - 875.12: would take up less size and you can see
+871.839 - 877.519: the difference in size and i say
+875.12 - 878.24: so right now it's in 16 and if i want to
+877.519 - 880.0: see
+878.24 - 882.48: the size there's a couple different i
+880.0 - 884.48: guess imp

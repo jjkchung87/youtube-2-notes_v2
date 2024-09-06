@@ -1,0 +1,176 @@
+00.32: you you know your data scattered and
+898.639 - 901.399: maybe the top and the bottom isn't that
+900.32 - 903.839: important but you kind of want to get a
+901.399 - 905.279: sense of things and so you'll see if we
+903.839 - 908.6800000000001: keep running this
+905.279 - 911.0: cell and I'm doing control enter to keep
+908.68 - 914.2399999999999: running this we see we get different
+911.0 - 919.079: pieces of data as we run this you can
+914.24 - 921.0: also pass in a random state to make this
+919.079 - 923.04: uh what is the word I'm looking for like
+921.0 - 925.16: repeatable so like it doesn't change I
+923.04 - 926.92: forget the actual technical word here
+925.16 - 928.7199999999999: next things you want to know is that's
+926.92 - 930.88: great for getting the top and bottom and
+928.72 - 933.12: r rows but what if we wanted to access
+930.88 - 936.68: specific values well the two functions
+933.12 - 940.199: you'll want to know about are Lo and IO
+936.68 - 943.12: so let's start with lo lo allows us to
+940.199 - 945.7199999999999: filter by rows and Columns of our data
+943.12 - 951.24: frame so our data frame again is coffee
+945.72 - 954.1600000000001: and we can use Lo and then rows comma
+951.24 - 956.8: columns is what we kind of pass in to
+954.16 - 959.199: this so what rows do we want and what
+956.8 - 961.68: columns do we want within this l
+959.199 - 963.7589999999999: function so to start let's say we wanted
+961.68 - 966.8389999999999: all rows or like maybe just the first
+963.759 - 969.88: row we could do coffee. lo0 and that's
+966.839 - 972.8000000000001: based on these indexes here and that
+969.88 - 975.12: would give us you know just this first
+972.8 - 977.399: day of our data frame I'll show the data
+975.12 - 981.759: frame again just so you can easily
+977.399 - 985.92: follow along see this is correct if we
+981.759 - 987.519: wanted the let's say zeroth first and
+985.92 - 992.4799999999999: second
+987.519 - 995.44: location we could do do this and we'll
+992.48 - 997.12: see do we get the first three rows this
+995.44 - 999.399: is nice because we could also you know
+997.12 - 1001.16: put in like the fifth row here and get
+999.399 - 1003.839: different things we can also use
+1001.16 - 1006.8389999999999: actually the slice syntax so I could do
+1003.839 - 1009.8800000000001: 0 to three I could also do something
+1006.839 - 1012.519: like zero onwards maybe it would be more
+1009.88 - 1017.4399999999999: interesting if I did five
+1012.519 - 1022.04: onwards you could do 5 to
+1017.44 - 1024.88: 12 5 uh eight all sorts of things you
+1022.04 - 1027.039: can do here and then additionally as I
+1024.88 - 1029.2800000000002: mentioned before this is rows and column
+1027.039 - 1031.52: so if I do a comma I can also grab rows
+1029.28 - 1034.6: so maybe I wanted to grab the day only
+1031.52 - 1039.0: the day maybe I wanted to grab the day
+1034.6 - 1039.0: and the number of units
+1040.039 - 1046.16: sold we see that so you can combine
+1043.64 - 1048.72: these things if you wanted all rows and
+1046.16 - 1050.799: just certain columns you can do this IO
+1048.72 - 1053.919: is pretty similar but instead of using
+1050.799 - 1057.48: labels like this it uses just index
+1053.919 - 1060.3200000000002: locations so if I did IO of this we see
+1057.48 - 1063.679: we'll get an error error but if I
+1060.32 - 1066.039: grabbed the zeroth indexed and the
+1063.679 - 1066.039: second
+1067.4 - 1073.799: index we'll see we get the same exact
+1070.2 - 1076.0: information in this situation the io so
+1073.799 - 1078.6: passing in values like this because the
+1076.0 - 1081.64: index is a integer value it is actually
+1078.6 - 1083.6399999999999: the index it's the same exact thing but
+1081.64 - 1086.76: one thing that you can do is I could do
+1083.64 - 1090.48: something like coffee.
+1086.76 - 1090.48: index equals
+1091.0 - 1098.919: coffee.day and so I can access specific
+1093.96 - 1100.3600000000001: columns by doing Dot column name or by
+1098.919 - 1102.1200000000001: doing
+1100.36 - 1105.36: Coffee
+1102.12 - 1107.76: Day if I set the index now if we look at
+1105.36 - 1111.12: our data
+1107.76 - 1113.4: frame we see that there's no numerical
+1111.12 - 1116.1589999999999: values there anymore and if I used a DOT
+1113.4 - 1119.039: a Lo and tried to grab just the first
+1116.159 - 1123.1200000000001: three rows we'll get an error but I
+1119.039 - 1126.6: could now do something like L
+1123.12 - 1128.76: Monday just get the Monday values I
+1126.6 - 1131.1999999999998: could even do something like Monday
+1128.76 - 1133.919: through
+1131.2 - 1135.52: Wednesday and filter by just those
+1133.919 - 1137.48: values and maybe I just wanted to grab
+1135.52 - 1139.4: units sold so you can combine all these
+1137.48 - 1142.76: things very useful
+1139.4 - 1147.44: so to you know in summary Lo allows us
+1142.76 - 1150.96: to get the rows and columns I look lets
+1147.44 - 1153.96: us grab the rows and columns as well but
+1150.96 - 1156.24: only using index
+1153.96 - 1157.64: values and then finally I think one
+1156.24 - 1159.6: thing that's worth
+1157.64 - 1162.44: mentioning just going to reload this
+1159.6 - 1164.6: coffee data frame so it has the index
+1162.44 - 1166.3200000000002: back to normal and finally one thing
+1164.6 - 1168.1999999999998: that I think is worth mentioning is
+1166.32 - 1171.9189999999999: let's say I wanted to set a specific
+1168.2 - 1174.2: value so look at our data frame coffee
+1171.919 - 1177.2800000000002: maybe we had a mistake in our data in
+1174.2 - 1179.88: the unit sold on Monday for lattes was
+1177.28 - 1182.1589999999999: actually off maybe it was actually 10
+1179.88 - 1184.88: units sold I can modify that value by
+1182.159 - 1187.5590000000002: doing something like coffee the row
+1184.88 - 1190.96: would be dolo
+1187.559 - 1192.6789999999999: one because it's the first index the
+1190.96 - 1196.159: value I want to edit is going to be
+1192.679 - 1199.72: units sold and I want to set it now to
+1196.159 - 1201.64: be equal to 10 if we look at our data
+1199.72 - 1206.08: frame after this
+1201.64 - 1208.0: step we see now it is 10 you could also
+1206.08 - 1211.52: set multiple values so maybe multiple
+1208.0 - 1213.799: values were 10 and if we run our data
+1211.52 - 1215.96: frame again we see we get 10 for all of
+1213.799 - 1218.9189999999999: those values so you can start modifying
+1215.96 - 1221.96: values within your data frame using L as
+1218.919 - 1223.7990000000002: well going to rerun coffee again worth
+1221.96 - 1225.4: really quickly mentioning that there's a
+1223.799 - 1228.679: slightly more optimized way to get
+1225.4 - 1232.72: specific values and that's using I at
+1228.679 - 1236.159: and at so if I did at and I specifically
+1232.72 - 1237.64: wanted zeroth index unit sold and just
+1236.159 - 1240.5590000000002: one single
+1237.64 - 1242.88: value could do that but if I try to pass
+1240.559 - 1244.24: in multiple values here it's gon to yell
+1242.88 - 1246.919: at
+1244.24 - 1248.28: me same thing with integer at it's not
+1246.919 - 1251.64: going to like me if I try to grab
+1248.28 - 1255.039: multiple things at once but I
+1251.64 - 1256.8400000000001: can grab a specific item like Monday
+1255.039 - 1258.679: this way but this only works for
+1256.84 - 1261.6399999999999: specific values I could also very
+1258.679 - 1264.2: similar just do IO here I find I use IO
+1261.64 - 1265.5590000000002: and lo way more than I would use and I
+1264.2 - 1267.4: but if you really needed to efficiently
+1265.559 - 1269.08: grab one single value quickly those
+1267.4 - 1271.64: would be the ones to do it all right
+1269.08 - 1274.4399999999998: this is all good but there's other ways
+1271.64 - 1276.0800000000002: to access data first off as we mentioned
+1274.44 - 1279.559: before to grab columns you can do
+1276.08 - 1282.76: brackets column name we can also if it's
+1279.559 - 1286.52: a single word you can do coffee dot just
+1282.76 - 1289.039: the value of that so I could do coffee
+1286.52 - 1290.76: unit sold like this but I think it you
+1289.039 - 1292.84: there's no way because it has a space in
+1290.76 - 1295.08: it I don't think you can
+1292.84 - 1297.76: do maybe you can yeah it's not going to
+1295.08 - 1300.6789999999999: work like that so if it is a single word
+1297.76 - 1303.279: you can do the dot syntax to grab a
+1300.679 - 1305.76: column but you can do bracket syntax
+1303.279 - 1309.039: always so bracket syntax is a bit more
+1305.76 - 1311.64: robust that graes us a column one thing
+1309.039 - 1314.799: we may want to do is sort our
+1311.64 - 1319.72: data so we can do sort values and we can
+1314.799 - 1322.2: provide a column name such as units sold
+1319.72 - 1323.96: and run this and we see now it's in
+1322.2 - 1326.279: increasing order if we wanted that
+1323.96 - 1330.44: instead to be in decreasing order we can
+1326.279 - 1332.72: pass ascending equals false now it's in
+1330.44 - 1334.799: decreasing order you could also filter
+1332.72 - 1338.64: by two parameters so I could do first
+1334.799 - 1343.679: filter by let's say unit sold and then I
+1338.64 - 1346.039: want you to fil or to sort by the coffee
+1343.679 - 1348.0: type so this means there will be it will
+1346.039 - 1350.1589999999999: first sort by unit sold and if there's
+1348.0 - 1352.64: ever a value Val such as this first one
+1350.159 - 1355.44: that has the same exact unit sold for
+1352.64 - 1358.4: both then it will sort by coffee type in
+1355.44 - 1360.2: this case coffee type is a string so
+1358.4 - 1362.88: that would be in alphabetical order by
+1360.2 - 1365.52: default and you can specify different
+1362.88 - 1368.919: things to be in in a sending descending
+1365.52 - 1371.96: differently by doing something like 01
+1368.919 - 1374.1200000000001: so this would say unit sold is false
+1371.96 - 1376.44: don't make it ascending but for coffee
+1374.12 - 1379.6: type make that ascending so this would
+1376.44 - 1382.159: be alphabetical or

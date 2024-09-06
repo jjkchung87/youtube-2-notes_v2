@@ -1,0 +1,1739 @@
+0.06 - 3.419: what's up guys and welcome back to
+1.589 - 5.009: another video so in today's video we
+3.419 - 7.5600000000000005: will go through the bat plot live
+5.009 - 9.48: library of Python and this is a super
+7.56 - 12.599: useful library for all things data
+9.48 - 14.099: visualization in Python so the video
+12.599 - 16.68: will start off with going through the
+14.099 - 18.6: matplotlib basics so as you see on the
+16.68 - 20.46: screen will be creating like line graphs
+18.6 - 22.5: such as the one you see here you'll
+20.46 - 24.869: learn how to format these lines in
+22.5 - 26.939: different ways you'll be able to add a
+24.869 - 30.3: title you'll be able to add labels to
+26.939 - 33.12: your x and y-axes format your tick marks
+30.3 - 35.13: properly add a legend etc so all the
+33.12 - 37.86: kind of basic matplotlib things you want
+35.13 - 40.410000000000004: to know then we'll move into other types
+37.86 - 42.69: of graphs such as bar charts and we'll
+40.41 - 44.669999999999995: finish this video off with going through
+42.69 - 46.289: all sorts of like real world examples
+44.67 - 49.53: where you can kind of combine your data
+46.289 - 51.27: science skills that you might have using
+49.53 - 52.44: like pandas library and if you haven't
+51.27 - 53.910000000000004: learned anything about the pandas
+52.44 - 57.57: library I recommend you watch my video
+53.91 - 59.06999999999999: on that so with that the kind of real
+57.57 - 61.35: world examples will do stuff such as
+59.07 - 64.32: like plot the USA versus Canada gas
+61.35 - 67.38: prices off of data that we have a little
+64.32 - 70.52999999999999: link to in a CSV we'll do some histogram
+67.38 - 73.74: stuff we'll do some pie chart stuff and
+70.53 - 76.08: we will do some box and whiskers chart
+73.74 - 78.27: stuff I can't get through every type of
+76.08 - 79.979: graph in this one video but if there's
+78.27 - 81.119: certain things that I didn't cover and
+79.979 - 83.58: you really want me to cover it let me
+81.119 - 87.99: know in the comments that would be super
+83.58 - 90.53999999999999: duper yeah that's all I got to start
+87.99 - 92.1: this video let's just jump into it all
+90.54 - 93.45: right let's start out by loading in the
+92.1 - 95.75: libraries that we need for this tutorial
+93.45 - 101.369: so we're an import and map plot live as
+95.75 - 105.36: our dot pie plot as peel of T we're
+101.369 - 107.759: gonna import numpy as NP and we're gonna
+105.36 - 111.72: for the later examples import pandas as
+107.759 - 113.57900000000001: PD and run that and so if you have all
+111.72 - 115.079: these us like already installed you
+113.579 - 116.82: won't get any errors if you do get these
+115.079 - 118.16999999999999: get an error when you're trying to run
+116.82 - 119.78999999999999: them onto these you find need to install
+118.17 - 123.0: it so you can either do a pip install
+119.79 - 125.61000000000001: matplotlib pip install numpy pip install
+123.0 - 126.78: pandas or you could install a Python
+125.61 - 129.149: distribution that already has these
+126.78 - 129.8: packages such as anaconda I'll link to
+129.149 - 132.11: how to do this
+129.8 - 134.57000000000002: the description okay so now we have our
+132.11 - 145.85000000000002: libraries loaded let's now build our
+134.57 - 147.79999999999998: basic graph so I just think it's kind of
+145.85 - 149.48: the hardest part about anything with
+147.8 - 153.05: Python in general is starting with that
+149.48 - 155.82999999999998: blank blank space so what I recommend
+153.05 - 158.69: for matplotlib is always start at the
+155.83 - 161.18: documentation so I have a link for this
+158.69 - 163.25: in the description but here is the home
+161.18 - 165.62: page of the matplotlib pipe lot
+163.25 - 166.7: documentation and what I recommend is
+165.62 - 169.16: like whenever we're trying to do
+166.7 - 171.58999999999997: something new just do a ctrl F and like
+169.16 - 173.18: look for it so if we look for plot here
+171.59 - 176.93: that's like we're just trying to get a
+173.18 - 178.55: line graph on the on the screen box
+176.93 - 181.43: plots not only one we don't want it been
+178.55 - 183.53: plot okay this looks good plot y versus
+181.43 - 186.23000000000002: X as lines or markers so this is what
+183.53 - 187.7: we'll start off by doing as you can see
+186.23 - 190.48999999999998: right here and the examples it gives
+187.7 - 193.48: gives plot X comma y so that's the
+190.49 - 196.61: command will F the run to make this work
+193.48 - 199.09: and just to know what x and y are if we
+196.61 - 201.41000000000003: go down to parameters they tell us that
+199.09 - 204.05: commonly these parameters are 1d arrays
+201.41 - 208.57999999999998: so we know we need to pass in 1d array
+204.05 - 216.83: to the plot function so if we do plot 1
+208.58 - 221.78: 2 3 that's gonna be our x + 2 4 6 will
+216.83 - 224.84: be our Y I can't type and run that plot
+221.78 - 227.239: is not defined so we imported pipe lot
+224.84 - 229.82: as plot so when we run this function we
+227.239 - 233.66: actually have to do P love T dot plot
+229.82 - 235.54999999999998: and then this is our X and the second
+233.66 - 238.67: array is our Y so let's see what happens
+235.55 - 242.09: there yay we got a graph and to clean
+238.67 - 245.51: this up a little bit I recommend moving
+242.09 - 251.54: our variables into removing our arrays
+245.51 - 258.53: into variables so X is 1 2 3 and Y is 2
+251.54 - 260.269: 4 6 and we can change now this to X Y
+258.53 - 261.44: and one thing that's annoying with the
+260.269 - 263.09000000000003: matplotlib if you're doing this in
+261.44 - 265.21999999999997: Jupiter notebook by default is you have
+263.09 - 266.45: this annoying little line here so you
+265.22 - 270.17: want to get rid of that you can just
+266.45 - 271.99: actually call plot dot show and that's
+270.17 - 278.09000000000003: the correct way to actually show this
+271.99 - 280.97: graph okay now that we have just a line
+278.09 - 283.13: on the screen let's start adding a
+280.97 - 285.14000000000004: little bit more to our graph so to do
+283.13 - 289.7: this let's go back to our documentation
+285.14 - 290.93: and go back to just the pie plot so I
+289.7 - 292.94: think this is a good spot to start
+290.93 - 294.35: because you always can kind of just ctrl
+292.94 - 296.03: F and find something you're looking for
+294.35 - 300.08000000000004: so let's say we wanted to add a title to
+296.03 - 301.52: our graph if I type in title it points
+300.08 - 303.38: me right to a couple different places
+301.52 - 305.39: that I probably want to look at and
+303.38 - 309.43: right here is what we're looking for so
+305.39 - 312.28999999999996: set a title for the axes click that and
+309.43 - 315.71: this tells me all sorts of stuff about
+312.29 - 322.91: how I call this so it looks like I use
+315.71 - 331.94: do pie plot title so I can do plot title
+322.91 - 335.57000000000005: and let's just do our first graph and
+331.94 - 340.06: run that as you can see our title is now
+335.57 - 343.46: there and same thing for a lot of the
+340.06 - 346.19: different parameters so going back to
+343.46 - 349.94: the documentation if I want an X level
+346.19 - 353.71999999999997: on a while label I just type in right I
+349.94 - 357.83: guess I knew that but let's just say Y
+353.72 - 360.62: label nothing comes up Y or just even
+357.83 - 363.44: label C label label a contour plot
+360.62 - 369.02: that's none of us the fig labels no pie
+363.44 - 372.8: no title no X label Y label let's how we
+369.02 - 375.26: get there so you can keep doing this and
+372.8 - 378.04: really easily find what you're looking
+375.26 - 380.9: for I think it's a good place to go if
+378.04 - 382.28000000000003: you kind of just if you forget things
+380.9 - 385.78999999999996: because I always forget things in that
+382.28 - 389.53: plot lid okay so adding a label to x and
+385.79 - 393.35: y plot an X label
+389.53 - 394.78999999999996: x-axes and I guess I'm getting really
+393.35 - 397.87: enthusiastic because we keep adding
+394.79 - 400.79: exclamation points to all of my stuff
+397.87 - 404.06: y-axes yay
+400.79 - 405.5: see what happens yeah and I want to just
+404.06 - 408.31: get rid of these recommendations I don't
+405.5 - 412.67: need them okay so now we have a graph
+408.31 - 415.76: and we have a title and we have y axis x
+412.67 - 417.98: axis in a real graph we would label
+415.76 - 419.51: these properly but for the sake of this
+417.98 - 422.21000000000004: example we're just kind of getting a
+419.51 - 424.4: feel for how we add these alright so now
+422.21 - 425.78: that we have our title and labels one
+424.4 - 430.42999999999995: thing we might want to do to them is
+425.78 - 432.71: resize them so if we look at the the
+430.43 - 435.41: documentation for title one thing you'll
+432.71 - 438.46999999999997: notice is that you can use you can pass
+435.41 - 439.91: in this font dictionary and it gives you
+438.47 - 442.28000000000003: a little bit of details about the font
+439.91 - 444.29: dictionary here but basically there's
+442.28 - 446.35999999999996: all sorts of options that we can do and
+444.29 - 449.09000000000003: like play around with our font so let's
+446.36 - 452.09000000000003: say I wanted to change the font of our
+449.09 - 457.76: title a new font dict equals and I can
+452.09 - 461.95: pass in a font name and let's say I my
+457.76 - 465.71: good old trusty reliable comic sans ms
+461.95 - 469.52: will be our new font and if you look at
+465.71 - 472.78999999999996: that we got a nice new font on a graph
+469.52 - 475.84999999999997: and if you can't see it well then in
+472.79 - 479.21000000000004: that case I'll change the font size to
+475.85 - 481.37: be something like 20 now you should
+479.21 - 485.39: definitely be able to tell that I've
+481.37 - 488.0: changed the font type and in the
+485.39 - 491.27: description I listed I put a link to all
+488.0 - 493.16: the known matplotlib fonts that you can
+491.27 - 494.59999999999997: use and if you look through the
+493.16 - 496.76000000000005: documentation you kind of find some
+494.6 - 499.61: different options you can do with this
+496.76 - 503.34999999999997: and you can also do the same thing with
+499.61 - 507.82: the labels I could do like font dict
+503.35 - 508.94: equals let's say I wanted to make this
+507.82 - 511.58: font
+508.94 - 514.669: arielle and that obviously might be the
+511.58 - 517.09: default but if I did it like Comic Sans
+514.669 - 517.09: as well
+517.199 - 523.539: you can tell that x-axis now has changed
+521.139 - 529.69: but I wouldn't just leave that this be
+523.539 - 531.55: for now okay so we did labels all right
+529.69 - 533.5290000000001: so that one thing that's bothering me is
+531.55 - 536.68: the tick marks I want to let's say I
+533.529 - 538.18: just want to do integer numbers and I'm
+536.68 - 540.939: gonna add a couple more values to our
+538.18 - 545.529: graph so I'm gonna go to five I'm gonna
+540.939 - 549.579: start at zero and Y would go from Y is
+545.529 - 552.459: always going to be two times X so it's
+549.579 - 553.959: gonna look like that oh I would
+552.459 - 558.459: magically did it for us
+553.959 - 560.649: at that case I don't want it to
+558.459 - 563.319: magically do it for us okay let's say we
+560.649 - 565.06: went to four and we wanted just the
+563.319 - 567.0999999999999: integer values we didn't want any
+565.06 - 572.29: decimal value so how do we change our
+567.1 - 578.769: ticks so we can do that by doing plot X
+572.29 - 580.93: ticks and our X ticks will do 0 0 1 2 3
+578.769 - 582.85: and I also just found remember this
+580.93 - 588.5999999999999: command by using the documentation and
+582.85 - 600.5400000000001: our wide ticks will be I have a 0 to 10
+588.6 - 604.8100000000001: every 2 so it was 0 2 4 6 oh my gosh 10
+600.54 - 606.55: as you can see that now we have the tick
+604.81 - 609.25: marks working properly and maybe I
+606.55 - 612.25: wanted to add 4 as well so now we
+609.25 - 613.66: labeled our ticks differently and one
+612.25 - 615.579: thing that's cool to know is that the
+613.66 - 618.49: graph will automatically resize based on
+615.579 - 622.0: how we set this so if I set one tick to
+618.49 - 626.559: a thousand well now our graph kind of
+622.0 - 630.189: looks like not too good but it's nice
+626.559 - 633.759: that you can easily do that 4 is better
+630.189 - 635.439: but and you can do the same thing with y
+633.759 - 640.17: I'd say when do they make the last one
+635.439 - 642.459: 100 as you can see it changes up the
+640.17 - 644.29: sizing of the graph one thing that's
+642.459 - 646.42: also cool though is find it even if I
+644.29 - 647.61: didn't even lis space these out if I did
+646.42 - 651.959: like 7 he
+647.61 - 654.779: and then 7.5 as you can see it properly
+651.959 - 658.5889999999999: puts those at the right spot in the
+654.779 - 661.14: graph I'll leave it like this I'll leave
+658.589 - 663.089: it a little bit weird but yeah that
+661.14 - 666.149: looks good to me okay so we have our
+663.089 - 668.7600000000001: first graph let's add a legend and make
+666.149 - 671.459: this line a little bit more exciting
+668.76 - 674.42: color wise so if we wanted to add a
+671.459 - 676.1999999999999: legend we can do and I'm gonna actually
+674.42 - 680.8499999999999: kind of like showing how the
+676.2 - 681.69: documentation is helpful if I looked up
+680.85 - 685.529: legend
+681.69 - 688.37: Figg legends that might be work just
+685.529 - 690.899: this legend place a legend on the axes
+688.37 - 693.36: like by looking up legend I I've figured
+690.899 - 695.19: out that the call is just legend and it
+693.36 - 699.0500000000001: gives me some examples so I always like
+695.19 - 702.57: to refer to this documentation okay so
+699.05 - 706.29: PLT legend and what happens when I do
+702.57 - 708.269: that no handles with labels fans put in
+706.29 - 710.3389999999999: legends so it's complaining because we
+708.269 - 713.0600000000001: don't have anything to label what it's
+710.339 - 716.6700000000001: saying is how do we label this line and
+713.06 - 719.67: the way we do that is by passing in a
+716.67 - 724.649: label to our plot function so in this
+719.67 - 726.51: case our X&Y we plotted X to be or Y to
+724.649 - 731.97: be 2 times X so I'm going to call the
+726.51 - 733.519: label here 2x and as you can see we get
+731.97 - 735.87: 2x right there
+733.519 - 738.449: okay let's say now that we wanted to
+735.87 - 741.93: change up the color of this line maybe
+738.449 - 747.29: make it thicker do some other things to
+741.93 - 747.29: it if we go to plot
+750.08 - 757.08: whereas plot we'll see all sorts of
+754.44 - 759.21: properties that we can do and plot so
+757.08 - 762.36: what I'm seeing right here is you can
+759.21 - 766.08: pass in all these different parameters
+762.36 - 768.99: to our plot and it probably lists off
+766.08 - 772.0500000000001: what we can put maybe not it's not super
+768.99 - 773.79: specific but if you look hard enough you
+772.05 - 777.99: can see all these properties that you
+773.79 - 782.91: can pass into the plot function so one
+777.99 - 789.1800000000001: thing we could plot pass in is color so
+782.91 - 791.0699999999999: if I passed in color equals red will
+789.18 - 795.2299999999999: work and it will know well I think the
+791.07 - 797.7600000000001: common color so if I did yellow if I did
+795.23 - 800.0600000000001: like yellow which is not a color it's
+797.76 - 803.15: gonna yell at me might even work with y
+800.06 - 805.17: yeah cool and we also can pass in
+803.15 - 807.48: hexadecimal colors so I could do like a
+805.17 - 811.05: B a B a B and we got like a grayish
+807.48 - 813.09: color you get this is helpful because
+811.05 - 815.4: you can pick use like a color picker
+813.09 - 819.38: tool and pick pretty much any color you
+815.4 - 821.9399999999999: want here but we'll stay with red for no
+819.38 - 826.08: the other parameters I could pass into
+821.94 - 830.9100000000001: that let's see what else we had I could
+826.08 - 836.19: do I think line size equals let's say 12
+830.91 - 838.17: oh that is not a print parameter not
+836.19 - 845.82: remembered either go back to Maya
+838.17 - 848.52: documentation size marker size maybe
+845.82 - 853.19: that's a marker size oh I also see you
+848.52 - 853.1899999999999: line width here so line width equals 2
+857.3 - 864.51: ohmygosh line with equals 12 makes this
+860.58 - 867.24: big line maybe two it's a bit bigger
+864.51 - 870.45: than I think what we had we can also do
+867.24 - 874.6800000000001: we can label a marker so let's say I
+870.45 - 877.2900000000001: wanted to add dots into this as you can
+874.68 - 878.9699999999999: see you can't really see it too too well
+877.29 - 881.5799999999999: but maybe I made the marker size a
+878.97 - 883.2900000000001: little bit bigger and I'm just kind of
+881.58 - 884.07: passing this in so you could kind of see
+883.29 - 887.79: what you can do
+884.07 - 889.98: oh that didn't work let's say 10 yeah as
+887.79 - 898.62: you can see nicely big dots on our graph
+889.98 - 900.089: I can also do marker edge color there's
+898.62 - 902.7: all sorts of properties I'm just like
+900.089 - 905.9590000000001: continually passing these in but now you
+902.7 - 908.37: see a different type of dot and whatnot
+905.959 - 910.26: so this is pretty cool that we can have
+908.37 - 912.0: all this customization it sometimes
+910.26 - 915.87: takes a little while to get what we want
+912.0 - 918.6: but it's usually it just is nice to have
+915.87 - 925.339: this power and one final thing I'll pass
+918.6 - 925.339: in is line style
+930.19 - 935.24: so there's all sorts of line styles we
+932.81 - 937.6099999999999: can pass it and you can read all into
+935.24 - 942.6800000000001: the different ways you can do this in
+937.61 - 943.64: the documentation one thing that's
+942.68 - 945.3499999999999: pretty cool
+943.64 - 947.0: is that instead of listing all of these
+945.35 - 948.65: keyword arguments sometimes we just want
+947.0 - 951.65: to make a different type of line quickly
+948.65 - 953.6899999999999: so there's actually a shorthand that you
+951.65 - 954.5: can use to kind of do pretty much the
+953.69 - 956.45: same thing
+954.5 - 960.56: so I comment this out real quick we have
+956.45 - 963.32: no graph what you can do is there's a
+960.56 - 964.91: shorthand notation that allows you to
+963.32 - 969.6500000000001: kind of have a pretty good amount of
+964.91 - 972.9499999999999: customization quickly so the shorthand
+969.65 - 975.8: notation is color marker line style I
+972.95 - 982.96: guess so if we go and copy this line
+975.8 - 991.279: from above let's say we just passed in
+982.96 - 994.5500000000001: this now what we can do is before we add
+991.279 - 998.03: our label we can pass in the shorthand
+994.55 - 1000.1899999999999: notation so I can do color will say read
+998.03 - 1001.78: it I think just accepts letters you can
+1000.19 - 1002.5300000000001: look into the documentation see exactly
+1001.78 - 1005.38: what it does
+1002.53 - 1008.02: marker will do a dot and then line will
+1005.38 - 1012.37: do a dash so watch what happens when I
+1008.02 - 1016.81: do this gives us a nice line with dots
+1012.37 - 1019.45: in it if I do two dashes gives us a
+1016.81 - 1021.28: dotted line if I do like a different
+1019.45 - 1024.28: type of marker you can pass in like a
+1021.28 - 1026.1399999999999: carat like that gives us a line with
+1024.28 - 1028.8999999999999: carrots in it it's kind of cool that you
+1026.14 - 1031.14: can do this shorthand notation and get
+1028.9 - 1034.0300000000002: different types of lines very easily
+1031.14 - 1038.199: just to follow up on the whole shorthand
+1034.03 - 1041.11: notation pulling in the docs for the
+1038.199 - 1043.27: plot function it shows all the different
+1041.11 - 1045.4289999999999: markers you can use and the different
+1043.27 - 1049.5: line Styles supported and the different
+1045.429 - 1053.17: colors supported so check out the plot
+1049.5 - 1055.36: documentation to see all that all right
+1053.17 - 1058.3300000000002: let's move on to our next thing and that
+1055.36 - 1059.11: will be I guess let's just add another
+1058.33 - 1061.84: line
+1059.11 - 1069.2199999999998: quick to our graph so we have our first
+1061.84 - 1070.4199999999998: line let's add line number two and this
+1069.22 - 1074.32: one will make a little bit more
+1070.42 - 1076.5700000000002: interesting and the thing is like here
+1074.32 - 1079.36: we had a very straightforward like you
+1076.57 - 1080.799: have X any other Y but this is not
+1079.36 - 1083.53: always easy to do especially if you have
+1080.799 - 1086.53: like a function like sign where you want
+1083.53 - 1088.12: to plot it at like a bunch of values but
+1086.53 - 1090.28: those values are all like you know crazy
+1088.12 - 1092.1999999999998: decimals so I'm going to show you how
+1090.28 - 1096.46: you can handle something like that so
+1092.2 - 1098.53: this is where we use numpy so nobody
+1096.46 - 1105.0: call this x2 I'm going to say that x2
+1098.53 - 1108.9289999999999: equals NP a range 0 to 4 and we'll go by
+1105.0 - 1113.29: 0.5 as our tick so if I print out x2
+1108.929 - 1117.3700000000001: real quick you see that this gives us a
+1113.29 - 1120.58: numpy array with zero zero point 5 1 1.5
+1117.37 - 1122.6789999999999: to 2 point 5 3 to 3.5 I'll actually make
+1120.58 - 1125.1399999999999: it good a 4 point 5 so it goes at the
+1122.679 - 1127.919: same spot as our other graph because
+1125.14 - 1134.41: this is a exclusive here so we have that
+1127.919 - 1139.0300000000002: so that's gonna be our XS and so what I
+1134.41 - 1142.24: can do here is I can go ahead and plot
+1139.03 - 1145.299: that and I'm going to plot the square
+1142.24 - 1147.52: function for it so I'm gonna pass in x2
+1145.299 - 1149.83: and then instead of passing in a why I'm
+1147.52 - 1153.8799999999999: just gonna do x2 and I'm gonna do
+1149.83 - 1156.49: squared what happens here so now you see
+1153.88 - 1158.44: we get x2 squared
+1156.49 - 1160.21: it goes a little bit higher than our
+1158.44 - 1162.73: original axis was set so I'm going to
+1160.21 - 1164.74: change up the ticks or maybe I'll just
+1162.73 - 1166.69: kind of comment this out and see what
+1164.74 - 1168.58: happens for a tick marks yeah I'm fine
+1166.69 - 1170.919: with just leaving the default that it
+1168.58 - 1173.8899999999999: gave us looks good to me
+1170.919 - 1176.47: and now we have two blue colors so let's
+1173.89 - 1179.5: make this a different color maybe you
+1176.47 - 1182.23: make it red we want to give it a label
+1179.5 - 1187.11: as well so I'm going to do red and I'm
+1182.23 - 1189.8: going to say the label is equal to x
+1187.11 - 1191.8999999999999: squared
+1189.8 - 1194.0: and one thing that's cool is that it
+1191.9 - 1195.8300000000002: automatically moved this legend to the
+1194.0 - 1198.29: top left because the positioning was
+1195.83 - 1201.71: better now that this goes up to the top
+1198.29 - 1204.05: right okay so we have two two lines up
+1201.71 - 1205.6100000000001: there and from the original image I
+1204.05 - 1208.43: showed there's some stuff that's still
+1205.61 - 1211.4599999999998: different one thing that's kind of cool
+1208.43 - 1213.3500000000001: that you could do is let's say you had a
+1211.46 - 1215.78: graph that stopped but you wanted to
+1213.35 - 1218.48: kind of show the projection of it not in
+1215.78 - 1221.44: the future so what I did to show that
+1218.48 - 1228.59: type of a phenomenon is I did like X to
+1221.44 - 1230.3600000000001: take the first four values here it'll
+1228.59 - 1239.98: plot that what did I do
+1230.36 - 1245.06: oh shoot first four so what I want I
+1239.98 - 1247.4: think that will work take the first
+1245.06 - 1259.6699999999998: floor and plot that and then for the
+1247.4 - 1261.65: last values so from let's say five or
+1259.67 - 1272.0900000000001: three all right let's make this a little
+1261.65 - 1278.3300000000002: bigger like this six or five bear with
+1272.09 - 1279.98: me here from four onward we'll make it a
+1278.33 - 1281.33: dash line and I had a little bit of
+1279.98 - 1286.07: overlap because I think it'll look
+1281.33 - 1288.74: better you'll see in a sec four - make
+1286.07 - 1290.95: this still the same function but this
+1288.74 - 1293.78: time we're gonna make it a dashed line
+1290.95 - 1294.95: so there you see and I'm going to
+1293.78 - 1297.79: actually make this a little bit
+1294.95 - 1297.79: different
+1303.61 - 1308.7199999999998: there you see like maybe something ended
+1306.2 - 1310.27: here and then you make it - the rest of
+1308.72 - 1314.66: the way you could do something like that
+1310.27 - 1316.7: using the format I just showed all right
+1314.66 - 1318.0700000000002: what else do we have probably clean this
+1316.7 - 1320.71: code up a little bit
+1318.07 - 1323.27: another thing that I showed in the
+1320.71 - 1327.05: original graph that I showed when I was
+1323.27 - 1328.79: a introducing this video was a resize so
+1327.05 - 1331.52: let's say we wanted to resize our graph
+1328.79 - 1334.3999999999999: well we should do that by near the top
+1331.52 - 1344.6299999999999: of our graph so I'm going to go ahead
+1334.4 - 1347.99: and do resize your graph I'm going to go
+1344.63 - 1350.5100000000002: ahead and do plot dot figure pass in fix
+1347.99 - 1354.38: size and we're going to say let's make
+1350.51 - 1357.83: the dimensions 5 by 3 it's kind of an
+1354.38 - 1361.0400000000002: arbitrary 5 by 3 that will give you kind
+1357.83 - 1363.8: of the ratio of your X to Y or Y but to
+1361.04 - 1365.03: specify how many pixels it is you're
+1363.8 - 1368.09: gonna want to pass in a second parameter
+1365.03 - 1371.84: which is dpi which basically is pixels
+1368.09 - 1375.6499999999999: per inch so I recommend using a value of
+1371.84 - 1378.1699999999998: around 300 here if you do smaller values
+1375.65 - 1380.65: you'll have more pixelated graphs so if
+1378.17 - 1384.71: you can afford having a bigger image
+1380.65 - 1387.41: having a bigger dpi is often nice so in
+1384.71 - 1389.8700000000001: this case we have pixels per inch of 300
+1387.41 - 1392.6000000000001: so this is going to actually be 5 inches
+1389.87 - 1396.9799999999998: by 3 inches so that Tolle pixels will be
+1392.6 - 1399.1399999999999: 1500 by 900 here in this graph so now
+1396.98 - 1404.81: it's much much bigger maybe that's a
+1399.14 - 1407.45: little bit too big I didn't I'm going to
+1404.81 - 1411.6499999999999: be blocking this graph so I'm gonna make
+1407.45 - 1415.43: it a little bit smaller but you get the
+1411.65 - 1421.3700000000001: idea then here so we'll make it like two
+1415.43 - 1422.64: by 1.5 that's not a good dimensions now
+1421.37 - 1425.12: though
+1422.64 - 1429.0800000000002: [Music]
+1425.12 - 1430.58: I mean just play around with this the
+1429.08 - 1434.51: the biggest issue I have right now is
+1430.58 - 1438.05: the graph looks so big because I have my
+1434.51 - 1441.26: screen super high resolution or super
+1438.05 - 1442.6399999999999: the view is like very up close because I
+1441.26 - 1446.89: want to make sure you guys can see my
+1442.64 - 1450.3200000000002: code but yeah this would be at 1500 by
+1446.89 - 1454.8500000000001: 900 graph I'm gonna just for the sake of
+1450.32 - 1458.09: the graph decrease the DPI and make it
+1454.85 - 1459.53: more reasonable that the issue you can't
+1458.09 - 1461.6899999999998: really tell from this image but if you
+1459.53 - 1464.18: really zoom into the graph and maybe if
+1461.69 - 1466.46: you like printed the graph out it would
+1464.18 - 1470.54: look maybe a little bit pixelated with a
+1466.46 - 1474.2: dpi of 100 so probably try to keep this
+1470.54 - 1480.32: value higher if possible and then
+1474.2 - 1483.44: another thing you want to do is you'll
+1480.32 - 1496.6399999999999: want to save your graph so to say we can
+1483.44 - 1500.72: do plot dot savefig and when you do say
+1496.64 - 1503.96: buy graph dot PNG and one thing that's
+1500.72 - 1507.5: nice too is like I pass in the DPI
+1503.96 - 1509.0: parameter here as well so let's say when
+1507.5 - 1510.62: I actually see if my graph wanted to be
+1509.0 - 1513.08: bigger but for the sake of being able to
+1510.62 - 1516.26: show you guys in a smaller format I
+1513.08 - 1519.8: wanted the 100 above I can still go
+1516.26 - 1522.5: ahead and save it with 300 and then kind
+1519.8 - 1525.29: of solves both of my problems and so
+1522.5 - 1527.27: this then my graph dot PNG will save in
+1525.29 - 1531.6499999999999: the current directory that this MATLAB
+1527.27 - 1532.82: matplotlib tutorial is in it was yeah
+1531.65 - 1534.14: well saving that current the current
+1532.82 - 1535.9399999999998: director whatever fought whatever
+1534.14 - 1538.3400000000001: directory of your file not pot Lib
+1535.94 - 1541.5800000000002: tutorial is in this graph will also save
+1538.34 - 1546.47: there when we run this cool now we have
+1541.58 - 1549.6399999999999: that saved all right let me clean this
+1546.47 - 1549.64: up a little bit
+1565.23 - 1570.06: and just to note the reason I did this
+1567.15 - 1573.7800000000002: is because this is exclusive the six
+1570.06 - 1576.57: here so when I do five onwards it picks
+1573.78 - 1578.97: up this actually ends at five because it
+1576.57 - 1582.4399999999998: doesn't include six so it actually
+1578.97 - 1582.44: covers everything here
+1608.05 - 1613.9099999999999: all right now that we've shown line
+1610.28 - 1616.91: graphs a bit let's go and do quickly do
+1613.91 - 1618.3200000000002: bar charts and after bar charts I think
+1616.91 - 1620.0900000000001: we're going to just end this video short
+1618.32 - 1622.79: and I'll do the real-world examples in a
+1620.09 - 1624.23: video that I'll post next week I just
+1622.79 - 1626.21: think this video might get a bit too
+1624.23 - 1629.81: long if I include everything in just one
+1626.21 - 1632.14: video so all right so I want to do bar
+1629.81 - 1632.1399999999999: chart
+1636.73 - 1640.3700000000001: okay so bar charts are pretty
+1639.23 - 1651.17: straightforward as well
+1640.37 - 1657.2299999999998: let's say we had some labels a a B and C
+1651.17 - 1659.51: and some values that say 1 4 & 2
+1657.23 - 1664.3700000000001: well if we wanted to do a bar chart we
+1659.51 - 1666.4: can just do plot dot bar of labels comma
+1664.37 - 1674.1799999999998: values at Friday they're wrong its
+1666.4 - 1679.76: values comma labels and we get not what
+1674.18 - 1687.47: I was looking for okay let's see it is
+1679.76 - 1689.36: actually labels first then values ABC
+1687.47 - 1694.19: cool so that was pretty straightforward
+1689.36 - 1697.34: and I can do the plot dot show we're
+1694.19 - 1699.8: going to do all the adding of titles and
+1697.34 - 1703.1: whatnot the same way as before in the
+1699.8 - 1704.6: line graph example let's skip over that
+1703.1 - 1707.06: for now
+1704.6 - 1712.37: it could also resize it let's say so I
+1707.06 - 1716.1799999999998: could do plot figure fig size equals
+1712.37 - 1720.02: it's a six by four it's gonna use
+1716.18 - 1721.0700000000002: whatever the default dpi is and then one
+1720.02 - 1725.36: thing that it's cool that you can do
+1721.07 - 1728.4199999999998: with bar charts is you could add
+1725.36 - 1731.87: different patterns to these so to do
+1728.42 - 1733.13: that and you can you can really play
+1731.87 - 1735.8: around with the documentation do all
+1733.13 - 1738.2600000000002: sorts of different things I do some kind
+1735.8 - 1739.81: of following the graphs that I was
+1738.26 - 1741.57: showing the inner intro
+1739.81 - 1747.1: video so I wanted to just show kind of
+1741.57 - 1752.04: what different hatch values look like so
+1747.1 - 1756.1299999999999: I can make first one have I'm gonna say
+1752.04 - 1759.6399999999999: bars equal plug up ours there you go now
+1756.13 - 1762.43: I do bars zero set hatch that's gonna
+1759.64 - 1765.1000000000001: give me the lines that you see down here
+1762.43 - 1772.99: I can do the same thing with the second
+1765.1 - 1775.6: value let's make this circles and you
+1772.99 - 1778.63: can find out the hatch values and the
+1775.6 - 1782.32: documentation as well let's do the third
+1778.63 - 1785.3200000000002: value we'll do stars so now you get kind
+1782.32 - 1787.57: of a cool little bar chart I can also
+1785.32 - 1789.58: add a legend to this very easily and
+1787.57 - 1791.32: this will tell me right away we have a B
+1789.58 - 1793.06: and C but I mean their label right here
+1791.32 - 1797.8899999999999: some legends probably not necessary in
+1793.06 - 1799.27: this case all right let's see what else
+1797.89 - 1800.3200000000002: does I want to do with this and then if
+1799.27 - 1802.66: you wanted to make this a little bit
+1800.32 - 1805.1799999999998: neater if you had like many more I might
+1802.66 - 1813.0900000000001: get tiring to do this so you could do
+1805.18 - 1817.39: something like patterns equals /o and
+1813.09 - 1823.6299999999999: star and you could do instead of this
+1817.39 - 1833.0500000000002: notation you could do ya for a bar and
+1823.63 - 1835.71: bars bar dot set hatch guess we want an
+1833.05 - 1835.71: index as well
+1838.25 - 1846.21: we'll just do actually patterns dot pop
+1842.57 - 1848.9099999999999: first item off so this would get us our
+1846.21 - 1853.14: right one for each one should yeah look
+1848.91 - 1854.5500000000002: at that if I didn't pop regularly I
+1853.14 - 1858.21: think it would take off the last so this
+1854.55 - 1860.1599999999999: will be stars instead of yep look at
+1858.21 - 1862.02: that yeah so basically what it did is it
+1860.16 - 1863.97: just popped off the first item for the
+1862.02 - 1865.29: first bar popped up the second item for
+1863.97 - 1868.83: the second bar and then popped off the
+1865.29 - 1871.46: final item for the third bar as you can
+1868.83 - 1871.46: see there
+1873.39 - 1876.45: in this video we're going to build off
+1874.89 - 1877.95: of what we didn't in the last video
+1876.45 - 1881.1000000000001: which was kind of an introductory video
+1877.95 - 1882.39: to Matt pot Lib library of Python so in
+1881.1 - 1884.2199999999998: this video specifically we're going to
+1882.39 - 1886.89: be kind of doing some real world type
+1884.22 - 1889.3500000000001: examples so basically combining our
+1886.89 - 1891.75: knowledge of the pandas library with the
+1889.35 - 1894.54: matplotlib library to create all sorts
+1891.75 - 1898.32: of different plots based on CSV style
+1894.54 - 1900.48: data so we'll start out with a
+1898.32 - 1905.52: spreadsheet that all provided my github
+1900.48 - 1908.28: page link in the description to gas
+1905.52 - 1911.12: prices over time for different countries
+1908.28 - 1914.52: so with that data sheet will build
+1911.12 - 1917.9699999999998: charts such as the one you see here then
+1914.52 - 1920.58: the second data set that I provided is a
+1917.97 - 1923.58: list of all the game the video game
+1920.58 - 1925.11: FIFA's player stats so if you're not
+1923.58 - 1927.03: familiar with that and basically all of
+1925.11 - 1928.35: the soccer players or I guess if you're
+1927.03 - 1929.73: an international viewer watching this
+1928.35 - 1932.8799999999999: all the football players in the game
+1929.73 - 1934.77: FIFA provided all their like overall
+1932.88 - 1938.46: stats in the game and will build grab
+1934.77 - 1940.8: all sorts of charts off of that so we'll
+1938.46 - 1944.22: do like histogram stuff with players
+1940.8 - 1947.6699999999998: overall rating in FIFA some pie chart
+1944.22 - 1950.49: stuff more pie chart stuff a little bit
+1947.67 - 1953.43: more complex and then finally some box
+1950.49 - 1955.71: and whisker chart stuff based off the
+1953.43 - 1958.71: FIFA data and if we have time maybe one
+1955.71 - 1962.25: or two more graphs before we begin
+1958.71 - 1964.05: couple quick I guess announcements first
+1962.25 - 1965.88: is if you've enjoyed any of my videos
+1964.05 - 1968.9099999999999: it'd mean a lot to me if you can
+1965.88 - 1970.74: subscribe and also along the same lines
+1968.91 - 1972.9: if you don't mind also following my
+1970.74 - 1975.24: Instagram and Twitter
+1972.9 - 1978.1200000000001: basically the more followers I get on
+1975.24 - 1981.08: all my social media platforms the more
+1978.12 - 1984.06: content the more serious that I'll take
+1981.08 - 1985.8: this and the more content that I'll
+1984.06 - 1987.1499999999999: produce all right we'll start this video
+1985.8 - 1988.53: off the same way we started the last
+1987.15 - 1991.2: video make sure you load up the
+1988.53 - 1993.69: necessary libraries I'll be editing with
+1991.2 - 1994.14: Jupiter notebook using Python 3 but you
+1993.69 - 1997.56: can
+1994.14 - 1999.8100000000002: using other IDs and text editors as well
+1997.56 - 2003.32: so we're importing these three libraries
+1999.81 - 2005.6599999999999: matplotlib numpy and pandas then the
+2003.32 - 2008.21: next step will be to download the data
+2005.66 - 2010.3400000000001: that I provided for this so to do that
+2008.21 - 2012.8600000000001: go to my github which is in the
+2010.34 - 2015.3799999999999: description and we want to download two
+2012.86 - 2017.03: different files so that files the first
+2015.38 - 2019.5200000000002: file we want to download is this gas
+2017.03 - 2022.37: prices so the easiest way to think to
+2019.52 - 2027.08: download this is go to the raw and then
+2022.37 - 2031.4899999999998: just do save as you can and you want to
+2027.08 - 2034.37: save it wherever you have your code so
+2031.49 - 2036.41: my code these Jupiter notebooks for me
+2034.37 - 2039.11: are in this map pot Lib tutorial
+2036.41 - 2041.39: directory so I would save this value
+2039.11 - 2044.3: here as you see I already saved it and
+2041.39 - 2046.5500000000002: then for the the other data file the
+2044.3 - 2048.77: FIFA dataset we're gonna want to do the
+2046.55 - 2051.5299999999997: same thing so go back to the main file
+2048.77 - 2053.39: in the github click on FIFA data this
+2051.53 - 2057.9500000000003: one you can't even preview but just
+2053.39 - 2061.9089999999997: click view raw right click and save as
+2057.95 - 2064.0099999999998: you want to save it as a CSV file so a
+2061.909 - 2065.51: comma separated values file and you'll
+2064.01 - 2067.3700000000003: also want to save this in the same
+2065.51 - 2072.23: directory that you have the file that
+2067.37 - 2074.24: you're writing your code in okay so now
+2072.23 - 2076.28: that we've saved the data let's start
+2074.24 - 2078.4399999999996: playing around with it and if you
+2076.28 - 2081.3500000000004: remember from my pandas video the way
+2078.44 - 2084.14: that we can look at a CSV file with
+2081.35 - 2086.83: pandas is we can do something like will
+2084.14 - 2091.97: call this CS or will our data gasps
+2086.83 - 2093.3199999999997: equals PD read CSV then we need to type
+2091.97 - 2096.3999999999996: in the name of the file we want to read
+2093.32 - 2100.5800000000004: we've saved it as gas prices dot CSV and
+2096.4 - 2102.08: we should be luron that no issues and we
+2100.58 - 2104.99: saved this file in the same directory
+2102.08 - 2107.09: that this map pot the editorial file is
+2104.99 - 2109.7: in so that's why this worked if you save
+2107.09 - 2112.73: this file in a different directory you
+2109.7 - 2115.16: can specify where you save it so if you
+2112.73 - 2117.41: save it in like a data folder you would
+2115.16 - 2121.46: specify it so it's with this type of
+2117.41 - 2123.52: syntax okay yes so now what we can do is
+2121.46 - 2127.13: look what to see what's in our
+2123.52 - 2130.22: this data file so if I just do gas and
+2127.13 - 2133.4: this works in Jupiter notebook but in
+2130.22 - 2134.8999999999996: another if you're just using like
+2133.4 - 2138.26: sublime text you'd have to like print
+2134.9 - 2143.119: gas or you could just be looking at the
+2138.26 - 2146.15: actual CSV file and like excel so gasps
+2143.119 - 2148.31: we have year and then we have all these
+2146.15 - 2151.609: different countries and their price and
+2148.31 - 2154.5499999999997: US dollars per gallon for gas that year
+2151.609 - 2160.43: so the way I look at this we're gonna
+2154.55 - 2163.52: have year as our x input so ah stop
+2160.43 - 2168.71: texting me so based on the year each
+2163.52 - 2170.3: country has a different gas price so the
+2168.71 - 2176.09: way we can access that is we can do
+2170.3 - 2181.79: something like PLT dot plot and so our X
+2176.09 - 2183.9500000000003: data is going to be gas a year our Y
+2181.79 - 2187.52: data is gonna be let's say we start with
+2183.95 - 2189.109: USA so USA is all caps here so I have to
+2187.52 - 2193.88: follow that same syntax when I'm
+2189.109 - 2196.0699999999997: accessing that gas that USA and then I
+2193.88 - 2197.75: can do a plot dot show and I think
+2196.07 - 2200.3590000000004: already there we'll have a basic graph
+2197.75 - 2206.81: up and running so as you can see yep
+2200.359 - 2208.52: this is the basic graph for our data and
+2206.81 - 2214.33: we could also add another country we can
+2208.52 - 2220.4: do plot plot let's add Canada year gas
+2214.33 - 2222.17: Canada I think yeah as you can see now
+2220.4 - 2225.32: we have two different graphs and as you
+2222.17 - 2227.21: can see from this it's easy to see more
+2225.32 - 2227.96: easily than just reading the CSV that oh
+2227.21 - 2230.54: okay
+2227.96 - 2234.71: every year gas and Canada is
+2230.54 - 2236.54: consistently higher than in the USA but
+2234.71 - 2238.16: we have some problems with this graph so
+2236.54 - 2241.64: like one thing that I see that's an
+2238.16 - 2242.8999999999996: issue is all these years like I don't
+2241.64 - 2245.359: know I think it just makes more sense to
+2242.9 - 2247.609: be looking at the exact year especially
+2245.359 - 2249.95: since this data wasn't like broken up by
+2247.609 - 2253.359: month so like I don't like the x axis
+2249.95 - 2255.5699999999997: labels we have no title we have no real
+2253.359 - 2257.22: good indicator of
+2255.57 - 2259.7400000000002: these values mean up here here on the
+2257.22 - 2262.3199999999997: y-axis so we need to start fixing some
+2259.74 - 2265.41: things up and quickly to know if you
+2262.32 - 2267.21: have like a multi-word name this format
+2265.41 - 2272.1: of dot year probably won't work so you
+2267.21 - 2275.4900000000002: could also do bracket notation to access
+2272.1 - 2277.5: that field as you see it still works so
+2275.49 - 2279.1499999999996: if we had something with two names and I
+2277.5 - 2283.97: don't remember let me look at the data
+2279.15 - 2283.9700000000003: again see if any countries have that
+2284.3 - 2290.88: South Korea for example like we would
+2287.43 - 2294.68: have to use this syntax so I'll actually
+2290.88 - 2304.13: plot South Korea's gas in this list
+2294.68 - 2304.1299999999997: their gas prices so plot plot gas year
+2304.28 - 2309.0600000000004: gas South Korea wouldn't work maybe
+2308.01 - 2310.86: actually it would work with the
+2309.06 - 2313.35: underlines I'm not sure yeah
+2310.86 - 2319.71: South Korea's having issues so what we
+2313.35 - 2320.79: can do is south space Korea now we have
+2319.71 - 2322.8: three lines and Wow
+2320.79 - 2324.6: yeah the gas in South Korea is even more
+2322.8 - 2326.9100000000003: expensive okay it's just kind of
+2324.6 - 2328.38: bothering me mixing these different ways
+2326.91 - 2331.3199999999997: to do this so I'm going to change this
+2328.38 - 2334.23: back to here change this back to year
+2331.32 - 2335.88: and only leave the South Korea like that
+2334.23 - 2338.27: because it has to be like that okay so
+2335.88 - 2341.4300000000003: now we have some plots let's make this
+2338.27 - 2344.91: graph overall better though so to start
+2341.43 - 2347.0699999999997: let's add a title so to add a title if
+2344.91 - 2349.56: you remember from my last video and feel
+2347.07 - 2354.32: free to review that again we can just
+2349.56 - 2366.24: use peel detail I can label this like
+2354.32 - 2367.73: gas prices over time and US dollars and
+2366.24 - 2371.04: so it still doesn't make too much sense
+2367.73 - 2372.69: because you see all these lines but you
+2371.04 - 2374.04: don't know what they represent I mean we
+2372.69 - 2376.62: only know that what they represent
+2374.04 - 2378.93: because we see the code here but we
+2376.62 - 2381.3599999999997: should add a legend and so to add a
+2378.93 - 2383.1: legend we're not to first give these
+2381.36 - 2385.35: plots labels because if I don't give
+2383.1 - 2387.49: these labels watch what happens plot dot
+2385.35 - 2393.97: legend
+2387.49 - 2399.6099999999997: oh wow it worked I was not actually
+2393.97 - 2400.9599999999996: expecting that to work try to think why
+2399.61 - 2403.1800000000003: that is that it worked
+2400.96 - 2406.51: whatever it worked without needing to
+2403.18 - 2408.7: add the labels specifically so that's
+2406.51 - 2411.4300000000003: kind of nice for us I guess due to the
+2408.7 - 2414.2799999999997: fact that we're reading this in and we
+2411.43 - 2416.71: kind of from a nice CSV that already has
+2414.28 - 2421.51: headers it probably worked but in our
+2416.71 - 2423.04: last video you had to add label so I
+2421.51 - 2424.63: could actually change the label if I
+2423.04 - 2429.4: wanted to if I wanted this to just say
+2424.63 - 2432.07: United States see that change it like
+2429.4 - 2433.69: that so you can add this optional label
+2432.07 - 2436.21: parameter if things aren't working for
+2433.69 - 2439.33: you properly but for us it just kind of
+2436.21 - 2441.28: magically did the trick okay so this is
+2439.33 - 2443.25: looking already a little bit better I
+2441.28 - 2448.4500000000003: might make the graph a little bit bigger
+2443.25 - 2455.62: let's do that I can do plot dot figure
+2448.45 - 2458.6499999999996: big size equals say 8 by 5 so now that's
+2455.62 - 2460.69: a nicer sizing it's more easy to see
+2458.65 - 2463.2000000000003: everything the legend is a more
+2460.69 - 2466.39: reasonable size and comparison of
+2463.2 - 2469.72: everything in there so that's bit better
+2466.39 - 2471.4: what else can we do to this well we
+2469.72 - 2473.2: don't have any labels for axes so we
+2471.4 - 2474.7000000000003: should definitely do that also I really
+2473.2 - 2477.52: don't like that these tick marks are not
+2474.7 - 2479.77: exact years so I think the next thing
+2477.52 - 2485.86: I'm going to do is change up the ticks
+2479.77 - 2488.89: so x ticks what we can pass in is just
+2485.86 - 2493.2400000000002: the year here so now it will have a tick
+2488.89 - 2496.99: for every year that we have data for Wow
+2493.24 - 2499.6899999999996: and that looks absolutely fantastic yeah
+2496.99 - 2503.8599999999997: obviously issues with this - squished
+2499.69 - 2508.5: together so what can work well is if I
+2503.86 - 2511.6: print out gas that year you see we have
+2508.5 - 2514.21: part of a panda's data frame but we have
+2511.6 - 2517.95: over one of these years if we remember
+2514.21 - 2520.11: you know some good old list
+2517.95 - 2523.6499999999996: comprehension
+2520.11 - 2526.31: this comprehension the list iterating
+2523.65 - 2528.4500000000003: syntax maybe that will be the word but
+2526.31 - 2529.95: you know when you want to get certain
+2528.45 - 2533.1299999999997: items like the first five items on a
+2529.95 - 2535.77: list you go zero to five or you could
+2533.13 - 2538.38: even just do five what we want to do is
+2535.77 - 2540.5099999999998: iterate you know maybe take every three
+2538.38 - 2542.04: years so what we could do to do that is
+2540.51 - 2543.3: we don't care where we start it so we're
+2542.04 - 2546.36: gonna start at the beginning we want to
+2543.3 - 2549.27: end at the end but we want to skip every
+2546.36 - 2554.31: three years so now we get all the years
+2549.27 - 2556.29: in a we get every third year which will
+2554.31 - 2558.33: probably be better when we graph it down
+2556.29 - 2562.5: here so I'm going to do that now so
+2558.33 - 2567.83: guess year tick tick three colon colon
+2562.5 - 2567.83: three cool that looks pretty good all
+2567.86 - 2573.03: right
+2569.22 - 2576.0899999999997: I also kind of would like to have exact
+2573.03 - 2578.88: values here kind of show exactly where
+2576.09 - 2581.3700000000003: we're plotting the points so to do that
+2578.88 - 2585.59: if you remember the shorthand notation
+2581.37 - 2594.96: from the last video we can do stuff like
+2585.59 - 2599.07: will make us a blue dot - so blue is the
+2594.96 - 2601.88: color and we want a dot - we want dot
+2599.07 - 2605.55: markers and a dash a straight line
+2601.88 - 2607.77: basically we're saying cool so now we
+2605.55 - 2610.0800000000004: have every third year but we have points
+2607.77 - 2612.78: for every time we actually have a data
+2610.08 - 2618.96: point so that looks good we do the same
+2612.78 - 2621.03: thing for the other ones red - and
+2618.96 - 2622.71: what's cool - is you see that the legend
+2621.03 - 2631.4700000000003: changes as we do that
+2622.71 - 2634.08: South Korea let's say green dot - cool I
+2631.47 - 2636.56: like the look of this still we need to
+2634.08 - 2642.36: do some more modifications let's add
+2636.56 - 2644.97: labels to our X and y-axis so X label
+2642.36 - 2651.42: will be year that's pretty
+2644.97 - 2665.5299999999997: self-explanatory then the Y label
+2651.42 - 2669.7000000000003: we'll be US dollars cool so now you can
+2665.53 - 2675.55: see you know okay and year 2008 South
+2669.7 - 2677.77: Korea paid approximately $6 per gallon
+2675.55 - 2680.92: of gas we're all translating all these
+2677.77 - 2686.59: values to US dollars while Canada paid
+2680.92 - 2690.88: about four dollars and the u.s. played
+2686.59 - 2693.19: about three dollars so that looks pretty
+2690.88 - 2700.53: good to me and we can easily add some
+2693.19 - 2705.4900000000002: more countries here so I could like add
+2700.53 - 2709.9300000000003: Australia for example and we'll make
+2705.49 - 2712.2999999999997: them ah I don't know what color to use I
+2709.93 - 2716.02: don't know that anymore I got a yellow
+2712.3 - 2716.4700000000003: shirt it might be ugly color yeah it's
+2716.02 - 2718.48: not too bad
+2716.47 - 2720.73: but yeah and there we have Australia
+2718.48 - 2724.45: looks like they're missing maybe a data
+2720.73 - 2725.98: value for 1990 I'm not positive but yeah
+2724.45 - 2727.66: we can easily do this for all of our
+2725.98 - 2730.09: different graphs and we could even do
+2727.66 - 2734.37: something like let's comment this out
+2730.09 - 2740.8: temporarily let me do something like for
+2734.37 - 2746.23: country in gas let's see what happens at
+2740.8 - 2749.23: that print country yeah cool this is
+2746.23 - 2752.86: giving us all the different countries we
+2749.23 - 2762.3: don't want year so I'm going to say in
+2752.86 - 2762.3: gas one onwards now we have Oh No
+2765.16 - 2772.49: close close close okay I'm gonna be a
+2768.59 - 2779.48: little bit hacky here if country is not
+2772.49 - 2781.1899999999996: equal to Year print country now we get
+2779.48 - 2784.28: all of the countries and so what we
+2781.19 - 2785.9900000000002: could do with this now is you know
+2784.28 - 2789.5: that's probable need of a way to do this
+2785.99 - 2791.0: then if country is not equal to year but
+2789.5 - 2792.98: I'm just trying to show you how like we
+2791.0 - 2796.96: can do this very quick and efficient
+2792.98 - 2799.9: like dude gas that year and then country
+2796.96 - 2802.37: and we'll let it self select the colors
+2799.9 - 2806.39: but we could if we wanted to specify
+2802.37 - 2807.74: marker equals dot and think the line
+2806.39 - 2816.44: style will be fine already
+2807.74 - 2820.72: oh no unrecognized character and oh okay
+2816.44 - 2825.7400000000002: can't just do country we need to do gas
+2820.72 - 2829.7: country look at that now we've got all
+2825.74 - 2832.87: the different all the different
+2829.7 - 2835.8799999999997: countries in our graph and you could
+2832.87 - 2838.1: move there's ways within matplotlib to
+2835.88 - 2840.23: like move the legend outside of the
+2838.1 - 2842.87: graph I'm not going to go into that
+2840.23 - 2844.34: right now but another I guess comment
+2842.87 - 2846.08: that I have is whenever you're doing
+2844.34 - 2849.17: anything with matplotlib or anything
+2846.08 - 2850.88: with python in general is like quickly
+2849.17 - 2853.85: do a google search like how to move
+2850.88 - 2856.06: legend outside of matplotlib graph and
+2853.85 - 2858.95: you'll find probably on Stack Overflow
+2856.06 - 2860.48: within the first three searches someone
+2858.95 - 2862.37: that had the same problem as you and
+2860.48 - 2864.89: found an answer to it so I always
+2862.37 - 2867.17: recommend doing that but this is kind of
+2864.89 - 2869.12: cool that we were able to quickly graph
+2867.17 - 2871.85: all these different lines for all the
+2869.12 - 2874.72: different countries and if you wanted to
+2871.85 - 2880.4: you could like create a list like
+2874.72 - 2882.98: countries to look at maybe not the best
+2880.4 - 2885.4100000000003: name and you could choose exactly which
+2882.98 - 2888.11: ones you wanted to include and then you
+2885.41 - 2890.96: would do if not equals a year and we
+2888.11 - 2895.01: actually you could just do if country in
+2890.96 - 2897.04: countries to look at you'll do this real
+2895.01 - 2897.0400000000004: quick
+2905.31 - 2916.87: if country in countries to look at so
+2915.07 - 2920.23: you see this is another way we can graph
+2916.87 - 2922.3599999999997: specific things cool cool cool all right
+2920.23 - 2928.2400000000002: I'm gonna comment this out temporarily
+2922.36 - 2929.83: and just leave I'll leave it I'll push
+2928.24 - 2937.5699999999997: it to the github when we're done with
+2929.83 - 2944.89: this video and it will uncon with this
+2937.57 - 2946.81: again cool and yeah you can play around
+2944.89 - 2948.79: with this style you can use the
+2946.81 - 2950.73: shorthand notation or you can use the
+2948.79 - 2953.29: long hand notation that we kind of used
+2950.73 - 2955.27: here but you also can reference the
+2953.29 - 2957.37: first video I posted on matplotlib to
+2955.27 - 2957.97: really play around with your line graph
+2957.37 - 2959.74: styles
+2957.97 - 2961.33: alright we're pretty much known of this
+2959.74 - 2963.49: graph but a lot of a couple final things
+2961.33 - 2965.3199999999997: before I move on to the FIFA data and
+2963.49 - 2968.35: doing some other graphs so the first
+2965.32 - 2970.6000000000004: thing is changing up the font size I
+2968.35 - 2973.39: mentioned this in the previous map plot
+2970.6 - 2975.19: lib video I did but I thought I was
+2973.39 - 2977.5: worth mentioning again so we can add a
+2975.19 - 2979.75: font stick to our title and actually we
+2977.5 - 2982.2: can add this to any text based label so
+2979.75 - 2984.37: you also add it to the X label ony label
+2982.2 - 2988.18: and we can do all sorts of different
+2984.37 - 2989.95: tweaks to our font I put a list in the
+2988.18 - 2991.8399999999997: description to all the different fonts
+2989.95 - 2994.7799999999997: you can use here if you wanted to change
+2991.84 - 2997.21: up the actual font type but I'm going to
+2994.78 - 2999.94: keep the font type the same I'm going to
+2997.21 - 3003.39: change the font weight I'm gonna make it
+2999.94 - 3006.33: bold so you see it now it's not bold but
+3003.39 - 3008.1299999999997: if I do this watch what happens now it's
+3006.33 - 3010.0499999999997: bold and let's say I also wanted to
+3008.13 - 3014.1600000000003: change the font size I would say font
+3010.05 - 3018.8100000000004: size and let's say it's size 22 so now
+3014.16 - 3022.83: we have a larger font maybe 18 is a
+3018.81 - 3025.13: better value so we can do that you can
+3022.83 - 3027.5099999999998: do that for any of your your labels
+3025.13 - 3028.98: another thing we might want to do is
+3027.51 - 3031.28: in the when I showed this graph
+3028.98 - 3034.26: originally I also had of the year 2011
+3031.28 - 3037.38: we don't have values for 2011 but maybe
+3034.26 - 3039.7200000000003: you wanted to allow for the ability of
+3037.38 - 3043.4700000000003: that showing up and maybe project where
+3039.72 - 3048.6: they're going you could do Plus you take
+3043.47 - 3052.95: your ticks and plus 2011 ah that did not
+3048.6 - 3054.5099999999998: work so this is a litter this is a data
+3052.95 - 3059.3399999999997: frame so you can't just directly add
+3054.51 - 3061.2900000000004: 2011 so we need to make it a list still
+3059.34 - 3063.06: didn't work and the problem is the data
+3061.29 - 3065.96: frame is kind of weird when you add just
+3063.06 - 3069.06: a direct list so you can do dot to list
+3065.96 - 3072.63: and now do this now you see 2011 is
+3069.06 - 3075.0: there and then if you wanted to actually
+3072.63 - 3079.23: save this graph remember we can do plot
+3075.0 - 3083.88: dot save fig we can give it a name so
+3079.23 - 3086.58: gas price figure sure and remember when
+3083.88 - 3089.2200000000003: we're saving if you change the DPI
+3086.58 - 3091.08: you'll get a higher resolution image so
+3089.22 - 3093.3199999999997: 300 is a good value this is gonna make a
+3091.08 - 3096.83: pretty big image it's going to make a
+3093.32 - 3100.29: 300 times eight which is 24 hundred by
+3096.83 - 3102.54: 1500 image but so really you can play
+3100.29 - 3105.06: around with this video but the higher
+3102.54 - 3106.8: the resolution or higher dpi the higher
+3105.06 - 3111.0: resolution image you're going to get so
+3106.8 - 3115.92: whoo I want to say this is a PNG so if I
+3111.0 - 3120.45: went into that folder that I had as you
+3115.92 - 3123.57: can see where did it go refresh oh I
+3120.45 - 3126.3599999999997: don't know where I'm saving this just
+3123.57 - 3130.1400000000003: propose figure where are you alright
+3126.36 - 3132.21: sorry I tipped us in wrong savefig and
+3130.14 - 3133.56: you always just you can refresh and look
+3132.21 - 3135.54: at the documentation I'm gonna have
+3133.56 - 3137.07: government yeah I got an error here I
+3135.54 - 3140.97: should have noticed that before but yeah
+3137.07 - 3144.15: say fig one word do that now if I go to
+3140.97 - 3148.41: the folder that I have these files in we
+3144.15 - 3153.2400000000002: got gas price figure and if I bring that
+3148.41 - 3157.41: in you see the figure there saves nicely
+3153.24 - 3159.7799999999997: as a PNG all right let's move on to the
+3157.41 - 3160.3489999999997: FIFA data now that we're done with the
+3159.78 - 3162.779: gas price
+3160.349 - 3164.279: stuff let's move on to using our FIFA
+3162.779 - 3169.799: data so we're gonna first gonna have to
+3164.279 - 3172.259: load it in so in if you didn't save the
+3169.799 - 3176.519: FIFA data maybe skipped around this
+3172.259 - 3178.349: video it's on my github page and the
+3176.519 - 3179.1899999999996: link to that is in the description and
+3178.349 - 3181.71: you want to save it in the same
+3179.19 - 3185.94: directory of the file that you're using
+3181.71 - 3189.779: to produce these graphs Lou I'm mixing
+3185.94 - 3194.609: my words load FIFA data ok so to do that
+3189.779 - 3198.809: we'll just call FIFA equals PD not read
+3194.609 - 3202.89: CSV and I believe we called this FIFA
+3198.809 - 3205.079: data dot CSV and that's just check make
+3202.89 - 3206.819: sure it's loaded in properly cool and
+3205.079 - 3209.549: this is actually shoot it shouldn't have
+3206.819 - 3210.66: loaded at all ok it's still a preview
+3209.549 - 3212.43: but you could do something if you only
+3210.66 - 3216.45: wanted to see like the first 5 rows you
+3212.43 - 3218.729: can do FIFA dot head five all right so
+3216.45 - 3221.9399999999996: so you can get a feel for what's in this
+3218.729 - 3223.589: data you got like the name of the player
+3221.94 - 3226.43: and you should probably recognize some
+3223.589 - 3231.479: of these guys names Leo Messi Ronaldo
+3226.43 - 3233.3089999999997: Neymar all very good players I think
+3231.479 - 3236.8799999999997: it's right now sorted probably by their
+3233.309 - 3238.799: overall but yet all the stats from the
+3236.88 - 3242.219: game FIFA for these guys and I think it
+3238.799 - 3245.579: just provides a good set of data to work
+3242.219 - 3247.529: from and also I took this data from a
+3245.579 - 3250.529: cat goal challenge I'm gonna link to the
+3247.529 - 3252.569: original source of the data as well down
+3250.529 - 3256.67: the description ok so what can we do
+3252.569 - 3260.119: with this so to start off let's do some
+3256.67 - 3260.119: histogram stuff
+3264.32 - 3269.82: okay so what I think is cool first thing
+3267.36 - 3273.3900000000003: to do is plot the overall skill level
+3269.82 - 3274.86: here that you see on the right just
+3273.39 - 3277.2: figure out in the game like how many
+3274.86 - 3280.6800000000003: people have above a 90 how many people
+3277.2 - 3282.5099999999998: have between an 80 and 90 etc so what we
+3280.68 - 3284.04: can do to do that is we have our data
+3282.51 - 3291.9900000000002: already loaded I don't have to reload a
+3284.04 - 3296.19: 10 but I can go ahead and do let's see
+3291.99 - 3298.62: plot and the way that I remember these
+3296.19 - 3302.3: commands is like I showed in the last
+3298.62 - 3304.7599999999998: video you can kind of use the PI plot
+3302.3 - 3307.05: documentation as your kind of your
+3304.76 - 3309.3: starting point and then if you're
+3307.05 - 3311.67: looking to try to do a histogram lookup
+3309.3 - 3312.9900000000002: histogram within that documentation the
+3311.67 - 3315.03: link to the documentation is in the
+3312.99 - 3320.49: description and you'll find the command
+3315.03 - 3323.8100000000004: hist so what I can pass into history to
+3320.49 - 3330.2999999999997: set we're going to pass in the overall
+3323.81 - 3332.67: skill level as my input and let's see
+3330.3 - 3335.04: what happened going to do that and then
+3332.67 - 3338.4300000000003: I'll do a plot Dutch show so I don't get
+3335.04 - 3340.65: all this random stuff okay that looks
+3338.43 - 3343.74: pretty good it's already starting to get
+3340.65 - 3348.4500000000003: there what would probably be more
+3343.74 - 3350.97: helpful is if this kind of these tick
+3348.45 - 3355.29: marks were centered for each bin that we
+3350.97 - 3358.8599999999997: have and I'll do that in a sec all right
+3355.29 - 3361.77: we're gonna set the bins every 10
+3358.86 - 3363.63: overall skill level points so like the
+3361.77 - 3365.7599999999998: highest you would be and the FIFA game
+3363.63 - 3369.63: is 100 the lowest you could be as a zero
+3365.76 - 3372.36: so we'll do our bins at intervals of 10
+3369.63 - 3374.7000000000003: up to from zero to a hundred so the
+3372.36 - 3376.2000000000003: first bin that we have will be all
+3374.7 - 3379.74: players that have a skill level between
+3376.2 - 3387.7999999999997: 0 and 10 and it's counting that number
+3379.74 - 3391.5899999999997: 50 60 70 80 90 and then finally 100 cool
+3387.8 - 3395.3100000000004: so oh I didn't do anything yet now we
+3391.59 - 3399.3: can set the bins parameter of the
+3395.31 - 3403.62: the histogram to our bins now we got a
+3399.3 - 3405.42: nice a little bit nicer of a graph now
+3403.62 - 3409.83: the next thing I'm going to do is set
+3405.42 - 3413.1800000000003: our X ticks to be the bins as well so
+3409.83 - 3415.47: now it's nicely labeled each interval
+3413.18 - 3417.93: corresponds exactly with what we have
+3415.47 - 3421.3199999999997: here but it looks like we have some
+3417.93 - 3425.04: unnecessary data so it looks like
+3421.32 - 3429.3: there's very little players over here so
+3425.04 - 3435.02: maybe I'll limit this start at 40 and go
+3429.3 - 3435.02: up to 100 and what's kind of crazy is
+3435.29 - 3441.39: you know the players that are over a 90
+3438.15 - 3443.82: are really a rarity because you can't
+3441.39 - 3451.0699999999997: even see that bar from the 90 to 100
+3443.82 - 3453.1200000000003: range there so let's do a little bit
+3451.07 - 3456.54: you're not a title the same way as
+3453.12 - 3460.7599999999998: before got a while a ball so I'll do a
+3456.54 - 3469.07: wide labor real quick number of players
+3460.76 - 3471.1800000000003: and the X label would be the skill level
+3469.07 - 3480.3900000000003: and we could have a title that would be
+3471.18 - 3481.23: like distribution of player skills in in
+3480.39 - 3485.97: FIFA
+3481.23 - 3489.17: I think it's FIFA 2018 might be 2019 not
+3485.97 - 3493.5899999999997: positive so that's a cool little
+3489.17 - 3495.27: visualization and you can get more into
+3493.59 - 3501.8700000000003: details like to actually see that there
+3495.27 - 3507.48: are some values there you could do you
+3501.87 - 3514.5499999999997: change up your white X to be let's say 0
+3507.48 - 3514.55: to 100 okay that didn't work
+3523.07 - 3530.25: yeah yes it's kind of tough with all of
+3528.42 - 3534.0: these players but if we did move it from
+3530.25 - 3536.46: like 80 to 100 you see that yeah there
+3534.0 - 3538.98: are actually players that are above a 90
+3536.46 - 3540.93: is just very very few compared to the
+3538.98 - 3542.4: amount of players in the game another
+3540.93 - 3547.41: thing you could potentially do is maybe
+3542.4 - 3548.9100000000003: break it up use the data and only look
+3547.41 - 3550.68: at the stats of players and certain
+3548.91 - 3554.31: teams and then you wouldn't get all the
+3550.68 - 3558.75: noise I guess in the lower skill levels
+3554.31 - 3560.73: that I put all the people in here one
+3558.75 - 3562.5: little modification we can make to this
+3560.73 - 3566.22: is let's say we wanted to change the
+3562.5 - 3567.84: color of our bar I could set this you
+3566.22 - 3570.33: know I could set it to red usually like
+3567.84 - 3575.61: that or I could set it to a hexadecimal
+3570.33 - 3578.2799999999997: value very easily and what I recommend
+3575.61 - 3580.23: whatever you want a certain color what
+3578.28 - 3583.26: you can do is just like do a google
+3580.23 - 3588.48: search for a color picker as you see
+3583.26 - 3590.61: here I can just move this bar around and
+3588.48 - 3592.26: no matter what color I want so let's say
+3590.61 - 3597.98: I want this greenish color I copy that
+3592.26 - 3601.4100000000003: hex code hide this paste in the hex code
+3597.98 - 3604.47: now I get that green color I kind of
+3601.41 - 3605.67: like the bluish color so I'm gonna go
+3604.47 - 3607.47: with that but yeah you can play around
+3605.67 - 3609.84: and get any color you want with that pot
+3607.47 - 3613.7099999999996: lid all right let's do pie chart snacks
+3609.84 - 3616.02: and just to start off I kind of
+3613.71 - 3617.67: mentioned this the histograms but to
+3616.02 - 3620.57: like figure out how to do a pie chart I
+3617.67 - 3624.2400000000002: usually just start at this documentation
+3620.57 - 3628.92: lookup pie plot a pie chart is right
+3624.24 - 3631.47: there and then with this page I can kind
+3628.92 - 3634.08: of get all the details of what I can
+3631.47 - 3640.29: pass in and what are the parameters that
+3634.08 - 3644.61: I can play around with yeah a lot of
+3640.29 - 3645.21: good stuff here okay so the wedge sizes
+3644.61 - 3647.9100000000003: are
+3645.21 - 3649.92: so that's what we're gonna input here so
+3647.91 - 3651.839: what does that look like okay so I want
+3649.92 - 3656.19: to just output some of our data again
+3651.839 - 3659.2799999999997: and what I think we're gonna do for this
+3656.19 - 3663.54: first chart is one of the components of
+3659.28 - 3668.19: this I guess we can't see it here but if
+3663.54 - 3670.71: you open up the full I can't see all of
+3668.19 - 3673.619: it if you opened up the full file within
+3670.71 - 3679.46: like Excel you'd see that one of the
+3673.619 - 3679.46: parameters we can have is preferred foot
+3680.15 - 3685.589: so if I look up that you see that left
+3685.02 - 3687.24: or right
+3685.589 - 3689.52: it's what whether you play left you're
+3687.24 - 3691.3799999999997: ready in soccer so what I'm thinking
+3689.52 - 3695.309: would be interesting to do a pie chart
+3691.38 - 3696.869: on is the percentage of people that play
+3695.309 - 3698.6400000000003: with their left foot versus their right
+3696.869 - 3703.29: foot so how would we do something like
+3698.64 - 3705.0589999999997: that well we can count the number of
+3703.29 - 3707.64: people that play with our left foot by
+3705.059 - 3710.099: doing the following and this plays into
+3707.64 - 3714.66: the stuff that I taught in the that we
+3710.099 - 3716.819: went through in the pandas video but we
+3714.66 - 3719.7599999999998: can use the dot lok to kind of like look
+3716.819 - 3722.25: up the data set and kind of filter the
+3719.76 - 3725.4300000000003: data set by specific condition in this
+3722.25 - 3729.42: case for left we want to the condition
+3725.43 - 3733.339: to be apologize one sec when the
+3729.42 - 3740.849: condition to be if the preferred foot
+3733.339 - 3743.19: column is equal to left then we want
+3740.849 - 3745.23: only the data that this condition holds
+3743.19 - 3749.25: and because we're going to need to pass
+3745.23 - 3752.64: this into a pie chart what we'll want to
+3749.25 - 3756.45: do is get the count of that I believe
+3752.64 - 3758.7599999999998: this count gives us an array I can
+3756.45 - 3764.0989999999997: probably check so let's see what is the
+3758.76 - 3768.0: left yeah it's like an array here so if
+3764.099 - 3768.559: we do count 0 we'll actually get a
+3768.0 - 3773.67: number
+3768.559 - 3776.849: as you can see 4211 players prefer their
+3773.67 - 3779.29: left foot and so we can do the same
+3776.849 - 3789.5: thing with right FIFA
+3779.29 - 3791.0: FIFA bird foot equals equals right get
+3789.5 - 3793.7: the count of that and then because this
+3791.0 - 3795.8: returns a data frame we have to take the
+3793.7 - 3798.0499999999997: we'll just take the first element which
+3795.8 - 3800.57: it will be a number and let's see how
+3798.05 - 3802.4: much you like right okay so considerably
+3800.57 - 3805.52: more people preference their right foot
+3802.4 - 3807.44: than they left that makes sense okay so
+3805.52 - 3810.4: now how do I do the pie chart we can do
+3807.44 - 3813.62: plot pie this is from the documentation
+3810.4 - 3815.63: and I guess I kind of jumped ahead but
+3813.62 - 3820.5499999999997: you might like think maybe I can just go
+3815.63 - 3823.34: ahead and do FIFA preferred I can't even
+3820.55 - 3825.4100000000003: spell of course I like foot and like
+3823.34 - 3828.59: figure that it might just plot the pie
+3825.41 - 3832.24: chart while doing that but it it gets
+3828.59 - 3835.1000000000004: messed up when you don't pass it numbers
+3832.24 - 3839.24: so what we need to do is passing a list
+3835.1 - 3844.64: of numbers so what we can do is left
+3839.24 - 3846.7999999999997: comma right so now we have two values
+3844.64 - 3850.4: and I'll make a part pie chart out of
+3846.8 - 3853.82: these values look at that cool and I'll
+3850.4 - 3856.13: do plot dot show one thing I'm noticing
+3853.82 - 3858.77: is these colors are really ugly and also
+3856.13 - 3864.77: nothing is labeled right now so going
+3858.77 - 3868.25: back to the documentation you can see
+3864.77 - 3869.69: labels is list sequence of strings
+3868.25 - 3871.13: providing the labels for each wedge we
+3869.69 - 3873.62: need to pass in that we can also change
+3871.13 - 3878.71: up the colors with a writ list as well
+3873.62 - 3886.88: so let's do that so labels will do
+3878.71 - 3891.16: equals left and right and we'll pass
+3886.88 - 3897.23: those into our pie chart do labels
+3891.16 - 3899.87: equals labels cool so now at least we
+3897.23 - 3902.39: have like relative percentages I mean we
+3899.87 - 3905.87: don't know the exact percentages but you
+3902.39 - 3908.0: have an idea just based off the graph if
+3905.87 - 3909.24: we added in colors we can change this
+3908.0 - 3912.42: ugly orange from
+3909.24 - 3915.14: there she could pass in two colors let's
+3912.42 - 3917.19: say like we're gonna just use some
+3915.14 - 3924.93: hexadecimal values we're just typing in
+3917.19 - 3930.18: these in randomly and now I have to pass
+3924.93 - 3931.6189999999997: some colors here cool now that looks
+3930.18 - 3934.29: alright maybe you'd want a little bit
+3931.619 - 3936.9: more contrast but it doesn't really
+3934.29 - 3937.5: matter too too much you can be the judge
+3936.9 - 3943.44: of that
+3937.5 - 3945.18: I do Auto percentage this should forget
+3943.44 - 3953.64: exactly how to format this I'll have to
+3945.18 - 3956.1499999999996: check so others percentage format
+3953.64 - 3956.15: percent
+3957.83 - 3965.8199999999997: so we can use percent notation here so
+3961.83 - 3967.59: we can do % point 2f and basically
+3965.82 - 3971.4300000000003: they'll just fill in whatever value is
+3967.59 - 3974.9300000000003: for the percentage with 0.2 two decimals
+3971.43 - 3983.1299999999997: of floats and I guess I screwed that up
+3974.93 - 3984.6299999999997: probably also be a string cool so now it
+3983.13 - 3986.28: actually gives us our percentages so
+3984.63 - 3988.38: twenty three point one nine percent of
+3986.28 - 3990.9300000000003: the people in the FIFA game prefer their
+3988.38 - 3993.09: left foot over their right foot and if
+3990.93 - 3994.859: you want to actually see percent on that
+3993.09 - 3997.56: it's a little bit weird and just do
+3994.859 - 3999.33: percent percent basically if you just
+3997.56 - 4002.5299999999997: did percent I think it would bug out
+3999.33 - 4005.0: because it's expecting specific notation
+4002.53 - 4008.09: basically by doing two percentage points
+4005.0 - 4010.94: in this notation it knows you actually
+4008.09 - 4013.4900000000002: do want that percentage sign all right
+4010.94 - 4021.04: and then we can add a label the title as
+4013.49 - 4027.589: we've done in the past preference foot
+4021.04 - 4030.41: preference of FIFA players
+4027.589 - 4031.249: cool and there's a basic pie chart I'm
+4030.41 - 4035.8689999999997: trying to think of there's other things
+4031.249 - 4037.519: I should add to this well we'll get into
+4035.869 - 4040.7290000000003: a little bit more complicated stuff and
+4037.519 - 4042.1989999999996: the next pie chart that we'll build so
+4040.729 - 4043.549: this is a pretty simple pie chart let's
+4042.199 - 4046.7290000000003: make another pie chart
+4043.549 - 4049.849: all right pie chart number two so in
+4046.729 - 4053.66: this one what we're gonna do is look at
+4049.849 - 4056.2290000000003: the breakdown of the weights of the FIFA
+4053.66 - 4061.7889999999998: players and we'll plot it as a pie chart
+4056.229 - 4063.529: so I mean okay let's look at what the
+4061.789 - 4068.0890000000004: weights look like so I'm going to print
+4063.529 - 4070.339: out wait here okay so we have a list of
+4068.089 - 4073.009: all these weights what we can see is
+4070.339 - 4075.92: that there and note that they're in
+4073.009 - 4079.16: pounds they're not into kilograms as
+4075.92 - 4081.619: many of you guys might expect and pounds
+4079.16 - 4083.1499999999996: but you could initial step you could do
+4081.619 - 4085.009: to this pie chart would be to convert
+4083.15 - 4088.279: all these values to kilograms that'd be
+4085.009 - 4091.219: a fun little exercise but okay we have
+4088.279 - 4092.479: all these pounds and one thing I
+4091.219 - 4094.7290000000003: immediately noticed is if we're trying
+4092.479 - 4097.549: to count ranges of these pounds it's
+4094.729 - 4100.369: gonna be tough with this pounds string
+4097.549 - 4104.829: attached is there anything else I notice
+4100.369 - 4108.199: here no it's mostly just that but okay
+4104.829 - 4111.7699999999995: so basically what I want to do is reset
+4108.199 - 4115.308999999999: the weight category to not include these
+4111.77 - 4117.889: pounds and just be the number so this is
+4115.309 - 4119.809: going to be a string right now and we
+4117.889 - 4125.2390000000005: just want this converted to an integer
+4119.809 - 4129.619000000001: so let's try to do that okay so we're
+4125.239 - 4132.29: going to reset the weight column and
+4129.619 - 4136.839: what we're gonna want to do is strip off
+4132.29 - 4141.559: so X here I'm going to do X for X in
+4136.839 - 4146.63: FIFA eight so X in this case is going to
+4141.559 - 4148.7300000000005: be a string so we can do strip lbs so
+4146.63 - 4149.469: that will give us just this part of the
+4148.73 - 4151.669999999999: string
+4149.469 - 4153.5: perhaps in FIFA wait let's see if that
+4151.67 - 4156.849: works
+4153.5 - 4160.869: float object has no attribute strip and
+4156.849 - 4167.469: I mixed I was expecting that all these
+4160.869 - 4169.179: would be strings start to start with but
+4167.469 - 4170.71: because they're not what we can add is
+4169.179 - 4173.02: an if statement within our list
+4170.71 - 4176.199: comprehension I'm going to just say if
+4173.02 - 4177.46: type x equals equals strain I'm guessing
+4176.199 - 4179.949: maybe there's a couple of empty values
+4177.46 - 4191.02: or something so we're just gonna kind of
+4179.949 - 4193.839: ignore those and then else X so if type
+4191.02 - 4198.040000000001: x equals equals string we're gonna do
+4193.839 - 4201.159: this else just leave it as is that's
+4198.04 - 4203.28: what we're saying here let's see if this
+4201.159 - 4211.089999999999: works
+4203.28 - 4216.79: now we print out FIFA eight cool cool
+4211.09 - 4219.7300000000005: and I'm gonna take the first value real
+4216.79 - 4220.75: quick and notice it's still a string so
+4219.73 - 4224.0199999999995: what we're actually going to want to do
+4220.75 - 4225.989: to this line is surround it with the int
+4224.02 - 4231.9400000000005: block which will convert it to an end
+4225.989 - 4235.659: now if I look at this FIFA dot we 0 we
+4231.94 - 4237.07: get it as a integer value I don't know
+4235.659 - 4240.129999999999: why it's giving a decimal here but
+4237.07 - 4241.8099999999995: should be an actual value and you notice
+4240.13 - 4243.849: because the point 0 we know that it
+4241.81 - 4246.580000000001: probably is being read as a value ok so
+4243.849 - 4248.32: now we have these values set right so
+4246.58 - 4250.929: let's start counting things so we're
+4248.32 - 4253.23: gonna start with light players and we'll
+4250.929 - 4255.61: say light players I have a weight under
+4253.23 - 4260.4: this is kind of arbitrary of a rest say
+4255.61 - 4264.61: that they have a weight under 125 pounds
+4260.4 - 4268.299999999999: and then we're gonna count that just
+4264.61 - 4271.049999999999: like we did in the last example then the
+4268.3 - 4278.28: next condition we'll do is I guess
+4271.05 - 4278.28: medium light players that would be above
+4278.4 - 4284.73: 125 greater than or equal to 125 then we
+4282.699 - 4286.839999999999: need an and condition the end condition
+4284.73 - 4287.73: and the way we're going to format this
+4286.84 - 4290.9400000000005: with our Panda
+4287.73 - 4294.169999999999: notation is like that and this is
+4290.94 - 4296.5199999999995: probably review a bit if you did watch
+4294.17 - 4302.61: watch through the pandas video that I
+4296.52 - 4307.040000000001: did and FIFA 8 is less than 150 let's
+4302.61 - 4309.48: say so now we're getting only the rows
+4307.04 - 4315.21: that have both of these conditions true
+4309.48 - 4318.2699999999995: we're going to count that 0 keep doing
+4315.21 - 4321.03: this I'll price peed this up when I edit
+4318.27 - 4324.410000000001: the video I'm going to just get three
+4321.03 - 4324.41: more categories
+4337.55 - 4342.72: all right cool so we have five different
+4340.92 - 4346.62: weight categories and I can like print
+4342.72 - 4347.52: these out I don't know invalid syntax
+4346.62 - 4353.94: what do they do
+4347.52 - 4356.64: Oh didn't end up 369 heavy people medium
+4353.94 - 4359.19: heavy let's see if this is a valid
+4356.64 - 4362.400000000001: number 4000 so yeah it makes sense that
+4359.19 - 4364.139999999999: there's more between 170 and 200 then
+4362.4 - 4365.759999999999: there are people over 200 in the league
+4364.14 - 4370.4400000000005: it's kind of tough to be a soccer player
+4365.76 - 4375.27: or 200 pounds okay so let's now plot
+4370.44 - 4379.82: this so what we want to plot will be our
+4375.27 - 4382.320000000001: weights and I'll make this an array
+4379.82 - 4391.32: light weights
+4382.32 - 4396.929999999999: medium medium medium heavy and heavy our
+4391.32 - 4400.53: labels yeah can't type today
+4396.93 - 4403.92: all right so plot dot pie weights let's
+4400.53 - 4408.15: see what this looks like cool it looks
+4403.92 - 4411.62: pretty good but it has no labels right
+4408.15 - 4418.92: now now I'm gonna do a plot touch show
+4411.62 - 4425.849999999999: so we need to add some labels so under
+4418.92 - 4434.31: 125 it's the first one 125 to 150 is the
+4425.85 - 4438.570000000001: second 150 to 175 is the third and 175
+4434.31 - 4442.200000000001: to 200 its fourth and finally over
+4438.57 - 4449.009999999999: 200 is the last and it will pass these
+4442.2 - 4451.71: in with our pipe chart okay cool so now
+4449.01 - 4453.860000000001: we have all these labels one thing I
+4451.71 - 4456.36: don't like and this is a good little
+4453.86 - 4457.799999999999: thing to know is you couldn't I don't
+4456.36 - 4459.839999999999: like the default color scheme and
+4457.8 - 4463.37: instead of passing in all five of my own
+4459.84 - 4466.89: colors one thing you can actually do is
+4463.37 - 4468.39: I don't know what I just typed in I
+4466.89 - 4469.51: didn't mean to do that I'm getting ahead
+4468.39 - 4473.92: of myself
+4469.51 - 4476.400000000001: is there's a plot style and so instead
+4473.92 - 4478.27: of the default which is currently set
+4476.4 - 4480.3099999999995: aside as you can see it stays the same
+4478.27 - 4484.06: when I do that we're going to use the
+4480.31 - 4485.4400000000005: style of ggplot and I'll link a list of
+4484.06 - 4488.740000000001: these different styles in the
+4485.44 - 4490.719999999999: description so I personally like this
+4488.74 - 4494.98: color scheme a lot more when I change
+4490.72 - 4495.67: the style of our plot okay so that's
+4494.98 - 4498.129999999999: pretty good
+4495.67 - 4500.65: we can also add the auto percentage as
+4498.13 - 4503.41: we did with the last example so
+4500.65 - 4507.28: percentage point 2f percentage is a
+4503.41 - 4510.13: percentage percentage cool but things
+4507.28 - 4512.32: are a little bit ugly in this case the
+4510.13 - 4515.2: things are squished together so how can
+4512.32 - 4517.36: we resolve this problem and really if
+4515.2 - 4520.09: you go into the documentation you'll see
+4517.36 - 4522.24: there's a lot of these weird names and
+4520.09 - 4526.03: you might not know what everyone means
+4522.24 - 4528.48: but if you kind of look up like if you
+4526.03 - 4531.639999999999: did a google search like pie chart
+4528.48 - 4532.99: Python numbers getting in the way of
+4531.64 - 4534.76: each other you probably find some
+4532.99 - 4538.0599999999995: different solutions so one solution we
+4534.76 - 4540.7: could go ahead and try would be setting
+4538.06 - 4542.650000000001: the percentage distance so the
+4540.7 - 4544.54: percentage distance is the percentage
+4542.65 - 4547.2699999999995: distance from the center of the graph so
+4544.54 - 4551.65: if I did centage equals percentage
+4547.27 - 4553.570000000001: distance equals zero you'd see
+4551.65 - 4556.21: everything's right there so instead of
+4553.57 - 4559.09: that we'll do like 0.8 so this comes
+4556.21 - 4561.37: zero to one is within the chart and you
+4559.09 - 4563.41: could even do if you want it to like 1.5
+4561.37 - 4566.26: and that would be values outside the
+4563.41 - 4569.38: truck but 0.8 was a good value that I
+4566.26 - 4570.91: thought okay so this baby makes it a
+4569.38 - 4572.650000000001: little bit better these numbers right
+4570.91 - 4575.139999999999: here that I'm highlighting aren't as
+4572.65 - 4576.73: squished but they're still not great so
+4575.14 - 4582.58: the other thing we can actually do is
+4576.73 - 4585.37: use this explode property and what
+4582.58 - 4588.88: explode does it breaks the graph apart a
+4585.37 - 4594.88: bit and so let's see what that does so
+4588.88 - 4596.68: we need a list that's as big as our yeah
+4594.88 - 4598.0: this could be a list it can be too full
+4596.68 - 4599.41: I'm going to say that was a tuple that's
+4598.0 - 4601.82: what I did when I was playing around
+4599.41 - 4606.3: with this doesn't shouldn't matter
+4601.82 - 4608.599: 0e 0.4 I'm gonna these are the values I
+4606.3 - 4612.03: want to get to but we'll start with
+4608.599 - 4614.2390000000005: doing them all point one and I'll reason
+4612.03 - 4617.909: to why I got to the values that I got -
+4614.239 - 4619.589999999999: okay so explode equals explode so this
+4617.909 - 4623.549999999999: is gonna split the graph apart so it's
+4619.59 - 4625.83: not actually touching so you see that so
+4623.55 - 4627.599: that's cool but really we don't need
+4625.83 - 4629.34: everything exploded we really just need
+4627.599 - 4632.4890000000005: these values that are very close
+4629.34 - 4635.4890000000005: together to explode a bit so what we can
+4632.489 - 4638.549999999999: do to that is all right so we want under
+4635.489 - 4642.178999999999: 125 and over 200 to be exploded a bit
+4638.55 - 4645.599: more as you can see those correspond to
+4642.179 - 4648.03: our labels here we don't really need 150
+4645.599 - 4653.099: to 175 to explode it off because that's
+4648.03 - 4654.36: pretty set we don't really need 175 to
+4653.099 - 4656.429: 200 explode
+4654.36 - 4658.29: so what does this look like now and
+4656.429 - 4663.9890000000005: we'll have this explode a little bit
+4658.29 - 4666.719: this is this 12.6 1% cool and I think
+4663.989 - 4670.138999999999: that this looks decently good now you
+4666.719 - 4670.9800000000005: can more easily see the different
+4670.139 - 4673.11: slivers and
+4670.98 - 4675.718999999999: I guess it's tough because this sliver
+4673.11 - 4678.719: is so small the under one under 125 but
+4675.719 - 4681.3: think that you can more easily read this
+4678.719 - 4685.889: then you could win all of them or
+4681.3 - 4690.469: compact together and as in the other
+4685.889 - 4697.02: examples we can also add a title so
+4690.469 - 4699.0: weight distribution of FIFA players and
+4697.02 - 4703.650000000001: we would want to spay that this is in
+4699.0 - 4705.33: pounds cool and also as you notice
+4703.65 - 4707.79: because I changed the style the header
+4705.33 - 4709.469: actually changed too so that's one thing
+4707.79 - 4711.2699999999995: to be a little bit careful with with the
+4709.469 - 4713.699: Styles but sometimes they can be very
+4711.27 - 4715.139: helpful all right because this video is
+4713.699 - 4717.839999999999: getting kind of long we're gonna end it
+4715.139 - 4719.58: with one more graph but if there's other
+4717.84 - 4721.77: types of graphs that I didn't cover in
+4719.58 - 4723.36: this video or my previous video that you
+4721.77 - 4725.429: want to see let me know in the comments
+4723.36 - 4727.619: so we're gonna do a box and whiskers
+4725.429 - 4731.46: chart and really the question we're
+4727.619 - 4733.268999999999: trying to ask here is how can we compare
+4731.46 - 4735.34: teams like the
+4733.269 - 4739.079000000001: how good two different teams are in our
+4735.34 - 4743.9400000000005: set so looking back at our FIFA chart
+4739.079 - 4747.909: let's print that out so you can see that
+4743.94 - 4749.86: all these players have a club so we're
+4747.909 - 4754.058999999999: trying to compare the relative strengths
+4749.86 - 4757.089999999999: of different clubs and so there I
+4754.059 - 4759.099: thought that a good way to do that would
+4757.09 - 4762.849: be this to use this box and whiskers
+4759.099 - 4765.28: chart which shows shows your highest
+4762.849 - 4767.17: player or it shows your highest score if
+4765.28 - 4770.199: you have a box and whiskers chart it
+4767.17 - 4772.599: will show like the max it'll show the
+4770.199 - 4775.839999999999: mean and then I'll show a box around
+4772.599 - 4777.429: where the middle 50% of scores or values
+4775.84 - 4779.71: were I think that's a good way to
+4777.429 - 4782.499: compare a team where you can kind of see
+4779.71 - 4784.269: okay where's the best player at where's
+4782.499 - 4787.78: their worst player at if everyone got
+4784.269 - 4789.46: injured and then the the middle box is
+4787.78 - 4792.518999999999: kind of like the core of the team like
+4789.46 - 4794.619: how good are they so I think it's a good
+4792.519 - 4796.329000000001: way to potentially compare two different
+4794.619 - 4798.009999999999: teams maybe you can disagree with me and
+4796.329 - 4799.989: maybe there's a different way you would
+4798.01 - 4803.1990000000005: recommend but well that's what we're
+4799.989 - 4807.268999999999: going to do in this example so to start
+4803.199 - 4813.4: let's uh take a couple teams and count
+4807.269 - 4816.820000000001: their their overall scores for that club
+4813.4 - 4820.058999999999: so we'll start with I was a good team to
+4816.82 - 4823.42: start with go up top we'll start with FC
+4820.059 - 4827.650000000001: Barcelona so we're gonna do Barcelona
+4823.42 - 4830.829: equals FIFA Lok so we're going to filter
+4827.65 - 4834.789: out all the rows that have people from
+4830.829 - 4842.59: Barcelona so we can do FIFA club equals
+4834.789 - 4845.65: equals FC Barcelona yeah cool and let's
+4842.59 - 4848.1900000000005: see and then we want when we do our
+4845.65 - 4852.369: averaging we're gonna want to take their
+4848.19 - 4856.03: overall score so we can just filter by
+4852.369 - 4859.63: that too so now if we print out
+4856.03 - 4860.889: Barcelona because we're comparing the
+4859.63 - 4863.11: overall scores I think that's the most
+4860.889 - 4865.479: useful metric you see we just have a
+4863.11 - 4870.098999999999: list of all the players on Barstow
+4865.479 - 4874.09: their relative their overall performance
+4870.099 - 4879.9890000000005: in FIFA cool then we could do that with
+4874.09 - 4879.9890000000005: another team let's say we do Real Madrid
+4881.189 - 4888.820000000001: FIFA Club echoes equals Real Madrid and
+4887.469 - 4893.199: when you want to take their overall
+4888.82 - 4895.239: values as well cool so this is two
+4893.199 - 4898.478999999999: different values we can see Madrid here
+4895.239 - 4900.759999999999: and all those values okay so now let's
+4898.479 - 4906.76: plot a box and whiskers chart for that
+4900.76 - 4909.4890000000005: so to do that we do lot dot fox plot we
+4906.76 - 4913.3: pass in Barcelona and it will pass in
+4909.489 - 4915.009999999999: Madrid so these are the all the values
+4913.3 - 4917.38: for Barcelona and all the values for
+4915.01 - 4920.139: Madrid and correspondent so what we see
+4917.38 - 4922.689: here so it will know this function will
+4920.139 - 4931.78: know that it needs to make a boxplot off
+4922.689 - 4935.26: of that so what does that look like okay
+4931.78 - 4938.228999999999: one thing I noticed too this is also a
+4935.26 - 4940.780000000001: residual effect of changing the style in
+4938.229 - 4943.869000000001: one cell style is still changed I'm
+4940.78 - 4948.728999999999: going to change the style of here back
+4943.869 - 4950.53: to our default style so default style
+4948.729 - 4952.269: looks like this graph doesn't really
+4950.53 - 4956.639: tell us too much right now but we'll get
+4952.269 - 4959.530000000001: it to look a little better in a second
+4956.639 - 4962.619: and I want to do plot dot show so all
+4959.53 - 4964.929: this stuff is not there okay cool so
+4962.619 - 4966.249: this is a comparison of the two teams
+4964.929 - 4970.3: relatively you can see they're pretty
+4966.249 - 4973.03: dang even I'd say Barcelona has a slight
+4970.3 - 4977.619000000001: advantage it seems like it's boxes a
+4973.03 - 4980.499: little bit higher than Real Madrid's but
+4977.619 - 4982.598999999999: and also their best player is ranked
+4980.499 - 4985.36: better than really Madrid's best player
+4982.599 - 4986.769: but it's kind of annoying when it's just
+4985.36 - 4989.308999999999: as one and two down here so let's add
+4986.769 - 4989.309: our labels
+4993.5 - 5002.93: so it's a list FC Barcelona and Real
+4999.469 - 5005.2390000000005: Madrid and then we can go into our box
+5002.93 - 5007.04: plot it has a labels property and you
+5005.239 - 5009.5599999999995: can double check the documentation to
+5007.04 - 5015.92: see this labels label is cool so now we
+5009.56 - 5018.26: have our two different box plots and so
+5015.92 - 5020.21: these two teams with this comparison I
+5018.26 - 5022.04: would just say that they look pretty
+5020.21 - 5023.45: similarly matched like they could go
+5022.04 - 5026.0199999999995: ahead to head probably be a pretty good
+5023.45 - 5030.469: game where you really see kind of the
+5026.02 - 5031.969: coolness of visualizing this data with a
+5030.469 - 5034.1: box and plot and like comparing two
+5031.969 - 5038.0: teams is when you take a team that's not
+5034.1 - 5039.38: as strong so my local team here in
+5038.0 - 5043.19: Boston is the New England Revolution
+5039.38 - 5047.9800000000005: they're an MLS soccer organization so I
+5043.19 - 5051.739: also pass in some scores for them and
+5047.98 - 5052.94: they're short tend names the revs so I'm
+5051.739 - 5056.679999999999: gonna just call them that instead of
+5052.94 - 5064.82: typing out the whole New England
+5056.68 - 5070.13: Revolution every time and yeah I wonder
+5064.82 - 5073.219: which I say the England Revolution and
+5070.13 - 5074.63: we're going to take their overall and
+5073.219 - 5076.58: you could look at all the different
+5074.63 - 5077.9890000000005: teams in the datasheet and get like a
+5076.58 - 5080.87: certain team that you wanted to look at
+5077.989 - 5082.19: pretty easy yeah you just have to be
+5080.87 - 5084.68: careful that you type in everything
+5082.19 - 5085.099999999999: properly and apparently I did something
+5084.68 - 5090.110000000001: wrong
+5085.1 - 5095.660000000001: oh okay yeah we also have passing the
+5090.11 - 5097.099999999999: ribs here cool so now we have three
+5095.66 - 5098.57: teams and you can see that the New
+5097.1 - 5100.450000000001: England Revolution is significantly
+5098.57 - 5103.54: worse than Real Madrid or Barcelona
+5100.45 - 5106.7: which is what we were wanting to show
+5103.54 - 5109.12: let's add a title here and we'll add
+5106.7 - 5115.01: some style to this chart as well
+5109.12 - 5116.87: professional soccer team comparison and
+5115.01 - 5119.17: because I'm from the States I call it
+5116.87 - 5123.46: soccer yeah you probably call football
+5119.17 - 5125.05: but that is besides the point
+5123.46 - 5130.36: FIFA over
+5125.05 - 5134.68: all reading over all hitting is our
+5130.36 - 5136.929999999999: y-axis and we have our teams down here
+5134.68 - 5143.25: in the x-axis that looks pretty good to
+5136.93 - 5151.6: me okay what we could also change up
+5143.25 - 5153.76: potentially would be our tick marks okay
+5151.6 - 5155.59: or we could change the figure size maybe
+5153.76 - 5158.74: it would look better if it stretched out
+5155.59 - 5162.04: a bit more along the y-axis so we'll
+5158.74 - 5166.69: change our figure size a bit plot dot
+5162.04 - 5169.99: figure fig size equals we'll have the Y
+5166.69 - 5171.639999999999: dimension be greater than the X and as
+5169.99 - 5173.5599999999995: you can see now it looks like this and
+5171.64 - 5175.990000000001: this gives us a little bit more detail
+5173.56 - 5178.18: in the actual scores among the two teams
+5175.99 - 5181.679999999999: but you can still see the New England
+5178.18 - 5184.4800000000005: Revolution is not as good and also this
+5181.68 - 5185.92: name is kind of running into each other
+5184.48 - 5190.57: so I'm gonna shorten New England
+5185.92 - 5192.91: Revolution to any revolution just kind
+5190.57 - 5193.99: of make it a little neater cool all
+5192.91 - 5196.45: right so the final thing we're gonna do
+5193.99 - 5197.98: is add a little bit of style to this
+5196.45 - 5200.29: graph so it looks a little bit better
+5197.98 - 5203.349999999999: and you also if you wanted to yeah feel
+5200.29 - 5204.81: free to add more teams to this and like
+5203.35 - 5209.26: really see the differences between
+5204.81 - 5210.76: soccer teams and FIFA but we will add
+5209.26 - 5212.83: some color around the perimeters of
+5210.76 - 5214.570000000001: these boxes maybe make this line a
+5212.83 - 5217.35: little thicker that represents this
+5214.57 - 5218.5599999999995: represents the median the orange line
+5217.35 - 5220.96: okay
+5218.56 - 5224.950000000001: so what I found to be the best way to do
+5220.96 - 5226.99: this is I'm gonna save boxes as the
+5224.95 - 5230.44: result of this plot and then basically
+5226.99 - 5231.969999999999: what we can do is this will store the
+5230.44 - 5234.28: three different values we've plotted
+5231.97 - 5239.070000000001: here so it will help us style each
+5234.28 - 5247.21: individual box a little easier so for
+5239.07 - 5249.7: blocks in boxes boxes so you're getting
+5247.21 - 5256.36: the box parameter from what was saved
+5249.7 - 5257.879: here we want to set the color and then
+5256.36 - 5259.018999999999: this also kind of shows you
+5257.879 - 5260.879: there's different ways to do these
+5259.019 - 5261.929: things like I could have passed color in
+5260.879 - 5264.019: here
+5261.929 - 5266.28: the problem with passing color within
+5264.019 - 5268.1990000000005: here is it would make everything the
+5266.28 - 5272.07: same color so if you wanted like go
+5268.199 - 5277.799999999999: ahead and change a specific box I can
+5272.07 - 5279.209: have a list of colors it's easier or I
+5277.8 - 5280.499: guess maybe colors is not the best
+5279.209 - 5283.349: example because color is probably would
+5280.499 - 5286.889: allow you to pass in an array but for
+5283.349 - 5289.59: certain properties it's hard to set just
+5286.889 - 5300.03: one value at a time so I want to go
+5289.59 - 5302.519: ahead and set the color here so now you
+5300.03 - 5305.159: see that we have a different color
+5302.519 - 5308.399: around our box and they're similar to
+5305.159 - 5311.009999999999: boxes here there's another parameter for
+5308.399 - 5313.889: like the longest strike here and the
+5311.01 - 5317.6990000000005: long strike here the whiskers of the box
+5313.889 - 5322.1990000000005: and whiskers plot but I think it could
+5317.699 - 5326.209: use to be a little thicker here and so
+5322.199 - 5328.919: to do that we're gonna do line width
+5326.209 - 5336.03: equals two and all these parameters I'm
+5328.919 - 5341.929: finding from the from the documentation
+5336.03 - 5346.039: okay cool so set edge color basically
+5341.929 - 5353.849: and let's say we wanted to change the
+5346.039 - 5355.648999999999: fill color so change fill color and you
+5353.849 - 5358.7390000000005: could as I said before like you could
+5355.649 - 5361.320000000001: iterate through these and through a list
+5358.739 - 5363.268999999999: and like each time set a different color
+5361.32 - 5365.688999999999: for each of these change filler color we
+5363.269 - 5368.189: can do something like set a face color
+5365.689 - 5370.619000000001: we could all do this in one line as well
+5368.189 - 5373.559: but kind of just showing different ways
+5370.619 - 5375.299999999999: you can go about things face color is
+5373.559 - 5377.399: another property this actually changes
+5375.3 - 5379.919: the inside of the box so what happens
+5377.399 - 5383.789000000001: when I do easier easier or easier this
+5379.919 - 5386.039: is a grayish color unknown property face
+5383.789 - 5387.78: color this was something that I found
+5386.039 - 5391.29: super annoying when I was trying to do
+5387.78 - 5393.719999999999: this so if you're trying to set the fee
+5391.29 - 5396.99: a box-and-whisker chart doesn't
+5393.72 - 5398.67: recognize I can't like recognize this
+5396.99 - 5400.41: property face color for whatever reason
+5398.67 - 5404.1: by default see actually if I set this
+5400.41 - 5405.84: patch artists property to true to allow
+5404.1 - 5408.54: you to change the face color so now we
+5405.84 - 5413.0: have these graphs I think that looks a
+5408.54 - 5415.23: bit better we could also change up the
+5413.0 - 5418.02: median line so you could do it within
+5415.23 - 5421.74: this format or another way we can do it
+5418.02 - 5424.620000000001: is one of the properties of boxplot is
+5421.74 - 5427.5599999999995: median props so you can also pass in
+5424.62 - 5429.45: like a dictionary of median props and so
+5427.56 - 5431.43: we could pass in a line width here too
+5429.45 - 5436.59: so let's say we wanted this line to have
+5431.43 - 5438.75: the same thickness as the outline pass
+5436.59 - 5443.34: that in and there we go
+5438.75 - 5447.33: a lot of the styling stuff it's really a
+5443.34 - 5448.89: matter of google searching really like
+5447.33 - 5450.36: you can look at the documentation find
+5448.89 - 5453.51: some things from the documentation but I
+5450.36 - 5455.88: find is sometimes quicker is to say how
+5453.51 - 5458.34: do I change the outline color in a box
+5455.88 - 5460.89: and whiskers chart Google search that
+5458.34 - 5463.08: find a Stack Overflow post and then like
+5460.89 - 5465.81: from there figure out I can do this type
+5463.08 - 5469.53: of technique that's what works usually
+5465.81 - 5473.070000000001: well for me all right so yeah now we
+5469.53 - 5474.3: have these three teams being compared
+5473.07 - 5476.19: I'm going to strengthen graph a little
+5474.3 - 5478.14: bit so you can see better I think this
+5476.19 - 5481.379999999999: is a kind of a cool way to visualize how
+5478.14 - 5483.42: teams compare in FIFA all right I'm
+5481.38 - 5484.89: gonna end the video here hopefully these
+5483.42 - 5487.38: graphs were helpful hopefully it is
+5484.89 - 5489.84: helpful to combine the pandas and like
+5487.38 - 5492.24: the CSV is with the matplotlib library
+5489.84 - 5494.43: if you found this video useful make sure
+5492.24 - 5496.29: to throw it a big thumbs up and also
+5494.43 - 5499.29: don't forget to subscribe because I'll
+5496.29 - 5501.5: be posting a lot of videos in the near
+5499.29 - 5501.5: future

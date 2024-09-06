@@ -1,0 +1,172 @@
+ 2802.1189999999997: converting and then if we wanted to save
+2799.319 - 2804.0: our updated bios new data frame this is
+2802.119 - 2806.52: just making explicit something I
+2804.0 - 2812.16: casually mentioned earlier we could do2
+2806.52 - 2813.96: CSV we could do SL dat bios new. CSV I
+2812.16 - 2816.5589999999997: typically recommend doing index equals
+2813.96 - 2818.559: false otherwise it will save a extra
+2816.559 - 2820.8390000000004: column with all these values which
+2818.559 - 2823.2000000000003: aren't really necessary but because of
+2820.839 - 2825.2799999999997: kind of how pandas was built and
+2823.2 - 2828.5589999999997: backwards compatibility they keep in
+2825.28 - 2830.3590000000004: Saving the index by default save that
+2828.559 - 2832.599: and if we looked in our data we would
+2830.359 - 2834.2: now see this bio's new that has the
+2832.599 - 2837.319: updates that we made in the new columns
+2834.2 - 2839.839: that we added taking this a bit further
+2837.319 - 2842.16: we could add custom columns to our data
+2839.839 - 2843.96: frame by doing something like following
+2842.16 - 2846.359: let's say we wanted to classify people
+2843.96 - 2847.559: into short average and Tall we could do
+2846.359 - 2851.16: something like
+2847.559 - 2855.7200000000003: bios height category
+2851.16 - 2859.48: equals bios height cm and then we could
+2855.72 - 2862.72: apply use this do apply method and apply
+2859.48 - 2867.28: a Lambda function that looks at the
+2862.72 - 2871.24: values so just going to say short if the
+2867.28 - 2871.2400000000002: x value is
+2872.119 - 2878.359: less then let's say
+2874.88 - 2883.6400000000003: 165 and then we could do lse
+2878.359 - 2889.119: average if x is less than about
+2883.64 - 2892.2799999999997: 185 and then we could do else or else
+2889.119 - 2895.7200000000003: tall run
+2892.28 - 2899.8: that we look at our data
+2895.72 - 2901.9599999999996: frame we look at the final thing tall
+2899.8 - 2903.7200000000003: average tall and you know you can find
+2901.96 - 2905.8: someone that would be short in there as
+2903.72 - 2907.5989999999997: well so that's applying a custom
+2905.8 - 2909.48: function you can do anything with I'm
+2907.599 - 2911.8: using Lambda again because this is
+2909.48 - 2913.92: custom it's not going to be optimized
+2911.8 - 2915.8390000000004: perfectly with Panda's built-in so use a
+2913.92 - 2917.839: built-in whenever you can but something
+2915.839 - 2919.359: like this Lambda function can be helpful
+2917.839 - 2921.68: if you need to do something you know
+2919.359 - 2923.16: very specific another thing if we wanted
+2921.68 - 2925.3999999999996: to take this even further maybe we gave
+2923.16 - 2927.319: them like a weight category like you
+2925.4 - 2929.6800000000003: know how big is this person and big
+2927.319 - 2932.359: could either mean tall or heavy we could
+2929.68 - 2935.3999999999996: do something like Define a function that
+2932.359 - 2938.2: would be called like categorize athlete
+2935.4 - 2942.839: take in row data for this function and
+2938.2 - 2944.5989999999997: how about if you know the row height is
+2942.839 - 2950.88: less than how about
+2944.599 - 2954.6800000000003: 175 and row weight is less than 70 they
+2950.88 - 2956.92: are considered light weight and we could
+2954.68 - 2961.5989999999997: add any custom logic we want in here we
+2956.92 - 2964.4: do lsf row height centim have a less
+2961.599 - 2966.1600000000003: than 185 so kind of keep copying what we
+2964.4 - 2968.7200000000003: had before I guess slightly different
+2966.16 - 2973.44: cuz we had 1 75 the first one and row or
+2968.72 - 2978.799: how about or row weight kg is less than
+2973.44 - 2984.319: or equal to 80 then we return middle
+2978.799 - 2988.2: weight then finally else I return heavy
+2984.319 - 2990.96: weight and we could apply this to our
+2988.2 - 2990.96: data frame by
+2994.839 - 2999.839: doing bios app so just like we had the
+2997.68 - 3001.96: Lambda function before but this time we
+2999.839 - 3004.2799999999997: want to pass in our
+3001.96 - 3006.559: function and we need to specify that
+3004.28 - 3010.8390000000004: this is on rows so we need to say axis
+3006.559 - 3012.119: equals one one is rows zero is columns
+3010.839 - 3014.799: and we run
+3012.119 - 3016.6400000000003: this again it not optimized for pandas
+3014.799 - 3017.7599999999998: by doing this custom functions but
+3016.64 - 3019.319: sometimes you just need to apply
+3017.76 - 3023.96: something and it doesn't matter how fast
+3019.319 - 3023.96: or slow it runs if we look at
+3025.28 - 3033.6400000000003: bios we get you know this and we could
+3029.04 - 3033.64: add any logic we want to here very very
+3035.68 - 3040.24: useful but I'm going to go ahead real
+3037.68 - 3042.72: quick and reset our bios to be what it
+3040.24 - 3042.72: was
+3042.76 - 3047.1600000000003: default all right next we'll build on
+3045.4 - 3048.64: the adding and removing columns and
+3047.16 - 3051.64: we're going to do that at scale with
+3048.64 - 3054.5589999999997: merging and concatenating data so
+3051.64 - 3057.48: looking at our bios information one
+3054.559 - 3059.28: thing that we might want to do is take
+3057.48 - 3061.0: this born country and we see we just
+3059.28 - 3063.92: have a three-letter code we might want
+3061.0 - 3065.92: to convert into the actual country name
+3063.92 - 3067.319: and that actually could be separate from
+3065.92 - 3069.28: where they compete so there's definitely
+3067.319 - 3072.2799999999997: people that compete for example we see
+3069.28 - 3074.1600000000003: born in Great Britain and competed in
+3072.28 - 3076.7200000000003: France so I think we want to make it
+3074.16 - 3078.0789999999997: more explicit ways to compare where they
+3076.72 - 3080.16: are born and where they competed and
+3078.079 - 3083.079: maybe just filter on data based on that
+3080.16 - 3085.799: so in the data folder within those repo
+3083.079 - 3087.2000000000003: there's a file called we'll just call it
+3085.799 - 3091.359: NOC
+3087.2 - 3095.16: equals pd. read CSV
+3091.359 - 3097.5589999999997: data/ regions. CSV I found this file on
+3095.16 - 3099.2799999999997: a pre-existing kaggle data set so shout
+3097.559 - 3104.2400000000002: out to that I'll link the kaggle data
+3099.28 - 3104.2400000000002: set in the description we look at this
+3106.119 - 3112.839: file we see there's this code threel
+3109.76 - 3115.6400000000003: code and the region SL country so what
+3112.839 - 3118.599: we can do here is we can go ahead and
+3115.64 - 3120.72: merge the dat data so we had our data
+3118.599 - 3123.799: looked like
+3120.72 - 3124.9199999999996: this and we want to take this column
+3123.799 - 3126.559: it's a little bit confusing because we
+3124.92 - 3128.559: also have a column called National
+3126.559 - 3131.6800000000003: Olympic Committee and we basically want
+3128.559 - 3136.76: to do a born country full or something
+3131.68 - 3138.96: like that so we can do pd. merge our
+3136.76 - 3141.6800000000003: BIOS with the
+3138.96 - 3142.96: no's and because they're two different
+3141.68 - 3145.5589999999997: column names we're not going to use the
+3142.96 - 3148.4: same column for both normally we just do
+3145.559 - 3152.3190000000004: on equals say nooc but we actually want
+3148.4 - 3154.92: to compare no from this data frame with
+3152.319 - 3157.0: a different column this born country for
+3154.92 - 3165.88: this one so we can actually specify left
+3157.0 - 3168.88: on is born country and right on equals
+3165.88 - 3171.04: nooc we want to specify the how so this
+3168.88 - 3173.76: is very important I think by default
+3171.04 - 3176.04: it's inner which basically just looks at
+3173.76 - 3178.1600000000003: takes basically all the rows that both
+3176.04 - 3181.079: have in actual match so like the born
+3178.16 - 3183.359: country exists and it pairs up nicely
+3181.079 - 3185.48: with something in the no's and you just
+3183.359 - 3187.52: take those rows but if you wanted to
+3185.48 - 3189.88: make sure all of your rows in this
+3187.52 - 3191.24: original bios were kept and even if
+3189.88 - 3193.319: there wasn't a perfect match for one of
+3191.24 - 3195.72: these country codes it didn't it just
+3193.319 - 3198.96: used like a nan which is like a null
+3195.72 - 3201.52: value you could do how equals left I'll
+3198.96 - 3203.32: pop up here a little visual that can
+3201.52 - 3204.559: help you understand
+3203.32 - 3208.559: [Music]
+3204.559 - 3211.0: this cool and and we could set this you
+3208.559 - 3214.119: know either back to our original data
+3211.0 - 3218.16: frame or we could call it like iOS new
+3214.119 - 3218.1600000000003: we run this now we look
+3219.24 - 3224.5589999999997: at we're going to see over here on the
+3221.44 - 3227.44: right we have this region now and so it
+3224.559 - 3230.3590000000004: might make more sense to call this we'll
+3227.44 - 3230.359: do a
+3231.119 - 3241.52: rename to how about born country full
+3237.319 - 3241.52: and we'll do that in place equals
+3244.359 - 3249.44: true and we see now it's called Born
+3247.04 - 3252.319: country full and one thing to note is
+3249.44 - 3254.76: that because both of the original data
+3252.319 - 3258.92: frame and the new data frame had this
+3254.76 - 3261.44: nooc column it adds a suffix to both of
+3258.92 - 3263.319: them and you can specify that suffix by
+3261.44 - 3267.119: doing left
+3263.319 - 3268.92: suffix oh suffixes equals
+3267.119 - 3271.28: I think if you just do a single thing oh
+3268.92 - 3274.7200000000003: I think you actually have to pass in two
+3271.28 - 3277.2000000000003: so I could do like bios and I could do
+3274.72 - 3279.04: nodf or something like that if I ran
+3277.2 - 3282.2: this
+3279.04 - 3284.4: again we would see the new suffix is
+3282.2 - 3285.7599999999998: this specifying it but I don't really
+3284.4 - 3287.0: like that new suffix but I just wanted
+3285.76 - 3289.3590000000004: to show you that you could do th

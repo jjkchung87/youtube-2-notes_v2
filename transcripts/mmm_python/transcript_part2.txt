@@ -1,0 +1,223 @@
+h lower
+528.24 - 532.24: that they're not really good for uh
+531.2 - 534.8000000000001: for
+532.24 - 535.839: the regression but it's whatever we have
+534.8 - 537.8389999999999: it
+535.839 - 540.08: and then we have all the
+537.839 - 542.8000000000001: uh all the rate investments that are
+540.08 - 545.12: really low correlated we shouldn't put
+542.8 - 547.279: it inside in order to validate our
+545.12 - 550.32: policies if we should
+547.279 - 552.8: insert our
+550.32 - 555.7600000000001: radio or not we're going to use ols
+552.8 - 557.5999999999999: ordinary square from stats models i
+555.76 - 560.88: already inputted everything we have
+557.6 - 563.6800000000001: inputs we define facebook tv and radio
+560.88 - 565.2: we define x which is our input variables
+563.68 - 568.56: independent variables
+565.2 - 570.72: is df inputs y
+568.56 - 573.1199999999999: sdf sales
+570.72 - 575.6: we add in the ols
+573.12 - 576.9590000000001: statsmodels library a constant because
+575.6 - 580.5600000000001: we know that
+576.959 - 583.92: at when the variables are all input
+580.56 - 585.1999999999999: variables are all 0 we still have some
+583.92 - 587.8389999999999: positive
+585.2 - 587.839: conversions
+588.64 - 593.519: then we print results as sm ols
+592.24 - 596.24: x
+593.519 - 598.5600000000001: epsilon and x dot fit
+596.24 - 600.9590000000001: which is the function for uh ordinary
+598.56 - 604.399: squares in the stats models library and
+600.959 - 606.4799999999999: then we print the summary so run it
+604.399 - 609.36: and in this case
+606.48 - 611.2: we have some uh matrix and kpi we need
+609.36 - 613.6: to take for this
+611.2 - 615.76: i think one of the most important part
+613.6 - 616.8000000000001: for an entire marketing mix modeling
+615.76 - 619.12: project
+616.8 - 622.4799999999999: we have the r square which measures
+619.12 - 624.24: accuracy so it basically tells you
+622.48 - 626.16: what is
+624.24 - 628.88: what is the percentage of variation in
+626.16 - 630.959: the input variables are
+628.88 - 632.88: are described describe the output
+630.959 - 634.88: variables describe the variation in the
+632.88 - 637.04: output variables
+634.88 - 638.72: we have the f statistics
+637.04 - 640.16: which is a metric and a kpi that
+638.72 - 642.72: measures how
+640.16 - 643.76: statistically significant is the entire
+642.72 - 647.12: model
+643.76 - 650.3199999999999: and it should be higher than two
+647.12 - 653.6: in order to be statistically significant
+650.32 - 655.839: now um let's measure here
+653.6 - 658.8000000000001: we have the first column so
+655.839 - 661.6: the dimension in here is
+658.8 - 663.92: constant facebook tv radio so there are
+661.6 - 666.5600000000001: the input variables for our model
+663.92 - 670.64: we see that we have an input coefficient
+666.56 - 673.76: for a constant of 3.36 which we can if
+670.64 - 675.1999999999999: we compare it with our model
+673.76 - 678.88: on excel
+675.2 - 680.6400000000001: we have a 3.01 which is super similar
+678.88 - 681.68: right
+680.64 - 683.1999999999999: so
+681.68 - 684.959: um
+683.2 - 687.2: we are here
+684.959 - 687.1999999999999: and
+687.519 - 694.399: it's okay facebook is at 0.04
+691.36 - 696.5600000000001: tv is at 0.18 and radio has a negative
+694.399 - 698.72: coefficient which doesn't make sense
+696.56 - 702.2399999999999: there is no it doesn't exist an
+698.72 - 705.2: investment that drives negative sales we
+702.24 - 708.24: now here have a standard error so
+705.2 - 712.72: how much we think it can vary
+708.24 - 715.519: at this how much this value can vary
+712.72 - 718.1600000000001: from old historical data
+715.519 - 721.44: and we can see actually this standard
+718.16 - 723.76: error is used to uh to measure then p
+721.44 - 725.7600000000001: value and the p value measures how
+723.76 - 727.519: statistically significant is the
+725.76 - 728.3199999999999: coefficient so
+727.519 - 729.44: uh
+728.32 - 730.88: if
+729.44 - 733.0400000000001: this
+730.88 - 736.24: if the coefficient
+733.04 - 738.56: has a probability higher than 95 percent
+736.24 - 739.76: of happening
+738.56 - 740.959: um
+739.76 - 745.519: it's good
+740.959 - 746.6389999999999: if not if it has a p value lower than 95
+745.519 - 749.92: percent
+746.639 - 751.279: but higher than 0.05
+749.92 - 753.04: it's bad
+751.279 - 756.959: as we can see
+753.04 - 758.399: uh here we have most of our
+756.959 - 762.0: variables
+758.399 - 763.92: are lower than 0.05
+762.0 - 766.32: which means that these three are
+763.92 - 770.079: statistically significant well what is
+766.32 - 772.399: not statistically significant is radio
+770.079 - 775.4399999999999: the confidence interval in here tells
+772.399 - 777.44: you what is the range in which uh your
+775.44 - 779.36: uh coefficient here
+777.44 - 783.0400000000001: could vary
+779.36 - 784.0790000000001: in a 95 percent confidence interval
+783.04 - 786.88: and
+784.079 - 789.92: constants has a pretty wide range of
+786.88 - 792.72: values uh facebook has a pretty low
+789.92 - 794.4799999999999: range of values same for tv
+792.72 - 797.2: and
+794.48 - 799.9200000000001: radio is not statistically significant
+797.2 - 803.36: ergo we should eliminate it so what we
+799.92 - 805.1999999999999: do here let's copy this
+803.36 - 807.04: this code let's paste in here and we're
+805.2 - 809.839: going to remove radio
+807.04 - 811.279: let's see what happens to our model
+809.839 - 813.2790000000001: our model
+811.279 - 815.92: redu it decreases
+813.279 - 817.56: the r squared decreases a little bit
+815.92 - 822.279: from
+817.56 - 822.279: 0.875 to 0.872
+822.32 - 825.9200000000001: um
+823.519 - 828.24: perfect f statistics increases which is
+825.92 - 829.36: good all the variables are statistically
+828.24 - 832.24: significant
+829.36 - 833.36: are they're all positive which is good
+832.24 - 835.12: and
+833.36 - 837.1990000000001: there's another thing that i want to
+835.12 - 840.0: mention which is condition number and a
+837.199 - 842.079: condition number is a
+840.0 - 844.16: is a variable it's a kpi that measures
+842.079 - 845.68: what's the multiple linearity inside of
+844.16 - 847.76: our models
+845.68 - 849.519: and what we want to have because we have
+847.76 - 852.48: a linear regression which is a function
+849.519 - 854.9590000000001: that describes it's
+852.48 - 857.44: it's something like this
+854.959 - 862.56: i'm going to comment it absolutely is
+857.44 - 865.6800000000001: equal to better one x1 plus beta2 x2 etc
+862.56 - 869.3599999999999: plus beta0 for example
+865.68 - 872.88: we want to have all the inside axis
+869.36 - 874.8000000000001: independent and not collinear to other
+872.88 - 875.76: input variables
+874.8 - 877.92: because
+875.76 - 880.24: it would create some
+877.92 - 883.04: some problems over time if we if there
+880.24 - 885.839: is high multi-linearity inside
+883.04 - 888.88: so what we do here
+885.839 - 891.7600000000001: is we now define what's the best model
+888.88 - 893.36: uh we're gonna create we're gonna
+891.76 - 895.12: run the
+893.36 - 898.9590000000001: train test split
+895.12 - 900.0: uh to divide our data set so we do x
+898.959 - 902.0: train
+900.0 - 902.959: y train
+902.0 - 905.519: uh
+902.959 - 907.5999999999999: x test
+905.519 - 909.519: y test
+907.6 - 911.1990000000001: equal to train
+909.519 - 912.399: test
+911.199 - 914.16: pass
+912.399 - 917.519: split
+914.16 - 921.279: let's run x epsilon uh we're gonna do
+917.519 - 923.839: shuffle equal false we know we don't
+921.279 - 925.4399999999999: want to shuffle our data
+923.839 - 926.639: and
+925.44 - 927.839: test
+926.639 - 930.0: size
+927.839 - 932.8800000000001: let's start with
+930.0 - 934.16: 0.2 right
+932.88 - 935.759: now
+934.16 - 937.8389999999999: i'm not going to run it because i want
+935.759 - 940.9590000000001: to i want to find out we're going to
+937.839 - 943.759: divide our um our data set and we're
+940.959 - 946.7199999999999: going to use 80 for training and 20
+943.759 - 949.1990000000001: for set for for testing
+946.72 - 951.9200000000001: i decided to not shuffle the data which
+949.199 - 953.3599999999999: means i want this particular order
+951.92 - 955.36: because in the long term it's going to
+953.36 - 957.6: be useful for the ad stock we don't want
+955.36 - 961.6800000000001: to shuffle the ad stock but
+957.6 - 963.6800000000001: we're going to cover it later anyway um
+961.68 - 966.399: so let's uh
+963.68 - 967.4399999999999: initiate our model so we do model equal
+966.399 - 969.839: linear
+967.44 - 969.839: regression
+970.399 - 977.279: perfect and we want to do model dot fit
+973.92 - 978.959: open parenthesis x train
+977.279 - 981.6: y train
+978.959 - 983.92: so it's gonna learn and
+981.6 - 987.519: train basically
+983.92 - 989.92: and then i want to print
+987.519 - 991.839: the score i want to see what's the score
+989.92 - 994.8: what's the r square for
+991.839 - 997.0400000000001: a model dot score
+994.8 - 999.04: x x-ray
+997.04 - 1002.399: y train
+999.04 - 1004.16: comma model.score
+1002.399 - 1006.959: x test
+1004.16 - 1006.959: y test
+1007.04 - 1010.399: perfect
+1008.639 - 1011.199: and
+1010.399 - 1012.959: so
+1011.199 - 1015.3599999999999: let's run it
+1012.959 - 1018.16: we find a ninety percent r square
+1015.36 - 1019.04: uh in the training set and 38 percent in
+1018.16 - 1019.92: the
+1019.04 - 1022.8: uh
+1019.92 - 1025.4389999999999: test set which is it's not good
+1022.8 - 1028.6399999999999: uh let's see what happens if we increase
+1025.439 - 1029.919: the test size so if we have if we train
+1028.64 - 1034.0: the data set
+1029.919 - 1035.8390000000002: uh using other more than 15 rows records
+1034.0 - 1038.16: let's see
+1035.839 - 1041.52: they tend to converge a little bit let's
+1038.16 - 1044.16: try to find 0.5 for example
+1041.52 - 1045.199: yeah it's way closer now it makes a lot
+1044.16 - 1046.72: of sense
+1045.199 - 1048.0790000000002: to have these two
+1046.72 - 1049.919: now um
+1048.079 - 1052.96: we train only on 50
+1049.919 - 1055.679: an

@@ -1,0 +1,106 @@
+s the issue
+2081.44 - 2084.7200000000003: my printout b
+2083.2 - 2087.6789999999996: looks good
+2084.72 - 2089.2799999999997: the issue lies in if i print out a
+2087.679 - 2091.28: look what happens
+2089.28 - 2094.0: i just printed out a
+2091.28 - 2096.48: and a now has
+2094.0 - 2098.24: a 100 instead of the 123 that i
+2096.48 - 2100.32: initially set it as
+2098.24 - 2102.4799999999996: and that's because when we did b equals
+2100.32 - 2103.599: a we just said that
+2102.48 - 2106.16: the
+2103.599 - 2109.04: the variable name b points the same
+2106.16 - 2110.48: thing as a does we didn't tell like
+2109.04 - 2112.56: numpy to
+2110.48 - 2114.56: make a copy of what is
+2112.56 - 2116.7999999999997: the contents of a
+2114.56 - 2118.64: so that's that's why because we're just
+2116.8 - 2120.88: pointing at the same exact thing that a
+2118.64 - 2122.7999999999997: is pointing when we change the value it
+2120.88 - 2124.48: also changes the value of a
+2122.8 - 2126.8: so if we want to prevent that we can use
+2124.48 - 2129.76: this dot copy function oh sorry i
+2126.8 - 2131.28: shouldn't do it yet um b equals a dot
+2129.76 - 2133.6800000000003: copy
+2131.28 - 2135.8390000000004: and then when we run the cell as you can
+2133.68 - 2137.52: see one two three
+2135.839 - 2140.48: it's still there because now we're just
+2137.52 - 2142.48: copying the contents of what's in a
+2140.48 - 2144.4: and if i print b
+2142.48 - 2147.2: it has the 100 200
+2144.4 - 2149.839: 100 2 3. okay so one of the big uses of
+2147.2 - 2151.359: numpy is all the math capabilities it
+2149.839 - 2154.0789999999997: offers
+2151.359 - 2156.16: um so just to kind of show some of that
+2154.079 - 2158.5600000000004: um one thing that it can do is
+2156.16 - 2160.24: element-wise um
+2158.56 - 2162.56: i'll just make those four values
+2160.24 - 2165.68: element-wise addition subtractions
+2162.56 - 2167.52: element y is i guess arithmetic so
+2165.68 - 2169.839: here we have a
+2167.52 - 2172.24: print out a
+2169.839 - 2174.24: um and if i wanted to do something like
+2172.24 - 2176.7999999999997: a plus two
+2174.24 - 2178.72: um adds two to each element you can do a
+2176.8 - 2180.8: minus two
+2178.72 - 2182.24: subtract two from each element a
+2180.8 - 2183.92: times two
+2182.24 - 2188.24: as you can see
+2183.92 - 2189.599: uh a divided by two
+2188.24 - 2191.7599999999998: um
+2189.599 - 2193.599: divides everything by two
+2191.76 - 2194.96: uh one thing to note with and you can
+2193.599 - 2197.839: also do stuff like
+2194.96 - 2199.04: uh a plus equals two so now i printed
+2197.839 - 2201.119: out a
+2199.04 - 2203.68: in this column
+2201.119 - 2206.48: it's going to be
+2203.68 - 2207.5989999999997: 2 plus everything
+2206.48 - 2210.2400000000002: it's kind of cool you can do like the
+2207.599 - 2212.48: same type of math that you can do in
+2210.24 - 2214.3199999999997: python
+2212.48 - 2216.0: you can also create another array an
+2214.32 - 2219.04: mp.array
+2216.0 - 2219.04: and that's like let's say
+2219.68 - 2221.7599999999998: one
+2220.64 - 2223.04: zero
+2221.76 - 2224.2400000000002: one
+2223.04 - 2226.88: zero
+2224.24 - 2229.04: and i could do something like a plus b
+2226.88 - 2230.48: and that should be two two
+2229.04 - 2232.8: four four
+2230.48 - 2235.119: oh and because i added
+2232.8 - 2236.6400000000003: if i rerun this okay two two four four
+2235.119 - 2238.48: like we expect
+2236.64 - 2244.0789999999997: uh so all sorts of useful things you
+2238.48 - 2246.48: could even do like a to the second power
+2244.079 - 2248.32: 1 4 9 16 and that might have made it a
+2246.48 - 2249.92: bigger data type i'm not sure
+2248.32 - 2251.76: um
+2249.92 - 2253.92: cool
+2251.76 - 2256.48: we can do stuff like
+2253.92 - 2262.2400000000002: take the sine of all the values so let's
+2256.48 - 2264.2400000000002: say we had a we do np dot sine pass in a
+2262.24 - 2266.8799999999997: gives us all the
+2264.24 - 2269.2799999999997: sinusoid of all those values which
+2266.88 - 2270.4: you know and you have like the cosine of
+2269.28 - 2272.0: all those values
+2270.4 - 2275.52: all sorts of useful things that you can
+2272.0 - 2278.0: form on an entire array or entire matrix
+2275.52 - 2281.04: all at once and if you want all the
+2278.0 - 2282.96: different things that you can do
+2281.04 - 2285.52: i'll paste in a link
+2282.96 - 2286.96: here this will all be part of the as i
+2285.52 - 2289.2: mentioned before i have this on my
+2286.96 - 2292.7200000000003: github so if you look in the description
+2289.2 - 2296.0: you can find this exact notebook
+2292.72 - 2299.839: so yeah look up the routines right here
+2296.0 - 2299.839: for math all sorts of cool stuff
+2300.24 - 2304.3999999999996: all right
+2301.119 - 2306.7200000000003: moving on we're gonna still be in math
+2304.4 - 2309.359: but let's jump into
+2306.72 - 2312.0: linear algebra type stuff so here we are
+2309.359 - 2314.16: doing linear algebra
+2312.0 - 2315.68: so this is kind of like basic
+2314.16 - 2316.7999999999997: all

@@ -1,0 +1,170 @@
+me and we can easily add some
+2693.19 - 2705.4900000000002: more countries here so I could like add
+2700.53 - 2709.9300000000003: Australia for example and we'll make
+2705.49 - 2712.2999999999997: them ah I don't know what color to use I
+2709.93 - 2716.02: don't know that anymore I got a yellow
+2712.3 - 2716.4700000000003: shirt it might be ugly color yeah it's
+2716.02 - 2718.48: not too bad
+2716.47 - 2720.73: but yeah and there we have Australia
+2718.48 - 2724.45: looks like they're missing maybe a data
+2720.73 - 2725.98: value for 1990 I'm not positive but yeah
+2724.45 - 2727.66: we can easily do this for all of our
+2725.98 - 2730.09: different graphs and we could even do
+2727.66 - 2734.37: something like let's comment this out
+2730.09 - 2740.8: temporarily let me do something like for
+2734.37 - 2746.23: country in gas let's see what happens at
+2740.8 - 2749.23: that print country yeah cool this is
+2746.23 - 2752.86: giving us all the different countries we
+2749.23 - 2762.3: don't want year so I'm going to say in
+2752.86 - 2762.3: gas one onwards now we have Oh No
+2765.16 - 2772.49: close close close okay I'm gonna be a
+2768.59 - 2779.48: little bit hacky here if country is not
+2772.49 - 2781.1899999999996: equal to Year print country now we get
+2779.48 - 2784.28: all of the countries and so what we
+2781.19 - 2785.9900000000002: could do with this now is you know
+2784.28 - 2789.5: that's probable need of a way to do this
+2785.99 - 2791.0: then if country is not equal to year but
+2789.5 - 2792.98: I'm just trying to show you how like we
+2791.0 - 2796.96: can do this very quick and efficient
+2792.98 - 2799.9: like dude gas that year and then country
+2796.96 - 2802.37: and we'll let it self select the colors
+2799.9 - 2806.39: but we could if we wanted to specify
+2802.37 - 2807.74: marker equals dot and think the line
+2806.39 - 2816.44: style will be fine already
+2807.74 - 2820.72: oh no unrecognized character and oh okay
+2816.44 - 2825.7400000000002: can't just do country we need to do gas
+2820.72 - 2829.7: country look at that now we've got all
+2825.74 - 2832.87: the different all the different
+2829.7 - 2835.8799999999997: countries in our graph and you could
+2832.87 - 2838.1: move there's ways within matplotlib to
+2835.88 - 2840.23: like move the legend outside of the
+2838.1 - 2842.87: graph I'm not going to go into that
+2840.23 - 2844.34: right now but another I guess comment
+2842.87 - 2846.08: that I have is whenever you're doing
+2844.34 - 2849.17: anything with matplotlib or anything
+2846.08 - 2850.88: with python in general is like quickly
+2849.17 - 2853.85: do a google search like how to move
+2850.88 - 2856.06: legend outside of matplotlib graph and
+2853.85 - 2858.95: you'll find probably on Stack Overflow
+2856.06 - 2860.48: within the first three searches someone
+2858.95 - 2862.37: that had the same problem as you and
+2860.48 - 2864.89: found an answer to it so I always
+2862.37 - 2867.17: recommend doing that but this is kind of
+2864.89 - 2869.12: cool that we were able to quickly graph
+2867.17 - 2871.85: all these different lines for all the
+2869.12 - 2874.72: different countries and if you wanted to
+2871.85 - 2880.4: you could like create a list like
+2874.72 - 2882.98: countries to look at maybe not the best
+2880.4 - 2885.4100000000003: name and you could choose exactly which
+2882.98 - 2888.11: ones you wanted to include and then you
+2885.41 - 2890.96: would do if not equals a year and we
+2888.11 - 2895.01: actually you could just do if country in
+2890.96 - 2897.04: countries to look at you'll do this real
+2895.01 - 2897.0400000000004: quick
+2905.31 - 2916.87: if country in countries to look at so
+2915.07 - 2920.23: you see this is another way we can graph
+2916.87 - 2922.3599999999997: specific things cool cool cool all right
+2920.23 - 2928.2400000000002: I'm gonna comment this out temporarily
+2922.36 - 2929.83: and just leave I'll leave it I'll push
+2928.24 - 2937.5699999999997: it to the github when we're done with
+2929.83 - 2944.89: this video and it will uncon with this
+2937.57 - 2946.81: again cool and yeah you can play around
+2944.89 - 2948.79: with this style you can use the
+2946.81 - 2950.73: shorthand notation or you can use the
+2948.79 - 2953.29: long hand notation that we kind of used
+2950.73 - 2955.27: here but you also can reference the
+2953.29 - 2957.37: first video I posted on matplotlib to
+2955.27 - 2957.97: really play around with your line graph
+2957.37 - 2959.74: styles
+2957.97 - 2961.33: alright we're pretty much known of this
+2959.74 - 2963.49: graph but a lot of a couple final things
+2961.33 - 2965.3199999999997: before I move on to the FIFA data and
+2963.49 - 2968.35: doing some other graphs so the first
+2965.32 - 2970.6000000000004: thing is changing up the font size I
+2968.35 - 2973.39: mentioned this in the previous map plot
+2970.6 - 2975.19: lib video I did but I thought I was
+2973.39 - 2977.5: worth mentioning again so we can add a
+2975.19 - 2979.75: font stick to our title and actually we
+2977.5 - 2982.2: can add this to any text based label so
+2979.75 - 2984.37: you also add it to the X label ony label
+2982.2 - 2988.18: and we can do all sorts of different
+2984.37 - 2989.95: tweaks to our font I put a list in the
+2988.18 - 2991.8399999999997: description to all the different fonts
+2989.95 - 2994.7799999999997: you can use here if you wanted to change
+2991.84 - 2997.21: up the actual font type but I'm going to
+2994.78 - 2999.94: keep the font type the same I'm going to
+2997.21 - 3003.39: change the font weight I'm gonna make it
+2999.94 - 3006.33: bold so you see it now it's not bold but
+3003.39 - 3008.1299999999997: if I do this watch what happens now it's
+3006.33 - 3010.0499999999997: bold and let's say I also wanted to
+3008.13 - 3014.1600000000003: change the font size I would say font
+3010.05 - 3018.8100000000004: size and let's say it's size 22 so now
+3014.16 - 3022.83: we have a larger font maybe 18 is a
+3018.81 - 3025.13: better value so we can do that you can
+3022.83 - 3027.5099999999998: do that for any of your your labels
+3025.13 - 3028.98: another thing we might want to do is
+3027.51 - 3031.28: in the when I showed this graph
+3028.98 - 3034.26: originally I also had of the year 2011
+3031.28 - 3037.38: we don't have values for 2011 but maybe
+3034.26 - 3039.7200000000003: you wanted to allow for the ability of
+3037.38 - 3043.4700000000003: that showing up and maybe project where
+3039.72 - 3048.6: they're going you could do Plus you take
+3043.47 - 3052.95: your ticks and plus 2011 ah that did not
+3048.6 - 3054.5099999999998: work so this is a litter this is a data
+3052.95 - 3059.3399999999997: frame so you can't just directly add
+3054.51 - 3061.2900000000004: 2011 so we need to make it a list still
+3059.34 - 3063.06: didn't work and the problem is the data
+3061.29 - 3065.96: frame is kind of weird when you add just
+3063.06 - 3069.06: a direct list so you can do dot to list
+3065.96 - 3072.63: and now do this now you see 2011 is
+3069.06 - 3075.0: there and then if you wanted to actually
+3072.63 - 3079.23: save this graph remember we can do plot
+3075.0 - 3083.88: dot save fig we can give it a name so
+3079.23 - 3086.58: gas price figure sure and remember when
+3083.88 - 3089.2200000000003: we're saving if you change the DPI
+3086.58 - 3091.08: you'll get a higher resolution image so
+3089.22 - 3093.3199999999997: 300 is a good value this is gonna make a
+3091.08 - 3096.83: pretty big image it's going to make a
+3093.32 - 3100.29: 300 times eight which is 24 hundred by
+3096.83 - 3102.54: 1500 image but so really you can play
+3100.29 - 3105.06: around with this video but the higher
+3102.54 - 3106.8: the resolution or higher dpi the higher
+3105.06 - 3111.0: resolution image you're going to get so
+3106.8 - 3115.92: whoo I want to say this is a PNG so if I
+3111.0 - 3120.45: went into that folder that I had as you
+3115.92 - 3123.57: can see where did it go refresh oh I
+3120.45 - 3126.3599999999997: don't know where I'm saving this just
+3123.57 - 3130.1400000000003: propose figure where are you alright
+3126.36 - 3132.21: sorry I tipped us in wrong savefig and
+3130.14 - 3133.56: you always just you can refresh and look
+3132.21 - 3135.54: at the documentation I'm gonna have
+3133.56 - 3137.07: government yeah I got an error here I
+3135.54 - 3140.97: should have noticed that before but yeah
+3137.07 - 3144.15: say fig one word do that now if I go to
+3140.97 - 3148.41: the folder that I have these files in we
+3144.15 - 3153.2400000000002: got gas price figure and if I bring that
+3148.41 - 3157.41: in you see the figure there saves nicely
+3153.24 - 3159.7799999999997: as a PNG all right let's move on to the
+3157.41 - 3160.3489999999997: FIFA data now that we're done with the
+3159.78 - 3162.779: gas price
+3160.349 - 3164.279: stuff let's move on to using our FIFA
+3162.779 - 3169.799: data so we're gonna first gonna have to
+3164.279 - 3172.259: load it in so in if you didn't save the
+3169.799 - 3176.519: FIFA data maybe skipped around this
+3172.259 - 3178.349: video it's on my github page and the
+3176.519 - 3179.1899999999996: link to that is in the description and
+3178.349 - 3181.71: you want to save it in the same
+3179.19 - 3185.94: directory of the file that you're using
+3181.71 - 3189.779: to produce these graphs Lou I'm mixing
+3185.94 - 3194.609: my words load FIFA data ok so to do that
+3189.779 - 3198.809: we'll just call FIFA equals PD not read
+3194.609 - 3202.89: CSV and I believe we called this FIFA
+3198.809 - 3205.079: data dot CSV and that's just check make
+3202.89 - 3206.819: sure it's loaded in properly cool and
+3205.079 - 3209.549: this is actually shoot it shouldn't have
+3206.819 - 3210.66: loaded at all ok it's still a preview
+3209.549 - 3212.43: but you could do something if you only
+3210.66 - 3216.45: wanted to see like the first 5 rows you
+3212.43 - 3218.729: can do FIFA dot head five all right so
+3216.45 - 3221.9399999999996: so you can get a feel for what's in this
+321

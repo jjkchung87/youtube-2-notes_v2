@@ -1,0 +1,101 @@
+- 1847.76: dimensional array i think because it was
+1845.52 - 1850.1589999999999: a vector it didn't do what i wanted to
+1847.76 - 1852.24: what i wanted to do is one two three or
+1850.159 - 1853.7600000000002: one two three
+1852.24 - 1855.44: one two three
+1853.76 - 1858.32: one two three
+1855.44 - 1860.64: so if i wanted to do that
+1858.32 - 1863.12: now i made this a two dimensional array
+1860.64 - 1865.8400000000001: and it will repeat the inner part
+1863.12 - 1867.76: uh on the zeroth axis so it'll be
+1865.84 - 1870.9599999999998: basically making it rows
+1867.76 - 1872.96: there you go so if i made this
+1870.96 - 1875.6000000000001: equal to one that's going to be what we
+1872.96 - 1875.6000000000001: saw before
+1876.799 - 1879.799: cool
+1894.32 - 1898.399: okay so next here's a picture
+1897.12 - 1900.32: of an array i want you to try to
+1898.399 - 1902.1589999999999: initialize using everything that we kind
+1900.32 - 1904.32: of just went through
+1902.159 - 1907.519: so all these different methods
+1904.32 - 1909.4399999999998: so look at this picture and then try to
+1907.519 - 1910.96: put it together without just manually
+1909.44 - 1913.3600000000001: typing out all the numbers because you
+1910.96 - 1916.24: can imagine like this isn't too too big
+1913.36 - 1918.0: but if you got into a matrix that was
+1916.24 - 1919.679: massive you'd want to know how to build
+1918.0 - 1922.399: it up using these kind of like
+1919.679 - 1924.48: fundamental concepts
+1922.399 - 1925.76: okay so here's the solution to that so i
+1924.48 - 1928.64: can do
+1925.76 - 1929.919: output equals
+1928.64 - 1931.6000000000001: i'm going to start with making
+1929.919 - 1934.24: everything ones
+1931.6 - 1936.799: so ones and it's gonna be a five by five
+1934.24 - 1936.799: of ones
+1937.36 - 1942.6399999999999: print output
+1940.159 - 1944.0: so this is what i have now
+1942.64 - 1946.3200000000002: okay and now basically what we're gonna
+1944.0 - 1947.6: do is fill in this middle part with
+1946.32 - 1948.72: zeros
+1947.6 - 1951.12: so
+1948.72 - 1953.279: z i'm going to just say equals np dot
+1951.12 - 1954.799: zeros and that's going to be a three by
+1953.279 - 1956.799: three
+1954.799 - 1960.0: and if i print
+1956.799 - 1962.399: z now we have this
+1960.0 - 1964.24: now what i can do is fill in
+1962.399 - 1966.7199999999998: the
+1964.24 - 1969.519: middle element so that's 1 1
+1966.72 - 1971.3600000000001: with a 9
+1969.519 - 1973.039: and now if i print z we get this and
+1971.36 - 1976.9599999999998: then finally we need to replace the
+1973.039 - 1978.96: middle part of the ones matrix so output
+1976.96 - 1981.6000000000001: the middle part so that's going to be
+1978.96 - 1984.159: the first row to the
+1981.6 - 1986.399: third row
+1984.159 - 1988.48: so i want the
+1986.399 - 1990.32: first row to the third row and then i
+1988.48 - 1991.519: want the same thing with columns because
+1990.32 - 1993.6: it's the middle
+1991.519 - 1995.279: first column to the
+1993.6 - 1997.1999999999998: third column and actually this is an
+1995.279 - 1998.399: exclusive value so it needs to go to
+1997.2 - 1999.63: four
+1998.399 - 2002.6989999999998: and that's going to equal
+1999.63 - 2002.699: [Music]
+2002.84 - 2008.399: z and now what happens when i print
+2006.0 - 2008.399: output
+2009.36 - 2013.039: is yay we got what we're looking for and
+2011.279 - 2013.84: actually one thing that i think is nice
+2013.039 - 2015.519: is
+2013.84 - 2017.9189999999999: instead of using four i can also do
+2015.519 - 2020.64: negative one so basically the from the
+2017.919 - 2021.519: first element to the last element
+2020.64 - 2023.76: uh
+2021.519 - 2025.519: do that and as you see it didn't change
+2023.76 - 2026.559: this last initialization i want to go
+2025.519 - 2029.1200000000001: through i guess is a little bit
+2026.559 - 2030.399: different it's uh over on the concept of
+2029.12 - 2032.4799999999998: copying but something you got to be
+2030.399 - 2035.6: really careful about so i'm just going
+2032.48 - 2035.6: to quickly mention it
+2039.279 - 2041.6: i want to do explanation points there we
+2040.72 - 2045.3600000000001: go
+2041.6 - 2046.559: um okay so imagine we have two
+2045.36 - 2049.5989999999997: arrays
+2046.559 - 2051.919: or we have one array
+2049.599 - 2054.7200000000003: let's call it a
+2051.919 - 2055.919: and so now a is just a normal array
+2054.72 - 2058.3199999999997: as you can see
+2055.919 - 2061.839: and let's say we want to make b a direct
+2058.32 - 2063.9190000000003: copy of a so now i'm going to just do b
+2061.839 - 2067.44: equals a
+2063.919 - 2069.2: and then print out b and as you can see
+2067.44 - 2071.2000000000003: it's still one two three
+2069.2 - 2073.2: and so i'm like okay i have this copy
+2071.2 - 2075.2799999999997: like things are cool it's fine
+2073.2 - 2077.6789999999996: i want to change the first element in b
+2075.28 - 2080.079: so i'm going to do b zero equals
+2077.679 - 2081.44: 100.
+2080.079 - 2083.2000000000003: here'

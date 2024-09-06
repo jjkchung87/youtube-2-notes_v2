@@ -1,0 +1,168 @@
+ke print
+4342.72 - 4347.52: these out I don't know invalid syntax
+4346.62 - 4353.94: what do they do
+4347.52 - 4356.64: Oh didn't end up 369 heavy people medium
+4353.94 - 4359.19: heavy let's see if this is a valid
+4356.64 - 4362.400000000001: number 4000 so yeah it makes sense that
+4359.19 - 4364.139999999999: there's more between 170 and 200 then
+4362.4 - 4365.759999999999: there are people over 200 in the league
+4364.14 - 4370.4400000000005: it's kind of tough to be a soccer player
+4365.76 - 4375.27: or 200 pounds okay so let's now plot
+4370.44 - 4379.82: this so what we want to plot will be our
+4375.27 - 4382.320000000001: weights and I'll make this an array
+4379.82 - 4391.32: light weights
+4382.32 - 4396.929999999999: medium medium medium heavy and heavy our
+4391.32 - 4400.53: labels yeah can't type today
+4396.93 - 4403.92: all right so plot dot pie weights let's
+4400.53 - 4408.15: see what this looks like cool it looks
+4403.92 - 4411.62: pretty good but it has no labels right
+4408.15 - 4418.92: now now I'm gonna do a plot touch show
+4411.62 - 4425.849999999999: so we need to add some labels so under
+4418.92 - 4434.31: 125 it's the first one 125 to 150 is the
+4425.85 - 4438.570000000001: second 150 to 175 is the third and 175
+4434.31 - 4442.200000000001: to 200 its fourth and finally over
+4438.57 - 4449.009999999999: 200 is the last and it will pass these
+4442.2 - 4451.71: in with our pipe chart okay cool so now
+4449.01 - 4453.860000000001: we have all these labels one thing I
+4451.71 - 4456.36: don't like and this is a good little
+4453.86 - 4457.799999999999: thing to know is you couldn't I don't
+4456.36 - 4459.839999999999: like the default color scheme and
+4457.8 - 4463.37: instead of passing in all five of my own
+4459.84 - 4466.89: colors one thing you can actually do is
+4463.37 - 4468.39: I don't know what I just typed in I
+4466.89 - 4469.51: didn't mean to do that I'm getting ahead
+4468.39 - 4473.92: of myself
+4469.51 - 4476.400000000001: is there's a plot style and so instead
+4473.92 - 4478.27: of the default which is currently set
+4476.4 - 4480.3099999999995: aside as you can see it stays the same
+4478.27 - 4484.06: when I do that we're going to use the
+4480.31 - 4485.4400000000005: style of ggplot and I'll link a list of
+4484.06 - 4488.740000000001: these different styles in the
+4485.44 - 4490.719999999999: description so I personally like this
+4488.74 - 4494.98: color scheme a lot more when I change
+4490.72 - 4495.67: the style of our plot okay so that's
+4494.98 - 4498.129999999999: pretty good
+4495.67 - 4500.65: we can also add the auto percentage as
+4498.13 - 4503.41: we did with the last example so
+4500.65 - 4507.28: percentage point 2f percentage is a
+4503.41 - 4510.13: percentage percentage cool but things
+4507.28 - 4512.32: are a little bit ugly in this case the
+4510.13 - 4515.2: things are squished together so how can
+4512.32 - 4517.36: we resolve this problem and really if
+4515.2 - 4520.09: you go into the documentation you'll see
+4517.36 - 4522.24: there's a lot of these weird names and
+4520.09 - 4526.03: you might not know what everyone means
+4522.24 - 4528.48: but if you kind of look up like if you
+4526.03 - 4531.639999999999: did a google search like pie chart
+4528.48 - 4532.99: Python numbers getting in the way of
+4531.64 - 4534.76: each other you probably find some
+4532.99 - 4538.0599999999995: different solutions so one solution we
+4534.76 - 4540.7: could go ahead and try would be setting
+4538.06 - 4542.650000000001: the percentage distance so the
+4540.7 - 4544.54: percentage distance is the percentage
+4542.65 - 4547.2699999999995: distance from the center of the graph so
+4544.54 - 4551.65: if I did centage equals percentage
+4547.27 - 4553.570000000001: distance equals zero you'd see
+4551.65 - 4556.21: everything's right there so instead of
+4553.57 - 4559.09: that we'll do like 0.8 so this comes
+4556.21 - 4561.37: zero to one is within the chart and you
+4559.09 - 4563.41: could even do if you want it to like 1.5
+4561.37 - 4566.26: and that would be values outside the
+4563.41 - 4569.38: truck but 0.8 was a good value that I
+4566.26 - 4570.91: thought okay so this baby makes it a
+4569.38 - 4572.650000000001: little bit better these numbers right
+4570.91 - 4575.139999999999: here that I'm highlighting aren't as
+4572.65 - 4576.73: squished but they're still not great so
+4575.14 - 4582.58: the other thing we can actually do is
+4576.73 - 4585.37: use this explode property and what
+4582.58 - 4588.88: explode does it breaks the graph apart a
+4585.37 - 4594.88: bit and so let's see what that does so
+4588.88 - 4596.68: we need a list that's as big as our yeah
+4594.88 - 4598.0: this could be a list it can be too full
+4596.68 - 4599.41: I'm going to say that was a tuple that's
+4598.0 - 4601.82: what I did when I was playing around
+4599.41 - 4606.3: with this doesn't shouldn't matter
+4601.82 - 4608.599: 0e 0.4 I'm gonna these are the values I
+4606.3 - 4612.03: want to get to but we'll start with
+4608.599 - 4614.2390000000005: doing them all point one and I'll reason
+4612.03 - 4617.909: to why I got to the values that I got -
+4614.239 - 4619.589999999999: okay so explode equals explode so this
+4617.909 - 4623.549999999999: is gonna split the graph apart so it's
+4619.59 - 4625.83: not actually touching so you see that so
+4623.55 - 4627.599: that's cool but really we don't need
+4625.83 - 4629.34: everything exploded we really just need
+4627.599 - 4632.4890000000005: these values that are very close
+4629.34 - 4635.4890000000005: together to explode a bit so what we can
+4632.489 - 4638.549999999999: do to that is all right so we want under
+4635.489 - 4642.178999999999: 125 and over 200 to be exploded a bit
+4638.55 - 4645.599: more as you can see those correspond to
+4642.179 - 4648.03: our labels here we don't really need 150
+4645.599 - 4653.099: to 175 to explode it off because that's
+4648.03 - 4654.36: pretty set we don't really need 175 to
+4653.099 - 4656.429: 200 explode
+4654.36 - 4658.29: so what does this look like now and
+4656.429 - 4663.9890000000005: we'll have this explode a little bit
+4658.29 - 4666.719: this is this 12.6 1% cool and I think
+4663.989 - 4670.138999999999: that this looks decently good now you
+4666.719 - 4670.9800000000005: can more easily see the different
+4670.139 - 4673.11: slivers and
+4670.98 - 4675.718999999999: I guess it's tough because this sliver
+4673.11 - 4678.719: is so small the under one under 125 but
+4675.719 - 4681.3: think that you can more easily read this
+4678.719 - 4685.889: then you could win all of them or
+4681.3 - 4690.469: compact together and as in the other
+4685.889 - 4697.02: examples we can also add a title so
+4690.469 - 4699.0: weight distribution of FIFA players and
+4697.02 - 4703.650000000001: we would want to spay that this is in
+4699.0 - 4705.33: pounds cool and also as you notice
+4703.65 - 4707.79: because I changed the style the header
+4705.33 - 4709.469: actually changed too so that's one thing
+4707.79 - 4711.2699999999995: to be a little bit careful with with the
+4709.469 - 4713.699: Styles but sometimes they can be very
+4711.27 - 4715.139: helpful all right because this video is
+4713.699 - 4717.839999999999: getting kind of long we're gonna end it
+4715.139 - 4719.58: with one more graph but if there's other
+4717.84 - 4721.77: types of graphs that I didn't cover in
+4719.58 - 4723.36: this video or my previous video that you
+4721.77 - 4725.429: want to see let me know in the comments
+4723.36 - 4727.619: so we're gonna do a box and whiskers
+4725.429 - 4731.46: chart and really the question we're
+4727.619 - 4733.268999999999: trying to ask here is how can we compare
+4731.46 - 4735.34: teams like the
+4733.269 - 4739.079000000001: how good two different teams are in our
+4735.34 - 4743.9400000000005: set so looking back at our FIFA chart
+4739.079 - 4747.909: let's print that out so you can see that
+4743.94 - 4749.86: all these players have a club so we're
+4747.909 - 4754.058999999999: trying to compare the relative strengths
+4749.86 - 4757.089999999999: of different clubs and so there I
+4754.059 - 4759.099: thought that a good way to do that would
+4757.09 - 4762.849: be this to use this box and whiskers
+4759.099 - 4765.28: chart which shows shows your highest
+4762.849 - 4767.17: player or it shows your highest score if
+4765.28 - 4770.199: you have a box and whiskers chart it
+4767.17 - 4772.599: will show like the max it'll show the
+4770.199 - 4775.839999999999: mean and then I'll show a box around
+4772.599 - 4777.429: where the middle 50% of scores or values
+4775.84 - 4779.71: were I think that's a good way to
+4777.429 - 4782.499: compare a team where you can kind of see
+4779.71 - 4784.269: okay where's the best player at where's
+4782.499 - 4787.78: their worst player at if everyone got
+4784.269 - 4789.46: injured and then the the middle box is
+4787.78 - 4792.518999999999: kind of like the core of the team like
+4789.46 - 4794.619: how good are they so I think it's a good
+4792.519 - 4796.329000000001: way to potentially compare two different
+4794.619 - 4798.009999999999: teams maybe you can disagree with me and
+4796.329 - 4799.989: maybe there's a different way you would
+4798.01 - 4803.1990000000005: recommend but well that's what we're
+4799.989 - 4807.268999999999: going to do in this example so to start
+4803.199 - 4813.4: let's uh take a couple teams and count
+4807.269 - 4816.820000000001: their their overall scores for that club
+4813.4 - 4820.058999999999: so we'll start with I was a good team to
+4816.82 - 4823.42: start with go up top we'll start with FC
+4820.059 - 4827.650000000001: Barcelona so we're gonna do Barcelona
+4823.42 - 4830.829: equals FIFA Lok so we're going to filter
+4827.65 - 4834.789: out all the rows that have people from
+4830.829 - 4842.59: Barcelona so we can do FIFA club equals
+4834.789 - 4845.65: equals FC Barcelona yeah cool and let's
+4842.59 - 4848.1900000000005: see and then we want when we do our
+4845.65 - 4852.369:

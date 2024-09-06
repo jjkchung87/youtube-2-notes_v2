@@ -1,0 +1,168 @@
+ls equals right get
+3789.5 - 3793.7: the count of that and then because this
+3791.0 - 3795.8: returns a data frame we have to take the
+3793.7 - 3798.0499999999997: we'll just take the first element which
+3795.8 - 3800.57: it will be a number and let's see how
+3798.05 - 3802.4: much you like right okay so considerably
+3800.57 - 3805.52: more people preference their right foot
+3802.4 - 3807.44: than they left that makes sense okay so
+3805.52 - 3810.4: now how do I do the pie chart we can do
+3807.44 - 3813.62: plot pie this is from the documentation
+3810.4 - 3815.63: and I guess I kind of jumped ahead but
+3813.62 - 3820.5499999999997: you might like think maybe I can just go
+3815.63 - 3823.34: ahead and do FIFA preferred I can't even
+3820.55 - 3825.4100000000003: spell of course I like foot and like
+3823.34 - 3828.59: figure that it might just plot the pie
+3825.41 - 3832.24: chart while doing that but it it gets
+3828.59 - 3835.1000000000004: messed up when you don't pass it numbers
+3832.24 - 3839.24: so what we need to do is passing a list
+3835.1 - 3844.64: of numbers so what we can do is left
+3839.24 - 3846.7999999999997: comma right so now we have two values
+3844.64 - 3850.4: and I'll make a part pie chart out of
+3846.8 - 3853.82: these values look at that cool and I'll
+3850.4 - 3856.13: do plot dot show one thing I'm noticing
+3853.82 - 3858.77: is these colors are really ugly and also
+3856.13 - 3864.77: nothing is labeled right now so going
+3858.77 - 3868.25: back to the documentation you can see
+3864.77 - 3869.69: labels is list sequence of strings
+3868.25 - 3871.13: providing the labels for each wedge we
+3869.69 - 3873.62: need to pass in that we can also change
+3871.13 - 3878.71: up the colors with a writ list as well
+3873.62 - 3886.88: so let's do that so labels will do
+3878.71 - 3891.16: equals left and right and we'll pass
+3886.88 - 3897.23: those into our pie chart do labels
+3891.16 - 3899.87: equals labels cool so now at least we
+3897.23 - 3902.39: have like relative percentages I mean we
+3899.87 - 3905.87: don't know the exact percentages but you
+3902.39 - 3908.0: have an idea just based off the graph if
+3905.87 - 3909.24: we added in colors we can change this
+3908.0 - 3912.42: ugly orange from
+3909.24 - 3915.14: there she could pass in two colors let's
+3912.42 - 3917.19: say like we're gonna just use some
+3915.14 - 3924.93: hexadecimal values we're just typing in
+3917.19 - 3930.18: these in randomly and now I have to pass
+3924.93 - 3931.6189999999997: some colors here cool now that looks
+3930.18 - 3934.29: alright maybe you'd want a little bit
+3931.619 - 3936.9: more contrast but it doesn't really
+3934.29 - 3937.5: matter too too much you can be the judge
+3936.9 - 3943.44: of that
+3937.5 - 3945.18: I do Auto percentage this should forget
+3943.44 - 3953.64: exactly how to format this I'll have to
+3945.18 - 3956.1499999999996: check so others percentage format
+3953.64 - 3956.15: percent
+3957.83 - 3965.8199999999997: so we can use percent notation here so
+3961.83 - 3967.59: we can do % point 2f and basically
+3965.82 - 3971.4300000000003: they'll just fill in whatever value is
+3967.59 - 3974.9300000000003: for the percentage with 0.2 two decimals
+3971.43 - 3983.1299999999997: of floats and I guess I screwed that up
+3974.93 - 3984.6299999999997: probably also be a string cool so now it
+3983.13 - 3986.28: actually gives us our percentages so
+3984.63 - 3988.38: twenty three point one nine percent of
+3986.28 - 3990.9300000000003: the people in the FIFA game prefer their
+3988.38 - 3993.09: left foot over their right foot and if
+3990.93 - 3994.859: you want to actually see percent on that
+3993.09 - 3997.56: it's a little bit weird and just do
+3994.859 - 3999.33: percent percent basically if you just
+3997.56 - 4002.5299999999997: did percent I think it would bug out
+3999.33 - 4005.0: because it's expecting specific notation
+4002.53 - 4008.09: basically by doing two percentage points
+4005.0 - 4010.94: in this notation it knows you actually
+4008.09 - 4013.4900000000002: do want that percentage sign all right
+4010.94 - 4021.04: and then we can add a label the title as
+4013.49 - 4027.589: we've done in the past preference foot
+4021.04 - 4030.41: preference of FIFA players
+4027.589 - 4031.249: cool and there's a basic pie chart I'm
+4030.41 - 4035.8689999999997: trying to think of there's other things
+4031.249 - 4037.519: I should add to this well we'll get into
+4035.869 - 4040.7290000000003: a little bit more complicated stuff and
+4037.519 - 4042.1989999999996: the next pie chart that we'll build so
+4040.729 - 4043.549: this is a pretty simple pie chart let's
+4042.199 - 4046.7290000000003: make another pie chart
+4043.549 - 4049.849: all right pie chart number two so in
+4046.729 - 4053.66: this one what we're gonna do is look at
+4049.849 - 4056.2290000000003: the breakdown of the weights of the FIFA
+4053.66 - 4061.7889999999998: players and we'll plot it as a pie chart
+4056.229 - 4063.529: so I mean okay let's look at what the
+4061.789 - 4068.0890000000004: weights look like so I'm going to print
+4063.529 - 4070.339: out wait here okay so we have a list of
+4068.089 - 4073.009: all these weights what we can see is
+4070.339 - 4075.92: that there and note that they're in
+4073.009 - 4079.16: pounds they're not into kilograms as
+4075.92 - 4081.619: many of you guys might expect and pounds
+4079.16 - 4083.1499999999996: but you could initial step you could do
+4081.619 - 4085.009: to this pie chart would be to convert
+4083.15 - 4088.279: all these values to kilograms that'd be
+4085.009 - 4091.219: a fun little exercise but okay we have
+4088.279 - 4092.479: all these pounds and one thing I
+4091.219 - 4094.7290000000003: immediately noticed is if we're trying
+4092.479 - 4097.549: to count ranges of these pounds it's
+4094.729 - 4100.369: gonna be tough with this pounds string
+4097.549 - 4104.829: attached is there anything else I notice
+4100.369 - 4108.199: here no it's mostly just that but okay
+4104.829 - 4111.7699999999995: so basically what I want to do is reset
+4108.199 - 4115.308999999999: the weight category to not include these
+4111.77 - 4117.889: pounds and just be the number so this is
+4115.309 - 4119.809: going to be a string right now and we
+4117.889 - 4125.2390000000005: just want this converted to an integer
+4119.809 - 4129.619000000001: so let's try to do that okay so we're
+4125.239 - 4132.29: going to reset the weight column and
+4129.619 - 4136.839: what we're gonna want to do is strip off
+4132.29 - 4141.559: so X here I'm going to do X for X in
+4136.839 - 4146.63: FIFA eight so X in this case is going to
+4141.559 - 4148.7300000000005: be a string so we can do strip lbs so
+4146.63 - 4149.469: that will give us just this part of the
+4148.73 - 4151.669999999999: string
+4149.469 - 4153.5: perhaps in FIFA wait let's see if that
+4151.67 - 4156.849: works
+4153.5 - 4160.869: float object has no attribute strip and
+4156.849 - 4167.469: I mixed I was expecting that all these
+4160.869 - 4169.179: would be strings start to start with but
+4167.469 - 4170.71: because they're not what we can add is
+4169.179 - 4173.02: an if statement within our list
+4170.71 - 4176.199: comprehension I'm going to just say if
+4173.02 - 4177.46: type x equals equals strain I'm guessing
+4176.199 - 4179.949: maybe there's a couple of empty values
+4177.46 - 4191.02: or something so we're just gonna kind of
+4179.949 - 4193.839: ignore those and then else X so if type
+4191.02 - 4198.040000000001: x equals equals string we're gonna do
+4193.839 - 4201.159: this else just leave it as is that's
+4198.04 - 4203.28: what we're saying here let's see if this
+4201.159 - 4211.089999999999: works
+4203.28 - 4216.79: now we print out FIFA eight cool cool
+4211.09 - 4219.7300000000005: and I'm gonna take the first value real
+4216.79 - 4220.75: quick and notice it's still a string so
+4219.73 - 4224.0199999999995: what we're actually going to want to do
+4220.75 - 4225.989: to this line is surround it with the int
+4224.02 - 4231.9400000000005: block which will convert it to an end
+4225.989 - 4235.659: now if I look at this FIFA dot we 0 we
+4231.94 - 4237.07: get it as a integer value I don't know
+4235.659 - 4240.129999999999: why it's giving a decimal here but
+4237.07 - 4241.8099999999995: should be an actual value and you notice
+4240.13 - 4243.849: because the point 0 we know that it
+4241.81 - 4246.580000000001: probably is being read as a value ok so
+4243.849 - 4248.32: now we have these values set right so
+4246.58 - 4250.929: let's start counting things so we're
+4248.32 - 4253.23: gonna start with light players and we'll
+4250.929 - 4255.61: say light players I have a weight under
+4253.23 - 4260.4: this is kind of arbitrary of a rest say
+4255.61 - 4264.61: that they have a weight under 125 pounds
+4260.4 - 4268.299999999999: and then we're gonna count that just
+4264.61 - 4271.049999999999: like we did in the last example then the
+4268.3 - 4278.28: next condition we'll do is I guess
+4271.05 - 4278.28: medium light players that would be above
+4278.4 - 4284.73: 125 greater than or equal to 125 then we
+4282.699 - 4286.839999999999: need an and condition the end condition
+4284.73 - 4287.73: and the way we're going to format this
+4286.84 - 4290.9400000000005: with our Panda
+4287.73 - 4294.169999999999: notation is like that and this is
+4290.94 - 4296.5199999999995: probably review a bit if you did watch
+4294.17 - 4302.61: watch through the pandas video that I
+4296.52 - 4307.040000000001: did and FIFA 8 is less than 150 let's
+4302.61 - 4309.48: say so now we're getting only the rows
+4307.04 - 4315.21: that have both of these conditions true
+4309.48 - 4318.2699999999995: we're going to count that 0 keep doing
+4315.21 - 4321.03: this I'll price peed this up when I edit
+4318.27 - 4324.410000000001: the video I'm going to just get three
+4321.03 - 4324.41: more categories
+4337.55 - 4342.72: all right cool so we have five different
+4340.92 - 4346.62: weight categories and I can li

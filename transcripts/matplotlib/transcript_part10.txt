@@ -1,0 +1,167 @@
+ averaging we're gonna want to take their
+4848.19 - 4856.03: overall score so we can just filter by
+4852.369 - 4859.63: that too so now if we print out
+4856.03 - 4860.889: Barcelona because we're comparing the
+4859.63 - 4863.11: overall scores I think that's the most
+4860.889 - 4865.479: useful metric you see we just have a
+4863.11 - 4870.098999999999: list of all the players on Barstow
+4865.479 - 4874.09: their relative their overall performance
+4870.099 - 4879.9890000000005: in FIFA cool then we could do that with
+4874.09 - 4879.9890000000005: another team let's say we do Real Madrid
+4881.189 - 4888.820000000001: FIFA Club echoes equals Real Madrid and
+4887.469 - 4893.199: when you want to take their overall
+4888.82 - 4895.239: values as well cool so this is two
+4893.199 - 4898.478999999999: different values we can see Madrid here
+4895.239 - 4900.759999999999: and all those values okay so now let's
+4898.479 - 4906.76: plot a box and whiskers chart for that
+4900.76 - 4909.4890000000005: so to do that we do lot dot fox plot we
+4906.76 - 4913.3: pass in Barcelona and it will pass in
+4909.489 - 4915.009999999999: Madrid so these are the all the values
+4913.3 - 4917.38: for Barcelona and all the values for
+4915.01 - 4920.139: Madrid and correspondent so what we see
+4917.38 - 4922.689: here so it will know this function will
+4920.139 - 4931.78: know that it needs to make a boxplot off
+4922.689 - 4935.26: of that so what does that look like okay
+4931.78 - 4938.228999999999: one thing I noticed too this is also a
+4935.26 - 4940.780000000001: residual effect of changing the style in
+4938.229 - 4943.869000000001: one cell style is still changed I'm
+4940.78 - 4948.728999999999: going to change the style of here back
+4943.869 - 4950.53: to our default style so default style
+4948.729 - 4952.269: looks like this graph doesn't really
+4950.53 - 4956.639: tell us too much right now but we'll get
+4952.269 - 4959.530000000001: it to look a little better in a second
+4956.639 - 4962.619: and I want to do plot dot show so all
+4959.53 - 4964.929: this stuff is not there okay cool so
+4962.619 - 4966.249: this is a comparison of the two teams
+4964.929 - 4970.3: relatively you can see they're pretty
+4966.249 - 4973.03: dang even I'd say Barcelona has a slight
+4970.3 - 4977.619000000001: advantage it seems like it's boxes a
+4973.03 - 4980.499: little bit higher than Real Madrid's but
+4977.619 - 4982.598999999999: and also their best player is ranked
+4980.499 - 4985.36: better than really Madrid's best player
+4982.599 - 4986.769: but it's kind of annoying when it's just
+4985.36 - 4989.308999999999: as one and two down here so let's add
+4986.769 - 4989.309: our labels
+4993.5 - 5002.93: so it's a list FC Barcelona and Real
+4999.469 - 5005.2390000000005: Madrid and then we can go into our box
+5002.93 - 5007.04: plot it has a labels property and you
+5005.239 - 5009.5599999999995: can double check the documentation to
+5007.04 - 5015.92: see this labels label is cool so now we
+5009.56 - 5018.26: have our two different box plots and so
+5015.92 - 5020.21: these two teams with this comparison I
+5018.26 - 5022.04: would just say that they look pretty
+5020.21 - 5023.45: similarly matched like they could go
+5022.04 - 5026.0199999999995: ahead to head probably be a pretty good
+5023.45 - 5030.469: game where you really see kind of the
+5026.02 - 5031.969: coolness of visualizing this data with a
+5030.469 - 5034.1: box and plot and like comparing two
+5031.969 - 5038.0: teams is when you take a team that's not
+5034.1 - 5039.38: as strong so my local team here in
+5038.0 - 5043.19: Boston is the New England Revolution
+5039.38 - 5047.9800000000005: they're an MLS soccer organization so I
+5043.19 - 5051.739: also pass in some scores for them and
+5047.98 - 5052.94: they're short tend names the revs so I'm
+5051.739 - 5056.679999999999: gonna just call them that instead of
+5052.94 - 5064.82: typing out the whole New England
+5056.68 - 5070.13: Revolution every time and yeah I wonder
+5064.82 - 5073.219: which I say the England Revolution and
+5070.13 - 5074.63: we're going to take their overall and
+5073.219 - 5076.58: you could look at all the different
+5074.63 - 5077.9890000000005: teams in the datasheet and get like a
+5076.58 - 5080.87: certain team that you wanted to look at
+5077.989 - 5082.19: pretty easy yeah you just have to be
+5080.87 - 5084.68: careful that you type in everything
+5082.19 - 5085.099999999999: properly and apparently I did something
+5084.68 - 5090.110000000001: wrong
+5085.1 - 5095.660000000001: oh okay yeah we also have passing the
+5090.11 - 5097.099999999999: ribs here cool so now we have three
+5095.66 - 5098.57: teams and you can see that the New
+5097.1 - 5100.450000000001: England Revolution is significantly
+5098.57 - 5103.54: worse than Real Madrid or Barcelona
+5100.45 - 5106.7: which is what we were wanting to show
+5103.54 - 5109.12: let's add a title here and we'll add
+5106.7 - 5115.01: some style to this chart as well
+5109.12 - 5116.87: professional soccer team comparison and
+5115.01 - 5119.17: because I'm from the States I call it
+5116.87 - 5123.46: soccer yeah you probably call football
+5119.17 - 5125.05: but that is besides the point
+5123.46 - 5130.36: FIFA over
+5125.05 - 5134.68: all reading over all hitting is our
+5130.36 - 5136.929999999999: y-axis and we have our teams down here
+5134.68 - 5143.25: in the x-axis that looks pretty good to
+5136.93 - 5151.6: me okay what we could also change up
+5143.25 - 5153.76: potentially would be our tick marks okay
+5151.6 - 5155.59: or we could change the figure size maybe
+5153.76 - 5158.74: it would look better if it stretched out
+5155.59 - 5162.04: a bit more along the y-axis so we'll
+5158.74 - 5166.69: change our figure size a bit plot dot
+5162.04 - 5169.99: figure fig size equals we'll have the Y
+5166.69 - 5171.639999999999: dimension be greater than the X and as
+5169.99 - 5173.5599999999995: you can see now it looks like this and
+5171.64 - 5175.990000000001: this gives us a little bit more detail
+5173.56 - 5178.18: in the actual scores among the two teams
+5175.99 - 5181.679999999999: but you can still see the New England
+5178.18 - 5184.4800000000005: Revolution is not as good and also this
+5181.68 - 5185.92: name is kind of running into each other
+5184.48 - 5190.57: so I'm gonna shorten New England
+5185.92 - 5192.91: Revolution to any revolution just kind
+5190.57 - 5193.99: of make it a little neater cool all
+5192.91 - 5196.45: right so the final thing we're gonna do
+5193.99 - 5197.98: is add a little bit of style to this
+5196.45 - 5200.29: graph so it looks a little bit better
+5197.98 - 5203.349999999999: and you also if you wanted to yeah feel
+5200.29 - 5204.81: free to add more teams to this and like
+5203.35 - 5209.26: really see the differences between
+5204.81 - 5210.76: soccer teams and FIFA but we will add
+5209.26 - 5212.83: some color around the perimeters of
+5210.76 - 5214.570000000001: these boxes maybe make this line a
+5212.83 - 5217.35: little thicker that represents this
+5214.57 - 5218.5599999999995: represents the median the orange line
+5217.35 - 5220.96: okay
+5218.56 - 5224.950000000001: so what I found to be the best way to do
+5220.96 - 5226.99: this is I'm gonna save boxes as the
+5224.95 - 5230.44: result of this plot and then basically
+5226.99 - 5231.969999999999: what we can do is this will store the
+5230.44 - 5234.28: three different values we've plotted
+5231.97 - 5239.070000000001: here so it will help us style each
+5234.28 - 5247.21: individual box a little easier so for
+5239.07 - 5249.7: blocks in boxes boxes so you're getting
+5247.21 - 5256.36: the box parameter from what was saved
+5249.7 - 5257.879: here we want to set the color and then
+5256.36 - 5259.018999999999: this also kind of shows you
+5257.879 - 5260.879: there's different ways to do these
+5259.019 - 5261.929: things like I could have passed color in
+5260.879 - 5264.019: here
+5261.929 - 5266.28: the problem with passing color within
+5264.019 - 5268.1990000000005: here is it would make everything the
+5266.28 - 5272.07: same color so if you wanted like go
+5268.199 - 5277.799999999999: ahead and change a specific box I can
+5272.07 - 5279.209: have a list of colors it's easier or I
+5277.8 - 5280.499: guess maybe colors is not the best
+5279.209 - 5283.349: example because color is probably would
+5280.499 - 5286.889: allow you to pass in an array but for
+5283.349 - 5289.59: certain properties it's hard to set just
+5286.889 - 5300.03: one value at a time so I want to go
+5289.59 - 5302.519: ahead and set the color here so now you
+5300.03 - 5305.159: see that we have a different color
+5302.519 - 5308.399: around our box and they're similar to
+5305.159 - 5311.009999999999: boxes here there's another parameter for
+5308.399 - 5313.889: like the longest strike here and the
+5311.01 - 5317.6990000000005: long strike here the whiskers of the box
+5313.889 - 5322.1990000000005: and whiskers plot but I think it could
+5317.699 - 5326.209: use to be a little thicker here and so
+5322.199 - 5328.919: to do that we're gonna do line width
+5326.209 - 5336.03: equals two and all these parameters I'm
+5328.919 - 5341.929: finding from the from the documentation
+5336.03 - 5346.039: okay cool so set edge color basically
+5341.929 - 5353.849: and let's say we wanted to change the
+5346.039 - 5355.648999999999: fill color so change fill color and you
+5353.849 - 5358.7390000000005: could as I said before like you could
+5355.649 - 5361.320000000001: iterate through these and through a list
+5358.739 - 5363.268999999999: and like each time set a different color
+5361.32 - 5365.688999999999: for each of these change filler color we
+5363.269 - 5368.189: can do something like set a face color
+5365.689 - 5370.619000000001: we could all do this in one line as well
+5368.189 - 5373.559: but kind of just showing different ways
+5370.619 - 5375.299999999999: you can go about things face color is
+5373.559 - 5377.399: another property this actually chang

@@ -1,0 +1,95 @@
+ sorts of functions you can do on
+2315.68 - 2318.96: elements
+2316.8 - 2320.7200000000003: uh linear algebra so this is like really
+2318.96 - 2322.7200000000003: i feel like when i'm using matlab it
+2320.72 - 2326.72: would be doing these linear algebra type
+2322.72 - 2328.3999999999996: stuff so let's say we have two matrices
+2326.72 - 2330.7999999999997: and the big difference with linear
+2328.4 - 2332.48: algebra is like we're not doing element
+2330.8 - 2334.6400000000003: wise so like
+2332.48 - 2337.119: in this case this b
+2334.64 - 2340.3199999999997: we're doing element-wise computation so
+2337.119 - 2340.32: like a times b
+2342.16 - 2346.48: in you know linear algebra you're trying
+2344.72 - 2350.48: to multiply matrices and that's a
+2346.48 - 2350.48: different process so let's say we have
+2350.72 - 2353.839: two matrices we'll have a
+2352.56 - 2355.68: and i'm going to use the syntax we
+2353.839 - 2361.2799999999997: learned about earlier i'm going to say
+2355.68 - 2361.2799999999997: this is a 2 by 3 matrix of all twos
+2361.68 - 2367.52: or actually let's make this
+2364.079 - 2369.2000000000003: 2 by 3 matrix of ones
+2367.52 - 2372.88: so we have a
+2369.2 - 2372.8799999999997: as you can see and then we'll have
+2373.92 - 2380.64: b which is equal to np dot full
+2377.76 - 2383.2000000000003: it's going to be a 3 by 2
+2380.64 - 2385.839: and it's going to be a value 2.
+2383.2 - 2388.0: so if i print out b
+2385.839 - 2390.7999999999997: now we have this and if you remember
+2388.0 - 2393.52: linear algebra you have to have the
+2390.8 - 2394.88: columns of the first matrix be the equal
+2393.52 - 2396.64: to the
+2394.88 - 2398.7200000000003: rows of the second one so as you can see
+2396.64 - 2400.7999999999997: this says three columns and this has
+2398.72 - 2403.7599999999998: three rows so we're good there so we
+2400.8 - 2406.1600000000003: would multiply this row by this column
+2403.76 - 2407.599: um and you know you do the the process
+2406.16 - 2408.72: of matric multiplication we're not going
+2407.599 - 2411.119: to walk through the whole thing but we
+2408.72 - 2416.16: should end up with a 2
+2411.119 - 2416.1600000000003: by 2 matrix at the end if we want to do
+2416.4 - 2419.28: matrix multiplication and it doesn't
+2417.92 - 2420.64: just automatically occur if you try to
+2419.28 - 2422.0: do a times b
+2420.64 - 2425.7599999999998: it's not going to work because these are
+2422.0 - 2427.92: different sizes so we can do is mp has a
+2425.76 - 2430.7200000000003: matrix multiply function and if i pass
+2427.92 - 2432.2400000000002: an a then pass in b
+2430.72 - 2436.48: we get
+2432.24 - 2439.2799999999997: 6 6 6 6. did i say enough sixes
+2436.48 - 2440.96: i don't know but uh yeah it uh multiply
+2439.28 - 2441.8390000000004: those two matrices
+2440.96 - 2443.839: um
+2441.839 - 2445.599: you know and if i try to switch up this
+2443.839 - 2447.7599999999998: dimension in the middle
+2445.599 - 2450.56: uh it's not gonna work because it's now
+2447.76 - 2450.5600000000004: incompatible
+2450.88 - 2454.4: uh yeah that's matrix multiplication
+2453.119 - 2456.56: you could also want to do maybe some
+2454.4 - 2459.52: other stuff with matrices so let's
+2456.56 - 2459.92: imagine i wanted to create the or to
+2459.52 - 2461.04: find the
+2459.92 - 2462.88: [Music]
+2461.04 - 2465.2: um
+2462.88 - 2467.92: let's say determinant of a matrix so
+2465.2 - 2469.4399999999996: we could as a sanity check you know make
+2467.92 - 2472.4: c equal the
+2469.44 - 2474.2400000000002: identity matrix and if you are familiar
+2472.4 - 2476.96: with linear algebra you know that
+2474.24 - 2478.7999999999997: the identity matrix has a determinant of
+2476.96 - 2480.7200000000003: one
+2478.8 - 2482.079: so if i do linear algebra dot
+2480.72 - 2484.56: determinant
+2482.079 - 2487.28: of c we should get one
+2484.56 - 2490.96: 1.0 as we get so
+2487.28 - 2490.96: find the determinant
+2491.76 - 2496.88: you know there's all sorts of other good
+2493.28 - 2500.4: things like eigenvalues
+2496.88 - 2502.88: you know the inverse of a matrix so what
+2500.4 - 2504.8: what do you multiply by a matrix to get
+2502.88 - 2505.599: the identity matrix
+2504.8 - 2507.6800000000003: um
+2505.599 - 2508.6400000000003: and so yeah all sorts of good stuff on
+2507.68 - 2511.7599999999998: that
+2508.64 - 2511.7599999999998: like i guess i'll do
+2512.48 - 2516.72: and if you want to have all this
+2514.72 - 2518.24: information on the other types of linear
+2516.72 - 2521.2799999999997: algebra stuff
+2518.24 - 2523.68: here is some useful information
+2521.28 - 2526.1600000000003: definitely go to this link and as i've
+2523.68 - 2528.3999999999996: said a couple times in this video
+2526.16 - 2529.7599999999998: this notebook is on my github page so
+2528.4 - 2532.079: you can find
+2529.76 - 2533.8390000000004: all this there but yeah there's so many
+2532.079 - 2536.6400000000003: different things that you can do
+2533.839 - 2539.599: with matrices and linear algebra using
